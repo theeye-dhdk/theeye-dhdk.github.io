@@ -2,27 +2,22 @@
     {
     	"issue":"1",
 		"topic":"TECHNOLOGY", 
-        "pageLink":"technology.html"
+        "pageLink":"tech/"
 	},
     {
     	"issue":"2",
     	"topic":"SPACE",
-        "pageLink":"space.html" 
+        "pageLink":"space/" 
     },
     {
     	"issue":"3",
     	"topic":"CLIMATE",
-        "pageLink":"climate.html"
+        "pageLink":"climate/"
     },
     {
     	"issue":"4",
     	"topic":"HEALTH",
-        "pageLink":"healt.html" 
-    }, 
-    {
-        "issue":"n",
-        "topic":"N",
-        "pageLink":"N.html"
+        "pageLink":"healt/" 
     }
     ]
 }
