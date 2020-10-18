@@ -1,0 +1,2244 @@
+@font-face {
+    font-family: 'giveny';
+    src: url('font/Giveny.ttf');
+}
+@font-face {
+    font-family: 'chromate';
+    src: url('font/Chromate-Regular.ttf');
+}
+
+@font-face {
+    font-family: 'eksell';
+    src: url('font/Eksell-Medium.ttf');
+}
+@font-face {
+    font-family: 'forum';
+    src: url('font2/Forum.ttf');
+}
+
+@font-face {
+    font-family: 'amagro';
+    src: url('font/Amagro-bold.ttf');
+}
+@font-face {
+    font-family: 'kabond';
+    src: url('font/Kabond Font.otf');
+}
+
+@font-face {
+    font-family: 'faktpro';
+    src: url('font/FaktPro-Normal.ttf');
+}
+
+@font-face {
+    font-family: 'neutralfacebold';
+    src: url('font/NeutralFace-Bold.otf');
+}
+
+@font-face {
+    font-family: 'neutralface';
+    src: url('font/NeutralFace.otf');
+}
+
+
+ #file {
+margin: 0;
+padding: 0;
+}
+
+/* ----------------------------------------------------- ARTICLE --------------------------------------------------------------- */ 
+/* ----------------------------------------------------- ARTICLE --------------------------------------------------------------- */ 
+
+
+ #file div.article div.cover {
+	background: linear-gradient(-45deg, #fff381, #ff9cc9, #9fc6ff, #8aff79);
+/*  background: linear-gradient(-45deg, yellow,#e8548d, #70c4ff, #26ffc2);*/
+	background-size: 400% 400%;
+	-webkit-animation: gradient 15s ease infinite;
+	        animation: gradient 15s ease infinite;
+	height:100%;
+	
+}
+
+@keyframes gradient {
+	0% {
+		background-position: 0% 50%;
+	}
+	50% {
+		background-position: 100% 50%;
+	}
+	100% {
+		background-position: 0% 50%;
+	}
+}
+
+
+/* COVER */
+
+ #file div.article div.cover {
+position:relative;
+margin-left:none;
+margin-right:none;
+}
+
+ #file div.article #CoverWrapper:after {
+  content: " ";
+  display: block;
+  box-sizing: border-box;
+  height: 2vw;
+  width: 2vw;
+  border-style: solid;
+  border-color: white;
+  border-width: 0px 2.5px 2.5px 0px;
+  transform: rotate(45deg);
+  transition: border-width 150ms ease-in-out;
+  position:relative;
+  top: -10%;
+  left: 49%;
+  animation: blinker 2.5s linear infinite;
+  -webkit-animation: fade_move_down 4s ease-in-out infinite;
+}
+
+
+@keyframes blinker {
+  50% {
+    opacity: 0;
+  }
+}
+
+@-webkit-keyframes fade_move_down {
+  0%   { -webkit-transform:translate(0,-10px) rotate(45deg); opacity: 0;  }
+  50%  { opacity: 1;  }
+  100% { -webkit-transform:translate(0,10px) rotate(45deg); opacity: 0; }
+}
+
+@-webkit-keyframes fadein {
+    from { opacity: 0; }
+    to   { opacity: 1; }
+}
+
+ #file div.article .title {
+width:100%;
+height:100%;
+text-align:center;
+}
+
+
+ #file div.article .coverpic {
+max-width:60%;
+position: absolute;
+margin-left: auto;
+margin-right: auto;
+left: 0;
+right: 0;
+margin-top: auto;
+margin-bottom: auto;
+top: 0;
+bottom: 0;
+
+ filter: blur(2px);
+  -webkit-filter: blur(1px);
+  
+  -webkit-animation: fadein 10s;
+}
+
+ #file div.article .coverimg {
+max-width:60%;
+position: absolute;
+margin-left: auto;
+margin-right: auto;
+left: 0;
+right: 0;
+margin-top: auto;
+margin-bottom: auto;
+top: 0;
+bottom: 0;
+ filter: blur(2px);
+  -webkit-filter: blur(1px);  
+  -webkit-animation: fadein 10s;
+}
+   
+ #file div.article .covercaption {
+display:none;
+}
+
+ #file div.article div.title  h1{
+width:70%;
+color:white;
+font-size:95px;
+font-family:'eksell';
+font-weight:normal;
+letter-spacing: 4px;
+position:relative;
+left: 15%;
+top: 50%;
+transform: translateY(-50%);
+-webkit-transform: translateY(-50%);
+-ms-transform: translateY(-50%);
+
+}
+
+
+ #file div.article .byline {
+font-family:'faktpro';
+color:white;
+position: absolute;
+text-align:center;
+margin-left: auto;
+margin-right: auto;
+left: 0;
+right: 0;
+top: 10%;
+}
+ #file div.article .byline:nth-child(2) {
+top: 15%;
+}
+ #file div.article .byline:nth-child(3) {
+top: 20%;
+}
+ #file div.article .byline:nth-child(4) {
+top: 25%;
+}
+ #file div.article .byline:nth-child(5) {
+top: 30%;
+}
+
+
+ #file div.article .publicationDate {
+color:white;
+position: absolute;
+margin-left: auto;
+margin-right: auto;
+left: 0;
+right: 0;
+top:5%;
+text-align: center;
+font-family:'faktpro';
+}
+
+ #file div.article .updated {
+color:white;
+position: absolute;
+margin-left: auto;
+margin-right: auto;
+left: 0;
+right: 0;
+bottom:10%;
+text-align: center;
+font-family:'faktpro';
+}
+
+ #file div.article div.cover p.pubnote {
+color:white;
+font-family:'faktpro';
+font-size:12px;
+text-transform: uppercase;
+writing-mode: vertical-rl;
+text-orientation: mixed;
+text-align:center;
+position:absolute;
+width: 6%;
+height:70%;
+margin-top: auto;
+margin-bottom: auto;
+top: 0;
+bottom: 0;
+right:25;
+}
+
+ #file div.article p.subtitle  {
+color:white;
+font-family:'faktpro';
+font-size:12px;
+text-transform: uppercase;
+writing-mode: vertical-rl;
+transform: rotate(180deg);
+text-orientation: mixed;
+text-align:center;
+position:absolute;
+width: 6%;
+height:70%;
+margin-top: auto;
+margin-bottom: auto;
+top: 0;
+bottom: 0;
+left:25;
+
+}
+
+
+/* CONTENT */
+/* ---  */
+
+ #file div.article div.content {
+display: block;
+margin-top: 10%;
+width:100%;
+background-color: white;
+position: relative;
+z-index: 0;
+margin-bottom: calc(-100vh + 6px);
+}
+
+
+
+ #file div.article .content:before {
+    content: "";
+    display: block;
+    background: linear-gradient(to right top, #ebfb4d 0%, #ffc3de 22%, #76adff 50%, white 50%);
+    height: calc(100% - 100vh + 10px);
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -2;
+}
+
+ #file div.article .content:after {
+    content: "";
+    display: block;
+    background: white;
+    background-color:white;
+    height: calc(100vh - 10px);
+    width: 100%;
+    position: -webkit-sticky;
+    position: sticky;
+    bottom: 0;
+    left: 0;
+    z-index: -1;
+}
+
+
+ #file div.article div.content p{
+margin-left:20%;
+margin-right:20%;
+margin-top: 3% ;
+margin-bottom: 3% ;
+font-family:'faktpro';
+font-size:18px;
+line-height:1.77778;
+font-size: 98%;
+line-height: 2.1;
+cursor: crosshair;
+}
+
+ #file div.article div.content h1, 
+ #file div.article div.content h2, 
+ #file div.article div.content h3, 
+ #file div.article div.content h4, 
+ #file div.article div.content h5, 
+ #file div.article div.content h6 {
+text-align:left;
+margin-left:20%;
+margin-right:20%;
+margin-top: 3% ;
+margin-bottom:0%;
+padding:0;
+}
+
+ #file div.article .content p:first-of-type { 
+   margin-top:10%;}
+ #file div.article .content section p:first-of-type { 
+   margin-top:3%;}
+
+ #file div.article .content p:first-of-type::first-letter { 
+	vertical-align:center;
+	font-size:600%;
+	margin:.1em .2em 0 0;
+	padding:.6em .2em .5em .2em;
+	line-height:.85em;
+	float:left;
+	color:#333;
+	border: solid #333;
+	border-width: thin;
+  *line-height:1em; /* IE7 Only */}
+
+ #file div.article .content table caption p:first-of-type::first-letter { 
+    all:unset;
+    /* IE Only */
+	vertical-align: center;
+	font-size:18px;
+	line-height:1.77778;
+	line-height: 2.1;
+	color:#333;
+	margin:0px;
+	padding:0;
+	float:none;
+	border:0;
+	border-width: 0;
+    *line-height:0em;
+    font-family:'faktpro';
+    }
+
+ #file div.article .content section p:first-of-type::first-letter { 
+	vertical-align:center;
+	font-size:400%;
+	margin:.1em .2em 0 0;
+	padding:.6em .2em .5em .2em;
+	line-height:.60em;
+	float:left;
+	color:#333;
+	border: solid #333;
+	border-width: thin;
+  *line-height:1em; /* IE7 Only */}
+  
+ #file div.article  .content section  {
+ width:60%;
+ margin-left:20%;
+ margin-right:20%;
+ margin-bottom:2px;
+ border-top: 1px solid black;
+ border-bottom: 1px solid black;
+ padding-top:3%;
+ padding-bottom:3%;
+ }
+ #file div.article  .content section + section {
+  border-top: none;
+ }  
+
+ #file div.article   .content section  p, 
+ #file div.article   .content section h1, 
+ #file div.article   .content section h2, 
+ #file div.article  .content section h3, 
+ #file div.article   .content section h4, 
+ #file div.article   .content section h5, 
+ #file div.article   .content section h6{
+ width:100%;
+ padding:0;
+ margin:0;
+ }
+  #file div.article  .content a {
+  color: #4682B4}
+  
+ #file div.article  .content a:hover {
+ background: linear-gradient(-45deg, #ff8a8a, #f272fe);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;}
+  
+ #file div.article div.content figure { 
+display: inline-block;
+width: 80%;
+margin-right:10%;
+margin-left:10%;
+}
+
+ #file div.article figure img{ 
+max-width:100%;
+width: 100%;
+height:auto;
+}
+
+ #file div.article figcaption {
+font-family:'faktpro';
+text-align: center;
+text-transform: uppercase;
+font-size:75%;
+width: 70%;
+margin-left: auto;
+margin-right:auto;
+padding-top:2%;
+padding-bottom:2%;
+}
+
+ #file div.article blockquote {
+display: inline-block;
+width: 92%;
+line-height 50%;
+color:white;
+text-align: center;
+font-family:'chromate';
+font-size:300%;
+	/*  background: linear-gradient(-45deg, yellow,#e8548d, #8fe1ff, #abd1a6); */
+	/*  background: linear-gradient(-45deg, #fff381,#ffc3de, #d0e3ff, #b4ffa9); */
+	background: linear-gradient(-45deg, #fff381, #ff9cc9, #9fc6ff, #8aff79);
+	background-size: 400% 400%;
+	-webkit-animation: gradient 15s ease infinite;
+	        animation: gradient 15s ease infinite;
+padding-top: 5%;
+padding-right: 4%;
+padding-left: 4%;
+margin-right: 0px;
+margin-left: 0px;
+}
+
+ #file div.article blockquote:after {
+display:block;
+content: " — Quote —";
+font-size:40%;
+padding: 5%;
+}
+
+ #file div.article div.foot {
+font-family:'faktpro';
+text-transform: uppercase;
+font-size:90%;
+width:70%;
+margin-left:15%;
+margin-right:15%;
+z-index: 0;
+margin-bottom:20px;
+position:relative;
+border-top: 1px solid black;
+}
+
+ #file div.article .bio {
+text-align:left;
+margin-top:40px;
+margin-bottom:40px;
+padding-bottom:40px;
+border-bottom: 1px solid black;
+letter-spacing:1px;
+}
+
+ #file div.article .bio span.person {
+font-weight: bold;
+font-size:100%;
+text-decoration: underline;
+}
+
+ #file div.article .copy {
+text-align:left;
+margin-bottom:20px;
+margin-top:40px;
+text-transform: none;
+}
+
+ #file div.article .pubnote { 
+text-align:left;
+margin-top:20px;
+margin-bottom:40px;
+text-transform: none;
+}
+
+ #file div.article #References {
+font-family:'faktpro';
+text-transform: uppercase;
+border-top: 1px solid black;
+}
+
+  #file div.article .bio + #References {
+border-top: none;
+}
+
+
+#file div.article  div.content table {
+  width: 80%;
+  margin-right:10%;
+  margin-left:10%;
+  margin-top: 5%;
+  margin-bottom:4%;
+  border-top:1px solid black;
+  text-align: left;
+  border-collapse: collapse;
+  background-color: white;  
+}
+
+#file div.article   div.content table caption {
+  position: relative;
+  text-align:left;
+  left:-20%;
+  margin-top:-10%;
+  padding:0%;
+  }
+  
+#file div.article   div.content table caption p{
+  margin-top: 0% ;
+  margin-bottom: 1% ;
+  }
+  
+#file div.article   div.content p.footnote {
+  position: relative;
+  text-align:left;
+  left:-10%;
+  padding:0;
+  font-size:14px;
+  line-height:1.77778;
+  margin-top: 0% ;
+  margin-bottom: 0% ;
+}
+
+ #file div.article  div.content table tfoot {
+
+}
+ 
+ #file div.article  div.content table tfoot tr{
+margin-top:2%;
+}
+ 
+ #file div.article  div.content table tbody{
+margin-bottom:0%;
+}
+ 
+ #file div.article  .footNoteMarker {
+margin-right:10px;
+margin-left:5px;
+font-weight: bold;
+}
+ 
+ #file div.article  .footNoteRef {
+margin-right:10px;
+margin-left:5px;
+font-weight: bold;
+}
+
+#file div.article   table tr:first-child th {
+padding-top:5%;
+}
+
+#file div.article   table tr:first-child td {
+padding-top:5%;
+}
+
+#file div.article   table td,th {
+ height: 50px;
+ padding: 10px;
+ text-align: left;
+ font-family:"faktpro";
+}
+
+#file div.article   table th {
+font-family: 'faktpro'; 
+font-size: 120%;
+letter-spacing: 4px;
+padding: 10px;
+color: black;
+}
+
+#file div.article   table tr:nth-child(even) {
+background-image: linear-gradient(90deg, rgba(255,195,222,0.5) 0%, rgba(174,207,255,0.5) 100%);
+}
+
+#file div.article   div.content ul,
+#file div.article   div.content ol,
+#file div.article   div.content dl {
+width:60%;
+margin-right:20%;
+margin-left:20%;
+font-family:"faktpro";
+font-size: 98%;
+line-height: 2.1;
+
+}
+
+
+@media screen and (max-width: 1250px) {
+   
+#file div.article div.title h1 {
+    font-size: 80px;
+  }
+#file div.article div.cover:after {
+  height: 3vw;
+  width: 3vw;
+  }
+
+}
+@media screen and (max-width: 1100px) {
+   #file div.article  div.title h1 {
+    font-size: 70px;
+  }
+  
+   #file div.article  div.cover:after {
+  height: 3vw;
+  width: 3vw;
+  }
+
+}
+
+@media screen and (max-width: 800px) {
+   #file div.article div.title h1 {
+    font-size: 45px;
+  }
+   #file div.article div.cover:after {
+  height: 4vw;
+  width: 4vw;
+  }
+
+}
+
+@media screen and (max-width: 500px) {
+   #file div.article  div.title h1 {
+    font-size: 45px;
+  }
+   #file div.article  .coverpic {
+  display: none;
+  }
+   #file div.article  p.subtitle {
+  display: none;
+  }
+   #file div.article  p.pubnote  {
+  display: none;
+  }
+   #file div.article  div.cover:after {
+  height: 6vw;
+  width: 6vw;
+  }
+   #file div.article  div.content p{
+margin-left:7%;
+margin-right:7%;
+font-size:14px;
+line-height: 2.1;
+cursor: crosshair;
+}
+ #file div.article  blockquote {
+font-size:200%;
+}
+ #file div.article  div.content figure{ 
+display: inline-block;
+width: 100%;
+margin-right:0%;
+margin-left:0%;
+}
+  #file div.article  .content section  {
+ width:86%;
+ margin-left:7%;
+ margin-right:7%;
+ border-top: 1px solid black;
+ border-bottom: 1px solid black;
+  padding-top:3%;
+ padding-bottom:3%;
+ } 
+ #file div.article   div.content section p{
+ width:100%;  
+margin:0;
+padding:0;
+}
+ #file div.article  div.content ul,
+ #file div.article  div.content ol,
+ #file div.article  div.content dl {
+ margin-left:7%;
+ margin-right:7%;
+
+}
+ #file div.article  div.content h1, 
+ #file div.article  div.content h2, 
+ #file div.article  div.content h3, 
+ #file div.article  div.content h4, 
+ #file div.article  div.content h5, 
+ #file div.article  div.content h6 {
+ margin-left:7%;
+ margin-right:7%;
+}
+ #file div.article  div.content table caption {
+  left:0%;
+  margin-top:-10%;
+  }
+  
+ #file div.article  div.content p.footnote {
+  left:0%;
+}
+ #file div.article  div.content table {
+font-size:14px;
+width: 100%;
+margin-right:0%;
+margin-left:0%;
+border-bottom: 1px solid black;
+}
+ #file div.article  div.foot{
+width: 100%;
+margin-right:0%;
+margin-left:0%;
+
+}
+
+ #file div.article  .bio {
+font-size:13px;
+margin-right:7%;
+margin-left:7%;
+}
+ #file div.article  .bio span.person {
+margin-right:7%;
+margin-left:7%;
+}
+ #file div.article  .copy {
+margin-right:7%;
+margin-left:7%;
+}
+ #file div.article  .pubnote { 
+margin-right:7%;
+margin-left:7%;
+}
+ #file div.article  #References {
+margin-right:7%;
+margin-left:7%;
+}
+}
+
+@media screen and (max-device-width: 500px) {
+   #file div.article  div.title h1 {
+    font-size: 45px;
+  }
+   #file div.article  .coverpic {
+  display: none;
+  }
+   #file div.article  p.subtitle {
+  display: none;
+  }
+   #file div.article  p.pubnote  {
+  display: none;
+  }
+   #file div.article  div.cover:after {
+  height: 6vw;
+  width: 6vw;
+  }
+   #file div.article  div.content p{
+margin-left:7%;
+margin-right:7%;
+font-size:14px;
+line-height: 2.1;
+cursor: crosshair;
+}
+ #file div.article  blockquote {
+font-size:200%;
+}
+ #file div.article  div.content figure{ 
+display: inline-block;
+width: 100%;
+margin-right:0%;
+margin-left:0%;
+}
+  #file div.article .content section  {
+ width:86%;
+ margin-left:7%;
+ margin-right:7%;
+ border-top: 1px solid black;
+ border-bottom: 1px solid black;
+  padding-top:3%;
+ padding-bottom:3%;
+ } 
+ 
+  #file div.article  div.content section p{
+ width:100%;  
+margin:0;
+padding:0;
+}
+
+ #file div.article  div.content ul,
+ #file div.article  div.content ol,
+ #file div.article  div.content dl {
+ margin-left:7%;
+ margin-right:7%;
+
+}
+ #file div.article  div.content h1, 
+ #file div.article  div.content h2, 
+ #file div.article  div.content h3, 
+ #file div.article  div.content h4, 
+ #file div.article  div.content h5, 
+ #file div.article  div.content h6 {
+ margin-left:7%;
+ margin-right:7%;
+}
+ #file div.article  div.content table caption {
+  left:0%;
+  margin-top:-10%;
+  }
+  
+ #file div.article  div.content p.footnote {
+  left:0%;
+}
+ #file div.article  div.content table {
+font-size:14px;
+width: 100%;
+margin-right:0%;
+margin-left:0%;
+border-bottom: 1px solid black;
+}
+ #file div.article  div.foot{
+width: 100%;
+margin-right:0%;
+margin-left:0%;
+
+}
+
+ #file div.article  .bio {
+font-size:13px;
+margin-right:7%;
+margin-left:7%;
+}
+ #file div.article  .bio span.person {
+margin-right:7%;
+margin-left:7%;
+}
+ #file div.article  .copy {
+margin-right:7%;
+margin-left:7%;
+}
+ #file div.article  .pubnote { 
+margin-right:7%;
+margin-left:7%;
+}
+ #file div.article  #References {
+margin-right:7%;
+margin-left:7%;
+}
+}
+/* ----------------------------------------------------- COVER ----------------------------------------------------------------- */ 
+/* ----------------------------------------------------- COVER ----------------------------------------------------------------- */ 
+#IssueCover {
+width:100%;
+background-image:radial-gradient(rgba(255,255,255,1) 0%, rgba(208,227,255,1) 17%, rgba(255,195,222,1) 45%, rgba(237,230,162,1) 81%, rgba(255,255,255,1) 100%);
+background-attachment: scroll;
+background-size: cover;
+margin: 0;
+padding: 0;
+z-index:0;
+overflow:hidden;
+ }
+
+#IssueCover h1 {
+width:90%;
+padding-top:10%;
+margin-right:5%;
+margin-left:5%;
+color:white;
+font-size:130px;
+text-align:center;
+font-family:'eksell';
+bottom:0;
+}
+
+
+
+#IssueCover .IssueBibliographicCitation {
+font-family:'amagro';
+color:white;
+font-size:30px;
+text-transform: uppercase;
+writing-mode: vertical-rl;
+text-orientation: mixed;
+text-align:center;
+position:relative;
+width: 10%;
+height:50%;
+margin-top: auto;
+margin-bottom: auto;
+top: -5%;
+}
+
+#IssueIndex {
+width:100%;
+
+
+}
+
+
+#IssueIndex div.ArticleInfo:nth-child(1) {
+width:70%;
+margin-right:15%;
+margin-left:15%;
+margin-bottom:0;
+position:relative; 
+display:block;
+text-align:center;
+top:-320px;
+    }
+#IssueIndex div.ArticleInfo:nth-child(2) {
+width:70%;
+margin-right:15%;
+margin-left:15%;
+text-align:center;
+position:relative;
+top:-160px;
+    }
+#IssueIndex div.ArticleInfo:nth-child(3) {
+width:30%;
+float:left; 
+position:relative;
+left:10%;
+margin-bottom:10%;
+    }
+    
+#IssueIndex div.ArticleInfo:nth-child(4) {
+width:30%;
+float:right; 
+position:relative;
+right:0%;
+padding:0;
+margin-bottom:10%;
+    }
+    
+
+
+#IssueCover div.ArticleInfo:nth-child(1) .articleImg {
+display:block;
+width:50%;
+height:80%;
+bottom:30%;
+margin-top:40px;
+border-top-right-radius: 5000px;
+border-top-left-radius: 5000px;
+margin-left: 25%;
+margin-right:25%;
+ filter: blur(2px);
+  -webkit-filter: blur(2px);
+}
+
+
+
+#IssueCover div.ArticleInfo:nth-child(2) .articleImg,
+#IssueCover div.ArticleInfo:nth-child(3) .articleImg,
+#IssueCover div.ArticleInfo:nth-child(4) .articleImg {
+display:none;
+}
+
+
+
+#IssueCover div.ArticleInfo:nth-child(1) .coverLabel {
+font-family:'amagro';
+font-size:200%;
+position:relative;
+bottom:-40px;
+z-index:1000;
+text-align:center;
+width:100%;
+}
+
+#IssueCover div.ArticleInfo:nth-child(2) .coverLabel {
+font-family:'amagro';
+font-size:200%;
+position:relative;
+bottom:-24px;
+z-index:1000;
+}
+#IssueCover div.ArticleInfo:nth-child(3) .coverLabel {
+font-family:'amagro';
+font-size:200%;
+position:relative;
+bottom:-24px;
+z-index:1000;
+}
+
+
+#IssueCover div.ArticleInfo:nth-child(4) .coverLabel {
+font-family:'amagro';
+font-size:200%;
+position:relative;
+bottom:-24px;
+z-index:1000;
+}
+
+
+
+#IssueCover div.ArticleInfo:nth-child(1) .coverAuthor {
+text-align:center;
+font-family:'amagro';
+color:white;
+font-size:120%;
+position:relative;
+bottom:-20px;
+z-index:1000;
+width:100%;
+}
+
+#IssueCover div.ArticleInfo:nth-child(1) .coverIssued {
+text-align:center;
+font-family:'amagro';
+color:white;
+font-size:120%;
+position:relative;
+bottom:-10px;
+z-index:1000;
+width:100%;
+}
+
+#IssueCover div.ArticleInfo:nth-child(1) .coverIssued:before{
+display: block;
+    content: "";
+    width: 200px;
+    height: 150px;
+    background: transparent url('img/Eye2025.png') no-repeat;
+    background-size:100%;
+    position:absolute;
+    left:50%;
+    top:1200%;
+    margin-left:-100px;
+    z-index:4;
+}
+
+#IssueCover div.ArticleInfo:nth-child(2) .coverAuthor, 
+#IssueCover div.ArticleInfo:nth-child(2) .coverIssued {
+font-family:'amagro';
+color:white;
+font-size:120%;
+}
+
+#IssueCover div.ArticleInfo:nth-child(3) .coverAuthor,
+#IssueCover div.ArticleInfo:nth-child(3) .coverIssued {
+font-family:'amagro';
+color:white;
+font-size:120%;
+
+}
+
+#IssueCover div.ArticleInfo:nth-child(4) .coverAuthor,
+#IssueCover div.ArticleInfo:nth-child(4) .coverIssued {
+font-family:'amagro';
+color:white;
+font-size:120%;
+}
+ 
+#IssueCover div.ArticleInfo:nth-child(1) .coverLabel a {
+color:white;
+}
+
+#IssueCover div.ArticleInfo:nth-child(2) .coverLabel a{
+color:white;
+}
+#IssueCover div.ArticleInfo:nth-child(3) .coverLabel a{
+color:white;
+}
+
+#IssueCover div.ArticleInfo:nth-child(4) .coverLabel a {
+color:white;
+}
+
+
+@media screen and (max-width: 1100px) {
+#IssueCover h1 {
+font-size:120px;
+}
+}
+@media screen and (max-width: 1000px) {
+#IssueCover h1 {
+font-size:110px;
+}
+}
+@media screen and (max-width: 900px) {
+#IssueCover h1 {
+font-size:100px;
+}
+#IssueIndex div.ArticleInfo:nth-child(4) {
+width:40%;
+float:right; 
+position:relative;
+right:0%;
+padding:0;
+margin-bottom:10%;
+    }
+}
+
+@media screen and (max-width: 800px) {
+#IssueCover h1 {
+font-size:90px;
+}
+
+    
+}
+
+@media screen and (max-width: 700px) {
+#IssueCover h1 {
+font-size:70px;
+}
+#IssueIndex div.ArticleInfo:nth-child(3) {
+width:80%;
+margin-right:10%;
+margin-left:10%;
+float:none; 
+text-align:center;
+left:0;
+    }
+    
+#IssueIndex div.ArticleInfo:nth-child(4) {
+width:80%;
+margin-right:10%;
+margin-left:10%;
+float:none; 
+text-align:center;
+    }
+#IssueCover div.ArticleInfo:nth-child(1) .articleImg {
+display:block;
+width:50%;
+height:40%;
+margin-top:40px;
+border-top-right-radius: 5000px;
+border-top-left-radius: 5000px;
+margin-left: 25%;
+margin-right:25%;
+ filter: blur(2px);
+  -webkit-filter: blur(2px);
+}
+
+#IssueCover .IssueBibliographicCitation {
+font-family:'amagro';
+color:white;
+font-size:25px;
+text-transform: uppercase;
+writing-mode: vertical-rl;
+text-orientation: mixed;
+text-align:center;
+position:relative;
+width: 10%;
+height:50%;
+margin-top: auto;
+margin-bottom: auto;
+top: -5%;
+}
+
+#IssueCover div.ArticleInfo:nth-child(1) .coverIssued:before{
+display: block;
+    content: "";
+    width: 160px;
+    height: 120px;
+    background: transparent url('img/Eye2025.png') no-repeat;
+    background-size:100%;
+    position:absolute;
+    left:50%;
+    top:600%;
+    margin-left:-80px;
+    z-index:4;
+}
+#IssueCover div.ArticleInfo:nth-child(1) .coverLabel {
+font-family:'amagro';
+font-size:200%;
+position:relative;
+bottom:-40px;
+z-index:1000;
+text-align:center;
+width:100%;
+}
+
+#IssueCover div.ArticleInfo:nth-child(2) .coverLabel {
+font-family:'amagro';
+font-size:200%;
+position:relative;
+bottom:-24px;
+z-index:1000;
+}
+
+}
+
+@media screen and (max-device-width: 500px) {
+#IssueCover h1 {
+font-size:100px;
+}
+#IssueIndex div.ArticleInfo:nth-child(3) {
+width:80%;
+margin-right:10%;
+margin-left:10%;
+position:relative;
+top:-80px;
+float:none; 
+text-align:center;
+left:0;
+    }
+    
+#IssueIndex div.ArticleInfo:nth-child(1) {
+width:80%;
+margin-right:10%;
+margin-left:10%;
+
+    }
+#IssueIndex div.ArticleInfo:nth-child(2) {
+width:80%;
+margin-right:10%;
+margin-left:10%;
+
+    }
+    
+#IssueIndex div.ArticleInfo:nth-child(4) {
+width:80%;
+margin-right:10%;
+margin-left:10%;
+float:none; 
+text-align:center;
+    }
+    
+#IssueCover div.ArticleInfo:nth-child(1) .articleImg {
+display:block;
+width:50%;
+height:30%;
+margin-top:40px;
+border-top-right-radius: 5000px;
+border-top-left-radius: 5000px;
+margin-left: 25%;
+margin-right:25%;
+ filter: blur(2px);
+  -webkit-filter: blur(2px);
+}
+#IssueCover .IssueBibliographicCitation {
+font-family:'amagro';
+color:white;
+font-size:35px;
+text-transform: uppercase;
+writing-mode: vertical-rl;
+text-orientation: mixed;
+text-align:center;
+position:relative;
+width: 10%;
+height:50%;
+margin-top: auto;
+margin-bottom: auto;
+top: -5%;
+}
+
+#IssueCover div.ArticleInfo:nth-child(1) .coverIssued:before{
+display: block;
+    content: "";
+    width: 160px;
+    height: 120px;
+    background: transparent url('img/Eye2025.png') no-repeat;
+    background-size:100%;
+    position:absolute;
+    left:50%;
+    top:800%;
+    margin-left:-80px;
+    z-index:4;
+}
+#IssueIndex div.ArticleInfo:nth-child(1) {
+top:-600px;
+    }
+#IssueIndex div.ArticleInfo:nth-child(2) {
+top:-300px;
+    }
+#IssueCover div.ArticleInfo:nth-child(1) .coverLabel {
+font-family:'amagro';
+font-size:200%;
+position:relative;
+bottom:-40px;
+z-index:1000;
+text-align:center;
+width:100%;
+}
+
+#IssueCover div.ArticleInfo:nth-child(2) .coverLabel {
+font-family:'amagro';
+font-size:200%;
+position:relative;
+bottom:-24px;
+z-index:1000;
+}
+
+}
+
+/* ----------------------------------------------------- DISCLAIMER ------------------------------------------------------------ */ 
+/* ----------------------------------------------------- DISCLAIMER ------------------------------------------------------------ */ 
+
+#disclaimer {
+width:100%;
+background-image:radial-gradient(rgba(255,227,227,1) 0%, rgba(255,195,222,1) 17%, rgba(231,176,252,1) 45%, rgba(174,207,255,1) 87%, rgba(255,255,255,1) 100%);
+background-attachment: scroll;
+background-size: cover;
+margin: 0;
+padding-top:80px;
+z-index:0;
+overflow:hidden;
+ }
+#disclaimer:before{
+content: "Disclaimer";
+font-family:'kabond';
+color:white;
+font-size:50px;
+text-transform: uppercase;
+writing-mode: vertical-rl;
+text-orientation: mixed;
+position:relative;
+width: 10%;
+height:50%;
+margin-top: -375px;
+padding-right:100px;
+top: 20%;
+}  
+#disclaimer p {
+font-family:"faktpro";
+color: white;
+font-size:150%;
+width:50%;
+margin-right:25%;
+margin-left:25%;
+}
+#disclaimer ul {
+width:70%;
+margin-left:25%;
+margin-right:5%;
+margin-top:10%;
+padding-left: 0;
+}
+#disclaimer ul li {
+list-style-type: none;
+margin-bottom:20px;
+}
+#disclaimer ul li a {
+font-family:"amagro";
+text-transform: uppercase;
+color: white;
+font-size:100%;
+text-decoration: none;
+overflow-wrap: break-word;
+  word-wrap: break-word;
+}
+
+#disclaimer p:first-of-type {
+width:50%;
+margin-right:25%;
+margin-left:25%;
+margin-top:20%;
+}
+
+#disclaimer p:last-of-type {
+width:80%;
+margin-top:30%;
+margin-right:10%;
+margin-left:10%;
+margin-bottom:20%;
+text-align:center;
+}
+
+@media screen and (max-width: 500px) {
+#disclaimer p,
+#disclaimer p:first-of-type {
+font-size:120%;
+width:70%;
+margin-right:5%;
+margin-left:25%;
+}
+#disclaimer ul li a {
+font-size:80%;
+}
+}
+
+@media screen and (max-device-width: 500px) {
+#disclaimer p,
+#disclaimer p:first-of-type {
+font-size:120%;
+width:70%;
+margin-right:5%;
+margin-left:25%;
+}
+#disclaimer ul li a {
+font-size:80%;
+}
+@media screen and (max-device-width: 400px) {
+#disclaimer p,
+#disclaimer p:first-of-type {
+font-size:110%;
+width:70%;
+margin-right:5%;
+margin-left:25%;
+}
+#disclaimer ul li a {
+font-size:70%;
+}
+#disclaimer:before{
+content: "Disclaimer";
+font-family:'kabond';
+color:white;
+font-size:45px;
+text-transform: uppercase;
+writing-mode: vertical-rl;
+text-orientation: mixed;
+position:relative;
+width: 10%;
+height:50%;
+margin-top: -400px;
+padding-right:100px;
+top: 20%;
+}  
+}
+
+/* ----------------------------------------------------- ARTICLE --------------------------------------------------------------- */ 
+/* ----------------------------------------------------- ARTICLE --------------------------------------------------------------- */ 
+
+
+#file div.article div.cover {
+	background: linear-gradient(-45deg, #fff381, #ff9cc9, #9fc6ff, #8aff79);
+/*  background: linear-gradient(-45deg, yellow,#e8548d, #70c4ff, #26ffc2);*/
+	background-size: 400% 400%;
+	-webkit-animation: gradient 15s ease infinite;
+	        animation: gradient 15s ease infinite;
+	height:100%;
+	
+}
+
+@keyframes gradient {
+	0% {
+		background-position: 0% 50%;
+	}
+	50% {
+		background-position: 100% 50%;
+	}
+	100% {
+		background-position: 0% 50%;
+	}
+}
+
+
+/* COVER */
+
+#file div.article div.cover {
+position:relative;
+margin-left:none;
+margin-right:none;
+}
+
+#file div.article #CoverWrapper:after {
+  content: " ";
+  display: block;
+  box-sizing: border-box;
+  height: 2vw;
+  width: 2vw;
+  border-style: solid;
+  border-color: white;
+  border-width: 0px 2.5px 2.5px 0px;
+  transform: rotate(45deg);
+  transition: border-width 150ms ease-in-out;
+  position:relative;
+  top: -10%;
+  left: 49%;
+  animation: blinker 2.5s linear infinite;
+  -webkit-animation: fade_move_down 4s ease-in-out infinite;
+}
+
+
+@keyframes blinker {
+  50% {
+    opacity: 0;
+  }
+}
+
+@-webkit-keyframes fade_move_down {
+  0%   { -webkit-transform:translate(0,-10px) rotate(45deg); opacity: 0;  }
+  50%  { opacity: 1;  }
+  100% { -webkit-transform:translate(0,10px) rotate(45deg); opacity: 0; }
+}
+
+@-webkit-keyframes fadein {
+    from { opacity: 0; }
+    to   { opacity: 1; }
+}
+
+#file div.article .title {
+width:100%;
+height:100%;
+text-align:center;
+}
+
+
+#file div.article .coverpic {
+max-width:60%;
+position: absolute;
+margin-left: auto;
+margin-right: auto;
+left: 0;
+right: 0;
+margin-top: auto;
+margin-bottom: auto;
+top: 0;
+bottom: 0;
+
+ filter: blur(2px);
+  -webkit-filter: blur(1px);
+  
+  -webkit-animation: fadein 10s;
+}
+
+#file div.article .coverimg {
+max-width:60%;
+position: absolute;
+margin-left: auto;
+margin-right: auto;
+left: 0;
+right: 0;
+margin-top: auto;
+margin-bottom: auto;
+top: 0;
+bottom: 0;
+ filter: blur(2px);
+  -webkit-filter: blur(1px);  
+  -webkit-animation: fadein 10s;
+}
+   
+#file div.article .covercaption {
+display:none;
+}
+
+#file div.article div.title  h1{
+width:70%;
+color:white;
+font-size:95px;
+font-family:'eksell';
+font-weight:normal;
+letter-spacing: 4px;
+position:relative;
+left: 15%;
+top: 50%;
+transform: translateY(-50%);
+-webkit-transform: translateY(-50%);
+-ms-transform: translateY(-50%);
+
+}
+
+
+#file div.article .byline {
+font-family:'faktpro';
+color:white;
+position: absolute;
+text-align:center;
+margin-left: auto;
+margin-right: auto;
+left: 0;
+right: 0;
+top: 10%;
+}
+#file div.article .byline:nth-child(2) {
+top: 15%;
+}
+#file div.article .byline:nth-child(3) {
+top: 20%;
+}
+#file div.article .byline:nth-child(4) {
+top: 25%;
+}
+#file div.article .byline:nth-child(5) {
+top: 30%;
+}
+
+
+#file div.article .publicationDate {
+color:white;
+position: absolute;
+margin-left: auto;
+margin-right: auto;
+left: 0;
+right: 0;
+top:5%;
+text-align: center;
+font-family:'faktpro';
+}
+
+#file div.article .updated {
+color:white;
+position: absolute;
+margin-left: auto;
+margin-right: auto;
+left: 0;
+right: 0;
+bottom:10%;
+text-align: center;
+font-family:'faktpro';
+}
+
+#file div.article div.cover p.pubnote {
+color:white;
+font-family:'faktpro';
+font-size:12px;
+text-transform: uppercase;
+writing-mode: vertical-rl;
+text-orientation: mixed;
+text-align:center;
+position:absolute;
+width: 6%;
+height:70%;
+margin-top: auto;
+margin-bottom: auto;
+top: 0;
+bottom: 0;
+right:25;
+}
+
+#file div.article p.subtitle  {
+color:white;
+font-family:'faktpro';
+font-size:12px;
+text-transform: uppercase;
+writing-mode: vertical-rl;
+transform: rotate(180deg);
+text-orientation: mixed;
+text-align:center;
+position:absolute;
+width: 6%;
+height:70%;
+margin-top: auto;
+margin-bottom: auto;
+top: 0;
+bottom: 0;
+left:25;
+
+}
+
+
+/* CONTENT */
+/* ---  */
+
+#file div.article div.content {
+display: block;
+margin-top: 10%;
+width:100%;
+background-color: white;
+position: relative;
+z-index: 0;
+margin-bottom: calc(-100vh + 6px);
+}
+
+
+
+#file div.article .content:before {
+    content: "";
+    display: block;
+    background: linear-gradient(to right top, #ebfb4d 0%, #ffc3de 22%, #76adff 50%, white 50%);
+    height: calc(100% - 100vh + 10px);
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -2;
+}
+
+#file div.article .content:after {
+    content: "";
+    display: block;
+    background: white;
+    background-color:white;
+    height: calc(100vh - 10px);
+    width: 100%;
+    position: -webkit-sticky;
+    position: sticky;
+    bottom: 0;
+    left: 0;
+    z-index: -1;
+}
+
+
+#file div.article div.content p{
+margin-left:20%;
+margin-right:20%;
+margin-top: 3% ;
+margin-bottom: 3% ;
+font-family:'faktpro';
+font-size:18px;
+line-height:1.77778;
+font-size: 98%;
+line-height: 2.1;
+cursor: crosshair;
+}
+
+#file div.article div.content h1, 
+#file div.article div.content h2, 
+#file div.article div.content h3, 
+#file div.article div.content h4, 
+#file div.article div.content h5, 
+#file div.article div.content h6 {
+text-align:left;
+margin-left:20%;
+margin-right:20%;
+margin-top: 3% ;
+margin-bottom:0%;
+padding:0;
+}
+
+#file div.article .content p:first-of-type { 
+   margin-top:10%;}
+#file div.article .content section p:first-of-type { 
+   margin-top:3%;}
+
+#file div.article .content p:first-of-type::first-letter { 
+	vertical-align:center;
+	font-size:600%;
+	margin:.1em .2em 0 0;
+	padding:.6em .2em .5em .2em;
+	line-height:.85em;
+	float:left;
+	color:#333;
+	border: solid #333;
+	border-width: thin;
+  *line-height:1em; /* IE7 Only */}
+
+#file div.article .content table caption p:first-of-type::first-letter { 
+    all:unset;
+    /* IE Only */
+	vertical-align: center;
+	font-size:18px;
+	line-height:1.77778;
+	line-height: 2.1;
+	color:#333;
+	margin:0px;
+	padding:0;
+	float:none;
+	border:0;
+	border-width: 0;
+    *line-height:0em;
+    font-family:'faktpro';
+    }
+
+#file div.article .content section p:first-of-type::first-letter { 
+	vertical-align:center;
+	font-size:400%;
+	margin:.1em .2em 0 0;
+	padding:.6em .2em .5em .2em;
+	line-height:.60em;
+	float:left;
+	color:#333;
+	border: solid #333;
+	border-width: thin;
+  *line-height:1em; /* IE7 Only */}
+  
+ #file div.article .content section  {
+ width:60%;
+ margin-left:20%;
+ margin-right:20%;
+ margin-bottom:2px;
+ border-top: 1px solid black;
+ border-bottom: 1px solid black;
+ padding-top:3%;
+ padding-bottom:3%;
+ }
+#file div.article  .content section + section {
+  border-top: none;
+ }  
+
+#file div.article   .content section  p, 
+#file div.article   .content section h1, 
+#file div.article   .content section h2, 
+#file div.article  .content section h3, 
+#file div.article   .content section h4, 
+#file div.article   .content section h5, 
+#file div.article   .content section h6{
+ width:100%;
+ padding:0;
+ margin:0;
+ }
+#file div.article   .content a {
+  color: #4682B4}
+#file div.article  .content a:hover {
+ background: linear-gradient(-45deg, #ff8a8a, #f272fe);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;}
+#file div.article div.content figure { 
+display: inline-block;
+width: 80%;
+margin-right:10%;
+margin-left:10%;
+}
+
+#file div.article figure img{ 
+max-width:100%;
+width: 100%;
+height:auto;
+}
+
+#file div.article figcaption {
+font-family:'faktpro';
+text-align: center;
+text-transform: uppercase;
+font-size:75%;
+width: 70%;
+margin-left: auto;
+margin-right:auto;
+padding-top:2%;
+padding-bottom:2%;
+}
+
+#file div.article blockquote {
+display: inline-block;
+width: 92%;
+line-height 50%;
+color:white;
+text-align: center;
+font-family:'chromate';
+font-size:300%;
+	/*  background: linear-gradient(-45deg, yellow,#e8548d, #8fe1ff, #abd1a6); */
+	/*  background: linear-gradient(-45deg, #fff381,#ffc3de, #d0e3ff, #b4ffa9); */
+	background: linear-gradient(-45deg, #fff381, #ff9cc9, #9fc6ff, #8aff79);
+	background-size: 400% 400%;
+	-webkit-animation: gradient 15s ease infinite;
+	        animation: gradient 15s ease infinite;
+padding-top: 5%;
+padding-right: 4%;
+padding-left: 4%;
+margin-right: 0px;
+margin-left: 0px;
+}
+
+#file div.article blockquote:after {
+display:block;
+content: " — Quote —";
+font-size:40%;
+padding: 5%;
+}
+#file div.article div.foot {
+font-family:'faktpro';
+text-transform: uppercase;
+font-size:90%;
+width:70%;
+margin-left:15%;
+margin-right:15%;
+z-index: 0;
+margin-bottom:20px;
+position:relative;
+border-top: 1px solid black;
+}
+
+#file div.article .bio {
+text-align:left;
+margin-top:40px;
+margin-bottom:40px;
+padding-bottom:40px;
+border-bottom: 1px solid black;
+letter-spacing:1px;
+}
+#file div.article .bio span.person {
+font-weight: bold;
+font-size:100%;
+text-decoration: underline;
+}
+#file div.article .copy {
+text-align:left;
+margin-bottom:20px;
+margin-top:40px;
+text-transform: none;
+}
+#file div.article .pubnote { 
+text-align:left;
+margin-top:20px;
+margin-bottom:40px;
+text-transform: none;
+}
+#file div.article #References {
+font-family:'faktpro';
+text-transform: uppercase;
+border-top: 1px solid black;
+}
+#file div.article .bio + #References {
+border-top: none;
+}
+
+
+#file div.article div.content table {
+  width: 80%;
+  margin-right:10%;
+  margin-left:10%;
+  margin-top: 5%;
+  margin-bottom:4%;
+  border-top:1px solid black;
+  text-align: left;
+  border-collapse: collapse;
+  background-color: white;  
+}
+
+#file div.article div.content table caption {
+  position: relative;
+  text-align:left;
+  left:-20%;
+  margin-top:-10%;
+  padding:0%;
+  }
+  
+#file div.article div.content table caption p{
+  margin-top: 0% ;
+  margin-bottom: 1% ;
+  }
+  
+#file div.article div.content p.footnote {
+  position: relative;
+  text-align:left;
+  left:-10%;
+  padding:0;
+  font-size:14px;
+  line-height:1.77778;
+  margin-top: 0% ;
+  margin-bottom: 0% ;
+}
+
+#file div.article div.content table tfoot {
+
+}
+#file div.article div.content table tfoot tr{
+margin-top:2%;
+}
+#file div.article div.content table tbody{
+margin-bottom:0%;
+}
+#file div.article .footNoteMarker {
+margin-right:10px;
+margin-left:5px;
+font-weight: bold;
+}
+#file div.article .footNoteRef {
+margin-right:10px;
+margin-left:5px;
+font-weight: bold;
+}
+
+#file div.article table tr:first-child th {
+padding-top:5%;
+}
+#file div.article table tr:first-child td {
+padding-top:5%;
+}
+#file div.article table td,th {
+ height: 50px;
+ padding: 10px;
+ text-align: left;
+ font-family:"faktpro";
+}
+
+#file div.article table th {
+font-family: 'faktpro'; 
+font-size: 120%;
+letter-spacing: 4px;
+padding: 10px;
+color: black;
+}
+
+#file div.article table tr:nth-child(even) {
+background-image: linear-gradient(90deg, rgba(255,195,222,0.5) 0%, rgba(174,207,255,0.5) 100%);
+}
+
+#file div.article div.content ul,
+#file div.article div.content ol,
+#file div.article div.content dl {
+width:60%;
+margin-right:20%;
+margin-left:20%;
+font-family:"faktpro";
+font-size: 98%;
+line-height: 2.1;
+
+}
+
+
+@media screen and (max-width: 1250px) {
+  #file div.article div.title h1 {
+    font-size: 80px;
+  }
+  #file div.article div.cover:after {
+  height: 3vw;
+  width: 3vw;
+  }
+
+}
+@media screen and (max-width: 1100px) {
+  #file div.article div.title h1 {
+    font-size: 70px;
+  }
+  #file div.article div.cover:after {
+  height: 3vw;
+  width: 3vw;
+  }
+
+}
+
+@media screen and (max-width: 800px) {
+  #file div.article div.title h1 {
+    font-size: 45px;
+  }
+  #file div.article div.cover:after {
+  height: 4vw;
+  width: 4vw;
+  }
+
+}
+
+@media screen and (max-width: 500px) {
+  #file div.article div.title h1 {
+    font-size: 45px;
+  }
+  #file div.article .coverpic {
+  display: none;
+  }
+  #file div.article p.subtitle {
+  display: none;
+  }
+  #file div.article p.pubnote  {
+  display: none;
+  }
+  #file div.article div.cover:after {
+  height: 6vw;
+  width: 6vw;
+  }
+  #file div.article div.content p{
+margin-left:7%;
+margin-right:7%;
+font-size:14px;
+line-height: 2.1;
+cursor: crosshair;
+}
+#file div.article blockquote {
+font-size:200%;
+}
+#file div.article div.content figure{ 
+display: inline-block;
+width: 100%;
+margin-right:0%;
+margin-left:0%;
+}
+ #file div.article .content section  {
+ width:86%;
+ margin-left:7%;
+ margin-right:7%;
+ border-top: 1px solid black;
+ border-bottom: 1px solid black;
+  padding-top:3%;
+ padding-bottom:3%;
+ } 
+ #file div.article div.content section p{
+ width:100%;  
+margin:0;
+padding:0;
+}
+#file div.article div.content ul,
+#file div.article div.content ol,
+#file div.article div.content dl {
+ margin-left:7%;
+ margin-right:7%;
+
+}
+#file div.article div.content h1, 
+#file div.article div.content h2, 
+#file div.article div.content h3, 
+#file div.article div.content h4, 
+#file div.article div.content h5, 
+#file div.article div.content h6 {
+ margin-left:7%;
+ margin-right:7%;
+}
+#file div.article div.content table caption {
+  left:0%;
+  margin-top:-10%;
+  }
+  
+#file div.article div.content p.footnote {
+  left:0%;
+}
+#file div.article div.content table {
+font-size:14px;
+width: 100%;
+margin-right:0%;
+margin-left:0%;
+border-bottom: 1px solid black;
+}
+#file div.article div.foot{
+width: 100%;
+margin-right:0%;
+margin-left:0%;
+
+}
+
+#file div.article .bio {
+font-size:13px;
+margin-right:7%;
+margin-left:7%;
+}
+#file div.article .bio span.person {
+margin-right:7%;
+margin-left:7%;
+}
+#file div.article .copy {
+margin-right:7%;
+margin-left:7%;
+}
+#file div.article .pubnote { 
+margin-right:7%;
+margin-left:7%;
+}
+#file div.article #References {
+margin-right:7%;
+margin-left:7%;
+}
+}
+@media screen and (max-device-width: 500px) {
+  #file div.article div.title h1 {
+    font-size: 45px;
+  }
+  #file div.article .coverpic {
+  display: none;
+  }
+  #file div.article p.subtitle {
+  display: none;
+  }
+  #file div.article p.pubnote  {
+  display: none;
+  }
+  #file div.article div.cover:after {
+  height: 6vw;
+  width: 6vw;
+  }
+  #file div.article div.content p{
+margin-left:7%;
+margin-right:7%;
+font-size:14px;
+line-height: 2.1;
+cursor: crosshair;
+}
+#file div.article blockquote {
+font-size:200%;
+}
+#file div.article div.content figure{ 
+display: inline-block;
+width: 100%;
+margin-right:0%;
+margin-left:0%;
+}
+ #file div.article .content section  {
+ width:86%;
+ margin-left:7%;
+ margin-right:7%;
+ border-top: 1px solid black;
+ border-bottom: 1px solid black;
+  padding-top:3%;
+ padding-bottom:3%;
+ } 
+ #file div.article div.content section p{
+ width:100%;  
+margin:0;
+padding:0;
+}
+#file div.article div.content ul,
+#file div.article div.content ol,
+#file div.article div.content dl {
+ margin-left:7%;
+ margin-right:7%;
+
+}
+#file div.article div.content h1, 
+#file div.article div.content h2, 
+#file div.article div.content h3, 
+#file div.article div.content h4, 
+#file div.article div.content h5, 
+#file div.article div.content h6 {
+ margin-left:7%;
+ margin-right:7%;
+}
+#file div.article div.content table caption {
+  left:0%;
+  margin-top:-10%;
+  }
+  
+#file div.article div.content p.footnote {
+  left:0%;
+}
+#file div.article div.content table {
+font-size:14px;
+width: 100%;
+margin-right:0%;
+margin-left:0%;
+border-bottom: 1px solid black;
+}
+#file div.article div.foot{
+width: 100%;
+margin-right:0%;
+margin-left:0%;
+
+}
+
+#file div.article .bio {
+font-size:13px;
+margin-right:7%;
+margin-left:7%;
+}
+#file div.article .bio span.person {
+margin-right:7%;
+margin-left:7%;
+}
+#file div.article .copy {
+margin-right:7%;
+margin-left:7%;
+}
+#file div.article .pubnote { 
+margin-right:7%;
+margin-left:7%;
+}
+#file div.article #References {
+margin-right:7%;
+margin-left:7%;
+}
+}
