@@ -14,7 +14,7 @@
 	color: #e60000;
 }
 
-#ArticleBody {
+#file #ArticleBody {
 		/** container **/
 	margin-top: 3rem;
 	margin-bottom: 3rem;
@@ -31,20 +31,20 @@
 	border-bottom: solid 1px black;							/** simil pagination **/
 }
 
-#CoverWrapper {
+#file #CoverWrapper {
 	font-family: 'Questrial', sans-serif !important;
 	margin-bottom: 3%;
 	column-span:all;
 }
 
-#CoverWrapper .coverpic {
+#file #CoverWrapper .coverpic {
 	width: 70%;
 	float: right;
 	margin-top: -7%;
 	margin-right: -4%;
 }
 
-.title {
+#file .title {
 	margin-right: 4%;
 	margin-bottom: 2%;
 	vertical-align: bottom;
@@ -53,19 +53,19 @@
 	width: 100%;
 }
 
-.titlenoimage {
+#file .titlenoimage {
 	float:none;
 	width: 100%;
 }
 
-.subtitle {
+#file .subtitle {
 	font-family: 'Cambo', serif;
 	font-style: oblique;
 	text-align:right;
 	width: 50%;
 }
 
-#ArticleBody h1 {
+#file #ArticleBody h1 {
 	font-family: 'Questrial', sans-serif !important;
 	font-weight: 200 !important;
 	letter-spacing: 0.002em;
@@ -76,7 +76,7 @@
 	margin-top: 1em;
 }
 
-span#title_word {
+#file span#title_word {
 	font-family: 'Cambo', serif;
 	font-style: italic;
 	color: #e60000;
@@ -84,11 +84,11 @@ span#title_word {
 	font-variant-ligatures: discretionary-ligatures;
 }
 
-.coverinfo {
+#file .coverinfo {
 	margin-bottom: 5%;
 }
 
-.cover .byline {
+#file .cover .byline {
 	font-family: 'Cambo', serif;
 	font-size: 130%;
 	line-height: 0.5em;
@@ -96,53 +96,53 @@ span#title_word {
 	color: #e60000;
 }
 
-.coverinfo {
+#file .coverinfo {
 	font-weight: bold;
 	margin-left: 10%;
 }
 
-.publicationDate, .pubnote {
+#file .publicationDate, .pubnote {
 	margin-left: 10%;
 }
 
-#ArticleBody h2 {
+#file #ArticleBody h2 {
 	font-family: 'Barlow Semi Condensed', sans-serif !important;
 	letter-spacing: 0.002em;
 	line-height: 0.9em;
 	font-size: 2em;
 }
 
-#ArticleBody h3, #ArticleBody h4, #ArticleBody h5 {
+#file #ArticleBody h3, #ArticleBody h4, #ArticleBody h5 {
 	font-family: 'Barlow Semi Condensed', sans-serif !important;
 	letter-spacing: 0.002em;
 	line-height: 0.9em;
 	margin-left: 2%;
 }
 
-#ArticleBody h3 {
+#file #ArticleBody h3 {
 	font-size: 1.5em;
 }
 
-#ArticleBody h4 {
+#file #ArticleBody h4 {
 	font-size: 1.4em;
 }
 
-#ArticleBody h5 {
+#file #ArticleBody h5 {
 	font-size: 1.3em;
 }
 
-#Abstract {
+#file #Abstract {
 	background-color: #f2f2f2;
 	padding: 3%;
 	margin-top: -7%;
 }
 
-#Abstract .label {
+#file #Abstract .label {
 	color: #e60000;
 	font-weight: bold;
 }
 
-#Credits {
+#file #Credits {
 	font-family: 'Questrial', sans-serif;
 	font-size:0.7em;
 	font-style: oblique;
@@ -152,7 +152,7 @@ span#title_word {
 	padding: 3%;
 }
 
-#Summary {
+#file #Summary {
 	font-family: 'Questrial', sans-serif;
 	font-size:0.8em;
 	border: solid 3px #f2f2f2;
@@ -160,7 +160,7 @@ span#title_word {
 	margin-top: -7%;
 }
 
-#Summary .label {
+#file #Summary .label {
 	color: #e60000;
 	font-weight: bold;
 	font-size: 1em;
@@ -176,13 +176,13 @@ span#title_word {
 	line-height: 0.91em; 
 }**/
 
-figure {
+#file figure {
 	float:left;
 	width:100%;
 	margin-left:0%;
 }
 
-img {
+#file img {
     max-width: 96%;
     max-height: 96%;
 	padding-left: 2%; 
@@ -192,7 +192,7 @@ img {
 	z-index: -1;
 }
 
-figcaption {
+#file figcaption {
 	font-family: 'Barlow Semi Condensed', sans-serif !important;
 	font-size: 0.8em;
 	background-color: #e60000;
@@ -203,11 +203,11 @@ figcaption {
 	margin-top: -3%;
 }
 
-figcaption .num {
+#file figcaption .num {
 	font-weight: bold;
 }
 
-#Articlebody table {
+#file #Articlebody table {
 	font-family: 'Questrial', sans-serif;
 	border: 2px solid #b3b3b3;
 	width:100%;
@@ -223,29 +223,29 @@ figcaption .num {
 	height: 50%;
 }
 
-#ArticleBody th, td {
+#file #ArticleBody th, td {
 	border: 1px solid #b3b3b3;
 	padding: 2%;
 }
 
-tr:nth-child(even) {
+#file tr:nth-child(even) {
 	background-color: #e6e6e6;
 }
 
-tr:nth-child(odd) {
+#file tr:nth-child(odd) {
 	background-color: #f2f2f2;
 }
 
-th {
+#file th {
 	background-color: #ff9999;
 }
 
-table caption {
+#file table caption {
 	font-size: 0.8em;
 	text-align:justify;
 }
 
-table caption .num {
+#file table caption .num {
 	font-family: 'Cambo', serif !important;
 	font-size: 2em;
 	font-weight: bold;
@@ -253,23 +253,23 @@ table caption .num {
 	margin-bottom: 2%;
 }
 
-#References {
+#file #References {
 	background-color: #f2f2f2;
 	margin-top: 2%;
 	padding: 3%;
 }
 
-#References p {
+#file #References p {
 	font-family: 'Questrial', sans-serif;
 	font-size:0.9em;
 }
 
-#References p .biblioMarker {
+#file #References p .biblioMarker {
 	font-weight: bold;
 	color: #e60000;
 }
 
-#References h2 {
+#file #References h2 {
 	color: #e60000;
 	font-family: 'Cambo', serif !important;
 	font-style: italic;
@@ -277,15 +277,9 @@ table caption .num {
 	font-weight: 200;
 }
 
-#References h2 + p:first-of-type::first-letter {
-	font-family: 'Source Serif Pro', serif !important;
-	font-size: 100%;
-	line-height: 1;
-	shape-outside: none;
-}
 
 /** COVER FEATURES **/
-#file #IssueCover {
+#IssueCover {
 	background: url("img/barcode.jpg"), url("img/background2000.jpeg");
 	background-position: 2% 98%, top;
 	background-repeat: no-repeat, no-repeat;
