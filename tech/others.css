@@ -4,6 +4,9 @@ body {
 
 img {
     width:auto;
+    min-height:'';
+    max-height:'';
+    object-fit: '';
 }
 #selector, #fileWrapper {
     height:100%;
