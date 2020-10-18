@@ -188,6 +188,12 @@
 	font-family: Strasua;
 }
 
+#file .bio {
+	font-size: 0.9em;
+	border: solid 2px black;
+	width: 50%;
+	text-align: center;
+}
 
 #file #References {
 	width: 40%;

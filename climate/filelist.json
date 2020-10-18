@@ -1,0 +1,42 @@
+[
+	{
+		"label": "World Scientists’ Warning of a Climate Emergency",
+		"url": "climate.html",
+		"author": "William J. Ripple, Christopher Wolf, Thomas M. Newsome, Phoese Barnard, William R. Moomaw",
+		"issued": "05 November 2019",
+		"publisher": "BioScience",
+		"source": "https://academic.oup.com/bioscience/article/70/1/8/5610806",
+		"keywords": "climate, climate change, climate emergency, pollution, environment",
+		"imagesource":"\"\""
+	},
+	{
+		"label": "Climate Change Is Accelerating, Bringing World ‘Dangerously Close’ to Irreversible Change",
+		"url": "climate-change.html",
+		"author": "Henry Fountain",
+		"issued": "04 December 2019",
+		"publisher": "New York Times",
+		"source": "https://www.nytimes.com/2019/12/04/climate/climate-change-acceleration.html",
+		"keywords": "climate, climate change, environment",
+		"imagesource":"climate_change4.jpg"
+	},
+	{
+		"label": "Fossil fuels are harming our brains: identifying key messages about the health effects of air pollution from fossil fuels",
+		"url": "fossil-fuels.html",
+		"author": "John Kotcher, Edward Maibach, Wen-Tsing Choi",
+		"issued": "December 2019",
+		"publisher": "BMC Public Health",
+		"source": "https://www.researchgate.net/publication/335453485_Fossil_fuels_are_harming_our_brains_identifying_key_messages_about_the_health_effects_of_air_pollution_from_fossil_fuels",
+		"keywords": "Air pollution, Environmental health, Public engagement, Fossil fuels, Health communication, Health education, Neurological health, Climate change",
+		"imagesource":"\"\""
+	},
+	{
+		"label": "The world missed a critical deadline to safeguard biodiversity, UN report says",
+		"url": "natgeo.html",
+		"author": "Katya Zimmer",
+		"issued": "15 September 2020",
+		"publisher": "National Geographic",
+		"source": "https://www.nationalgeographic.com/science/2020/09/world-missed-critical-deadline-to-safeguard-biodiversity-un-report/",
+		"keywords": "biodiversity, climate change, environment, climate safeguard",
+		"imagesource":"ng1.png"
+	}
+]
