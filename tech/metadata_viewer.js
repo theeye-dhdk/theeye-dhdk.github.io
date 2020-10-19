@@ -36,7 +36,7 @@ $(window).scroll(function() {
     }
 });
 $('#return-to-top').click(function() {      // When arrow is clicked
-    $('html').animate({
+    $('body,html').animate({
         scrollTop : 0                       // Scroll to top of body
     }, 500);
 });
@@ -215,6 +215,7 @@ function loadDisclaimer() {
     if ($(window).width() < 768) {
         closeNav()
     }
+    
     var articlesArray = ajaxResult[0];
     var sources = [];
     var publishers = [];
@@ -229,7 +230,7 @@ function loadDisclaimer() {
                 <p>The documents contained in this web site have been selected for their length and complexity from ` + publishers + `. Their publication here is not intended to be an alternative or replace their original locations:</p>
                 <ul>
                 </ul>
-                <p class="copyright">All copyrights and related rights on the content remain with their original owners. All copyright on the typographic and layout choices are 2020 © Cristian Santini</p></div>`);
+                <p class="copyright">All copyrights and related rights on the content remain with their original owners. All copyright on the typographic and layout choices are 2020 © Cristian Santini, Marco Grasso, Giulia Morini, Elisa Silva</p></div>`);
     for (var i = 0; i < sources.length; i++) {
         $('#disclaimer ul').append(sources[i]);
     }
