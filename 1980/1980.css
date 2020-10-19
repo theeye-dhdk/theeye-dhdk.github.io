@@ -94,6 +94,12 @@ text-shadow:
      2px 2px 0 #000;
 font-family: "test1";
 }
+#file {
+overflow:hidden;
+margin:0;
+padding:0;
+}
+
 
 #IssueCover .IssueBibliographicCitation:before{
   content: "";
