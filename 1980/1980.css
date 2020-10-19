@@ -865,7 +865,7 @@ overflow-wrap: break-word;
 overflow: hidden; 
 
 }
-#file div.article  .articleinfo .icons {
+#file div.article  .coverinfo .icons {
 display:none; 
 }
 
@@ -974,7 +974,7 @@ width: 70%;
 width: 100%;
 float: none;
 }
-#file div.article  div.articleinfo {
+#file div.article  div.coverinfo {
 overflow:hidden;}
 
 #file div.article  .byline {
