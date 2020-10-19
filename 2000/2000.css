@@ -165,7 +165,7 @@
 	font-size: 1em;
 }
 
-/**#ContentWrapper p:first-of-type::first-letter {													DA MODIFICARE!!
+#file .myFirstletter {													
 	font-family: 'Barlow Semi Condensed', sans-serif;
 	font-size: 35vmax;
 	color: #e60000;
@@ -173,7 +173,7 @@
 	float:left;
 	shape-outside: unset(20% 20% 20% 20%);
 	line-height: 0.91em; 
-}**/
+}
 
 #file figure {
 	float:left;
