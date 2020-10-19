@@ -91,7 +91,6 @@
 #file .cover .byline {
 	font-family: 'Cambo', serif;
 	font-size: 130%;
-	line-height: 0.5em;
 	margin-left: 10%;
 	color: #e60000;
 }
@@ -253,6 +252,20 @@
 	margin-bottom: 2%;
 }
 
+#file .bio {
+	font-size: 0.9em;
+	font-style:oblique;
+}
+
+#file .bio::before, .bio::after {
+    display: inline-block;
+    content: "";
+    border-top: .3rem solid black;
+    width: 4rem;
+    margin: 0 1rem;
+    transform: translateY(-1rem);
+}
+
 #file #References {
 	background-color: #f2f2f2;
 	margin-top: 2%;
@@ -279,7 +292,7 @@
 
 
 /** COVER FEATURES **/
-#IssueCover {
+#file {
 	background: url("img/barcode.jpg"), url("img/background2000.jpeg");
 	background-position: 2% 98%, top;
 	background-repeat: no-repeat, no-repeat;
