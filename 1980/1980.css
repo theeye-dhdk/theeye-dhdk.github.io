@@ -300,9 +300,9 @@ margin-top:150px;
 #IssueCover div.ArticleInfo:nth-child(1) .coverLabel {
 display:inline-block; 
 font-family:"steelfish";
-font-size: 200%;
+font-size: 100%;
 text-transform: uppercase;
-max-width:70%;
+max-width:80%;
 padding:5px;
 position: relative;
 top:80px;
@@ -328,11 +328,11 @@ margin-bottom:0px;
 background-color: #fc4954;
 font-family:"futura";
 letter-spacing:3px;
-font-size: 200%;
+font-size: 150%;
 text-transform: uppercase;
 transform: rotate(-4deg);
 text-align:right;
-width:100%;
+width:150%;
 padding-right:10px;
 padding-left:60px;
 text-decoration: underline;
@@ -361,9 +361,9 @@ margin-left:15px;
 #IssueCover div.ArticleInfo:nth-child(1) .coverAuthor,
 #IssueCover div.ArticleInfo:nth-child(1) .coverIssued {
 font-family:"steelfish";
-font-size: 200%;
+font-size: 100%;
 text-transform: uppercase;
-width:30%;
+width:40%;
 text-align: right;
 padding-right:10px;
 position: relative;
@@ -408,7 +408,7 @@ margin-top: 15px;
 #IssueCover div.ArticleInfo:nth-child(3) .coverIssued {
 font-family:"futura";
 text-transform: uppercase;
-font-size: 200%;
+font-size: 150%;
 margin:5px;
 color:black;
 display:inline-block;
