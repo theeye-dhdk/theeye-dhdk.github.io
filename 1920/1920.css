@@ -6,11 +6,8 @@
 	src: url(font/strasua.regular.ttf);
 }
 
-#file {
-	background-color: #f9f7de;
-}
-
 #file #ArticleBody {
+	background-color: #f9f7de;
 	padding:5%;
 	background-color: #f9f7de;
 	font-family: 'Comfortaa', cursive;
@@ -78,13 +75,14 @@
 	padding-top: 5%;
 }
 
-#file #ContentWrapper h3, h4, h5 {
+#file #ArticleBody h3, h4, h5 {
 	display: block;
 	position:relative;
 	margin-left: 35%;
 }
 
 #file #ArticleBody h2 {
+	font-family: 'Comfortaa', cursive;
 	display: block;
 	position:relative;
 	margin-left: 25%;
@@ -288,7 +286,7 @@
 
 
 /** COVER **/
-#file {
+#IssueCover {
 	padding-top: 5%;
 	padding-bottom: 5%;
 	background: rgb(1,1,1);
