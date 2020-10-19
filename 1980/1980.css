@@ -879,6 +879,7 @@ overflow-wrap: break-word;
 
 #file div.article  div.maincover { 
 overflow: hidden; 
+display: inline-block;
 }
 
 #file div.article  .coverinfo .icons {
