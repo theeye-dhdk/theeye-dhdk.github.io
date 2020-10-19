@@ -94,10 +94,19 @@ text-shadow:
      2px 2px 0 #000;
 font-family: "test1";
 }
+
 #file {
 overflow:hidden;
 margin:0;
 padding:0;
+	color: unset;	
+	font-size: unset;
+	font-family: unset;
+	text-align: unset;
+	line-height: unset;
+	background-image: unset;
+	background-position: unset;
+	background-repeat: unset;
 }
 
 
