@@ -864,7 +864,7 @@ overflow-wrap: break-word;
 }
 
 #file div.article  div.cover h1 {
-  font-size:430%;
+  font-size:400%;
   font-family: 'futura'; 
   color: #1fa6c4;
   text-transform: uppercase;
@@ -872,14 +872,15 @@ overflow-wrap: break-word;
   border-bottom:20px solid #F3E848;
   padding-bottom: 20px;
   margin-top: 65px;
-  margin-bottom: 30px;  
+  margin-bottom: 30px; 
+  text-align:left;
 }
 
 
 #file div.article  div.maincover { 
-overflow: hidden; 
-
+overflow: visible; 
 }
+
 #file div.article  .coverinfo .icons {
 display:none; 
 }
