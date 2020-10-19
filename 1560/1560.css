@@ -184,13 +184,13 @@
 	display:flex;
 	flex-direction:column;
 	justify-content:center;
-	text-transform:uppercase;
 	font-size:22pt;
 }
 #IssueCover h1 {
 	padding:0em;
 	font-family:myHultog;
 	font-size:1.7em;
+	text-transform:uppercase;
 }
 #IssueIndex .ArticleInfo {
 	text-align: center;
@@ -204,6 +204,7 @@
 		text-transform: uppercase;
 		padding-top: 1em;
 		font-family: myHultog;
+		text-transform:uppercase;
 	}
 	
 	#IssueIndex img.articleImg {
