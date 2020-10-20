@@ -878,7 +878,7 @@ overflow-wrap: break-word;
 
 
 #file div.article  div.maincover { 
-overflow: hidden; 
+overflow: visible; 
 display: inline-block;
 }
 
