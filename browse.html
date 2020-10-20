@@ -30,13 +30,13 @@
 
 
           function createCovers(obj) {
-            var n = 0;  //also i works as index!
-            for (i in obj.issues) {
-              $("#cardCover").append("<div class='card'><a href=" + "'" + obj.issues[i].pageLink + "'" + "><div class='container_issue'><h2>The EYE on <br> <span id='demo" + i.toString() + "'" + "></span></h2></div></a><div class='card-body'><h5 id='demonr" + i.toString() + "'" + " class='card-title text-center'></h5></div></div>");
-                    document.getElementById("demo" + n.toString()).innerHTML = obj.issues[i].topic;
-                    document.getElementById("demonr" + n.toString()).innerHTML = "Issue " + obj.issues[i].issue;
+              for (i in obj.issues) {
+                  console.log(i);
+                  $("#cardCover").append("<div class='card'><div class='container-img'><a href=" + "'" + obj.issues[i].pageLink + "'" + "><div><figure><img src='" + obj.issues[i].coverImg + "' class='card-img-top' alt=''></figure></div></a></div><div class='card-body'><h2 class='card-title text-center'>The EYE on <br> <span id='demo" + i.toString() + "'" + "></span></h2><h5 id='demonr" + i.toString() + "'" + " class='text-center'></h5></div></div>");
+                    document.getElementById("demo" + i.toString()).innerHTML = obj.issues[i].topic;
+                    document.getElementById("demonr" + i.toString()).innerHTML = "Issue " + obj.issues[i].issue;
 
-              n = n + 1;
+                  $("#dropdownMenu").append("<a class='dropdown-item' href='" + obj.issues[i].pageLink + "'>The eye on " + obj.issues[i].topic + "</a>");
             }
 
           }

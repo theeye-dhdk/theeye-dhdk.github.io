@@ -2,22 +2,26 @@
     {
     	"issue":"1",
 		"topic":"TECHNOLOGY", 
-        "pageLink":"tech/"
+        "pageLink":"tech/",
+        "coverImg":"tech/simulation/img01.jpg"
 	},
     {
     	"issue":"2",
     	"topic":"SPACE",
-        "pageLink":"space/" 
+        "pageLink":"space/",
+        "coverImg":"climate/ng1.png"
     },
     {
     	"issue":"3",
     	"topic":"CLIMATE",
-        "pageLink":"climate/"
+        "pageLink":"climate/",
+        "coverImg":"climate/ng2.png"
     },
     {
     	"issue":"4",
     	"topic":"HEALTH",
-        "pageLink":"healt/" 
+        "pageLink":"healt/",
+        "coverImg":"climate/ng3.png"
     }
     ]
 }

@@ -8,7 +8,6 @@
 
 #file #ArticleBody {
 	background-color: #f9f7de;
-	padding:5%;
 	background-color: #f9f7de;
 	font-family: 'Comfortaa', cursive;
 	text-transform: lowercase;
@@ -75,13 +74,13 @@
 	padding-top: 5%;
 }
 
-#file #ArticleBody h3, h4, h5 {
+#file #ArticleBody #ContentWrapper h3, h4, h5 {
 	display: block;
 	position:relative;
 	margin-left: 35%;
 }
 
-#file #ArticleBody h2 {
+#file #ArticleBody #ContentWrapper h2 {
 	font-family: 'Comfortaa', cursive;
 	display: block;
 	position:relative;
@@ -96,7 +95,7 @@
 	width: 40%;
 }
 
-#file #ArticleBody h3, h4, h5 {
+#file #ArticleBody #ContentWrapper h3, h4, h5 {
 	border-top: solid 10px red;
 	width: 40%;
 	margin-top: 2%;

@@ -501,3 +501,56 @@ margin-top:50px;}
 
 }
 }
+
+
+
+/** Browsing page **/
+.container_issue {
+  background-color: #f2f2f2;
+  padding-top: 25%;
+  padding-bottom: 25%;
+}
+
+.card-deck {
+    margin-bottom: 5%;
+    margin-top: 10px;
+    margin-left: auto;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    grid-gap: .5rem;
+}
+
+#cardCover .container-img {
+}
+
+#cardCover .container-img::after {
+  content: '';
+  clear: both;
+  display: block; 
+}
+
+#cardCover .container-img div {
+  position: relative;
+  padding: 0;
+}
+
+#cardCover figure {
+  max-width: 500px;
+  max-height: 700px;
+  margin: 0;
+  padding: 0;
+  background: #fff;
+  overflow: hidden;
+}
+
+#cardCover img {
+  -webkit-transform: scale(1);
+  transform: scale(1);
+  -webkit-transition: .3s ease-in-out;
+  transition: .3s ease-in-out;
+}
+
+#cardCover img:hover {
+  -webkit-transform: scale(1.3);
+  transform: scale(1.3);
+}
