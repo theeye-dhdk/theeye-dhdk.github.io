@@ -531,7 +531,7 @@ text-decoration: none;
    }
 #IssueIndex div.ArticleInfo:nth-child(1) {
     width:100%;
-    margin:0px;
+    margin-bottom:200px;
     position:relative;
     display:inline-block;
     
@@ -552,7 +552,7 @@ text-decoration: none;
     float:right;
     position:relative;
     left:0px;
-    margin-bottom:0px;
+    margin-bottom:100px;
     display:inline-block;
     text-align:center;
     }
@@ -568,6 +568,7 @@ text-decoration: none;
     position:relative;
     display:inline-block;
     left:0px;
+    margin-bottom:100px;
     }
     
 #IssueIndex div.ArticleInfo:nth-child(4) {
@@ -580,7 +581,20 @@ text-decoration: none;
     left:-0px;
     z-index:1; 
     }
-    
+#IssueCover div.ArticleInfo:nth-child(3) .coverLabel {
+    background-color: #fc4954;
+    font-family: "futura";
+    letter-spacing: 3px;
+    font-size: 150%;
+    text-transform: uppercase;
+    /* transform: rotate(-4deg); */
+    text-align: left;
+    /* width: 110%; */
+    padding-right: 10px;
+    padding-left: 20px;
+    text-decoration: underline;
+    /* margin-left: 10px;  
+	}
 }
 /* ----------------------------------------------------- DISCLAIMER ------------------------------------------------------------ */ 
 /* ----------------------------------------------------- DISCLAIMER ------------------------------------------------------------ */ 
