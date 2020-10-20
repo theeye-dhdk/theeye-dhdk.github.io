@@ -1,16 +1,16 @@
 @font-face {
     font-family: 'battiato';
-    src: url('font/BodoniFLF-Roman.ttf');
+    src: url('../1980/font/BodoniFLF-Roman.ttf');
 }
 
 @font-face {
     font-family: 'test1';
-    src: url('font/Writev2.ttf');
+    src: url('../1980/font/Writev2.ttf');
 }
 
 @font-face {
         font-family: 'eurostyle';
-    src: url('font/EuroStyle Normal.ttf');
+    src: url('../1980/font/EuroStyle Normal.ttf');
 }
 
 @font-face {
@@ -20,37 +20,37 @@
 
 @font-face {
         font-family: 'novelgothic';
-    src: url('font/NovelGothicNormal.ttf');
+    src: url('../1980/font/NovelGothicNormal.ttf');
 }
 
 @font-face {
         font-family: 'comic';
-    src: url('font/ComicNeue-Bold.ttf');
+    src: url('../1980/font/ComicNeue-Bold.ttf');
 }
 @font-face {
     font-family: 'futura';
-    src: url('font/Futura Extra Black.ttf');
+    src: url('../1980/font/Futura Extra Black.ttf');
 }
 
 @font-face {
         font-family: 'goudy';
-    src: url('font/Goudy Old Style Regular.ttf');
+    src: url('../1980/font/Goudy Old Style Regular.ttf');
 }
 
 
 @font-face {
         font-family: 'handwritten';
-    src: url('font/GochiHand-Regular.ttf');
+    src: url('../1980/font/GochiHand-Regular.ttf');
 }
 
 @font-face {
         font-family: 'itcgaramond';
-    src: url('font/ITCGaramondStd-BkNarrow.otf');
+    src: url('../1980/font/ITCGaramondStd-BkNarrow.otf');
 }
 
 @font-face {
         font-family: 'itcgaramond2';
-    src: url('font/ITCGaramondStd-Ult.otf');
+    src: url('../1980/font/ITCGaramondStd-Ult.otf');
 }
 
 
@@ -65,7 +65,7 @@ padding-bottom:200px;
 background-color: #eeece0;
 position: relative;
 overflow: hidden;
-background-image: url("img/barcode.jpg"),url('img/coverdecoration.png'),url('img/coverdecoration1.png'),url("img/stars.png");
+background-image: url("../1980/img/barcode.jpg"),url('../1980/img/coverdecoration.png'),url('../1980/img/coverdecoration1.png'),url("../1980/img/stars.png");
    background-repeat: no-repeat, no-repeat, no-repeat,repeat;
    background-attachment: scroll, scroll, scroll,scroll;
    background-position: 5% 92%, bottom right, top right,top right;
@@ -112,7 +112,7 @@ padding:0;
 
 #IssueCover .IssueBibliographicCitation:before{
   content: "";
-  background-image:url("img/Eye80s2.png");
+  background-image:url("../1980/img/Eye80s2.png");
   background-size: 100%;
   background-repeat: no-repeat;
   background-color:none;
@@ -258,7 +258,7 @@ overflow: visible;
 #IssueCover div.ArticleInfo:nth-child(1) .articleImg {
 width:80%;
 border: 17px solid #7fd3f7;
-border-image: url('img/memphispattern3.jpg') 100 round;
+border-image: url('../1980/img/memphispattern3.jpg') 100 round;
 outline: 8px solid #1fa6c4;
 margin-left: -10px;
 transform: rotate(-6deg);
@@ -594,7 +594,7 @@ padding-bottom:200px;
 background-color: #eeece0;
 position: relative;
 overflow: hidden;
-background-image: url("img/barcode.jpg"),url('img/coverdecoration.png'),url("img/stars.png");
+background-image: url("../1980/img/barcode.jpg"),url('../1980/img/coverdecoration.png'),url("../1980/img/stars.png");
    background-repeat: no-repeat, no-repeat,repeat;
    background-attachment: scroll, scroll, scroll;
    background-position: 5% 92%, bottom right,top right;
@@ -648,7 +648,7 @@ margin-bottom:0%;
 line-height: 200%;
 border: 10px solid #7fd3f7;
 box-sizing: border-box;
-border-image: url('img/memphispattern3.jpg') 130 round;
+border-image: url('../1980/img/memphispattern3.jpg') 130 round;
 outline: 5px solid #1fa6c4;
 position:relative;
 top:-180px;
@@ -855,7 +855,7 @@ overflow-wrap: break-word;
 
 #file div.article {
    background-color: #eeece0;
-   background-image: url('img/coverback.png'), url('img/geometry.png');
+   background-image: url('../1980/img/coverback.png'), url('../1980/img/geometry.png');
    background-repeat: no-repeat, repeat;
    background-attachment: scroll, scroll;
    background-position: top right,top right;
@@ -950,7 +950,7 @@ letter-spacing: 5px;
 
 #file div.article  .coverimg { 
 position:relative;
-border-image: url('img/memphispattern3.jpg') 100 fill;
+border-image: url('../1980/img/memphispattern3.jpg') 100 fill;
 border-width: 10px;
 outline: none;
 margin-top: 70px;
@@ -969,7 +969,7 @@ z-index:10;
   left: 0%;
   background-color: transparent;
   font-family:"itcgaramond";
-  background-image: url('img/paper2.png');
+  background-image: url('../1980/img/paper2.png');
   background-size: 120%;
   box-shadow: none;
   color: black;
@@ -1054,7 +1054,7 @@ margin-top: 40px;
 }
 
 #file div.article  div.content {
-  background-image: url('img/backdrop.png');
+  background-image: url('../1980/img/backdrop.png');
   background-repeat: repeat;
   background-attachment: scroll;
   background-position: center;
