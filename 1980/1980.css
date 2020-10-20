@@ -593,7 +593,6 @@ text-decoration: none;
     padding-right: 10px;
     padding-left: 20px;
     text-decoration: underline;
-    /* margin-left: 10px;  
 	}
 }
 /* ----------------------------------------------------- DISCLAIMER ------------------------------------------------------------ */ 
@@ -1004,8 +1003,10 @@ width: 70%;
 width: 100%;
 float: none;
 }
+	
 #file div.article  div.coverinfo {
-overflow:hidden;}
+overflow:hidden;
+}
 
 #file div.article  .byline {
 display:inline-block;
@@ -1416,8 +1417,7 @@ margin-left:10px;
   padding-right: 30px;
   padding-left: 30px;
 }
-#file div.article  .publicationDate
-{
+#file div.article  .publicationDate {
 margin-bottom: 0px;
 margin-top: 0px;
 }
@@ -1502,6 +1502,7 @@ margin-top: 0px;
   left: 0%;
 }
 }
+	
 @media screen and (max-device-width: 700px) {
 #file div.article  div.content {
   column-count: 1;
@@ -1544,8 +1545,7 @@ font-size:14px;
  #file div.article  div.content table {
 font-size:14px;
 }
-#file div.article  .publicationDate
-{
+#file div.article  .publicationDate {
 margin-bottom: 0px;
 margin-top: 0px;
 }
