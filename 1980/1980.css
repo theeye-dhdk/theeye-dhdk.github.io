@@ -75,7 +75,7 @@ background-image: url("../1980/img/barcode.jpg"),url('../1980/img/coverdecoratio
 #IssueCover h1 {
 font-size: 600%;
 letter-spacing: 15px;
-width: 68%;
+width: 110%;
 text-align: left;
 margin-bottom: 5%;
 padding-left:39%;
@@ -121,7 +121,7 @@ padding:0;
   height: 350px;
   width:350px;
   top:55px;
-  left: -55%;
+  left: -64%;
   z-index: 1;
 }
 
@@ -183,7 +183,7 @@ overflow: visible;
 #IssueIndex div.ArticleInfo:nth-child(1) {
     width:50%;
     float:left; 
-    margin-top:-100px;
+    margin-bottom:200px;
     position:relative;
     display:inline-block;
     }
