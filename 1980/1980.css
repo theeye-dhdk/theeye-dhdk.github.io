@@ -1077,10 +1077,16 @@ border-bottom:18px solid #e46968;
 }
 
 #file div.article  div.content a {
-color: #2f6499;
+color: black;
 text-decoration: none;
-border-bottom: 2px solid #2f6499;
+border-bottom: 2px solid black;
 }
+#file div.article  .pubnote a {
+color: whitw;
+text-decoration: none;
+border-bottom: none;
+}
+
 #file div.article  div.content ul,
 #file div.article  div.content ol,
 #file div.article  div.content dl  {
