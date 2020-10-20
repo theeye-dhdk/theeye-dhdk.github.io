@@ -177,7 +177,6 @@
 	display:flex;
 	flex-direction:column;
 	justify-content:center;
-	text-transform:uppercase;
 	font-size:22pt;
 }
 #IssueCover {
@@ -199,7 +198,9 @@
 	padding-right: 1em;
 	font-family: myHultogCoursive;
 }
-
+#IssueIndex .ArticleInfo p {
+    margin: 0;
+}
 	#IssueIndex .ArticleInfo p:first-of-type {
 		text-transform: uppercase;
 		padding-top: 1em;
