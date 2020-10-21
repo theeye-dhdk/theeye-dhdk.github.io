@@ -594,22 +594,7 @@ span.head-title {
   width: 20px;
 }
 
-#buttonList #disclaimer-btn {
-  font-size: 1em;
-  background-color: #bfa853;
-  color: whitesmoke;
-  padding-left: 1%;
-  padding-right: 1%;
-  border: none;
-  border-radius: 10px;
-  transition:1s;
-  float:right;
-}
 
-#disclaimer-btn:hover {
-    background-color: #806913; 
-    color:white;
-}
 
 #buttonList #metadata-btn {
     font-size: 1em;
