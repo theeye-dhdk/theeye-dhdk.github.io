@@ -293,12 +293,14 @@
 
 /** COVER FEATURES **/
 #IssueCover {
+	margin: 0;
 	background: url("img/barcode.jpg"), url("img/background2000.jpeg");
 	background-position: 2% 98%, top;
 	background-repeat: no-repeat, no-repeat;
 	background-size: 15%, cover;
 	padding-left: 2%;
 	padding-bottom: 2%;
+	overflow-x: hidden;
 }
 
 #IssueCover h1 {
@@ -395,4 +397,37 @@
 #Abstract {
 	margin-top: 0%;
 }
+}
+
+/** DISCLAIMER **/
+#file #disclaimer {
+	margin: 0;
+	background: url("img/barcode.jpg"), url("img/disclaimerCover.jpeg");
+	background-position: 98% 98%, top;
+	background-repeat: no-repeat, no-repeat;
+	background-size: 15%, 100%;
+	padding: 30%;
+	padding-left: 20%;
+	padding-right: 20%;
+	overflow-x: hidden;
+}
+
+#disclaimer {
+	font-family: 'Source Serif Pro', serif !important;
+	font-size:1.3vmax;
+	font-weight: 550 !important;
+	text-align:justify;
+}
+
+#disclaimerText {
+	color:white;
+	background: rgba(205, 205, 239, 0.3); /* Blue background with 30% opacity */
+	padding: 5%;
+
+}
+
+#disclaimerText a {
+	font-family: 'Barlow Semi Condensed', sans-serif !important;
+	font-weight: 700 !important;
+	font-size: 120%;
 }

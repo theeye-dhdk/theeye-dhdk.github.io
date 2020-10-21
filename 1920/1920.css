@@ -95,7 +95,7 @@
 	width: 40%;
 }
 
-#file #ArticleBody #ContentWrapper h3, h4, h5 {
+#file #ArticleBody #ContentWrapper h3, #ContentWrapper h4, #ContentWrapper h5 {
 	border-top: solid 10px red;
 	width: 40%;
 	margin-top: 2%;
@@ -223,8 +223,8 @@
 #file #Articlebody table {
 	font-family: 'Comfortaa', cursive;
 	font-size: 0.8em;
-	width:100%;
-	height:100%;
+	max-width:100%;
+	max-height:100%;
 	margin-bottom: 5%;
 	margin-top: 5%;
 	word-break: break-word;
@@ -286,31 +286,33 @@
 
 /** COVER **/
 #IssueCover {
+	margin: 0;
 	padding-top: 5%;
 	padding-bottom: 5%;
 	background: rgb(1,1,1);
-	background: url("img/eye4.png"), url("img/circle.svg"), linear-gradient(90deg, rgba(1,1,1,1) 34%, rgba(255,253,253,1) 34%, rgba(255,255,255,1) 35%, rgba(0,1,36,1) 35%, rgba(255,0,0,1) 35%, rgba(250,0,0,1) 39%, rgba(252,252,252,1) 39%, rgba(252,252,252,1) 89%, rgba(255,0,0,1) 89%, rgba(244,4,4,1) 91%, rgba(244,4,4,1) 92%, rgba(255,255,255,1) 92%, rgba(230,230,230,1) 93%, rgba(0,0,0,1) 93%);
-	background-size: 40%, 40%, 100%;
-	background-repeat: no-repeat, no-repeat, no-repeat;
-	background-position: 78% 12%, 77% 7%, center;
+	background: url("img/eye4.png"), url("img/circle.svg"), linear-gradient(0deg, rgba(255,0,0,1) 36%, rgba(255,255,255,1) 37%, rgba(255,255,255,1) 62%, rgba(255,0,0,1) 63%), linear-gradient(0deg, rgba(255,0,0,1) 36%, rgba(255,255,255,1) 37%, rgba(255,255,255,1) 62%, rgba(255,0,0,1) 63%), linear-gradient(0deg, rgba(255,0,0,1) 36%, rgba(255,255,255,1) 37%, rgba(255,255,255,1) 62%, rgba(255,0,0,1) 63%), linear-gradient(0deg, rgba(255,0,0,1) 36%, rgba(255,255,255,1) 37%, rgba(255,255,255,1) 62%, rgba(255,0,0,1) 63%), linear-gradient(90deg, rgba(1,1,1,1) 34%, rgba(255,253,253,1) 34%, rgba(255,255,255,1) 35%, rgba(0,1,36,1) 35%, rgba(255,0,0,1) 35%, rgba(250,0,0,1) 39%, rgba(252,252,252,1) 39%, rgba(252,252,252,1) 89%, rgba(255,0,0,1) 89%, rgba(244,4,4,1) 91%, rgba(244,4,4,1) 92%, rgba(255,255,255,1) 92%, rgba(230,230,230,1) 93%, rgba(0,0,0,1) 93%);
+	background-size: 40%, 40%, 39% 7%, 11% 7%, 39% 7%, 11% 7%, 100%;
+	background-repeat: no-repeat, no-repeat, no-repeat, no-repeat, no-repeat, no-repeat, no-repeat;
+	background-position: 78% 20%, 77% 15%, 0% 40%, 100% 40%, 0% 90%, 100% 90%, center;
 	/**background: url("eye4.png"), linear-gradient(90deg, rgba(1,1,1,1) 34%, rgba(255,253,253,1) 34%, rgba(255,255,255,1) 35%, rgba(0,1,36,1) 35%, rgba(255,0,0,1) 35%, rgba(250,0,0,1) 39%, rgba(252,252,252,1) 39%, rgba(252,252,252,1) 89%, rgba(255,0,0,1) 89%, rgba(244,4,4,1) 91%, rgba(244,4,4,1) 92%, rgba(255,255,255,1) 92%, rgba(230,230,230,1) 93%, rgba(0,0,0,1) 93%);**/
 }
 
 #IssueCover h1 {
 	font-family: Strasua;
-	font-size: 3vmax;
+	font-size: 4vmax;
 	color:white;
 	text-transform: lowercase;
-	text-align: left;
+	text-align: right;
 	width: 30%;
-	margin-left: -2%;
-	border-bottom: solid 20px red;
+	margin-left: 0;
+	padding-top: 20%;
 	z-index: 2;
 	/**text-shadow: -0.08em 0px rgba(268, 0, 30, 0.6), 0.08em 0px rgb(50, 70, 278, 0.6), 0.18em 0px rgb(255, 265, 10, 0.8);**/
 }
 
+
 #IssueCover h1::first-letter {
-	font-size:12vmax;
+	font-size:20vmax;
 }
 
 #file #IssueCover .IssueBibliographicCitation {
@@ -320,14 +322,13 @@
 	text-transform: uppercase;
 	font-weight: bold;
 	padding: 2%;
-	border-left: solid 20px red;
 	margin-left: -43%;
-	margin-bottom: 20%;
+	margin-bottom: 55%;
 	transform: rotate(-90deg);
 }
 
 #file #IssueCover .IssueBibliographicCitation::first-letter {
-	font-size: 4vmax;
+	font-size: 6vmax;
 }
 
 #file #IssueCover .ArticleInfo {
@@ -383,7 +384,45 @@
 
 @media only screen and (max-width: 600px) {
 	#file #IssueCover h1 {
-		margin-left: -4%;
-		width: 40%;
+		margin-left: 2%;
+		width: 30%;
 	}
+}
+
+/** DISCLAIMER **/
+#disclaimer {
+	margin: 0;
+	padding-top: 5%;
+	padding-bottom: 9%;
+	background: rgb(1,1,1);
+	background: url("img/eye4.png"), url("img/circle.svg"), linear-gradient(0deg, rgba(255,0,0,1) 36%, rgba(255,255,255,1) 37%, rgba(255,255,255,1) 62%, rgba(255,0,0,1) 63%), linear-gradient(0deg, rgba(255,0,0,1) 36%, rgba(255,255,255,1) 37%, rgba(255,255,255,1) 62%, rgba(255,0,0,1) 63%), linear-gradient(0deg, rgba(255,0,0,1) 36%, rgba(255,255,255,1) 37%, rgba(255,255,255,1) 62%, rgba(255,0,0,1) 63%), linear-gradient(0deg, rgba(255,0,0,1) 36%, rgba(255,255,255,1) 37%, rgba(255,255,255,1) 62%, rgba(255,0,0,1) 63%), linear-gradient(90deg, rgba(1,1,1,1) 34%, rgba(255,253,253,1) 34%, rgba(255,255,255,1) 35%, rgba(0,1,36,1) 35%, rgba(255,0,0,1) 35%, rgba(250,0,0,1) 39%, rgba(252,252,252,1) 39%, rgba(252,252,252,1) 89%, rgba(255,0,0,1) 89%, rgba(244,4,4,1) 91%, rgba(244,4,4,1) 92%, rgba(255,255,255,1) 92%, rgba(230,230,230,1) 93%, rgba(0,0,0,1) 93%);
+	background-size: 10%, 10%, 39% 7%, 11% 7%, 39% 7%, 11% 7%, 100%;
+	background-repeat: no-repeat, no-repeat, no-repeat, no-repeat, no-repeat, no-repeat, no-repeat;
+	background-position: 85% 97%, 85% 100%, 0% 40%, 100% 40%, 0% 90%, 100% 90%, center;
+}
+
+#disclaimer p, a  {
+	font-family: 'Comfortaa', cursive !important;
+	font-size:1vmax;
+	text-transform: lowercase;
+	font-weight:bold;
+	width: 40%;
+	margin-left: 45%;
+	margin-bottom: 5%;
+	text-align: right;
+}
+
+#file #disclaimer li a {
+	text-decoration: none;
+	font-family: "Strasua";
+}
+
+#file #disclaimer li a:hover {
+	color:red;
+}
+
+#file #disclaimer .copyright {
+	padding-top: 5%;
+	font-size: 65%;
+	text-align: center;
 }
