@@ -1,0 +1,30 @@
+#file #IssueCover {
+	margin:2%;
+}
+
+#file #IssueCover .IssueBibliographicCitation {
+	text-transform: uppercase;
+	margin-bottom: 3%;
+}
+
+#file .ArticleInfo {
+	margin-bottom: 3%;
+}
+
+#file table {
+	max-width: 100%;
+	border-collapse: collapse;
+	width: 100%;
+}
+
+#file th, td {
+  text-align: left;
+  padding: 8px;
+}
+
+#file tr:nth-child(even) {background-color: #f2f2f2;}
+
+#file img {
+	max-width: 100%;
+	max-height: 100%;
+}

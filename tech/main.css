@@ -7,7 +7,6 @@
 
 body {
     font-family: 'Amiri', serif;
-    padding-top: 74px;
 }
 
 .navbarstyle2 { 
@@ -31,11 +30,11 @@ font-size: 110%;
 margin-left: 6%;}
 
 a {
-    color:#483949;
+    color: #483949;
 }
 
 a:hover {
-    color: #8c8c8c;
+    color: #3399ff;
     text-decoration: none;
 }
 
@@ -124,14 +123,13 @@ list-style-type: none;
     position: sticky;
     top: 0;
   }
-.sticky #metadataViewer {
-    padding-top:74px;
-}
+
 
 #metadataViewer .label {
     font-weight: bold;
 }
-#floating-btns {
+
+/** #floating-btns {
     width:100%;
     margin-top:2em;
 }
@@ -159,6 +157,7 @@ list-style-type: none;
     color:#f5f5f5;
     background: #483949;
 }
+
 #disclaimer-btn button {
     width:45%;
     overflow:hidden;
@@ -177,7 +176,7 @@ list-style-type: none;
 #disclaimer-btn button:hover {
     background-color: #483949;
     color:white;
-}
+}**/
 
 #IssueBox {
     margin-top: 1em;
@@ -201,22 +200,23 @@ list-style-type: none;
 }
 
 #paginationLinks {
-    background-color: #483949;
-font-size: 1.2em;
-width: 100%;
-border-radius: 0px 15px 0px 0px;
-text-align: center;
-margin-top: 1em;
-margin-bottom: 1em;
-height: 40px;
-padding: 0.3em;
-text-transform: capitalize;
+    background-color: #5766799c; /**#ccb168;**/
+    font-size: 1.2em;
+    width: 100%;
+    border-radius: 15px 15px 0px 0px;
+    text-align: center;
+    height: 40px;
+    padding: 0.3em;
 }
+
 .pagination-link {
-    width:33%;
+    width: 20%;
     cursor: pointer; /* Pointer/hand icon */
     float: left;
+    margin-top: -0.6%;
+    padding-top: 6;
 }
+
 .pagination-link a {
     color:#fff;
     width:100%;
@@ -227,7 +227,7 @@ text-transform: capitalize;
     cursor: pointer;
 }
 .pagination-link a:hover {
-    opacity: 1;
+    color:black;
 }
 
 #paginationLinks:after {
@@ -236,7 +236,12 @@ text-transform: capitalize;
     display: table;
   }
 
-
+/**#disclaimer {
+    padding-right: 1%;
+    padding-top: 1%;
+    border-radius: 0px 15px 0px 0px;
+    background-color: #ccb168;
+}**/
 
   #metadataArticle {
     width: 95%;
@@ -249,16 +254,16 @@ text-transform: capitalize;
 }
 
 #metadataArticle .nav-item a{
-    color: #483949;
+    color: #5766799c; /** #483949; **/
 }
 
   #metadataArticle .nav-item a:hover{
     color:#f5f5f5;
-    background-color: #483949;
+    background-color: #5766799c; /** #483949; **/
 }
 #metadataArticle .nav-item .active {
     color:#f5f5f5;
-    background-color: #483949;
+    background-color: #5766799c; /** #483949; **/
 }
 #metadataArticle .tab-pane{
     background-color:#f5f5f5;
@@ -350,14 +355,14 @@ ul.minimal {
 }
 
 #file {
-    padding:2em;
+    padding-top:2em;
 }
 
 .figure-wrapper, .table-wrapper {
     display:block;
     margin-top: 15px;
     margin-bottom: 15px;
-    background-color:#D3D3D3;
+    /**background-color:#D3D3D3;**/
 }
 
 .figure-widget {
@@ -389,7 +394,6 @@ ul.minimal {
     height:100%;
     position: fixed;
     top:0;
-    padding-top: 74px;
     width: 320px;
     z-index: 2;
     transform: translateX( -100% );
@@ -408,7 +412,7 @@ ul.minimal {
 
 #closebtn-1 {
     display:none;/*value will change via javascript*/
-    top: 74px;
+    top: 5px;
     right: 0px;
     z-index: 3;
     padding: 2px 7px 2px 7px;
@@ -424,30 +428,27 @@ a#closebtn-2 {
     margin-right: 0.2em;
     font-size: 2em;
 }
-#footer-links {
-    background-color:#6351ce;
-}
 
 #sticky-eye {
-    position:fixed;
-    top:70px;
-    left:0;
-    width:100%;
-    height: 50px;
+    position: fixed;
+    top: 33vh;
+    left: 0;
+    height: 40px;
     overflow: hidden;
-    background:white;
-    padding: 0.5em;
-    z-index:1;
-    font-size:30px; 
-    padding-left:5px;
-    cursor:pointer;
+    background: #5766799c; /**#ccb168;**/
+    z-index: 1;
+    font-size: 40px;
+    padding-right: 1%;
+    padding-left: 1%;
+    cursor: pointer;
+    border-radius: 0px 15px 15px 0px;
     display: none;/*value will change via javascript*/
 }
 
 span.head-title {
     font-size: 0.5em;
     padding-left: 0.8em;
-    font-family: 'OpenSans', sans-serif;
+    font-family: 'hardingreg';
 }
 
 #wikiLink {
@@ -492,7 +493,7 @@ span.head-title {
     }
     
     #fileWrapper {
-        margin-top: 60px;
+        /**margin-top: 60px;**/
     }
 }
 
@@ -536,4 +537,88 @@ span.head-title {
 #return-to-top:hover i {
     color: #fff;
     top: 5px;
+}
+
+
+
+/** STYLE BUTTONS **/
+#eyeStyle {
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0;
+  padding-top:2%;
+  padding-bottom: 1%;
+  background-color: white;
+  z-index:1;
+  border-radius: 0px 0px 15px 15px;
+}
+
+#eyeStyle .btn-group {
+    margin: 0 auto; 
+    text-align: center;
+    width: inherit;
+    display: inline-block;
+}
+
+#eyeStyle #buttonList {
+  margin-top: 3%;
+  padding-bottom: 1%;
+  text-align: center;
+}
+
+#eyeStyle img {
+  width: 100%;
+}
+
+#eyeStyle button {
+  font-family: "hardingreg";
+  font-size: 1em;
+  border: none;
+  background-color: transparent;
+}
+
+#eyeStyle button:hover {
+  opacity: 0.5;
+}
+
+#eyeStyle button:focus {
+  outline: none;
+}
+
+.eyeActive {
+  padding: 0;
+  background-color: transparent;
+}
+
+#eyeStyle button img {
+  width: 20px;
+}
+
+#buttonList #disclaimer-btn {
+  font-size: 1em;
+  background-color: #bfa853;
+  color: whitesmoke;
+  padding-left: 1%;
+  padding-right: 1%;
+  border: none;
+  border-radius: 10px;
+  transition:1s;
+  float:right;
+}
+
+#disclaimer-btn:hover {
+    background-color: #806913; 
+    color:white;
+}
+
+#buttonList #metadata-btn {
+    font-size: 1em;
+    background-color: #bfa853;
+    color: whitesmoke;
+    padding-left: 1%;
+    padding-right: 1%;
+    border: none;
+    border-radius: 10px;
+    transition:1s;
+    float:left;
 }

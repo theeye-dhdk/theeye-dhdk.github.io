@@ -1,15 +1,4 @@
 
-$("#styles").change(function() {
-    var selectedStyle = $(this).children("option:selected").val();
-    $("#ArticleCss").html("");
-    $("#ArticleCss").load('../' + selectedStyle + '/' + selectedStyle + '.css');
-    if ( $(window).width() < 768 ) {
-        closeNav()
-    }
-});
-
-
-
 window.onscroll = function() {myFunction()};
 
 // Get the selector
@@ -58,6 +47,7 @@ var expandCollapse = function(){
         });
     }
 }
+
 function openNav() {
     closeOccurrences();
     $('.offcanvas').css('transform', 'translateX( 0 )');
@@ -145,8 +135,6 @@ function main() {
         closeNav()
     }
     
-    $('.head-title').html(document.title);
-
     var title = $('meta[name="DC.title"]').attr("content");
     var editor = $('meta[name="DC.creator"]').attr("content");
     var subject = $('meta[name="DC.subject"]').attr("content");
@@ -215,7 +203,6 @@ function loadDisclaimer() {
     if ($(window).width() < 768) {
         closeNav()
     }
-    
     var articlesArray = ajaxResult[0];
     var sources = [];
     var publishers = [];
@@ -230,7 +217,7 @@ function loadDisclaimer() {
                 <p>The documents contained in this web site have been selected for their length and complexity from ` + publishers + `. Their publication here is not intended to be an alternative or replace their original locations:</p>
                 <ul>
                 </ul>
-                <p class="copyright">All copyrights and related rights on the content remain with their original owners. All copyright on the typographic and layout choices are 2020 © Cristian Santini, Marco Grasso, Giulia Morini, Elisa Silva</p></div>`);
+                <p class="copyright">All copyrights and related rights on the content remain with their original owners. All copyright on the typographic and layout choices are 2020 © Cristian Santini, Marco Grasso, Giulia Morini, Elisa Silva.</p></div>`);
     for (var i = 0; i < sources.length; i++) {
         $('#disclaimer ul').append(sources[i]);
     }
@@ -520,3 +507,52 @@ function reverseAccess(obj) {
     var what = '#file .' + className;
     fillOccurrenceTab(what, 'occurrences', '#occurrences');
 }
+
+
+
+
+//Change style through buttons
+function changeStyle(selectedStyle) {
+    document.getElementById('ArticleCss').setAttribute('href', selectedStyle);
+}
+
+//Manage active style button
+$(document).ready(function(){
+    $(".eyeActive").hide();
+
+    $("#none").click(function(){
+        $(".eyeActive").hide();
+  });
+    $("#1370").click(function(){
+        $(".eyeActive").hide();
+        $("#1370eye").show();
+  });
+    $("#1560").click(function(){
+        $(".eyeActive").hide();
+        $("#1560eye").show();
+  });
+    $("#1860").click(function(){
+        $(".eyeActive").hide();
+        $("#1860eye").show();
+  });
+    $("#1920").click(function(){
+        $(".eyeActive").hide();
+        $("#1920eye").show();
+  });
+    $("#1980").click(function(){
+        $(".eyeActive").hide();
+        $("#1980eye").show();
+  });
+    $("#2000").click(function(){
+        $(".eyeActive").hide();
+        $("#2000eye").show();
+  });
+    $("#2020").click(function(){
+        $(".eyeActive").hide();
+        $("#2020eye").show();
+  });
+     $("#2040").click(function(){
+        $(".eyeActive").hide();
+        $("#2040eye").show();
+  });
+});
