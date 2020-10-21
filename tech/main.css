@@ -279,7 +279,7 @@ list-style-type: none;
     right: 0;
     width: 200px;
     margin-right: 1em;
-    z-index:1;
+    z-index:1000;
     padding-left: 1em;
     background: #fff;
     border: 1px solid grey;
@@ -394,7 +394,7 @@ ul.minimal {
     position: fixed;
     top:0;
     width: 320px;
-    z-index: 2;
+    z-index: 2000;
     transform: translateX( -100% );
     transition: all 0.25s;
     overflow-y:scroll;
@@ -545,10 +545,9 @@ span.head-title {
   position: -webkit-sticky;
   position: sticky;
   top: 0;
-  width:100%;
   padding-bottom: 1%;
   background-color: white;
-  z-index:1;
+  z-index:1000;
   border-radius: 0px 0px 15px 15px;
 }
 
