@@ -71,7 +71,7 @@
 }
 
 #file #ContentWrapper {
-	padding-top: 5%;
+	padding: 5%;
 }
 
 #file #ArticleBody #ContentWrapper h3, h4, h5 {
@@ -190,6 +190,8 @@
 	border: solid 2px black;
 	width: 50%;
 	text-align: center;
+	padding: 3%;
+	margin-left: 5%;
 }
 
 #file #References {
@@ -282,6 +284,12 @@
 
 }
 
+#file #ContentWrapper dl, #file #ContentWrapper ol, #file #ContentWrapper ul {
+    margin-top: 0;
+    margin-bottom: 1rem;
+    margin-left: 55%;
+    text-align: justify;
+}
 
 
 /** COVER **/
@@ -313,6 +321,10 @@
 
 #IssueCover h1::first-letter {
 	font-size:20vmax;
+}
+
+#IssueCover img {
+	display: none;
 }
 
 #file #IssueCover .IssueBibliographicCitation {
@@ -395,10 +407,10 @@
 	padding-top: 5%;
 	padding-bottom: 9%;
 	background: rgb(1,1,1);
-	background: url("img/eye4.png"), url("img/circle.svg"), linear-gradient(0deg, rgba(255,0,0,1) 36%, rgba(255,255,255,1) 37%, rgba(255,255,255,1) 62%, rgba(255,0,0,1) 63%), linear-gradient(0deg, rgba(255,0,0,1) 36%, rgba(255,255,255,1) 37%, rgba(255,255,255,1) 62%, rgba(255,0,0,1) 63%), linear-gradient(0deg, rgba(255,0,0,1) 36%, rgba(255,255,255,1) 37%, rgba(255,255,255,1) 62%, rgba(255,0,0,1) 63%), linear-gradient(0deg, rgba(255,0,0,1) 36%, rgba(255,255,255,1) 37%, rgba(255,255,255,1) 62%, rgba(255,0,0,1) 63%), linear-gradient(90deg, rgba(1,1,1,1) 34%, rgba(255,253,253,1) 34%, rgba(255,255,255,1) 35%, rgba(0,1,36,1) 35%, rgba(255,0,0,1) 35%, rgba(250,0,0,1) 39%, rgba(252,252,252,1) 39%, rgba(252,252,252,1) 89%, rgba(255,0,0,1) 89%, rgba(244,4,4,1) 91%, rgba(244,4,4,1) 92%, rgba(255,255,255,1) 92%, rgba(230,230,230,1) 93%, rgba(0,0,0,1) 93%);
-	background-size: 10%, 10%, 39% 7%, 11% 7%, 39% 7%, 11% 7%, 100%;
-	background-repeat: no-repeat, no-repeat, no-repeat, no-repeat, no-repeat, no-repeat, no-repeat;
-	background-position: 85% 97%, 85% 100%, 0% 40%, 100% 40%, 0% 90%, 100% 90%, center;
+	background: url("img/eye4.png"), url("img/circle.svg"), linear-gradient(0deg, rgba(255,0,0,1) 36%, rgba(255,255,255,1) 37%, rgba(255,255,255,1) 62%, rgba(255,0,0,1) 63%), linear-gradient(0deg, rgba(255,0,0,1) 36%, rgba(255,255,255,1) 37%, rgba(255,255,255,1) 62%, rgba(255,0,0,1) 63%), /** linear-gradient(0deg, rgba(255,0,0,1) 36%, rgba(255,255,255,1) 37%, rgba(255,255,255,1) 62%, rgba(255,0,0,1) 63%),**/ linear-gradient(0deg, rgba(255,0,0,1) 36%, rgba(255,255,255,1) 37%, rgba(255,255,255,1) 62%, rgba(255,0,0,1) 63%), linear-gradient(90deg, rgba(1,1,1,1) 34%, rgba(255,253,253,1) 34%, rgba(255,255,255,1) 35%, rgba(0,1,36,1) 35%, rgba(255,0,0,1) 35%, rgba(250,0,0,1) 39%, rgba(252,252,252,1) 39%, rgba(252,252,252,1) 89%, rgba(255,0,0,1) 89%, rgba(244,4,4,1) 91%, rgba(244,4,4,1) 92%, rgba(255,255,255,1) 92%, rgba(230,230,230,1) 93%, rgba(0,0,0,1) 93%);
+	background-size: 10%, 10%, 39% 7%, 11% 7%, 39% 7%, /**11% 7%,**/ 100%;
+	background-repeat: no-repeat, no-repeat, no-repeat, no-repeat, no-repeat, /**no-repeat,**/ no-repeat;
+	background-position: 85% 97%, 85% 100%, 0% 40%, 100% 40%, 0% 90%, /**100% 90%,**/ center;
 }
 
 #disclaimer p, #disclaimer a  {

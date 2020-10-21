@@ -135,8 +135,6 @@ function main() {
         closeNav()
     }
     
-    $('.head-title').html("Look at ''" + document.title + "'' metadata");
-
     var title = $('meta[name="DC.title"]').attr("content");
     var editor = $('meta[name="DC.creator"]').attr("content");
     var subject = $('meta[name="DC.subject"]').attr("content");
@@ -215,11 +213,11 @@ function loadDisclaimer() {
     }
     publishers = publishers.join(', ');
             
-    $('#file').append(`<div id="disclaimer"><p>The purpose of this web site is to explore various types of typographic and layout style for text documents, as an end-of-course project for the "Information Modeling and Web technologies" course of the Master Degree in Digital Humanities and Digital Knowledge of the University of Bologna, under prof. Fabio Vitali.</p>
+    $('#file').append(`<div id="disclaimer"><div id="disclaimerText"><p>The purpose of this web site is to explore various types of typographic and layout style for text documents, as an end-of-course project for the "Information Modeling and Web technologies" course of the Master Degree in Digital Humanities and Digital Knowledge of the University of Bologna, under prof. Fabio Vitali.</p>
                 <p>The documents contained in this web site have been selected for their length and complexity from ` + publishers + `. Their publication here is not intended to be an alternative or replace their original locations:</p>
                 <ul>
                 </ul>
-                <p class="copyright">All copyrights and related rights on the content remain with their original owners. All copyright on the typographic and layout choices are 2020 © Cristian Santini</p></div>`);
+                <p class="copyright">All copyrights and related rights on the content remain with their original owners. All copyright on the typographic and layout choices are 2020 © Cristian Santini, Marco Grasso, Giulia Morini, Elisa Silva.</p></div></div>`);
     for (var i = 0; i < sources.length; i++) {
         $('#disclaimer ul').append(sources[i]);
     }
