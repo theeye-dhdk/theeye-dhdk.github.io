@@ -202,7 +202,7 @@ list-style-type: none;
 }
 
 #paginationLinks {
-    background-color: #527e87; /**#ccb168;**/
+    background-color: #1611369c; /**#ccb168;**/
     font-size: 1.2em;
     width: 100%;
     text-align: center;
@@ -256,20 +256,20 @@ list-style-type: none;
 }
 
 #metadataArticle .nav-item a{
-    color: #527e87; /** #483949; **/
+    color: #1611369c; /** #483949; **/
 }
 
   #metadataArticle .nav-item a:hover{
     color:#f5f5f5;
-    background-color: #527e87; /** #483949; **/
+    background-color: #1611369c; /** #483949; **/
 }
 #metadataArticle .nav-item .active {
     color:#f5f5f5;
-    background-color: #527e87; /** #483949; **/
+    background-color: #1611369c; /** #483949; **/
 }
 #metadataArticle .tab-pane{
     background-color:#f5f5f5;
-    color: #527e87;
+    color: black;
     padding:15px;
     border-radius:0px 0px 10px 10px; 
 }
@@ -434,7 +434,7 @@ a#closebtn-2 {
     left: 0;
     height: 40px;
     overflow: hidden;
-    background: #527e87; /**#ccb168;**/
+    background: #1611369c; /**#ccb168;**/
     z-index: 1;
     font-size: 40px;
     padding-right: 1%;
@@ -548,7 +548,7 @@ span.head-title {
   background-color: white;
   z-index:1000;
   border-radius: 0px 0px 15px 15px;
-  border-bottom:1px solid #527e87;
+  border-bottom:1px solid #1611369c;
 }
 
 #eyeStyle .btn-group {
