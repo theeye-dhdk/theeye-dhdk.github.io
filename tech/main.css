@@ -298,13 +298,11 @@ list-style-type: none;
     #occurrences-list{
         height: 130px;
         display: block;
-        font-size: 80%;
         overflow-y: scroll;
         overflow-x: hidden;
     }
     #wikiLink {
         display: block;
-        font-size: 90%;
         padding-left: 5px;
         padding-top: 15px;
     }
@@ -547,11 +545,10 @@ span.head-title {
   position: -webkit-sticky;
   position: sticky;
   top: 0;
-  padding-bottom: 1%;
   background-color: white;
   z-index:1000;
   border-radius: 0px 0px 15px 15px;
-  border:1px solid #1611369c;
+  border-bottom:1px solid #1611369c;
 }
 
 #eyeStyle .btn-group {
