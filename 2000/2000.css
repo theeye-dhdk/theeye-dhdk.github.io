@@ -371,6 +371,9 @@
 	font-size: 1.5vmax;
 }
 
+#IssueCover img {
+	display:none;
+}
 
 @media only screen and (max-width:780px) {
 #ArticleBody {
@@ -388,8 +391,9 @@
 
 @media only screen and (max-width: 600px) {
 #ArticleBody {
-    column-count: 1;
+    column-count: 1;										/** Non funziona! **/
   }
+
 .title, .subtitle, .coverpic {
 	width:100%;
 	column-span: all;
@@ -409,7 +413,7 @@
 	background: url("img/barcode.jpg"), url("img/disclaimerCover.jpeg");
 	background-position: 98% 98%, top;
 	background-repeat: no-repeat, no-repeat;
-	background-size: 15%, 100%;
+	background-size: 15%, cover;
 	padding: 30%;
 	padding-left: 20%;
 	padding-right: 20%;
@@ -427,7 +431,18 @@
 	color:white;
 	background: rgba(205, 205, 239, 0.3); /* Blue background with 30% opacity */
 	padding: 5%;
+	word-break: break-word;
+    overflow: hidden;
+}
 
+#disclaimer::before {
+	content: "Theyemagazine";
+	font-size: 6vmax;
+	font-weight: 100 !important;
+	letter-spacing: 2%;
+	color:red;
+	text-transform: uppercase;
+	text-align: center;
 }
 
 #disclaimerText a {
