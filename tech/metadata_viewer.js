@@ -213,7 +213,8 @@ function loadDisclaimer() {
     }
     publishers = publishers.join(', ');
             
-    $('#file').append(`<div id="disclaimer"><div id="disclaimerText"><p>The purpose of this web site is to explore various types of typographic and layout style for text documents, as an end-of-course project for the "Information Modeling and Web technologies" course of the Master Degree in Digital Humanities and Digital Knowledge of the University of Bologna, under prof. Fabio Vitali.</p>
+    $('#file').append(`<div id="disclaimer"><div id="disclaimerText">
+    <p>The purpose of this web site is to explore various types of typographic and layout style for text documents, as an end-of-course project for the "Information Modeling and Web technologies" course of the Master Degree in Digital Humanities and Digital Knowledge of the University of Bologna, under prof. Fabio Vitali.</p>
                 <p>The documents contained in this web site have been selected for their length and complexity from ` + publishers + `. Their publication here is not intended to be an alternative or replace their original locations:</p>
                 <ul>
                 </ul>
