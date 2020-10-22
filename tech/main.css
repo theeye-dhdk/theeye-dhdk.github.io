@@ -125,7 +125,7 @@ list-style-type: none;
   }
 
 #metadataViewer .tab-pane, #metadataIssue{
-    font-size:1.2em;
+    font-size:1.1em;
 }
 #metadataViewer .label {
     font-weight: bold;
@@ -271,7 +271,6 @@ list-style-type: none;
     background-color:#f5f5f5;
     color: #25383C;
     padding:15px;
-    font-size:90%;
     border-radius:0px 0px 10px 10px; 
 }
 
