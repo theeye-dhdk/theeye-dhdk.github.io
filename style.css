@@ -20,6 +20,7 @@ html {
 body {
     font-family: 'Amiri', serif;
     padding-top: 50px;
+    font-size:18px;
 }
 
 .navbarstyle { 
@@ -266,14 +267,12 @@ img {
 #footer {
   background-color: #f2f2f2;
 }
-#firstColumn, #secondColumn, #thirdColumn {
-  display: inline-block;
-}
+
 .page-footer ul {
-  list-style-type: none;
+list-style-type: none;
 }
+
 .page-footer {
-  position: absolute;
   bottom: 0;
   width: 100%;
   /* Set the fixed height of the footer here */
@@ -284,14 +283,15 @@ img {
   
 }
 .footer-copyright {
-    border-top: 2px solid black;
-    margin:0%;
+  border-top: 2px solid black;
+  margin:0%;
 }
 #footer2 {
-    border-bottom: 2px solid black;
-    border-top: 2px solid black;
-    margin:0%;
-    }
+  border-bottom: 4px solid black;
+  margin:0%;
+  }
+
+
 .docStyles {
 list-style-type: none;
 margin-bottom: 10%;
