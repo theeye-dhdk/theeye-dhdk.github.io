@@ -29,7 +29,7 @@
     background-image: url("img/darkleaves_1.jpg");
   
     /* Set a specific height */
-    height: 50%; 
+    height: 40vh; 
   
     /* Create the parallax scrolling effect */
     background-attachment: fixed;
@@ -121,7 +121,7 @@
 	margin-left: 25%;
 	margin-right: 25%;
 }
-#file #ContentWrapper h2, h3, h4, h5 {
+#file #ContentWrapper h2, #file #ContentWrapper h3, #file #ContentWrapper h4, #file #ContentWrapper h5 {
 	margin-left: 25%;
 	margin-right: 25%;
 }
