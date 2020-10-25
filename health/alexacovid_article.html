@@ -6,7 +6,7 @@
         <!-- style-->
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-        <script type="text/javascript" src="../2040/2040.js"></script>
+        <!--<script type="text/javascript" src="../2040/2040.js"></script>-->
         
         <meta name="DC.title" lang="en" content="Alexa, do I have COVID-19?" />
         <meta name="DC.creator" content="Emily Anthes" />
@@ -234,12 +234,64 @@
             </div>
         </div>
         <script>
+            
+            var ArticleText = null; 
+            $(document).ready(function(){
+                ArticleText = document.getElementById("ArticleBody").textContent; 
+                $("#ContentWrapper").hide();
+                $("#ListeningWrapper").hide();
+                $("#readingTime").hide();
+                $("#listeningTime").hide();
+                
+             
+                
+                $("#reading").click(function(){
+                    $("#ContentWrapper").show();
+                    $("#listeningTime").hide();
+                    $("#readingTime").show();
+                    //$("#time").append("Reading");
+                });
+
+                $("#listening").click(function(){
+                    $("#ContentWrapper").hide();
+                    $("#readingTime").hide();
+                    $("#listeningTime").show();
+                });
+            });
+
+            // reading time depending on number of character
+            $( document ).ready(function() {
+                if ($("#ContentWrapper").text().length <= 2500) {
+                    $("#readingTime").html("Reading time 5 minutes");
+                }
+                else if ($("#ContentWrapper").text().length > 2500 && $("#ContentWrapper").text().length <= 7500) {
+                    $("#readingTime").html("Reading time 7 minutes");
+                }
+                else if ($("#ContentWrapper").text().length > 7500) {
+                    $("#readingTime").html("Reading time 10 minutes");
+                }
+            });
+
+            $( document ).ready(function() {
+                if ($("#ContentWrapper").text().length <= 2500) {
+                    $("#listeningTime").html("Listening time 5 minutes");
+                }
+                else if ($("#ContentWrapper").text().length > 2500 && $("#ContentWrapper").text().length <= 7500) {
+                    $("#listeningime").html("Listening time 7 minutes");
+                }
+                else if ($("#ContentWrapper").text().length > 7500) {
+                    $("#listeningTime").html("Listening time 10 minutes");
+                }
+            });
+
+
+
             var status = null;
-            responsiveVoice.cancel()
+            responsiveVoice.cancel();
             $('#listening').click(function() {
                 document.getElementById("ListeningWrapper").style.display = 'block';
                 if (status == null) {
-                responsiveVoice.speak(document.getElementById("ArticleBody").textContent);
+                responsiveVoice.speak(ArticleText);
                 status = "play";
                 }
             });

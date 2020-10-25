@@ -1,4 +1,7 @@
+var ArticleText = null
+
 $(document).ready(function(){
+    ArticleText = document.getElementById("ArticleBody").textContent; 
     $("#ContentWrapper").hide();
     $("#ListeningWrapper").hide();
     $("#readingTime").hide();
