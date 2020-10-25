@@ -37,7 +37,7 @@
     background-repeat: no-repeat;
     background-size: cover; 
 }
-#file.logo {
+#file img.logo {
 	display: block;
   	margin-left: auto;
 	margin-right: auto;
@@ -58,13 +58,13 @@
 	line-height: 1.7;
 	padding-bottom: 10%;
 }
-#file .coverpic {
+#file img.coverpic {
 	max-width: 100%;
 	position: relative;
 	float: left;
 }
 
-#file .coverimg { 
+#file img.coverimg { 
 	max-width: 100%;
 	position: left;
 	display: block;
