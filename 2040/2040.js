@@ -1,5 +1,6 @@
 $(document).ready(function(){
     $("#ContentWrapper").hide();
+    $("#ListeningWrapper").hide();
     $("#readingTime").hide();
     $("#listeningTime").hide();
     
@@ -51,3 +52,25 @@ $( document ).ready(function() {
 //function darkMode(sheet) {
     //document.getElementById("ArticleCss").setAttribute("href", sheet);
 //}
+var status = null;
+responsiveVoice.cancel()
+$('#listening').click(function() {
+    $("#ListeningWrapper").show();
+    if (status == null) {
+      responsiveVoice.speak(document.getElementById("ArticleBody").textContent);
+      status = "play";
+    }
+});
+
+$('#play-btn').click(function() {
+    if (status == "play") {
+      responsiveVoice.pause();
+      status="pause";
+      document.getElementById("play-btn").innerHTML('<i class="fa fa-play" aria-hidden="true" style="font-size: 200%; padding:10%;"></i>');
+    }
+    if (status ="pause") {
+      responsiveVoice.play();
+      status = "play";
+      document.getElementById("play-btn").innerHTML('<i class="fa fa-pause" aria-hidden="true" style="font-size: 200%; padding:10%;"></i>');
+    }
+});
