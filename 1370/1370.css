@@ -1,0 +1,293 @@
+@font-face {
+	font-family: MiddleAges;
+	src: url(fonts/MiddleAges_PERSONAL_USE.ttf);
+}
+
+@font-face {
+	font-family: mySquac;
+	src: url(fonts/squac___.TTF);
+}
+  
+@font-face {
+	font-family: mySeagram;
+	src: url(fonts/Seagram.ttf);
+   /* article body */ 
+}
+  
+@font-face {
+	font-family: myCaps;
+	src: url(fonts/Medievalalphabet-4EY6.ttf);
+   /* caps */ 
+}
+
+#file {
+	width: 100%;
+	margin: 0;
+	padding: 0;
+}
+
+#file .parallax {
+	display: none;
+}
+
+#file.logo {
+	display: none;
+}
+
+#file #ArticleBody {
+	color: #000000;
+    min-height:100% !important;
+	padding-top: 50px;
+	padding-bottom: 320px;
+	font-size: 12pt;
+	font-family: mySeagram !important;
+	text-align: justify ;
+	column-count: 2;
+	column-gap: 7%;
+	column-fill: balance;
+	padding: 3%;
+	word-wrap: normal;
+	line-height: 1;
+	background-image: url("img/oldpaper_texture.png") /* url("img/cornice_corpo2.png")*/ !important;
+	/* background-position: center, left;*/
+	/* background-size: */
+	background-size: 100%;
+	/* background-position: center;*/
+}
+
+/* #file .coverpic {
+	max-width: 100%;
+	position: relative;
+	float: left;
+}
+
+#file .coverimg { 
+	max-width: 100%;
+	position: left;
+	display: block;
+	filter: brightness(80%);
+	filter: sepia(40%);
+} */
+
+#file h1 {
+	color: darkred; 
+	text-transform: uppercase;
+	text-align: center ;
+	font-family: mySeagram;
+    font-size: 32pt;
+	letter-spacing: 6px;
+	column-span: all;
+}
+
+/* #file p.subtitle {
+	color: #dbe3cb;
+	font-family: 'NightStillComes';
+	font-size: 20pt;
+	text-align: center;
+	margin-left: 10%;
+	margin-right: 10%;
+	line-height: 1.2;
+}*/ 
+
+#file #ArticleBody h2 {
+	letter-spacing: 10px;
+	text-align: center; 
+	text-transform: uppercase;
+	line-height: 1.3;
+	font-size: 24pt;
+	font-family:  mySeagram !important;
+	padding-top: 20px;
+	padding-bottom: 20px;
+	color: darkred;
+}
+
+#file #ArticleBody h3, #ArticleBody h4, #ArticleBody h5 {
+	font-family:  mySeagram;
+	text-transform: uppercase;
+	text-align: center;
+	letter-spacing: 10px;
+	font-size: 20pt;
+	padding-top: 10px;
+	padding-bottom: 10px;
+	line-height: 1.5;
+	color: darkred;
+}
+/* #file #ContentWrapper blockquote {
+	font-family: 'Saudagar';
+	background-color: #6c7c73;
+	display: block;
+	max-width: 100%;
+	margin: 0%;
+	color: #dbe3cb;
+	font-size: 50pt;
+	text-decoration: solid;
+	text-align: center;
+	padding-bottom: 5%;
+	padding-top: 5%;
+} 
+
+#file a:link {
+	color: #a4b49c;
+	background-color: transparent;
+	text-decoration: none;
+}
+  
+#file a:visited {
+	color:#a4b49c;
+	background-color: transparent;
+	text-decoration: none;
+}
+  
+#file a:hover {
+	color: #a4b49c;
+	background-color: transparent;
+	text-decoration: underline;
+}
+  
+#file a:active {
+	color: #a4b49c;
+	background-color: transparent;
+	text-decoration: underline;
+}
+
+#file #icons img {
+	display:inline-block;
+	width:100px;
+	padding:5%;
+}
+
+#file #icons img:hover {
+	opacity:0.5;
+}
+
+#file #icons img:active {
+	border: solid 1px #dbe3cb;
+} */
+
+#file #CoverWrapper {
+	font-family: mySquac !important;
+	text-transform: uppercase;
+	text-align: center;
+	line-height: 1;
+	font-size: 27pt;
+	font-family:  mySquac ;
+	padding-bottom: 110px;
+	column-span: all;
+}
+
+#file div.coverinfo {
+	display: none;
+} 
+
+#file #Introduction {
+	padding-top: 70px;
+	font-size: 12pt;
+	font-family: mySeagram !important;
+	text-align: justify;
+	line-height: 1;
+}
+
+#file #Articlebody img {
+    max-width: 100%;
+    max-height: 100%;
+	display: block;
+    margin-left: auto;
+    margin-right: auto;
+	filter: sepia(1);
+	-webkit-filter: sepia(1);
+	border:2px solid;
+	margin-top: 15px;
+    margin-bottom: 15px;
+}
+
+#file #Articlebody p.pubnote {
+	font-family: mySeagram;
+	font-size:21pt;
+	padding-bottom:10px;
+}
+
+#file #Credits > p:first-of-type::first-letter {
+	font-family: myCaps;
+	float: left;
+	font-size: 250pt;
+	line-height: 70px;
+	padding-top: 40px;
+	padding-bottom: 40px;
+	padding-right: 10px;
+	color: darkred;
+	float:left;
+	line-height: 0.63em;
+}
+
+#file #Summary > p:first-of-type::first-letter, #Introduction > p:first-of-type::first-letter, #ContentWrapper > p:first-of-type::first-letter, #ContentWrapper h2 ~ p:first-of-type::first-letter {
+	font-family: myCaps;
+	float: left;
+	font-size: 150pt;
+	line-height: 80px;
+	padding-top: 40px;
+	padding-right: 10px;
+	color: darkgreen; 
+	float:left;
+	line-height: 0.63em;
+}
+#file #Articlebody figcaption {
+	font-size: 10pt;
+	text-align: center;
+	line-height: 1.5;
+    padding: 5px;
+}
+
+#file #Articlebody figcaption .num {
+	font-size: 15pt;
+	text-align: center;
+	line-height: 1;
+    padding: 5px;
+}
+
+/* table */ 
+#file #Articlebody th {border: 1px solid black; 
+	font-size: 15pt;
+	text-transform: uppercase;
+	padding: 10px;
+
+}
+
+#file #Articlebody td {border: 1px solid black;
+	padding: 10px;
+}
+
+#file #Articlebody tr{
+	border: 1px solid black;
+}
+
+#file #Articlebody table {
+	border: 4px solid;
+	margin-bottom: 25px;
+	margin-top: 25px;
+	word-break: break-word;
+	margin-left: auto;
+	margin-right: auto;
+	color: black;
+	border-spacing: 1px;
+	border-collapse: separate;
+}
+/*#file #FootWrapper {
+	color:#dbe3cb;
+	font-family: 'RobotoLight';
+	background-color: #6c7c73;
+	font-size: 13pt;
+	text-align: left;
+	line-height: 1.7;
+	padding-top: 5%;
+	padding-bottom: 5%;
+	padding-right: 5%;
+	padding-left: 5%;
+}
+#file .footerimg {
+	background-image: url("img/sust_3.png");
+	max-width: 100%;
+    height: auto;
+	background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+}*/

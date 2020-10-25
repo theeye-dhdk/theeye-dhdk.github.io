@@ -1,0 +1,42 @@
+[
+	{
+		"label": "‘Parkrun saved my life’: how the weekly runs became a phenomenon – and are now coming back",
+		"url": "parkrun_article.html",
+		"author": "Sam Wollaston",
+		"issued": "2020-09-13",
+		"publisher": "The Guardian",
+		"source": "https://www.theguardian.com/lifeandstyle/2020/sep/13/parkrun-saved-my-life-how-the-weekly-runs-became-a-phenomenon-and-are-now-coming-back.html",
+		"keywords": "health, wellbeing, fitness, run",
+		"imagesource":"run1.jpg"
+	},
+	{
+		"label": "Alexa, do I have COVID-19?",
+		"url": "alexacovid_article.html",
+		"author": "Emily Anthes",
+		"issued": "2020-09-30",
+		"publisher": "Nature",
+		"source": "https://www.nature.com/articles/d41586-020-02732-4",
+		"keywords": "Alexa, covid-19, dementia, depression",
+		"imagesource":"alexa.jpg"
+	},
+	{
+		"label": "What will happen when COVID-19 and the flu collide this fall?",
+		"url": "covidflu_article.html",
+		"author": "Tina Hesman Saey",
+		"issued": "2020-09-18",
+		"publisher": "ScienceNews",
+		"source": "https://www.sciencenews.org/article/covid19-coronavirus-flu-season-fall",
+		"keywords": "health, medicine, covid-19, flu",
+		"imagesource":"covid.jpg"
+	},
+	{
+		"label": "The effectiveness of a monetary reimbursement model for weight reduction via a smartphone application: a preliminary retrospective study",
+		"url": "monetaryreimb_article.html",
+		"author": "Jungeun Lee, Sujin Bae, Dohyung Park, Youngin Kim, Jisun Park",
+		"issued": "2020-09-22",
+		"publisher": "Scientific Reports",
+		"source": "https://www.nature.com/articles/s41598-020-72908-5",
+		"keywords": "health care, psichology, monetary reimbursement, obesity",
+		"imagesource":"\"\""
+	}
+]
