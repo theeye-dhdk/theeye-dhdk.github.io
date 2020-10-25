@@ -1,10 +1,33 @@
 
 
 $(document).ready(function(){
+    var ArticleText = document.getElementById("ArticleBody").textContent;
+    var status = null;
+    
+    responsiveVoice.cancel();
+
     $("#ContentWrapper").hide();
     $("#ListeningWrapper").hide();
     $("#readingTime").hide();
     $("#listeningTime").hide();
+
+    document.getElementById("listening").onclick = function() {
+        document.getElementById("ListeningWrapper").style = 'display:block;'
+    };
+    document.getElementById("play-btn").onclick = function() {
+      if (status == null) {
+        responsiveVoice.speak(ArticleText);
+        alert('hello!')
+        status = "played";
+      }
+      if (status == "played") {
+        responsiveVoice.resume();
+      }
+    };
+    document.getElementById("pause-btn").onclick = function() {
+      responsiveVoice.pause();
+    };
+
     
     //$("#reading").mouseover(function(){
     //    $("#reading").css("opacity", "0.5");
@@ -49,22 +72,3 @@ $( document ).ready(function() {
 	}
 });
 
-var ArticleText = document.getElementById("ArticleBody").textContent;
-var status = null;
-
-responsiveVoice.cancel();
-document.getElementById("listening").onclick = function() {
-    document.getElementById("ListeningWrapper").style = 'display:block;'
-};
-document.getElementById("play-btn").onclick = function() {
-  if (status == null) {
-    responsiveVoice.speak(ArticleText);
-    status = "played";
-  }
-  if (status == "played") {
-    responsiveVoice.resume();
-  }
-};
-document.getElementById("pause-btn").onclick = function() {
-  responsiveVoice.pause();
-};
