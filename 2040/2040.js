@@ -49,7 +49,7 @@ $( document ).ready(function() {
 	}
 });
 
-
+var ArticleText = document.getElementById("ArticleBody").textContent;
 var status = null;
 
 responsiveVoice.cancel();
@@ -58,7 +58,7 @@ document.getElementById("listening").onclick = function() {
 };
 document.getElementById("play-btn").onclick = function() {
   if (status == null) {
-    responsiveVoice.speak(document.getElementById("ArticleBody").textContent);
+    responsiveVoice.speak(ArticleText);
     status = "played";
   }
   if (status == "played") {
