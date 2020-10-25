@@ -240,8 +240,8 @@
             responsiveVoice.cancel();
             $('#listening').click(function() {
                 if (status == null) {
-                responsiveVoice.speak(document.getElementById("ArticleBody").textContent);
-                console.log(document.getElementById("ArticleBody").textContent)
+                responsiveVoice.speak(document.getElementById("ContentWrapper").textContent);
+                console.log(document.getElementById("ContentWrapper").textContent)
                 status = "play";
                 }
             });
