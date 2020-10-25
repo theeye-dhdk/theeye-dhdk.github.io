@@ -1,7 +1,6 @@
 
 
 $(document).ready(function(){
-    var ArticleText = document.getElementById("ArticleBody").textContent; 
     $("#ContentWrapper").hide();
     $("#ListeningWrapper").hide();
     $("#readingTime").hide();
@@ -51,9 +50,21 @@ $( document ).ready(function() {
 });
 
 
-
+var status = null;
 
 responsiveVoice.cancel();
 document.getElementById("listening").onclick = function() {
+    document.getElementById("ListeningWrapper").style = 'display:block;'
+};
+document.getElementById("play-btn").onclick = function() {
+  if (status == null) {
     responsiveVoice.speak(document.getElementById("ArticleBody").textContent);
+    status = "played";
+  }
+  if (status == "played") {
+    responsiveVoice.resume();
+  }
+};
+document.getElementById("pause-btn").onclick = function() {
+  responsiveVoice.pause();
 };
