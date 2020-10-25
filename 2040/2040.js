@@ -17,6 +17,9 @@ $(document).ready(function(){
 
     document.getElementById("listening").onclick = function() {
         document.getElementById("ListeningWrapper").style = 'display:block;';
+        $("#ContentWrapper").hide();
+        $("#readingTime").hide();
+        $("#listeningTime").show();
         if (status == null) {
           responsiveVoice.speak(ArticleText);
           status = "played";
@@ -25,14 +28,10 @@ $(document).ready(function(){
     
     document.getElementById("pause-btn").onclick = function() {
       responsiveVoice.pause();
-      document.getElementById("pause-btn").style = 'display:none;';
-      document.getElementById("play-btn").style = 'display:block;';
     };
-    
+
     document.getElementById("play-btn").onclick = function() {
       responsiveVoice.resume();
-      document.getElementById("play-btn").style = 'display:none;';
-      document.getElementById("pause-btn").style = 'display:block;';
     };
 
     
@@ -43,15 +42,10 @@ $(document).ready(function(){
     $("#reading").click(function(){
         $("#ContentWrapper").show();
         $("#listeningTime").hide();
+        document.getElementById("ListeningWrapper").style = 'display:none;';
         $("#readingTime").show();
         responsiveVoice.cancel();
         //$("#time").append("Reading");
-    });
-
-    $("#listening").click(function(){
-        $("#ContentWrapper").hide();
-        $("#readingTime").hide();
-        $("#listeningTime").show();
     });
 });
 
