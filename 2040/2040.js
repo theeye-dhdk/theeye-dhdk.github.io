@@ -1,7 +1,7 @@
-var ArticleText = null
+
 
 $(document).ready(function(){
-    ArticleText = document.getElementById("ArticleBody").textContent; 
+    var ArticleText = document.getElementById("ArticleBody").textContent; 
     $("#ContentWrapper").hide();
     $("#ListeningWrapper").hide();
     $("#readingTime").hide();
@@ -51,7 +51,9 @@ $( document ).ready(function() {
 });
 
 
-//Darkmode and lightmode
-//function darkMode(sheet) {
-    //document.getElementById("ArticleCss").setAttribute("href", sheet);
-//}
+
+
+responsiveVoice.cancel();
+document.getElementById("listening").onclick = function() {
+    responsiveVoice.speak(document.getElementById("ArticleBody").textContent);
+};
