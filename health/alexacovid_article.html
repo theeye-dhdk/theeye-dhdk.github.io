@@ -233,7 +233,10 @@
             <div id="Footerimg"><img src="../2040/img/sust_3.png" class="footerimg"></div>
         </div>
         <script>
-            responsiveVoice.speak(document.getElementById("ArticleBody").textContent);
+            responsiveVoice.cancel();
+            document.getElementById("listening").onclick = function() {
+                responsiveVoice.speak(document.getElementById("ArticleBody").textContent);
+            };
         </script>
     </body>
 </html>
