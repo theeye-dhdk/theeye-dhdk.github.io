@@ -233,12 +233,11 @@
                 </button>
             </div>
         </div>
-        <script src="https://code.responsivevoice.org/responsivevoice.js?key=OnA8zeJi"></script>
         <script>
             var status = null;
             responsiveVoice.cancel()
             $('#listening').click(function() {
-                $("#ListeningWrapper").show();
+                document.getElementById("ListeningWrapper").style('display:block;');
                 if (status == null) {
                 responsiveVoice.speak(document.getElementById("ArticleBody").textContent);
                 status = "play";
