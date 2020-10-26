@@ -569,16 +569,5 @@ $(document).ready(function(){
         $('.articleImg[src=""]').hide();
         $('.articleImg:not([src=""])').show();
     });
-//Navbar hides on scroll 
 
-var prevScrollpos = window.pageYOffset;
-window.onscroll = function() {
-var currentScrollPos = window.pageYOffset;
-  if (prevScrollpos > currentScrollPos) {
-    document.getElementById("controlbar").style.top = "0";
-  } else {
-    document.getElementById("controlbar").style.top = "-50px";
-  }
-  prevScrollpos = currentScrollPos;
-}
 
