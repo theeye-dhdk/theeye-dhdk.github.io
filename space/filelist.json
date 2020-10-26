@@ -7,7 +7,7 @@
 		"publisher": "The California Sunday Magazine",
 		"source": "https://story.californiasunday.com/mars-madness",
 		"keywords": "Space, Mars, NASA, Rockets, Exploration",
-		"imagesource":"img/mars01.jpg"
+		"imagesource":"Mars Madness/mars01.jpg"
 	},
 	{
 		"label": "The Astronaut Who Might Actually Get Us to Mars",
@@ -17,7 +17,7 @@
 		"publisher": "Texas Monthly",
 		"source": "https://www.texasmonthly.com/articles/the-astronaut-who-might-actually-get-us-to-mars/",
 		"keywords": "Astronaut, Mars, Space, Ad Astra, Houston, Franklin Chang Diaz, Science, Technology",
-		"imagesource":"img/austronaut01.jpg"
+		"imagesource":"The Austronaut/austronaut01.jpg"
 	},
 	{
 		"label": "Welcome to the Real Space Age",
@@ -27,7 +27,7 @@
 		"publisher": "New York Magazine",
 		"source": "https://nymag.com/news/features/space-travel-2013-5/",
 		"keywords": "Space, Technology, NASA, Future, Travel",
-		"imagesource":"img/space01.jpg"
+		"imagesource":"Private Space/space01.jpg"
 	},
 	{
 		"label": "The Martian Chroniclers",
@@ -37,6 +37,6 @@
 		"publisher": "The New Yorker",
 		"source": "https://www.newyorker.com/magazine/2013/04/22/the-martian-chroniclers",
 		"keywords": "Space, Mars, Planets, Space exploration, Buzz Aldrin, Satellites",
-		"imagesource":"img/chronicles01.jpg"
+		"imagesource":"Martian Chronicles/chronicles01.jpg"
 	}
 ]
