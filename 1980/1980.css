@@ -116,7 +116,7 @@ padding:0;
 #IssueCover .IssueBibliographicCitation:before{
   content: "";
   background-image:url("../1980/img/Eye80s2.png");
-  background-size: 100%;
+  background-size: 85%;
   background-repeat: no-repeat;
   background-color:none;
   display: block;
@@ -302,7 +302,7 @@ margin-top:150px;
 #IssueCover div.ArticleInfo:nth-child(1) .coverLabel {
 display:inline-block; 
 font-family:"steelfish";
-font-size: 100%;
+font-size: 140%;
 text-transform: uppercase;
 max-width:80%;
 padding:5px;
@@ -363,7 +363,7 @@ margin-left:15px;
 #IssueCover div.ArticleInfo:nth-child(1) .coverAuthor,
 #IssueCover div.ArticleInfo:nth-child(1) .coverIssued {
 font-family:"steelfish";
-font-size: 100%;
+font-size: 160%;
 text-transform: uppercase;
 width:40%;
 text-align: right;
