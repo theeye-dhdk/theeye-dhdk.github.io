@@ -977,7 +977,7 @@ margin-bottom:10%;
 #IssueCover div.ArticleInfo:nth-child(1) .articleImg {
 display:block;
 width:50%;
-height:80%;
+height:600px;
 bottom:30%;
 margin-top:40px;
 border-top-right-radius: 5000px;
@@ -987,7 +987,9 @@ margin-right:25%;
  filter: blur(2px);
   -webkit-filter: blur(2px);
 }
-
+#IssueCover div.ArticleInfo:nth-child(1) .articleImg[src=""] {
+    display: none;
+} 
 
 
 #IssueCover div.ArticleInfo:nth-child(2) .articleImg,
