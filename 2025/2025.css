@@ -987,9 +987,6 @@ margin-right:25%;
  filter: blur(2px);
   -webkit-filter: blur(2px);
 }
-#IssueCover div.ArticleInfo:nth-child(1) .articleImg[src=""] {
-    display: none;
-} 
 
 
 
