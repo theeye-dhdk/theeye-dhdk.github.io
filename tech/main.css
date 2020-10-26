@@ -13,6 +13,13 @@ body {
 .navbarstyle2 { 
     border-bottom: 4px solid black;
     }
+.navbarstyle1 { 
+    border-bottom: 2px solid black;
+    }
+.controlbar { 
+    border-bottom: 4px solid black;
+    }
+
 .navbar-brand {
 margin-left:40px;
 font-family: "hardingreg";
