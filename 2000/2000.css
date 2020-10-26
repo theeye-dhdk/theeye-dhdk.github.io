@@ -10,6 +10,11 @@
   
  }
 
+#file {
+	margin:0;
+	padding:0;
+}
+
 #file a {
 	color: #e60000;
 }
@@ -422,7 +427,7 @@
 
 #disclaimer {
 	font-family: 'Source Serif Pro', serif !important;
-	font-size:1.3vmax;
+	/**font-size:1.3vmax;**/
 	font-weight: 550 !important;
 	text-align:justify;
 }
@@ -436,7 +441,7 @@
 }
 
 #disclaimer::before {
-	content: "Theyemagazine";
+	content: "disclaimer";
 	font-size: 6vmax;
 	font-weight: 100 !important;
 	letter-spacing: 2%;
@@ -449,4 +454,5 @@
 	font-family: 'Barlow Semi Condensed', sans-serif !important;
 	font-weight: 700 !important;
 	font-size: 120%;
+	overflow-wrap: break-word;
 }

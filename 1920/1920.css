@@ -6,6 +6,11 @@
 	src: url(font/strasua.regular.ttf);
 }
 
+#file {
+	margin:0;
+	padding:0;
+}
+
 #file #ArticleBody {
 	background-color: #f9f7de;
 	background-color: #f9f7de;
@@ -326,17 +331,16 @@
 
 #file #IssueCover .IssueBibliographicCitation {
 	font-family: Strasua;
-	font-size: 1.2vmax;
-	color:white;
-	background-color: black;
-	text-transform: uppercase;
-	font-weight: bold;
-	margin-left: 0;
-	margin-top: -7%;
-	padding-left: 30%;
-	width: 30%;
-	z-index: 2;
-	transform: rotate(-30deg);
+    font-size: 1vmax;
+    color: white;
+    background-color: black;
+    text-transform: uppercase;
+    font-weight: bold;
+    margin-left: 23%;
+    padding-left: 3%;
+    width: 40%;
+    z-index: 2;
+    transform: rotate(-30deg);
 }
 
 #file #IssueCover .IssueBibliographicCitation::first-letter {
@@ -405,7 +409,7 @@
 	font-weight:bold;
 	padding: 2%;
 	padding-bottom: 0;
-	width: 40%;
+	width: 45%;
 	margin-left: 15%;
 	margin-top: 5%;
 	text-align: right;
@@ -424,6 +428,7 @@
 
 #disclaimerText a {
 	background-color: yellow;
+    overflow-wrap: break-word;
 }
 
 #disclaimerText a:hover {
