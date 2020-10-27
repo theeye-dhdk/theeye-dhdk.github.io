@@ -657,8 +657,8 @@ border-top: 4px solid black;
     width: 100%;
     /* padding-right: 15px; */
     /* padding-left: 15px; */
-    margin-right: auto;
-    margin-left: auto;
+    margin-right: 0;
+    margin-left: 0;
         
 .pt-4, .py-4 {
     /* padding-top: 1.5rem!important; */
