@@ -56,6 +56,11 @@ img[src=""] {
     display: none;
 } 
 
+a {
+color:white;
+}
+
+
 /* ----------------------------------------------------- ARTICLE --------------------------------------------------------------- */ 
 /* ----------------------------------------------------- ARTICLE --------------------------------------------------------------- */ 
 
@@ -453,7 +458,7 @@ padding-bottom:2%;
 
  #file div.article blockquote {
 display: inline-block;
-width: 92%;
+width: 100%;
 line-height 50%;
 color:white;
 text-align: center;
@@ -470,6 +475,10 @@ padding-right: 4%;
 padding-left: 4%;
 margin-right: 0px;
 margin-left: 0px;
+}
+
+#file div.article blockquote a{
+color:white;
 }
 
  #file div.article blockquote:after {
