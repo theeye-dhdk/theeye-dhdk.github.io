@@ -676,14 +676,14 @@ border-top: 4px solid black;
     margin-left: 0;
         
 .pt-4, .py-4 {
-    padding-top: 0rem;
+    padding-top: 0rem!important;
 }
 
 .text-center {
     text-align: center!important;
     font-family: "hardingreg";
 }
-.previous {
+.pagination-link a .previous {
     padding-right: 30px;
  }
         
