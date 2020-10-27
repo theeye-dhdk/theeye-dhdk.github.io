@@ -686,6 +686,15 @@ border-top: 4px solid black;
         
 @media only screen and (max-width: 500px) {
       #buttonList {
-    margin-left: 40px;
+    margin-left: 0px;
         }
+    ul.breadcrumb {
+    margin-left: 0px;
+       }
+        ul.breadcrumb li {
+    font-size: 15px;
         }
+    #buttonList button {
+    font-size: 15px;
+        }
+ }
