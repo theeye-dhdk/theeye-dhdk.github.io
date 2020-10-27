@@ -590,7 +590,7 @@ a#closebtn-2 {
   margin-left:200px;
   padding-bottom: 1%;
   text-align: center;
-  height: 30px;
+  
 }
 
 #eyeStyle img {
@@ -602,6 +602,7 @@ a#closebtn-2 {
   font-size: 1em;
   border: none;
   background-color: white;
+  height: 30px;
 }
 
 #eyeStyle button:hover {
