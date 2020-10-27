@@ -616,6 +616,8 @@ a#closebtn-2 {
 .eyeActive {
   padding: 0;
   background-color: transparent;
+  position: relative;
+    top: -4px;
 }
 
 #eyeStyle button img {
