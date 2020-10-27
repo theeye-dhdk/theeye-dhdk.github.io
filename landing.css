@@ -34,7 +34,8 @@ font-size: 125%;
 color:black;
 text-decoration: none;
 position: relative;
-    top: 50px;
+top: 50px;
+cursor: pointer;
 }
 
 .enterbutton:hover {
