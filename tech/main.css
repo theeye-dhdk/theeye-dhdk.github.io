@@ -20,7 +20,7 @@ body {
 
 #controlbar { 
     border-bottom: 4px solid black;
-    background-color: #eee;
+    background-color: white;
     }
 
 .navbar-brand {
@@ -43,7 +43,7 @@ margin-left: 6%;}
 ul.breadcrumb {
     padding: 10px 16px;
     list-style: none;
-    background-color: #eee;
+    background-color: white;
     margin-left: 40px;
   }
   ul.breadcrumb li {
@@ -154,7 +154,7 @@ list-style-type: none;
     overflow-y: scroll;
     overflow-x: hidden;
     padding-bottom:20px;
-    background-color: #eee;
+    background-color: white;
 }
 
 #selector .list a {
@@ -600,7 +600,7 @@ a#closebtn-2 {
   font-family: "hardingreg";
   font-size: 1em;
   border: none;
-  background-color: transparent;
+  background-color: white;
 }
 
 #eyeStyle button:hover {
@@ -636,7 +636,7 @@ a#closebtn-2 {
 
 #buttonList button{
     font-size: 1em;
-    background-color: #eee;
+    background-color: white;
     color: black;
     padding-left: 1%;
     padding-right: 1%;
