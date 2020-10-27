@@ -677,3 +677,6 @@ border-top: 4px solid black;
     text-align: center!important;
     font-family: "hardingreg";
 }
+.previous {
+    padding-right: 25px;
+ }
