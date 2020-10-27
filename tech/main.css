@@ -680,10 +680,16 @@ border-top: 4px solid black;
     padding-top: 0rem!important;
 }
 
+.actualbreadcrumb {
+width:30%;
+}
 .text-center {
     text-align: center!important;
     font-family: "hardingreg";
+    width:50%;
 }
+
+
 .pagination-link a .previous {
     padding-right: 30px;
  }
