@@ -384,6 +384,8 @@ ul.minimal {
 
 #fileWrapper {
     transition: margin-left .5s;
+    padding: 0;
+    margin: 0;
 }
 
 #file {
