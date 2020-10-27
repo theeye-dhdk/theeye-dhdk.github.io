@@ -1096,17 +1096,21 @@ font-size:120%;
  
 #IssueCover div.ArticleInfo:nth-child(1) .coverLabel a {
 color:white;
+text-decoration:underline;
 }
 
 #IssueCover div.ArticleInfo:nth-child(2) .coverLabel a{
 color:white;
+text-decoration:underline;	
 }
 #IssueCover div.ArticleInfo:nth-child(3) .coverLabel a{
 color:white;
+text-decoration:underline;	
 }
 
 #IssueCover div.ArticleInfo:nth-child(4) .coverLabel a {
 color:white;
+text-decoration:underline;	
 }
 
 
@@ -1297,7 +1301,7 @@ display: block;
     background-size:100%;
     position:absolute;
     left:50%;
-    top:800%;
+    top:600%;
     margin-left:-80px;
     z-index:4;
 }
