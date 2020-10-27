@@ -244,8 +244,9 @@ list-style-type: none;
 #paginationLinks {
     width: 20%;
     text-align: right;
-    height: 45px;
+    height: 0;
     padding: 0.3em;
+    font-family: "hardingreg";
 }
 
 .pagination-link {
@@ -590,6 +591,7 @@ a#closebtn-2 {
   margin-left:200px;
   padding-bottom: 1%;
   text-align: center;
+  font-family: "hardingreg";
   
 }
 
@@ -648,6 +650,7 @@ a#closebtn-2 {
     border-radius: 0;
     transition:1s;
     float:right;
+    height:30px;
 }
 
 #buttonList button:active {
