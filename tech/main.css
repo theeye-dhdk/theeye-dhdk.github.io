@@ -683,3 +683,9 @@ border-top: 4px solid black;
 .previous {
     padding-right: 30px;
  }
+        
+@media only screen and (max-width: 500px) {
+      #buttonList {
+    margin-left: 40px;
+        }
+        }
