@@ -229,7 +229,7 @@ list-style-type: none;
 
 #metadataIssue {
     margin-top:0.6em;
-    border-radius: 5px;
+    border-radius: 0px;
     background-color: #f5f5f5;
     padding-top: 20px;
     padding-bottom: 20px;
@@ -305,7 +305,7 @@ list-style-type: none;
     background-color:#f5f5f5;
     color: black;
     padding:15px;
-    border-radius:0px 0px 10px 10px; 
+    border-radius:0px 0px 0px 0px; 
 }
 
 
