@@ -16,7 +16,8 @@ body {
 .navbarstyle1 { 
     border-bottom: 2px solid black;
     }
-.controlbar { 
+
+#controlbar { 
     border-bottom: 4px solid black;
     }
 
@@ -650,5 +651,6 @@ border: none;
 outline:0;
 border: none;
 }
-
-
+.page-footer {
+border-top: 4px solid black;
+}
