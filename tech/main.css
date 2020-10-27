@@ -655,8 +655,8 @@ border-top: 4px solid black;
 }
 .container-fluid, .container-lg, .container-md, .container-sm, .container-xl {
     width: 100%;
-    /* padding-right: 15px; */
-    /* padding-left: 15px; */
+    padding-right: 0px; 
+    padding-left: 0px; 
     margin-right: 0;
     margin-left: 0;
         
