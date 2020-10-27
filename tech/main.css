@@ -666,7 +666,7 @@ border-top: 4px solid black;
     margin-left: 0;
         
 .pt-4, .py-4 {
-    /* padding-top: 1.5rem!important; */
+    padding-top: 0;
 }
 
 .text-center {
