@@ -76,7 +76,7 @@ background-image: url("../1980/img/barcode.jpg"),url('../1980/img/coverdecoratio
 }
 
 #IssueCover h1 {
-font-size: 300%;
+font-size: 500%;
 letter-spacing: 15px;
 width: 110%;
 text-align: left;
@@ -879,7 +879,7 @@ overflow-wrap: break-word;
 }
 
 #file div.article  div.cover h1 {
-  font-size:400%;
+  font-size:300%;
   font-family: 'futura'; 
   color: #1fa6c4;
   text-transform: uppercase;
