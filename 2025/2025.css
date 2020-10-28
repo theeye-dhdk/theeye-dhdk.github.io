@@ -542,7 +542,28 @@ border-top: 1px solid black;
   #file div.article .bio + #References {
 border-top: none;
 }
+ 
+#file div.article  h2 #References {
+font-family: 'faktpro';
+    text-transform: uppercase;
+    border-top: 1px solid black;
+    font-size: 20px;
+    text-align: left;
+    margin-top: 40px;
+    padding-top: 10px;
+    padding-bottom: 30px;
+}
 
+#file div.article  h2 #Notes {
+font-family: 'faktpro';
+    text-transform: uppercase;
+    border-top: 1px solid black;
+    font-size: 20px;
+    text-align: left;
+    margin-top: 40px;
+    padding-top: 10px;
+    padding-bottom: 30px;
+}
 
 #file div.article  div.content table {
   width: 80%;
