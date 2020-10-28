@@ -241,7 +241,7 @@ list-style-type: none;
     text-transform: lowercase;
 }
 
-#paginationLinks {
+#controlbar ul.breadcrumb #paginationLinks {
     width: 20%;
     text-align: right;
     height: 0;
@@ -570,7 +570,6 @@ a#closebtn-2 {
 }
 
 
-
 /** STYLE BUTTONS **/
 #eyeStyle {
   position: -webkit-sticky;
@@ -644,7 +643,7 @@ a#closebtn-2 {
     float:left;
 }
 
-#buttonList button{
+#buttonList button {
     font-size: 1em;
     background-color: white;
     color: black;
@@ -666,6 +665,7 @@ border: none;
 outline:0;
 border: none;
 }
+
 .page-footer {
 border-top: 4px solid black;
 }
@@ -680,11 +680,11 @@ border-top: 4px solid black;
     padding-top: 0rem!important;
 }
 
-.actualbreadcrumb {
+#controlbar ul.breadcrumb .actualbreadcrumb {
 width:30%;
 }
         
-.text-center {
+#controlbar ul.breadcrumb .text-center {
     text-align: center!important;
     font-family: "hardingreg";
     width:50%;
@@ -703,6 +703,5 @@ width:30%;
         
         
         
-        
-
+  
  
