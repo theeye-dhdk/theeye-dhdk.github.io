@@ -29,7 +29,7 @@
     </head>
     <body>
         <!-- Navbar -->
-        <nav class="navbar navbarstyle1 navbar-expand-lg navbar-light">
+        <nav class="navbar navbarstyle2 navbar-expand-lg navbar-light">
             <a class="navbar-brand" href="../home.html">The Eye magazine</a>
             </div>
              <button class="navbar-toggler btn-default" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
@@ -52,40 +52,13 @@
               </ul>
             </div>
           </nav>
-
-          <!-- Navigation Control Bar-->
-        <div id="controlbar"class="breadcrumb_nav sticky-top">
+          <!-- Breadcrumb navigation -->
+        <div class="breadcrumb_nav">
           <ul class="breadcrumb">
-           <div class="actualbreadcrumb">
             <li><a href="../home.html">Home</a></li>
             <li><a href="../browse.html">Issues</a></li>
             <li>The Eye On Technology</li>
-           </div>
-            <div class="text-center">
-           <div id="buttonList" class="text-center styleselector">
-            <div id="btn-style" class="btn-group btn-group-sm mr-2 btn-light" role="group" aria-label="Second group">
-                <button type="button" style="color: black" class="buttonstylesin" disabled>Styles:</button>
-                <button type="button" id="none" class="button-image" onclick="changeStyle('../default.css')">RESET</button>
-                <button type="button" id="1370" class="button-image" onclick="changeStyle('../1370/1370.css')">1370<br><i id="1370eye" class="fa fa-eye eyeicon eyeActive"></i></button>
-                <button type="button" id="1560" class="button-image" onclick="changeStyle('../1560/1560.css')">1560<br><i id="1560eye" class="fa fa-eye eyeicon eyeActive"></i></button>
-                <button type="button" id="1860" class="button-image" onclick="changeStyle('../1860/1860.css')">1860<br><i id="1860eye" class="fa fa-eye eyeicon eyeActive"></i></button>
-                <button type="button" id="1920" class="button-image" onclick="changeStyle('../1920/1920.css')">1920<br><i id="1920eye" class="fa fa-eye eyeicon eyeActive"></i></button>
-                <button type="button" id="1980" class="button-image" onclick="changeStyle('../1980/1980.css')">1980<br><i id="1980eye" class="fa fa-eye eyeicon eyeActive"></i></button>
-                <button type="button" id="2000" class="button-image" onclick="changeStyle('../2000/2000.css')">2000<br><i id="2000eye" class="fa fa-eye eyeicon eyeActive"></i></button>
-                <button type="button" id="2020" class="button-image" onclick="changeStyle('../2025/2025.css')">2025<br><i id="2020eye" class="fa fa-eye eyeicon eyeActive"></i></button>
-                <button type="button" id="2040" class="button-image" onclick="changeStyle('../2040/2040.css')">2040<br><i id="2040eye" class="fa fa-eye eyeicon eyeActive"></i></button>
-            </div> 
-           </div>
-            </div> 
-            
-                                <div id="paginationLinks">
-                                    <div class="pagination-link"><a href="#"></a></div>
-                                    <div class="pagination-link" title="Previous articles"><a href="#" class="previous"><i class="fa fa-angle-left" aria-hidden="true"></i></a></div>
-                                    <div class="pagination-link" title="Article index"><a href="#" onclick="main()" class="coverLink">Cover</a></div>
-                                    <div class="pagination-link" title="Next articles"><a href="#" class="next"><i class="fa fa-angle-right" aria-hidden="true"></i></a></div>
-                                    <div id="disclaimer-btn" class="pagination-link" title="Disclaimer"><a href="#" onclick="loadDisclaimer()"><i class="fa fa-info-circle" aria-hidden="true"></i></a></div>
-                                </div>
-        </ul>
+          </ul> 
         </div>
           
                    <!-- Main Content -->
@@ -124,8 +97,43 @@
                         <!-- MAIN COLUMN -->
                         <div class="col-md-9" id="fileWrapper">
                             
+                                 <!-- Index and style selector -->
+                            <div id="eyeStyle" class="sticky-top">
+        
+                                <!-- Pagination links -->
+        
+                                <div id="sticky-eye"><span class="openbtn" onclick="openNav()"><i class="fa fa-caret-right" aria-hidden="true" style="color:whitesmoke;"></i></span><!--<span class="head-title"></span>--></div> 
+        
+                                <div id="paginationLinks">
+                                    <div class="pagination-link"><a href="#"></a></div>
+                                    <div class="pagination-link" title="Previous articles"><a href="#" class="previous"><i class="fa fa-angle-left" aria-hidden="true"></i></a></div>
+                                    <div class="pagination-link" title="Article index"><a href="#" onclick="main()" class="coverLink">Index</a></div>
+                                    <div class="pagination-link" title="Next articles"><a href="#" class="next"><i class="fa fa-angle-right" aria-hidden="true"></i></a></div>
+                                    <div id="disclaimer-btn" class="pagination-link" title="Disclaimer"><a href="#" onclick="loadDisclaimer()"><i class="fa fa-info-circle" aria-hidden="true"></i></a></div>
+                                </div>
+        
+                            <!-- Style buttons -->
+                            <div class="text-center">
+                                <div id="buttonList">
+                                    <div id="btn-style" class="btn-group btn-group-sm mr-2" role="group" aria-label="Second group">
+                                        <button type="button" id="none" class="button-image" onclick="changeStyle('../default.css')">None</button>
+                                        <button type="button" id="1370" class="button-image" onclick="changeStyle('../1370/1370.css')">1370</button>
+                                        <button type="button" id="1560" class="button-image" onclick="changeStyle('../1560/1560.css')">1560</button>
+                                        <button type="button" id="1860" class="button-image" onclick="changeStyle('../1860/1860.css')">1860</button>
+                                        <button type="button" id="1920" class="button-image" onclick="changeStyle('../1920/1920.css')">1920</button>
+                                        <button type="button" id="1980" class="button-image" onclick="changeStyle('../1980/1980.css')">1980</button>
+                                        <button type="button" id="2000" class="button-image" onclick="changeStyle('../2000/2000.css')">2000</button>
+                                        <button type="button" id="2020" class="button-image" onclick="changeStyle('../2025/2025.css')">2025</button>
+                                        <button type="button" id="2040" class="button-image" onclick="changeStyle('../2040/2040.css')">2040</button>
+                                    </div>
+        
+                                </div>
+                            </div>
+                        </div>
+                            <div class="row clearfix">
                             <!-- ARTICLE CONTAINER -->
                                 <div class="col-md-12" id="file">
+                                    
                                 </div>
                             </div>
             
@@ -151,7 +159,41 @@
                 <!-- Footer -->
                 <div class="container-fluid" id="footer2">
                 <footer class="page-footer font-small pt-4 sticky-bottom">
-
+                        <div class="container-fluid text-center text-md-left">
+                            <br>
+                            <br>
+                            <br>
+                            <div class="row justify-content-around">
+                            <div class="col-md-6 mt-md-0 mt-3">
+                                <h5 class="text-uppercase">MMMM - The idea<span class="flaticon-visibility"></span></h5>
+                                <p>MMMM has been realized during the University of Bologna course in Information Modeling and Web Technologies held by Professor Fabio Vitali in the y.a. 2019-2020. The website is built and managed by four students attending the course.</p>
+        
+                            </div>
+                            <hr class="clearfix w-100 d-md-none pb-3">
+                            <div class="col-md-2 mb-md-0 mb-3">
+                                <h5 class="text-uppercase">Team</h5>
+                                <ul class="list-unstyled">
+                                    <li>Marco Grasso</li>
+                                    <li>Giulia Morini</li>
+                                    <li>Cristian Santini</li>
+                                    <li>Elisa Silva</li>
+                                </ul>
+        
+                            </div>
+                            <div class="col-md-3 mb-md-0 mb-3">
+                                <h5 class="text-uppercase">Contacts</h5>
+                                <ul class="list-unstyled">
+                                    <li>marco.grasso@studio.unibo.it</li>
+                                    <li>giulia.morini@studio.unibo.it</li>
+                                    <li>cristian.santini2@studio.unibo.it</li>
+                                    <li>elisa.silva@studio.unibo.it</li>
+                                </ul>
+                                <br>
+                            </div>
+                            </div>
+                        </div>
+        
+                        
                     <!-- Copyright -->
                     <div class="footer-copyright text-center py-3">From a IMWT course © 2020 Copyright: Alma Mater Studiorum Bologna Univeristy</div>
         
@@ -160,7 +202,7 @@
                 <script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
                 <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
                 <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+                <script src="https://code.responsivevoice.org/responsivevoice.js?key=OnA8zeJi"></script>
                 <script type="text/javascript" src="metadata_viewer.js"></script>
-                <script src="jquery-3.5.1.min.js"></script>
             </body>
         </html>
