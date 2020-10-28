@@ -715,7 +715,7 @@ overflow:hidden;}
 
 @media only screen and (max-width: 1200px) {
 #controlbar ul.breadcrumb .actualbreadcrumb {
-width:40%;
+width:45%;
 }
 }
 
@@ -750,11 +750,12 @@ width:100%;
 }
 
 
-@media only screen and (max-width: 700px) {
+@media only screen and (max-width: 750px) {
 
 #controlbar ul.breadcrumb .actualbreadcrumb {
 width:100%;
-margin-left: 4px;
+margin-left: 0px;
+ext-align: center;
 }
 #controlbar ul.breadcrumb .text-center {
     text-align: center!important;
