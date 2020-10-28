@@ -1382,6 +1382,11 @@ border-right: 7px solid #b0cbc0;
 font-size: 120%;
 }
 
+#file div.article  div.content table caption {
+padding-left: 20px;
+color: black;
+}
+
 #file div.article  div.content p.footnote {
 column-span:all;
 }
