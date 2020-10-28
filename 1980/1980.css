@@ -1092,7 +1092,9 @@ letter-spacing: 0.1em;
 border-bottom:18px solid #e46968;
 }
 #file div.article  div.content h2 {
-border-bottom:15px solid #e46968;
+border-bottom:18px solid #e46968;
+font-size: 28px;
+text-align: left;	
 }
 
 #file div.article  div.content a {
