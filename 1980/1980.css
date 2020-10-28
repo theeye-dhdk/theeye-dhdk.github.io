@@ -1088,9 +1088,11 @@ font-family:"itcgaramond2";
 letter-spacing: 0.1em;
 }
 
-#file div.article  div.content h1,
-#file div.article  div.content h2 {
+#file div.article  div.content h1{
 border-bottom:18px solid #e46968;
+}
+#file div.article  div.content h2 {
+border-bottom:15px solid #e46968;
 }
 
 #file div.article  div.content a {
