@@ -1100,10 +1100,11 @@ text-align: left;
 #file div.article  div.content a {
 color: black;
 text-decoration: none;
-border-bottom: 2px solid black;
+border-bottom: none;
+ont-weight: 900;	
 }
 #file div.article  .pubnote a {
-color: whitw;
+color: white;
 text-decoration: none;
 border-bottom: none;
 }
