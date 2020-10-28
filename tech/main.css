@@ -743,10 +743,17 @@ width:100%;
     text-align: center!important;
     font-family: "hardingreg";
     width:100%;
+    font-size: 10px;
 }
 #controlbar ul.breadcrumb #paginationLinks {
-    width: 100%;
+    width: 80%;
+    margin-bottom: 20px;
+        }
+        
+    ul.breadcrumb {
+    padding: 0px 0px;
 }
+
 }
         
         
