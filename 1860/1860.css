@@ -79,17 +79,18 @@
 }
 
 #file table {
-    margin-top:0.9em;
-    margin-bottom:0.9em;
+    margin-top:1.1em;
+    margin-bottom:1.1em;
     font-family: myBodoniCondensed;
     border-collapse: collapse;
-    width: 100%;
     border: 1px solid;
     border-color: #241B12;
     word-break: break-word;
     hyphens: auto;
     margin-left: auto;
     margin-right: auto;
+    column-span:all;
+    width:90%;
 }
   
   
@@ -125,7 +126,12 @@
     margin-bottom: 0.6em;
     text-align: center;
   }
-
+#file h4:after {
+    display:none;
+}
+#file caption{
+	color:inherit;
+}
   /*ARTICLE*/
     
 #ArticleBody {
@@ -152,6 +158,22 @@
     margin-bottom: 1em;
     text-align:center;
 }
+#CoverWrapper div.maincover {
+	display:flex;
+	flex-direction: column;
+}
+
+#CoverWrapper div.maincover>div.coverpic {
+	order:2
+}
+
+#CoverWrapper div.maincover>div.title {
+	order:1
+}
+#CoverWrapper div.maincover>div.coverinfo {
+	order:3
+}
+
 #CoverWrapper p {
     display:inline;
     
