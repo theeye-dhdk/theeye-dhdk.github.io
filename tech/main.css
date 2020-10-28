@@ -702,7 +702,8 @@ padding-top: 3;
     width:40%;
 }
 
-
+#controlbar {
+overflow:hidden;}
 .fa-angle-left {
     padding-right: 30px;
  }
@@ -726,10 +727,10 @@ width:100%;
 #controlbar ul.breadcrumb .text-center {
     text-align: center!important;
     font-family: "hardingreg";
-    width:80%;
+    width:60%;
 }
 #controlbar ul.breadcrumb #paginationLinks {
-    width: 20%;
+    width: 40%;
 }
 }
 
@@ -738,6 +739,7 @@ width:100%;
 
 #controlbar ul.breadcrumb .actualbreadcrumb {
 width:100%;
+margin-left: 4px;
 }
 #controlbar ul.breadcrumb .text-center {
     text-align: center!important;
