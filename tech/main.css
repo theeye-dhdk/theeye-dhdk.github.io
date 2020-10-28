@@ -649,7 +649,7 @@ a#closebtn-2 {
 #buttonList button {
     font-size: 1em;
     background-color: white;
-    color: black;
+    color: grey;
     padding-left: 1%;
     padding-right: 1%;
     border: none;
@@ -659,9 +659,16 @@ a#closebtn-2 {
     height:30px;
 }
 
+#buttonList button .buttonstylesin {
+font-style: italic;
+color:black;
+
+}
+
 #buttonList button:active {
 outline: none;
 border: none;
+color: black;
 }
 
 #buttonList button:focus {
