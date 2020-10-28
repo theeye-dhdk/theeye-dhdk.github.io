@@ -633,8 +633,6 @@ a#closebtn-2 {
   width: 20px;
 }
 
-
-
 #buttonList #metadata-btn {
     font-size: 1em;
     background-color: #bfa853;
@@ -660,7 +658,7 @@ a#closebtn-2 {
     height:30px;
 }
 
-#buttonList button .buttonstylesin {
+#buttonList #btn-style button .buttonstylesin {
 font-style: italic;
 color:black;
 
@@ -675,6 +673,7 @@ color: black;
 #buttonList button:focus {
 outline:0;
 border: none;
+color: black;
 }
 
 .page-footer {
