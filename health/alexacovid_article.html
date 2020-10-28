@@ -5,9 +5,6 @@
         <link rel="schema.DCTERMS" href="http://purl.org/dc/terms/" />
         <!-- style-->
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-        <script type="text/javascript" src="../2040/2040.js"></script>
-        
         <meta name="DC.title" lang="en" content="Alexa, do I have COVID-19?" />
         <meta name="DC.creator" content="Emily Anthes" />
         <meta name="DCTERMS.issued" scheme="DCTERMS.W3CDTF" content="2020-09-30" />
@@ -37,22 +34,22 @@
                 <div class="coverinfo">
                     <p class="byline">By <span class="person">Emily Anthes</span></p>
                     <p class="publicationDate">2020-09-30</p>
-                    <div id="readingTime"></div>
-                    <div id="listeningTime"></div>
-                    <div id="icons">
-                        <i id="reading" class="fa fa-file-text-o" aria-hidden="true" style="font-size: 200%; padding:10%;" ;></i>
-                        <i id="listening" class="fa fa-microphone" aria-hidden="true" style="font-size: 200%;  padding:10%;";></i>
+                </div>
+              </div>
+              <div class="GiuliaMarkup">
+                <div id="readingTime"></div>
+                <div id="listeningTime"></div>
+                <div id="icons">
+                    <i id="listening" class="fa fa-microphone" aria-hidden="true"></i>
+                </div>
+                <div id="ListeningWrapper">
+                    <div id="audiobox">
+                        <i class="fa fa-play" id ="play-btn" aria-hidden="true"></i>
+                        <i class="fa fa-pause" id ="pause-btn" aria-hidden="true"></i>
                     </div>
-                 </div>  
-  				
-	    	</div>	         
+                </div>
+            </div>  	         
           </div>
-          <div id="ListeningWrapper">
-            <div id="audiobox">
-                <i class="fa fa-play" id ="play-btn" aria-hidden="true" style="font-size: 200%; padding:10%;"></i>
-                <i class="fa fa-pause" id ="pause-btn" aria-hidden="true" style="font-size: 200%; padding:10%;"></i>
-            </div>
-        </div>
   		<div id="ContentWrapper" class="content">
             <p> 
                 In March, as the staggering scope of the coronavirus pandemic started to become clear, officials around the world began enlisting the public to join in the fight. Hospitals asked local companies to donate face masks. 
@@ -225,11 +222,13 @@
                 <p class="biblioItem" id="b05"><span class="biblioMarker">5. </span>Maor, E. et al. Mayo Clin. Proc. 93, 840–847 (2018).</p>
                 <p class="biblioItem" id="b06"><span class="biblioMarker">6. </span>Huang, Z., Epps, J. & Joachim, D. IEEE Trans. Affect. Comput. https://doi.org/10.1109/taffc.2019.2944380 (2019).</p>
             </section>
-            <div id="FootWrapper" class="foot"> <!--chiedere se questo va bene qui anche se nell'articolo è prima delle references-->
-                <p class="copy">Nature 586, 22-25 (2020)</p>
-                <p class="pubnote">doi: 10.1038/d41586-020-02732-4</p>
-            </div>
-            <div id="Footerimg"><img src="../2040/img/sust_3.png" class="footerimg"></div>
         </div>
+        <div id="FootWrapper" class="foot"> <!--chiedere se questo va bene qui anche se nell'articolo è prima delle references-->
+            <p class="copy">Nature 586, 22-25 (2020)</p>
+            <p class="pubnote">doi: 10.1038/d41586-020-02732-4</p>
+        </div>
+        <div id="Footerimg"><img src="../2040/img/sust_3.png" class="footerimg"></div>
+    </div>
+    <script type="text/javascript" id ="ArticleScript" src='../2040/2040_2.js'></script>
     </body>
 </html>
