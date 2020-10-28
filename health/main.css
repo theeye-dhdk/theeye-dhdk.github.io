@@ -7,6 +7,7 @@
 
 body {
     font-family: 'Amiri', serif;
+ 
 }
 
 .navbarstyle2 { 
@@ -28,6 +29,30 @@ font-size: 110%;
 
 .navbar-toggler {
 margin-left: 6%;}
+
+ul.breadcrumb {
+    padding: 10px 16px;
+    list-style: none;
+    background-color: #eee;
+    margin:0;
+  }
+  ul.breadcrumb li {
+    display: inline;
+    font-size: 18px;
+  }
+  ul.breadcrumb li+li:before {
+    padding: 8px;
+    color: black;
+    content: "/\00a0";
+  }
+  ul.breadcrumb li a {
+    color: #0275d8;
+    text-decoration: none;
+  }
+  ul.breadcrumb li a:hover {
+    color: #01447e;
+    text-decoration: underline;
+  }
 
 a {
     color: #087faa;
@@ -73,7 +98,9 @@ h4:after
   border-left: none;
 }
 
-
+#main {
+    font-size:18px;
+}
 #footer {
     background-color: #f2f2f2;
   }
@@ -124,9 +151,7 @@ list-style-type: none;
     top: 0;
   }
 
-#metadataViewer .tab-pane, #metadataIssue{
-    font-size:1.1em;
-}
+
 #metadataViewer .label {
     font-weight: bold;
 }
@@ -203,11 +228,9 @@ list-style-type: none;
 
 #paginationLinks {
     background-color: #1611369c; /**#ccb168;**/
-    font-size: 1.2em;
     width: 100%;
     text-align: center;
-    height: 40px;
-    padding: 0.3em;
+    padding: 0.15em;
 }
 
 .pagination-link {
@@ -444,11 +467,7 @@ a#closebtn-2 {
     display: none;/*value will change via javascript*/
 }
 
-span.head-title {
-    font-size: 0.5em;
-    padding-left: 0.8em;
-    font-family: 'hardingreg';
-}
+
 
 #wikiLink {
     font-size: 80%;
@@ -559,7 +578,7 @@ span.head-title {
 }
 
 #eyeStyle #buttonList {
-  margin-top: 3%;
+  margin-top: 0.5%;
   padding-bottom: 1%;
   text-align: center;
 }
@@ -604,4 +623,22 @@ span.head-title {
     border-radius: 10px;
     transition:1s;
     float:left;
+}
+
+
+#btn-style>button.btn-active {
+    text-decoration:underline;
+    opacity: 0.5;
+}
+#CoverWrapper div.parallax {
+    display:none;
+}
+#CoverWrapper div.giuliaMarkup {
+    display:none;
+}
+#CoverWrapper div#ListeningWrapper {
+    display:none;
+}
+#ArticleBody div#Footerimg {
+    display:none;
 }
