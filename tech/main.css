@@ -669,13 +669,14 @@ border: none;
 .page-footer {
 border-top: 4px solid black;
 }
+
 .container-fluid, .container-lg, .container-md, .container-sm, .container-xl {
     width: 100%;
     padding-right: 0px; 
     padding-left: 0px; 
     margin-right: 0;
     margin-left: 0;
-        
+}       
 .pt-4, .py-4 {
     padding-top: 0rem!important;
 }
@@ -698,7 +699,7 @@ width:30%;
   .nav-tabs .nav-link  {
     border-top-left-radius: 0rem;
     border-top-right-radius: 0rem;
-        }
+ }
         
         
         
