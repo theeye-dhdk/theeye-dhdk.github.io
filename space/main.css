@@ -713,19 +713,11 @@ overflow:hidden;}
     border-top-right-radius: 0rem;
  }
 
+
+
+
+
 @media only screen and (max-width: 1200px) {
-#controlbar ul.breadcrumb .actualbreadcrumb {
-width:45%;
-}
-}
-
-@media only screen and (max-width: 1100px) {
-#controlbar ul.breadcrumb .actualbreadcrumb {
-width:30%;
-}
-}
-
-@media only screen and (max-width: 1000px) {
 
 #controlbar ul.breadcrumb .actualbreadcrumb {
 width:100%;
