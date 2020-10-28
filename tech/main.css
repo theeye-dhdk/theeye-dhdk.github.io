@@ -625,7 +625,8 @@ a#closebtn-2 {
   padding: 0;
   background-color: transparent;
   position: relative;
-    top: -4px;
+  top: -4px;
+  color:black;
 }
 
 #eyeStyle button img {
