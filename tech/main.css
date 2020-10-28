@@ -247,6 +247,7 @@ list-style-type: none;
     height: 0;
     padding: 0.3em;
     font-family: "hardingreg";
+    padding-top: 3;
 }
 
 .pagination-link {
@@ -683,6 +684,7 @@ border-top: 4px solid black;
 
 #controlbar ul.breadcrumb .actualbreadcrumb {
 width:30%;
+padding-top: 3;
 }
         
 #controlbar ul.breadcrumb .text-center {
@@ -700,6 +702,12 @@ width:30%;
     border-top-left-radius: 0rem;
     border-top-right-radius: 0rem;
  }
+
+@media only screen and (max-width: 00px) {
+  body {
+    background-color: lightblue;
+  }
+}
         
         
         
