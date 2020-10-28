@@ -557,10 +557,9 @@ font-family: 'faktpro';
 #file div.article  h2 #Notes {
 font-family: 'faktpro';
     text-transform: uppercase;
-    border-top: 1px solid black;
     font-size: 20px;
     text-align: left;
-    margin-top: 40px;
+    margin-top: 0px;
     padding-top: 10px;
     padding-bottom: 30px;
 }
