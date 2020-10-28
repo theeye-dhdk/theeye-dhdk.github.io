@@ -683,14 +683,14 @@ border-top: 4px solid black;
 }
 
 #controlbar ul.breadcrumb .actualbreadcrumb {
-width:30%;
+width:40%;
 padding-top: 3;
 }
         
 #controlbar ul.breadcrumb .text-center {
     text-align: center!important;
     font-family: "hardingreg";
-    width:50%;
+    width:40%;
 }
 
 
