@@ -154,7 +154,7 @@ transform: rotate(-4deg);
   font-size: 190%;
   left:-5%;
   font-style: bold; 
-  padding-top:5px; 
+  padding-top:0px; 
 }
 
 #IssueCover:after{
@@ -169,7 +169,7 @@ transform: rotate(-4deg);
   font-family:"battiato";
   font-size: 200%;
   left:-5%;
-   padding-top:5px; 
+   padding-top:0px; 
 }
 
 #IssueIndex {
