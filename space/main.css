@@ -719,6 +719,21 @@ width:30%;
 }
 }
 
+@media only screen and (max-width: 1000px) {
+
+#controlbar ul.breadcrumb .actualbreadcrumb {
+width:20%;
+}
+#controlbar ul.breadcrumb .text-center {
+    text-align: center!important;
+    font-family: "hardingreg";
+    width:50%;
+}
+#controlbar ul.breadcrumb #paginationLinks {
+    width: 30%;
+}
+}
+
 @media only screen and (max-width: 900px) {
 
 #controlbar ul.breadcrumb .actualbreadcrumb {
