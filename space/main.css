@@ -719,7 +719,7 @@ width:30%;
 }
 }
 
-@media only screen and (max-width: 800px) {
+@media only screen and (max-width: 900px) {
 
 #controlbar ul.breadcrumb .actualbreadcrumb {
 width:100%;
@@ -745,7 +745,8 @@ margin-left: 4px;
     text-align: center!important;
     font-family: "hardingreg";
     width:100%;
-    font-size: 10px;
+    ont-size: 15px;
+    overflow: scroll;
 }
 #controlbar ul.breadcrumb #paginationLinks {
     width: 80%;
