@@ -756,6 +756,9 @@ text-align: center;
     ul.breadcrumb {
     padding: 0px 0px;
 }
+#selector {
+    height: 100%;
+}
 }
         
         
