@@ -541,7 +541,7 @@ a#closebtn-2 {
   border-bottom:2px solid black;
 }
 #eyestyle .text-center {
-    float:right;
+    float:left;
     width:65%;
 }
 #eyeStyle .btn-group {
@@ -554,6 +554,7 @@ a#closebtn-2 {
 
 #eyeStyle #buttonList {
   margin-top: 0.5%;
+  padding-top:3;
   padding-bottom: 1%;
   text-align: center;
 }
