@@ -192,11 +192,9 @@ background-color: white;
 }
 
 #asideLeft {
-    margin-top:20%;
     margin-left: 0%;
     position: sticky;
     padding-left:1em;
-    padding-top:2em;
    
 }
 #asideRight {
