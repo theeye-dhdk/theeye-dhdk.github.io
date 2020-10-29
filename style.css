@@ -559,9 +559,7 @@ margin-top:50px;}
 #asideRight, #asideLeft {
   display:none;
 }
-#center {
-  margin: 5%;
-}
+
 .dropdown-menu {
     border-radius: 0px;
     border-bottom: none;
