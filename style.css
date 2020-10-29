@@ -20,6 +20,8 @@ html {
 body {
     font-family: 'Amiri', serif;
     padding-top: 50px;
+    overflow-x:hidden;
+    width:100%;
 }
 
 .navbarstyle { 
@@ -82,14 +84,27 @@ h1,h2 {
 }
 
 h4 {
+    font-weight: bold;
+    font-family: 'hardingreg', serif;
+    text-align: left;
+    margin-top: 35px;
+    margin-bottom: 15px;
+}
+h5 {
+	font-weight: bold;
+    font-family: 'hardingreg', serif;
+    text-align: left;
+    margin-top: 20px;
+    margin-bottom: 15px;
+}
+h3 {
 	font-weight: bold;
     font-family: 'hardingreg', serif;
     text-align: left;
 }
 
 
-h4:after
-{
+h4.documentationtitle:after {
     content:' ';
     display:block;
     border:1px solid black;
@@ -238,7 +253,7 @@ text-align: center;
     padding:0;}
     
 .containerstyle1 {
-/**margin-left:10%;**/
+margin-left:10%;
 }
 
 .containerstyle2 {
@@ -265,6 +280,10 @@ img {
 }
 #footer {
   background-color: #f2f2f2;
+  overflow: hidden;
+}
+#firstColumn, #secondColumn, #thirdColumn {
+  display: inline-block;
 }
 
 .page-footer ul {
@@ -272,6 +291,7 @@ list-style-type: none;
 }
 
 .page-footer {
+  position: absolute;
   bottom: 0;
   width: 100%;
   /* Set the fixed height of the footer here */
@@ -479,13 +499,36 @@ margin-top:50px;}
         margin-bottom: 15%;
     }
 }
-/* TEAM BLOCK--------------------------------------------------- */
+text-transform: none !important;
+font-family: 'Font Awesome 5 Free';
+font-weight: 900;
+			}
+.super-responsive-wrapper {
+  width: 100%;
+  margin: auto;
+}
+.board-wrapper > span {
+  margin: auto;
+  text-align: center;
+}
+.board-wrapper span {
+  overflow: hidden;
+  max-width: 100%!important;
+  border-radius: 0px; !important; 
+}
+.board-wrapper [class$=_button] {
+  display: none !important;
+}
+/* MEDIA QUERY--------------------------------------------------- */
 @media only screen and (max-width: 600px) {
 .sticky {
   position: static;
 }
 .container {
   margin-top: 10%;
+}
+#footer2 {
+  margin: 0%;
 }
 
 #asideRight, #asideLeft {
