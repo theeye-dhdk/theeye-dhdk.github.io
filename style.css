@@ -258,7 +258,7 @@ button.browse-btn{
 button.browse-btn:hover{
   color:black;
   background-color:fff;
-  text-decoration:underline;
+  border:1px solid #444;
 }
 
 .image {
