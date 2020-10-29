@@ -85,11 +85,25 @@ h4 {
 	font-weight: bold;
     font-family: 'hardingreg', serif;
     text-align: left;
+    margin-top: 35px;
+    margin-bottom: 15px;
+}
+h5 {
+	font-weight: bold;
+    font-family: 'hardingreg', serif;
+    text-align: left;
+    margin-top: 20px;
+    margin-bottom: 15px;
+}
+
+h3 {
+	font-weight: bold;
+    font-family: 'hardingreg', serif;
+    text-align: left;
 }
 
 
-h4:after
-{
+h4.documentationtitle:after {
     content:' ';
     display:block;
     border:1px solid black;
@@ -387,9 +401,9 @@ ul.docStyles > li >a:checked {
   color: #fff;
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 1000px) {
   .palette-grid {
-    grid-template-rows: auto 300px auto repeat(2, 240px) auto repeat(4, 200px);
+    grid-template-rows: 0px 130px 130px 130px 20px;
   }
 
   .palette--secondary-color, .palette--grays {
@@ -474,11 +488,33 @@ margin-top:50px;}
 .our-team .social-link li a:hover{
     color: #e143eb;
 }
+.super-responsive-wrapper {
+  width: 100%;
+  margin: auto;
+}
+
+.board-wrapper > span {
+  margin: auto;
+  text-align: center;
+
+}
+
+.board-wrapper span {
+  overflow: hidden;
+  max-width: 100%!important;
+  border-radius: 0px; !important; 
+}
+
+.board-wrapper [class$=_button] {
+  display: none !important;
+}
+
 @media screen and (max-width: 767px){
     .our-team{
         margin-bottom: 15%;
-    }
+    }	
 }
+
 /* TEAM BLOCK--------------------------------------------------- */
 @media only screen and (max-width: 600px) {
 .sticky {
