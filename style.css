@@ -509,7 +509,7 @@ margin-top:50px;}
 .board-wrapper span {
   overflow: hidden;
   max-width: 100%!important;
-  border-radius: 0px; !important; 
+  border-radius: 0px !important; 
 }
 .board-wrapper [class$=_button] {
   display: none !important;
