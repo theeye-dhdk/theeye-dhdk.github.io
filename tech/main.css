@@ -11,7 +11,7 @@ body {
 }
 
 .navbarstyle2 { 
-    border-bottom: 4px solid black;
+    border-bottom: 2px solid black;
     }
 .navbar-brand {
 margin-left:40px;
@@ -35,10 +35,13 @@ ul.breadcrumb {
     list-style: none;
     background-color: #eee;
     margin:0;
+    border-bottom:4px solid black
   }
   ul.breadcrumb li {
+    font-family: "hardingreg";
     display: inline;
     font-size: 18px;
+    color:#484848;
   }
   ul.breadcrumb li+li:before {
     padding: 8px;
@@ -46,9 +49,10 @@ ul.breadcrumb {
     content: "/\00a0";
   }
   ul.breadcrumb li a {
-    color: #0275d8;
     text-decoration: none;
+    color:grey;
   }
+
   ul.breadcrumb li a:hover {
     color: #01447e;
     text-decoration: underline;
@@ -140,6 +144,8 @@ list-style-type: none;
     overflow-y: scroll;
     overflow-x: hidden;
     padding-bottom:20px;
+    z-index:2000;
+    background-color:white;
 }
 
 #selector .list a {
@@ -227,8 +233,8 @@ list-style-type: none;
 }
 
 #paginationLinks {
-    background-color: #1611369c; /**#ccb168;**/
-    width: 100%;
+    width: 35%;
+    float:left;
     text-align: center;
     padding: 0.15em;
 }
@@ -242,17 +248,18 @@ list-style-type: none;
 }
 
 .pagination-link a {
-    color:#fff;
+    font-family: hardingreg;
+    color:#484848;
     width:100%;
     text-decoration: none;
     padding-left:0.3em;
     padding-right:0.3em;
     transition: 1s;
     cursor: pointer;
-    letter-spacing:1.5;
+    letter-spacing:1;
 }
 .pagination-link a:hover {
-    color:#d1cdd2;
+    color:black;
 }
 
 #paginationLinks:after {
@@ -260,7 +267,10 @@ list-style-type: none;
     clear: both;
     display: table;
   }
-
+#disclaimer-btn {
+    float:right;
+    padding-right: 15px;
+}
 /**#disclaimer {
     padding-right: 1%;
     padding-top: 1%;
@@ -374,10 +384,13 @@ ul.minimal {
 
 #fileWrapper {
     transition: margin-left .5s;
+
 }
 
 #file {
     padding-top:2em;
+    text-align:justify;
+    overflow:hidden;
 }
 
 .figure-wrapper, .table-wrapper {
@@ -474,48 +487,6 @@ a#closebtn-2 {
     padding-left: 5px;
 }
 
-.animate {
-    animation-name: bgcolor;
-    animation-duration: 1.50s;
-    animation-iteration-count: 3;
-    animation-fill-mode: backwards;
-}
-
-@keyframes bgcolor {
-    from {
-        background-color: #ffffff;
-    }
-
-    to {
-        background-color: greenyellow;
-    }
-}
-
-@media only screen and (max-width: 768px) {
-    #issueInfo {
-        top:0;
-        margin-left:0;
-        display:inline-block;
-        width:200px;
-        min-height: 150px;
-    }    
-    .sticky #metadataViewer {
-        padding-top:0px;
-    }
-    #closebtn-1 {
-        display:block;
-    }
-
-    #sticky-eye {
-        display:block;
-    }
-    
-    #fileWrapper {
-        /**margin-top: 60px;**/
-    }
-}
-
-
 #return-to-top {
     position: fixed;
     bottom: 20px;
@@ -564,17 +535,21 @@ a#closebtn-2 {
   position: -webkit-sticky;
   position: sticky;
   top: 0;
+  width:100%;
   background-color: white;
-  z-index:1000;
-  border-radius: 0px 0px 15px 15px;
-  border-bottom:1px solid #1611369c;
+  z-index:1500;
+  border-bottom:2px solid black;
 }
-
+#eyestyle .text-center {
+    float:right;
+    width:65%;
+}
 #eyeStyle .btn-group {
     margin: 0 auto; 
     text-align: center;
     width: inherit;
     display: inline-block;
+    font-size:0.9em;
 }
 
 #eyeStyle #buttonList {
@@ -589,14 +564,13 @@ a#closebtn-2 {
 
 #eyeStyle button {
   font-family: "hardingreg";
+  color:grey;
   font-size: 1em;
   border: none;
   background-color: transparent;
 }
 
-#eyeStyle button:hover {
-  opacity: 0.5;
-}
+
 
 #eyeStyle button:focus {
   outline: none;
@@ -642,3 +616,51 @@ a#closebtn-2 {
 #ArticleBody div#Footerimg {
     display:none;
 }
+.animate {
+    animation-name: bgcolor;
+    animation-duration: 1.50s;
+    animation-iteration-count: 3;
+    animation-fill-mode: backwards;
+}
+
+@keyframes bgcolor {
+    from {
+        background-color: #ffffff;
+    }
+
+    to {
+        background-color: greenyellow;
+    }
+}
+
+@media only screen and (max-width: 768px) {
+    #issueInfo {
+        top:0;
+        margin-left:0;
+        display:inline-block;
+        width:200px;
+        min-height: 150px;
+    }    
+    .sticky #metadataViewer {
+        padding-top:0px;
+    }
+    #closebtn-1 {
+        display:block;
+    }
+
+    #sticky-eye {
+        display:block;
+    }
+    
+    #fileWrapper {
+        /**margin-top: 60px;**/
+    }
+    #eyeStyle .text-center {
+        width:100%;
+    }
+    #eyeStyle #paginationLinks {
+        width:100%;
+    }
+}
+
+
