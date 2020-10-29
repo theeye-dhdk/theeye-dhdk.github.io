@@ -541,7 +541,7 @@ a#closebtn-2 {
   border-bottom:2px solid black;
 }
 #eyestyle .text-center {
-    float:left;
+    float:right;
     width:65%;
 }
 #eyeStyle .btn-group {
