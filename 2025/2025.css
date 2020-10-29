@@ -46,6 +46,18 @@ height: 100%;
 margin: 0;
 padding: 0;
 }
+ #fileWrapper {
+height: 100%;
+margin: 0;
+padding: 0;
+}
+
+img[src=""] {
+    display: none;
+} 
+
+
+
 
 /* ----------------------------------------------------- ARTICLE --------------------------------------------------------------- */ 
 /* ----------------------------------------------------- ARTICLE --------------------------------------------------------------- */ 
@@ -80,8 +92,11 @@ padding: 0;
 position:relative;
 margin-left:none;
 margin-right:none;
+height:650;
 }
-
+ #file div.article div.cover a {
+color:white;
+}
  #file div.article #CoverWrapper:after {
   content: " ";
   display: block;
@@ -166,7 +181,7 @@ display:none;
  #file div.article div.title  h1{
 width:70%;
 color:white;
-font-size:95px;
+font-size:80px;
 font-family:'eksell';
 font-weight:normal;
 letter-spacing: 4px;
@@ -278,7 +293,6 @@ width:100%;
 background-color: white;
 position: relative;
 z-index: 0;
-margin-bottom: calc(-100vh + 6px);
 }
 
 
@@ -287,7 +301,7 @@ margin-bottom: calc(-100vh + 6px);
     content: "";
     display: block;
     background: linear-gradient(to right top, #ebfb4d 0%, #ffc3de 22%, #76adff 50%, white 50%);
-    height: calc(100% - 100vh + 10px);
+    height: calc(100% - 100vh + 80px);
     width: 100%;
     position: absolute;
     top: 0;
@@ -300,7 +314,7 @@ margin-bottom: calc(-100vh + 6px);
     display: block;
     background: white;
     background-color:white;
-    height: calc(100vh - 10px);
+    height: calc(100vh - 70px);
     width: 100%;
     position: -webkit-sticky;
     position: sticky;
@@ -443,7 +457,7 @@ padding-bottom:2%;
 
  #file div.article blockquote {
 display: inline-block;
-width: 92%;
+width: 100%;
 line-height 50%;
 color:white;
 text-align: center;
@@ -462,6 +476,10 @@ margin-right: 0px;
 margin-left: 0px;
 }
 
+#file div.article blockquote a{
+color:white;
+}
+
  #file div.article blockquote:after {
 display:block;
 content: " — Quote —";
@@ -476,10 +494,14 @@ font-size:90%;
 width:70%;
 margin-left:15%;
 margin-right:15%;
+margin-top:100px;
 z-index: 0;
 margin-bottom:20px;
 position:relative;
 border-top: 1px solid black;
+}
+ #file div.article div.foot a {
+color:black;
 }
 
  #file div.article .bio {
@@ -520,7 +542,27 @@ border-top: 1px solid black;
   #file div.article .bio + #References {
 border-top: none;
 }
+ 
+#file div.article  h2 #References {
+font-family: 'faktpro';
+    text-transform: uppercase;
+    border-top: 1px solid black;
+    font-size: 20px;
+    text-align: left;
+    margin-top: 40px;
+    padding-top: 10px;
+    padding-bottom: 30px;
+}
 
+#file div.article  h2 #Notes {
+font-family: 'faktpro';
+    text-transform: uppercase;
+    font-size: 20px;
+    text-align: left;
+    margin-top: 0px;
+    padding-top: 10px;
+    padding-bottom: 30px;
+}
 
 #file div.article  div.content table {
   width: 80%;
@@ -876,9 +918,7 @@ margin-left:7%;
 /* ----------------------------------------------------- COVER ----------------------------------------------------------------- */ 
 /* ----------------------------------------------------- COVER ----------------------------------------------------------------- */
 
-img[src=""] {
-    display: none;
-} 
+
 
 #IssueCover {
 width:100%;
@@ -958,7 +998,7 @@ margin-bottom:10%;
 width:30%;
 float:right; 
 position:relative;
-right:0%;
+right: 5%;
 padding:0;
 margin-bottom:10%;
     }
@@ -968,7 +1008,7 @@ margin-bottom:10%;
 #IssueCover div.ArticleInfo:nth-child(1) .articleImg {
 display:block;
 width:50%;
-height:80%;
+height:600px;
 bottom:30%;
 margin-top:40px;
 border-top-right-radius: 5000px;
@@ -978,7 +1018,9 @@ margin-right:25%;
  filter: blur(2px);
   -webkit-filter: blur(2px);
 }
-
+#IssueCover div.ArticleInfo:nth-child(1) .articleImg[src=""] {
+    display: none;
+} 
 
 
 #IssueCover div.ArticleInfo:nth-child(2) .articleImg,
@@ -1085,17 +1127,21 @@ font-size:120%;
  
 #IssueCover div.ArticleInfo:nth-child(1) .coverLabel a {
 color:white;
+text-decoration:underline;
 }
 
 #IssueCover div.ArticleInfo:nth-child(2) .coverLabel a{
 color:white;
+text-decoration:underline;	
 }
 #IssueCover div.ArticleInfo:nth-child(3) .coverLabel a{
 color:white;
+text-decoration:underline;	
 }
 
 #IssueCover div.ArticleInfo:nth-child(4) .coverLabel a {
 color:white;
+text-decoration:underline;	
 }
 
 
@@ -1286,7 +1332,7 @@ display: block;
     background-size:100%;
     position:absolute;
     left:50%;
-    top:800%;
+    top:600%;
     margin-left:-80px;
     z-index:4;
 }
@@ -1694,7 +1740,7 @@ margin-bottom: calc(-100vh + 6px);
     display: block;
     background: white;
     background-color:white;
-    height: calc(100vh - 10px);
+    height: calc(100vh - 80px);
     width: 100%;
     position: -webkit-sticky;
     position: sticky;

@@ -5,9 +5,6 @@
 	  <link rel="schema.DCTERMS" href="http://purl.org/dc/terms/" />
         <!--Stylesheet link --> 
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-    <script type="text/javascript" src="../2040/2040.js"></script>
     
     <meta name="DC.title" lang="en" content="‘Parkrun saved my life’: how the weekly runs became a phenomenon – and are now coming back" />
 	  <meta name="DC.creator" content="Sam Wollaston" />
@@ -45,15 +42,23 @@
         <div class="coverinfo">
           <p class="byline">By <span class="person">Sam Wollaston</span></p>
           <p class="publicationDate">2020-09-13 14:00 BST</p>
-          <div id="readingTime"></div> <!-- aggiungere -->
-          <div id="listeningTime"></div>
-          <div id="icons"> <!--aggiungere -->
-            <i id="reading" class="fa fa-file-text-o" aria-hidden="true" style="font-size: 200%; padding:10%;" ;></i> 
-            <i id="listening" class="fa fa-microphone" aria-hidden="true" style="font-size: 200%;  padding:10%;";></i>
-          </div>
         </div> 
-      </div>           
-    
+        <!-- 2040 markup -->
+        <div class="GiuliaMarkup">
+          <div id="readingTime"></div>
+          <div id="listeningTime"></div>
+          <div id="icons">
+              <i id="listening" class="fa fa-microphone" aria-hidden="true"></i>
+          </div>
+          <div id="ListeningWrapper">
+              <div id="audiobox">
+                  <i class="fa fa-play" id ="play-btn" aria-hidden="true"></i>
+                  <i class="fa fa-pause" id ="pause-btn" aria-hidden="true"></i>
+              </div>
+          </div>
+        </div>  
+      </div>         
+      
       <div id="ContentWrapper" class="content">
       
               
@@ -97,8 +102,9 @@
         <p>Good news: <span class="concept">parkrun</span> <a href="https://www.bbc.com/sport/athletics/54062818">is coming back, soon</a>. By the end of October in <span class="place">England</span>, even with the new six-person rule. Preparations have been made, with a new framework that aims to maintain distancing, encourage sanitising and so on. Start lines and finishes can be enlarged; the post-run coffee may have to go. After discussions with the <span class="event">Department for Digital</span>, <span class="event">Culture</span>, <span class="event">Media and Sport</span>, <span class="event">Sport England</span> and <span class="event">Public Health England</span>, they’ve got the green light. <span class="place">Scotland</span>, <span class="place">Wales</span> and <span class="place">Northern Ireland</span> are works in progress. If your local parkrun is in – or you can travel to – one of three parks in the <span class="place">Northern Territory of Australia</span> or the <span class="place">Falkland Islands</span>, you can start sooner still, on <span class="datetime">19 September</span>. Perhaps you’re doing the alphabet challenge and haven’t got very far, just Ally Pally in <span class="place">London</span> and <span class="place">Bressay</span> in <span class="place">Shetland</span>. Why not make the next one <a href="https://www.parkrun.org.uk/capepembrokelighthouse/">Cape Pembroke Lighthouse parkrun</a> outside <span class="place">Port Stanley</span>?</p>
         <p><span class="concept">Parkrun</span>’s founder is ready for the return. “I know enough about troubled times to know that when you’re going through a rough patch you need to keep hold of the things that really matter,” <span class="person">Sinton-Hewitt</span> says. “I am so proud of what it has become; I am proud that, over the years, average finishing times have been getting slower and slower, proving that we are engaging those who might be taking their first tentative steps into physical activity. And they are so welcome.”</p>
         
-        <div id="Footerimg"><img src="../2040/img/sust_3.png" class="footerimg"></div> <!-- aggiungere -->
       </div>
+      <div id="Footerimg"><img src="../2040/img/sust_3.png" class="footerimg"></div> <!-- aggiungere -->
     </div>
+    <script type="text/javascript" id ="ArticleScript" src='../2040/2040_2.js'></script>
   </body>  
 </html> 

@@ -34,6 +34,7 @@ ul.breadcrumb {
     padding: 10px 16px;
     list-style: none;
     background-color: #eee;
+    margin:0;
   }
   ul.breadcrumb li {
     display: inline;
@@ -229,8 +230,7 @@ list-style-type: none;
     background-color: #1611369c; /**#ccb168;**/
     width: 100%;
     text-align: center;
-    height: 45px;
-    padding: 0.3em;
+    padding: 0.15em;
 }
 
 .pagination-link {
@@ -578,7 +578,7 @@ a#closebtn-2 {
 }
 
 #eyeStyle #buttonList {
-  margin-top: 3%;
+  margin-top: 0.5%;
   padding-bottom: 1%;
   text-align: center;
 }
@@ -623,4 +623,22 @@ a#closebtn-2 {
     border-radius: 10px;
     transition:1s;
     float:left;
+}
+
+
+#btn-style>button.btn-active {
+    text-decoration:underline;
+    opacity: 0.5;
+}
+#CoverWrapper div.parallax {
+    display:none;
+}
+#CoverWrapper div.giuliaMarkup {
+    display:none;
+}
+#CoverWrapper div#ListeningWrapper {
+    display:none;
+}
+#ArticleBody div#Footerimg {
+    display:none;
 }

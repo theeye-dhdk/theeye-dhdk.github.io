@@ -138,6 +138,12 @@
 	text-decoration: none;
 }
 
+#file caption{
+	color:inherit;
+}
+#file h4:after {
+    display:none;
+}
 #CoverWrapper {
 	font-family: myHultog;
 	text-transform: uppercase;
@@ -146,18 +152,35 @@
 	font-size: 22pt;
 	padding-bottom: 88px;
 }
+#CoverWrapper div.maincover {
+	display:flex;
+	flex-direction: column;
+}
+
+#CoverWrapper div.maincover>div.coverpic {
+	order:2
+}
+
+#CoverWrapper div.maincover>div.title {
+	order:1
+}
+#CoverWrapper div.maincover>div.coverinfo {
+	order:3
+}
+
 #CoverWrapper figcaption {
 	font-family: myHultogCoursive;
 	text-transform: capitalize;
 }
 #FootWrapper, #file .myPubnote {
-	padding-left: 88px;
-	padding-right: 88px;
+	padding-left: 1.7em;
+	padding-right: 1.7em;
 	font-family: myHultogCoursive;
 	font-size:13pt;
-	padding-bottom:52px;
 }
-
+#FootWrapper p, #file .myPubnote p {
+	text-indent:1em;
+}
 #file .label {
 	font-family: myHultogCoursive;
 	text-transform: uppercase;
@@ -250,11 +273,7 @@
 		padding-right: 200px;
 		padding-bottom: 340px;
 	}
-	#file .myPubnote, #file #FootWrapper {
-		padding-left:118px;
-		padding-right:118px;
-		padding-bottom: 69px;
-	}
+
 	#CoverWrapper {
 		padding-bottom: 118px;
 	}
@@ -300,11 +319,7 @@
 		padding-right: 6px;
 	}
 
-	#file #FootWrapper, #file .myPubnote {
-		padding-left: 59px;
-		padding-right: 59px;
-		padding-bottom: 35px;
-	}
+
 	#file th, #file td {
 		padding:7px;
 	}
@@ -327,11 +342,7 @@
 	#CoverWrapper {
 		padding-bottom: 35px;
 	}
-	#file #FootWrapper, #file .myPubnote {
-		padding-left: 35px;
-		padding-right: 35px;
-		padding-bottom: 21px;
-	}
+
 	#disclaimer {
 		padding:1em;
 	}

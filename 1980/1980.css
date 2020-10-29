@@ -88,7 +88,7 @@ transform: rotate(-4deg);
 transform-origin: top left;
 position: absolute;
 left:-5%;
-top: 95px;
+top: 130px;
 color: white;
 text-shadow:
    -1.5px -1.5px 0 #000,  
@@ -116,7 +116,7 @@ padding:0;
 #IssueCover .IssueBibliographicCitation:before{
   content: "";
   background-image:url("../1980/img/Eye80s2.png");
-  background-size: 100%;
+  background-size: 85%;
   background-repeat: no-repeat;
   background-color:none;
   display: block;
@@ -154,7 +154,7 @@ transform: rotate(-4deg);
   font-size: 190%;
   left:-5%;
   font-style: bold; 
-  padding-top:5px; 
+  padding-top:0px; 
 }
 
 #IssueCover:after{
@@ -169,7 +169,7 @@ transform: rotate(-4deg);
   font-family:"battiato";
   font-size: 200%;
   left:-5%;
-   padding-top:5px; 
+   padding-top:0px; 
 }
 
 #IssueIndex {
@@ -302,7 +302,7 @@ margin-top:150px;
 #IssueCover div.ArticleInfo:nth-child(1) .coverLabel {
 display:inline-block; 
 font-family:"steelfish";
-font-size: 100%;
+font-size: 140%;
 text-transform: uppercase;
 max-width:80%;
 padding:5px;
@@ -363,7 +363,7 @@ margin-left:15px;
 #IssueCover div.ArticleInfo:nth-child(1) .coverAuthor,
 #IssueCover div.ArticleInfo:nth-child(1) .coverIssued {
 font-family:"steelfish";
-font-size: 100%;
+font-size: 160%;
 text-transform: uppercase;
 width:40%;
 text-align: right;
@@ -879,7 +879,7 @@ overflow-wrap: break-word;
 }
 
 #file div.article  div.cover h1 {
-  font-size:400%;
+  font-size:300%;
   font-family: 'futura'; 
   color: #1fa6c4;
   text-transform: uppercase;
@@ -906,6 +906,7 @@ display:none;
   margin-right: 50px;
   margin-left: 50px;
   padding-bottom: 10px;
+  margin-bottom: 40px;
  }
 
 
@@ -1088,18 +1089,23 @@ font-family:"itcgaramond2";
 letter-spacing: 0.1em;
 }
 
-#file div.article  div.content h1,
+#file div.article  div.content h1{
+border-bottom:18px solid #e46968;
+}
 #file div.article  div.content h2 {
 border-bottom:18px solid #e46968;
+font-size: 25px;
+text-align: left;	
 }
 
 #file div.article  div.content a {
 color: black;
 text-decoration: none;
-border-bottom: 2px solid black;
+border-bottom: none;
+ont-weight: 900;	
 }
 #file div.article  .pubnote a {
-color: whitw;
+color: white;
 text-decoration: none;
 border-bottom: none;
 }
@@ -1375,6 +1381,11 @@ border-right: 7px solid #b0cbc0;
 
 #file div.article  div.content table caption p{
 font-size: 120%;
+}
+
+#file div.article  div.content table caption {
+padding-left: 20px;
+color: black;
 }
 
 #file div.article  div.content p.footnote {
