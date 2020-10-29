@@ -103,7 +103,11 @@
 }
 
 #file .publicationDate, .pubnote {
-	text-transform: uppercase;
+	font-size: 0.8em;
+    text-transform: uppercase;
+    text-align: right;
+    margin: 5%;
+    line-height: 1em;
 }
 
 #file #ArticleBody h2 {
@@ -291,11 +295,11 @@
 
 #file blockquote {
 	font-style: oblique;
-    font-size: 1.5em;
-    margin: 2%;
+    font-size: 1.3em;
+    margin: 5%;
     border-top: solid 2px red;
     border-bottom: solid 2px red;
-    column-span: all;
+    text-align: center;
 }
 
 /** COVER FEATURES **/
