@@ -21,10 +21,7 @@
 
 #file #ArticleBody {
 		/** container **/
-	margin-top: 3rem;
-	margin-bottom: 3rem;
-	margin-right: 3rem;
-	margin-left: 3rem;
+	margin: 3rem;
 		/** end of the container **/
 	font-family: 'Source Serif Pro', serif !important;
 	font-weight: 550 !important;
@@ -37,25 +34,24 @@
 }
 
 #file #CoverWrapper {
-	font-family: 'Questrial', sans-serif !important;
-	margin-bottom: 3%;
-	column-span:all;
+    font-family: 'Questrial', sans-serif !important;
+    margin-bottom: 3%;
+    column-span: all;
+    overflow-x: hidden;
+    word-break: break-word;
 }
 
 #file #CoverWrapper .coverpic {
-	width: 70%;
-	float: right;
-	margin-top: -7%;
-	margin-right: -4%;
+    width: 70%;
+    height: 70%;
+    float: right;
+    margin-top: -7%;
+    margin-right: -7%;
 }
 
 #file .title {
-	margin-right: 4%;
-	margin-bottom: 2%;
-	vertical-align: bottom;
-	width: 40%;
-	float:none; 						/** Togliere dopo aver verificato che funzionino con il js **/
-	width: 100%;
+    float: none;
+    width: 100%;
 }
 
 #file .titlenoimage {
@@ -64,21 +60,25 @@
 }
 
 #file .subtitle {
-	font-family: 'Cambo', serif;
-	font-style: oblique;
-	text-align:right;
-	width: 50%;
+	font-family: 'Questrial', sans-serif;
+    font-size: 1.3em;
+    text-align: left;
+    margin-bottom: 2%;
+    width: 60%;
 }
 
 #file #ArticleBody h1 {
 	font-family: 'Questrial', sans-serif !important;
-	font-weight: 200 !important;
-	letter-spacing: 0.002em;
-	text-transform: lowercase;
-	font-size: 3.8em;
-	line-height: 0.8em;
-	text-align:right;
-	margin-top: 1em;
+    font-weight: 200 !important;
+    letter-spacing: 0.002em;
+    text-transform: lowercase;
+    font-size: 3em;
+    line-height: 0.9em;
+    text-align: right;
+    margin-top: 1em;
+    margin-bottom: 0.7em;
+    overflow: hidden;
+    word-break: break-word;
 }
 
 #file span#title_word {
@@ -90,23 +90,20 @@
 }
 
 #file .coverinfo {
-	margin-bottom: 5%;
+	font-weight: bold;
+    margin-left: 5%;
+    margin-bottom: 5%;
+    text-align: left;
 }
 
 #file .cover .byline {
-	font-family: 'Cambo', serif;
-	font-size: 130%;
-	margin-left: 10%;
-	color: #e60000;
-}
-
-#file .coverinfo {
-	font-weight: bold;
-	margin-left: 10%;
+    font-family: 'Cambo', serif;
+    font-size: 130%;
+    color: #e60000;
 }
 
 #file .publicationDate, .pubnote {
-	margin-left: 10%;
+	text-transform: uppercase;
 }
 
 #file #ArticleBody h2 {
@@ -211,7 +208,7 @@
 	font-weight: bold;
 }
 
-#file #Articlebody table {
+#file #ArticleBody table {
 	font-family: 'Questrial', sans-serif;
 	border: 2px solid #b3b3b3;
 	width:100%;
@@ -258,17 +255,14 @@
 }
 
 #file .bio {
-	font-size: 0.9em;
-	font-style:oblique;
-}
-
-#file .bio::before, .bio::after {
-    display: inline-block;
-    content: "";
-    border-top: .3rem solid black;
-    width: 4rem;
-    margin: 0 1rem;
-    transform: translateY(-1rem);
+	font-size: 0.8em;
+    font-style: oblique;
+    text-align: center;
+    border-top: solid 1px black;
+    border-bottom: solid 1px black;
+    padding: 2%;
+    margin: 2%;
+    margin-top: 6%;
 }
 
 #file #References {
@@ -295,6 +289,14 @@
 	font-weight: 200;
 }
 
+#file blockquote {
+	font-style: oblique;
+    font-size: 1.5em;
+    margin: 2%;
+    border-top: solid 2px red;
+    border-bottom: solid 2px red;
+    column-span: all;
+}
 
 /** COVER FEATURES **/
 #IssueCover {
@@ -351,7 +353,7 @@
 #file .ArticleInfo .coverLabel a {
 	color: white;
 	font-family: 'Barlow Semi Condensed', sans-serif !important;
-	font-weight: 400 !important;
+	font-weight: 700 !important;
 	font-size: 3.7vmax;
 	line-height: 0.8em;
 	text-decoration: none;
@@ -376,41 +378,12 @@
 	font-size: 1.5vmax;
 }
 
+
+
 #IssueCover img {
 	display:none;
 }
 
-@media only screen and (max-width:780px) {
-#ArticleBody {
-    column-count: 2;
-  }
-.title, .subtitle, .coverpic {
-	width:100%;
-	column-span: all;
-  }
-.coverimg img{
-	max-width:100%;
-	max-height: 100%
-}
-}
-
-@media only screen and (max-width: 600px) {
-#ArticleBody {
-    column-count: 1;										/** Non funziona! **/
-  }
-
-.title, .subtitle, .coverpic {
-	width:100%;
-	column-span: all;
-  }
-.coverpic img{
-	max-width:100%;
-	max-height: 100%
-  }
-#Abstract {
-	margin-top: 0%;
-}
-}
 
 /** DISCLAIMER **/
 #file #disclaimer {
@@ -441,13 +414,14 @@
 }
 
 #disclaimer::before {
-	content: "disclaimer";
-	font-size: 6vmax;
-	font-weight: 100 !important;
-	letter-spacing: 2%;
-	color:red;
-	text-transform: uppercase;
-	text-align: center;
+    content: "disclaimer";
+    font-size: 5vmax;
+    font-weight: 100 !important;
+    letter-spacing: 2.2vmin;
+    color: red;
+    text-transform: uppercase;
+    overflow-x: hidden;
+    word-break: break-word;
 }
 
 #disclaimerText a {
@@ -455,4 +429,39 @@
 	font-weight: 700 !important;
 	font-size: 120%;
 	overflow-wrap: break-word;
+}
+
+
+
+@media only screen and (max-width:780px) {
+#ArticleBody {
+    column-count: 2;
+  }
+.title, .subtitle, .coverpic {
+	width:100%;
+	column-span: all;
+  }
+.coverimg img{
+	max-width:100%;
+	max-height: 100%
+}
+}
+
+@media screen and (max-width: 600px) {
+#file #ArticleBody {
+    column-count: 1;										/** Non funziona! **/
+  }
+
+#file .title, .subtitle, .coverpic {
+	width:100%;
+	column-span: all;
+  }
+
+#file .coverpic img{
+	max-width:100%;
+	max-height: 100%
+  }
+#file #Abstract {
+	margin-top: 0%;
+}
 }

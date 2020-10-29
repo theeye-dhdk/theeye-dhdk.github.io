@@ -424,6 +424,8 @@
 	text-align: right;
 	transform: rotate(27deg);
 	border-left: solid 15px black;
+	overflow-x: hidden;
+    word-break: break-word;
 }
 
 #disclaimerText:first-letter {
@@ -453,4 +455,6 @@
     margin-top: 15%;
     margin-left: 55%;
     border: solid 5px red; 
+    overflow-x: hidden;
+    word-break: break-word;
 }
