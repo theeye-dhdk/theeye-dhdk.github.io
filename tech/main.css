@@ -33,6 +33,10 @@ margin-left: 6%;}
         width:65%;
         float:left;
 }
+.breadcrumb_nav {
+        width:65%;
+        float:left;
+}
 ul.breadcrumb {
     padding: 10px 16px;
     list-style: none;
@@ -247,7 +251,6 @@ list-style-type: none;
     width: 20%;
     cursor: pointer; /* Pointer/hand icon */
     float: left;
-    margin-top: -0.6%;
     padding-top: 6;
 }
 
