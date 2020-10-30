@@ -246,7 +246,7 @@ width: 100%;
 }
 .container {
     width: 100%;
-    padding: 1em;
+    padding: 1em!important;
 }
 }
 
