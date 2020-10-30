@@ -134,7 +134,6 @@ list-style-type: none;
     margin:0%;
 }
 #footer2 {
-    border-bottom: 4px solid black;
     margin:0%;
     }
 
@@ -549,6 +548,7 @@ a#closebtn-2 {
 }
 #eyestyle .text-center {
     width:100%;
+        border-top:2px solid black;
         float:left;
 }
 #eyeStyle .btn-group {
