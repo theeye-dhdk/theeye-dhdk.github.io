@@ -36,7 +36,7 @@
 
 #file #ArticleBody {
 	color: #000000;
-    min-height:100% !important;
+    	min-height:100% !important;
 	padding-top: 50px;
 	padding-bottom: 320px;
 	font-size: 12pt;
@@ -74,20 +74,20 @@
 	text-transform: uppercase;
 	text-align: center ;
 	font-family: mySeagram;
-    font-size: 32pt;
+    	font-size: 32pt;
 	letter-spacing: 6px;
 	column-span: all;
 }
 
-/* #file p.subtitle {
+#file p.subtitle {
 	color: #dbe3cb;
-	font-family: 'NightStillComes';
+	font-family: mySeagram;
 	font-size: 20pt;
 	text-align: center;
 	margin-left: 10%;
 	margin-right: 10%;
 	line-height: 1.2;
-}*/ 
+}
 
 #file #ArticleBody h2 {
 	letter-spacing: 10px;
@@ -99,6 +99,7 @@
 	padding-top: 20px;
 	padding-bottom: 20px;
 	color: darkred;
+	column-span: all;
 }
 
 #file #ArticleBody h3, #ArticleBody h4, #ArticleBody h5 {
@@ -111,66 +112,48 @@
 	padding-bottom: 10px;
 	line-height: 1.5;
 	color: darkred;
+	column-span: all;
 }
-/* #file #ContentWrapper blockquote {
-	font-family: 'Saudagar';
-	background-color: #6c7c73;
-	display: block;
-	max-width: 100%;
-	margin: 0%;
-	color: #dbe3cb;
-	font-size: 50pt;
-	text-decoration: solid;
-	text-align: center;
-	padding-bottom: 5%;
-	padding-top: 5%;
+
+#file #ContentWrapper blockquote {
+	font-family: mySeagram;
+	background-color: black;
 } 
 
 #file a:link {
-	color: #a4b49c;
+	color: black;
 	background-color: transparent;
 	text-decoration: none;
 }
   
 #file a:visited {
-	color:#a4b49c;
+	color: black;
 	background-color: transparent;
 	text-decoration: none;
 }
   
 #file a:hover {
-	color: #a4b49c;
+	color: black;
 	background-color: transparent;
 	text-decoration: underline;
 }
   
 #file a:active {
-	color: #a4b49c;
+	color: black;
 	background-color: transparent;
 	text-decoration: underline;
 }
 
 #file #icons img {
-	display:inline-block;
-	width:100px;
-	padding:5%;
+	display:none;
 }
-
-#file #icons img:hover {
-	opacity:0.5;
-}
-
-#file #icons img:active {
-	border: solid 1px #dbe3cb;
-} */
 
 #file #CoverWrapper {
-	font-family: mySquac !important;
+	font-family: mySeagram !important;
 	text-transform: uppercase;
 	text-align: center;
 	line-height: 1;
 	font-size: 27pt;
-	font-family:  mySquac ;
 	padding-bottom: 110px;
 	column-span: all;
 }
@@ -188,16 +171,16 @@
 }
 
 #file #Articlebody img {
-    max-width: 100%;
-    max-height: 100%;
+    	max-width: 100%;
+    	max-height: 100%;
 	display: block;
-    margin-left: auto;
-    margin-right: auto;
+   	margin-left: auto;
+    	margin-right: auto;
 	filter: sepia(1);
 	-webkit-filter: sepia(1);
 	border:2px solid;
 	margin-top: 15px;
-    margin-bottom: 15px;
+    	margin-bottom: 15px;
 }
 
 #file #Articlebody p.pubnote {
@@ -234,25 +217,26 @@
 	font-size: 10pt;
 	text-align: center;
 	line-height: 1.5;
-    padding: 5px;
+    	padding: 5px;
 }
 
 #file #Articlebody figcaption .num {
-	font-size: 15pt;
+	font-size: 12pt;
 	text-align: center;
 	line-height: 1;
-    padding: 5px;
+    	padding: 5px;
 }
 
 /* table */ 
-#file #Articlebody th {border: 1px solid black; 
+#file #Articlebody th {
+	border: 1px solid black; 
 	font-size: 15pt;
 	text-transform: uppercase;
 	padding: 10px;
-
 }
 
-#file #Articlebody td {border: 1px solid black;
+#file #Articlebody td {
+	border: 1px solid black;
 	padding: 10px;
 }
 
@@ -271,23 +255,138 @@
 	border-spacing: 1px;
 	border-collapse: separate;
 }
-/*#file #FootWrapper {
-	color:#dbe3cb;
-	font-family: 'RobotoLight';
-	background-color: #6c7c73;
-	font-size: 13pt;
+#file #FootWrapper {
+	color: black;
+	font-family: mySeagram;
+	font-size: 12pt;
 	text-align: left;
-	line-height: 1.7;
+	line-height: 1.5;
 	padding-top: 5%;
 	padding-bottom: 5%;
 	padding-right: 5%;
 	padding-left: 5%;
 }
 #file .footerimg {
-	background-image: url("img/sust_3.png");
-	max-width: 100%;
-    height: auto;
-	background-attachment: fixed;
-    background-position: center;
-    background-repeat: no-repeat;
-}*/
+	display: none;
+}
+/*ISSUECOVER*/
+#IssueCover {
+	background-image: url("img/Eye_1.png"), url("img/bordertrasp2.png"), url("img/oldpaper_texture.png") ;
+	background-repeat: no-repeat, no-repeat, repeat;
+	background-position: 48% 6%, top left, center;
+	background-size: 36% 15%, 100% 100%, 100% 100%;
+	width: 100%;
+}
+#file #IssueCover h1 {
+	color: darkred;
+	font-family: mySeagram;
+	font-size: 35pt;
+	text-align: center;
+	margin-right: 5%;
+	margin-left: 5%;
+	padding-top: 55%;
+	line-height: 1pt;
+}
+#file .IssueBibliographicCitation {
+	color: black;
+	font-family: mySeagram;
+	font-size: 15pt;
+	text-align: center;
+}
+#IssueIndex .ArticleInfo {
+	color: black;
+	font-family: mySeagram;
+	font-size: 12pt;
+	text-align: justify;
+	margin-left: 10%;
+	margin-right: auto;
+	margin-bottom: 30%;
+	
+}
+#IssueIndex {
+	column-count: 2;
+	column-gap: 3%;
+	column-fill: balance;
+	padding: 3%;
+	margin-left:10%;
+	margin-right: 10%;
+	padding-bottom: 200px;
+	word-wrap: normal;
+	line-height: 1;
+}
+#IssueCover > h1:first-of-type::first-letter {
+	font-family: MiddleAges;
+	font-size: 70pt;
+	color: darkred;
+}
+#IssueIndex > .ArticleInfo::first-letter {
+	font-family: myCaps;
+	color: darkgreen;
+	font-size: 60pt;
+}
+
+/* responsive img*/
+@media screen and (max-width: 992px) {
+	#ContentWrapper figure img {
+	  width:480px;
+	  height:296px;
+	}
+	#ContentWrapper figure img:hover {
+		width: 520px;
+		height: 336px;
+	}
+	#file #ArticleBody h1 {
+		font-size: 32pt;
+	}
+	#file #ArticleBody h3, #ArticleBody h4, #ArticleBody h5 {
+		font-size: 20pt
+	}
+	#file #IssueCover h1 {
+		font-size: 35pt;
+	}
+}
+  
+  /* On screens that are 600px or less, set the background color to olive */
+@media screen and (max-width: 900px) {
+	#ContentWrapper figure img {
+		width:360px;
+		height: 222px;
+	  }
+	#ContentWrapper figure img:hover {
+		width: 390px;
+		height: 252px;
+	}
+	#file #ArticleBody h1 {
+		font-size: 20pt;
+	}
+	#file #ArticleBody h3, #ArticleBody h4, #ArticleBody h5 {
+		font-size: 14pt
+	}
+	#file #IssueCover h1 {
+		font-size: 20pt;
+	}
+  }
+
+/*DISCLAIMER*/
+#file #disclaimer {
+	background-image: url("img/cornicetrasp2.png"), url("img/oldpaper_texture.png") ;
+	background-repeat: repeat-x, repeat;
+	background-position: top left, center;
+	background-size: 100% 100%, 100% 100%;
+	width:100%;
+}
+
+#file #disclaimerText {
+	color: black;
+	font-family: mySeagram;
+	font-size: 12pt;
+	text-align: justify;
+	line-height: 1;
+	padding: 20%;
+	margin-top: 20%;
+	margin-right: 5%;
+	margin-left: 5%;
+}
+#file #disclaimerText a {
+	text-align: center;
+}
