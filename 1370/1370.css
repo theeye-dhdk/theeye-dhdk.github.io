@@ -48,11 +48,8 @@
 	padding: 3%;
 	word-wrap: normal;
 	line-height: 1;
-	background-image: url("img/oldpaper_texture.png") /* url("img/cornice_corpo2.png")*/ !important;
-	/* background-position: center, left;*/
-	/* background-size: */
+	background-image: url("img/oldpaper_texture.png") !important;
 	background-size: 100%;
-	/* background-position: center;*/
 }
 
 /* #file .coverpic {
@@ -80,7 +77,7 @@
 }
 
 #file p.subtitle {
-	color: #dbe3cb;
+	color: black;
 	font-family: mySeagram;
 	font-size: 20pt;
 	text-align: center;
@@ -117,13 +114,13 @@
 
 #file #ContentWrapper blockquote {
 	font-family: mySeagram;
-	background-color: black;
+	font-size: 13pt;
 } 
 
 #file a:link {
-	color: black;
+	color: darkred;
 	background-color: transparent;
-	text-decoration: none;
+	text-decoration: underline;
 }
   
 #file a:visited {
@@ -302,6 +299,9 @@
 	margin-right: auto;
 	margin-bottom: 30%;
 	
+}
+#IssueIndex img.articleImg {
+		display:none;
 }
 #IssueIndex {
 	column-count: 2;
