@@ -117,25 +117,25 @@
 	font-size: 13pt;
 } 
 
-#file a:link {
+#file #ContentWrapper a:link {
 	color: darkred;
 	background-color: transparent;
-	text-decoration: underline;
+	text-decoration: none;
 }
   
-#file a:visited {
+#file #ContentWrapper a:visited {
 	color: black;
 	background-color: transparent;
 	text-decoration: none;
 }
   
-#file a:hover {
+#file #ContentWrapper a:hover {
 	color: black;
 	background-color: transparent;
 	text-decoration: underline;
 }
   
-#file a:active {
+#file #ContentWrapper a:active {
 	color: black;
 	background-color: transparent;
 	text-decoration: underline;
@@ -363,7 +363,7 @@
 		font-size: 14pt
 	}
 	#file #IssueCover h1 {
-		font-size: 20pt;
+		font-size: 15pt;
 	}
   }
 
@@ -389,4 +389,6 @@
 }
 #file #disclaimerText a {
 	text-align: center;
+	color: black;
+	text-decoration: none; 
 }
