@@ -549,6 +549,7 @@ a#closebtn-2 {
 }
 #eyestyle .text-center {
     width:100%;
+        float:left;
 }
 #eyeStyle .btn-group {
     margin: 0 auto; 
@@ -648,6 +649,12 @@ a#closebtn-2 {
         width:200px;
         min-height: 150px;
     }    
+    #paginationLinks{
+            width:100%;
+        }
+    .breadcrumb_nav {
+            width:100%;
+        }
     .sticky #metadataViewer {
         padding-top:0px;
     }
