@@ -1,6 +1,6 @@
 @font-face {
-	font-family: 'RobotoLight';
-	src: url(fonts/Roboto-Light.ttf); /*body*/
+	font-family: 'OptimaNovaLTProLight';
+	src: url(fonts/OptimaNovaLTProLight.otf); /*body*/
 }
 
 @font-face {
@@ -9,14 +9,18 @@
 }
   
 @font-face {
-	font-family: 'NightStillComes'; /*body*/
+	font-family: 'NightStillComes'; 
 	src: url(fonts/NightStillComes_mine_final_sample.otf);
 }
   
 @font-face {
-	font-family: 'Saudagar'; 
-	src: url(fonts/Saudagar.ttf);
+	font-family: 'morion-bold.332ab69e'; 
+	src: url(fonts/morion-bold.332ab69e.ttf);
    /* caps? */ 
+}
+@font-face {
+	font-family: 'morion-regular.c5d43538'; 
+	src: url(fonts/morion-regular.c5d43538.ttf);
 }
 
 #file { /* aggiungi su light */
@@ -53,7 +57,7 @@
 	background-size: 100%;
 	padding: 0;
 	color: #dbe3cb;
-	font-family: 'RobotoLight';
+	font-family: 'OptimaNovaLTProLight';
 	font-size: 14pt;
 	text-align: left;
 	line-height: 1.7;
@@ -75,7 +79,7 @@
 
 #file h1 {
 	color:#dbe3cb;
-	font-family:'Saudagar';
+	font-family:'morion-bold.332ab69e';
 	font-style: bold;
 	font-size: 40pt;
 	text-align: center;
@@ -85,7 +89,7 @@
 }
 #file p.subtitle {
 	color: #dbe3cb;
-	font-family: 'NightStillComes';
+	font-family: 'morion-regular.c5d43538';
 	font-size: 20pt;
 	text-align: center;
 	margin-left: 10%;
@@ -94,7 +98,7 @@
 }
 #file div.coverinfo {  
 	color: #dbe3cb;
-	font-family: 'Saudagar';
+	font-family: 'morion-regular.c5d43538';
 	font-size: 14pt;
 	text-align: center;
 	font-style: bold;
@@ -103,13 +107,13 @@
 }
 
 #file #ArticleBody h2 {
-	font-family: 'Saudagar';
+	font-family: 'morion-bold.332ab69e';
 	font-size: 27pt;	
 	padding-bottom: none;
 }
 
 #file #ArticleBody h3, #ArticleBody h4, #ArticleBody h5 {
-	font-family: 'Saudagar';
+	font-family: 'morion-regular.c5d43538';
 	font-size: 25pt;	
 }
 
@@ -148,7 +152,7 @@
 #file #ContentWrapper {
 	color: #dbe3cb;
 	font-size: 13pt;
-	font-family: 'RobotoLight';
+	font-family: 'OptimaNovaLTProLight';
 }
 #file #ContentWrapper p {
 	margin-left: 25%;
@@ -159,7 +163,7 @@
 	margin-right: 25%;
 }
 #file #ContentWrapper blockquote {
-	font-family: 'Saudagar';
+	font-family: 'morion-regular.c5d43538';
 	background-color: #6c7c73;
 	display: block;
 	max-width: 100%;
@@ -234,7 +238,7 @@
 	width: 100%;
 	text-align: center;
 	text-transform: uppercase;
-	font-family: 'Susanna';
+	font-family: 'morion-regular.c5d43538';
 	font-style: bold;
 	font-size: 13pt;
 	margin-left: auto;
@@ -244,7 +248,7 @@
 }
 
 #file #Articlebody p.pubnote {
-	font-family: 'RobotoLight';  
+	font-family: 'OptimaNovaLTProLight';  
 	font-size: 21pt;
 	padding-bottom:10px;
 }
@@ -297,26 +301,26 @@
 	border-style: none  #dbe3cb;
 	border-bottom-width: 2pt ; 
 	font-size: 15pt;
-	font-family: 'RobotoLight';
+	font-family: 'OptimaNovaLTProLight';
 	padding: 10px;
 }
 
 #file #Articlebody td {
 	border-style: none #dbe3cb;
 	border-bottom-width: 2pt ;
-	font-family: 'RobotoLight';
+	font-family: 'OptimaNovaLTProLight';
 	padding: 10px;
 }
 
 #file #Articlebody tr{
 	border-style: none #dbe3cb;
 	border-bottom-width: 2pt ;
-	font-family: 'RobotoLight';
+	font-family: 'OptimaNovaLTProLight';
 }
 
 #file #FootWrapper {
 	color:#dbe3cb;
-	font-family: 'RobotoLight';
+	font-family: 'OptimaNovaLTProLight';
 	background-color: #6c7c73;
 	font-size: 13pt;
 	text-align: left;
@@ -351,7 +355,7 @@
 
 #IssuedCover h1 {
 	color:#dbe3cb;
-	font-family:'Saudagar';
+	font-family:'morion-bold.332ab69e';
 	font-style: bold;
 	font-size: 40pt;
 	text-align: center;
