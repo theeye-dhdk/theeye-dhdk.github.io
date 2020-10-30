@@ -554,6 +554,8 @@ a#closebtn-2 {
 }
 
 #eyeStyle #buttonList {
+    float:left;
+    padding-left:10px;
   margin-top: 0.5%;
   padding-top:3;
   padding-bottom: 1%;
