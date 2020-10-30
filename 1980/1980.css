@@ -517,20 +517,26 @@ text-decoration: none;
 
 @media screen and (max-width: 700px) {
 #IssueCover h1 {
-	padding-left:10%;
-	font-size: 500%;
-	width: 100%;
-	font-size:300%;
+    padding-left: 10%;
+    padding-bottom: 20%;
+    padding-top: 20%;
+    font-size: 500%;
+    width: 120%;
+    top: 0px;
+    font-size: 200%;
 	}
 #IssueCover .IssueBibliographicCitation:before{
-   height: 200px;
-   width:200px;
-   left: 50%;
-   top:30px;
+    height: 150px;
+    width: 150px;
+    left: -5%;
+    top: 20px;
    }
 #IssueCover .IssueBibliographicCitation {
-   position:relative;
-   bottom:0px;
+    position: relative;
+    bottom: 0px;
+    top: 120px;
+    width: 100%;
+    font-size: 20px;
    }
 #IssueIndex div.ArticleInfo:nth-child(1) {
     width:100%;
