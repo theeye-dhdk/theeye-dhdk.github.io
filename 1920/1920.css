@@ -314,7 +314,7 @@
     padding-bottom: 50%;
     background: rgb(251,251,251);
     background: rgb(0,0,0);
-    background: url(img/eye4.png), url(img/circle.svg), url(img/redtriangule.svg), linear-gradient(90deg, rgba(0,0,0,1) 0%, rgba(0,0,0,1) 18%, rgba(255,253,253,1) 18%, rgba(255,253,253,1) 19%, rgba(255,252,252,1) 22%, rgba(0,0,0,1) 22%, rgba(0,0,0,1) 27%, rgba(251,251,251,1) 27%);
+    background: url(img/eye4.png), url(img/circle.svg), url(img/redtriangule.svg), linear-gradient(90deg, rgba(0,0,0,1) 0%, rgba(0,0,0,1) 16%, rgba(255,253,253,1) 15%, rgba(255,253,253,1) 15%, rgba(255,252,252,1) 19%, rgba(0,0,0,1) 15%, rgba(0,0,0,1) 27%, rgba(251,251,251,1) 27%);
     background-repeat: no-repeat, no-repeat, no-repeat, no-repeat;
     background-position: 96% 4%, 95% 2%, 100% 100%, center;
     background-size: 20%, 20%, 80%, 100%; 
@@ -325,14 +325,14 @@
     font-size: 5vmax;
     color: black;
     margin-top: 30%;
-    padding-left: 23%;
+    padding-left: 26%;
     z-index: 2;
     text-align: left;
-    border-bottom: solid 90px red;
+    border-bottom: solid 80px red;
 }
 
 #IssueCover h1::first-letter {
-	font-size:9vmax;
+	font-size:12vmax;
 }
 
 #IssueCover h1::last-word {
@@ -541,8 +541,8 @@ div#IssueIndex {
     text-align: justify;
     width: 40%;
     padding: 2%;
-    margin-top: 20%;
-    margin-left: 45%;
+    margin-top: 25%;
+    margin-left: 40%;
     border: solid 5px red;
     overflow-x: hidden;
     word-break: break-word;
