@@ -8,7 +8,6 @@
 body {
     font-family: 'Amiri', serif;
     overflow-x:hidden;
-    padding-top:70px;
  
 }
 
@@ -647,7 +646,11 @@ a#closebtn-2 {
         background-color: greenyellow;
     }
 }
-
+@media only screen and (min-width: 1000px) {
+    #eyeStyle {
+        font-size:1.2em;
+    }
+}
 @media only screen and (max-width: 768px) {
     #issueInfo {
         top:0;
