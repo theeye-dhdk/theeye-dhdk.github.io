@@ -628,6 +628,13 @@ a#closebtn-2 {
     animation-iteration-count: 3;
     animation-fill-mode: backwards;
 }
+.container-fluid {
+    width:100%;
+    padding-right:0;
+    padding-left:0;
+    margin-right:0;
+    margin-left:0;
+}
 
 @keyframes bgcolor {
     from {
@@ -659,6 +666,7 @@ a#closebtn-2 {
     }
     #buttonList {
         width:100%;
+        padding-left:0;
     }
     
     .sticky #metadataViewer {
