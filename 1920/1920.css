@@ -376,10 +376,6 @@ div#IssueIndex {
     transform: rotate(-29deg);
 }
 
-#file #IssueCover .ArticleInfo .coverLabel {
-	font-size:1.5vmax;
-}
-
 #file .ArticleInfo .coverLabel::before {
 	content: '';
    display: inline-block;
@@ -545,8 +541,7 @@ div#IssueIndex {
     width: 40%;
     padding: 2%;
     margin-top: 15%;
-    margin-left: 55%;
-    margin-bottom: -%;
+    margin-left: 50%;
     border: solid 5px red;
     overflow-x: hidden;
     word-break: break-word;
