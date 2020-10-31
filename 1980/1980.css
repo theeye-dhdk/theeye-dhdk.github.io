@@ -896,6 +896,9 @@ overflow-wrap: break-word;
   margin-bottom: 30px; 
   text-align:left;
 }
+#file div.article  div.cover h1 a{
+  color: #1fa6c4;
+}
 
 
 #file div.article  div.maincover { 
@@ -951,6 +954,10 @@ font-size:20px;
 letter-spacing: 5px;
 }
 
+#file div.article   p.subtitle  a{
+color:black;
+}
+
 
 #file div.article   figure:nth-of-type(odd) img{
   border-color: #ffadd6;
@@ -1000,7 +1007,9 @@ z-index:10;
   font-family: 'handwritten';
   background-position: right;
   transform: rotate(5deg);
-
+}
+#file div.article  figcaption.covercaption a{
+  color: black;
 }
 
 
@@ -1033,6 +1042,10 @@ padding-top: 3px;
 padding-bottom: 1px;
 margin-bottom:5px;
 margin-top: 40px;
+}
+
+#file div.article  .byline a{
+color: white;
 }
 
 #file div.article  .byline .person:before {
