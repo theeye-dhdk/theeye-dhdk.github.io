@@ -239,14 +239,14 @@ list-style-type: none;
     width: 35%;
     float:right;
     text-align: center;
-    padding: 0.15em;
+    height:30px;
 }
 
 .pagination-link {
     width: 20%;
     cursor: pointer; /* Pointer/hand icon */
     float: left;
-    padding-top: 6;
+    padding-top: 3px;
 }
 
 .pagination-link a {
@@ -386,12 +386,13 @@ ul.minimal {
 
 #fileWrapper {
     transition: margin-left .5s;
+    padding:0;
+    margin:0;
 
 }
 
 #file {
     padding-top:2em;
-    text-align:justify;
 }
 
 .figure-wrapper, .table-wrapper {
@@ -537,9 +538,11 @@ a#closebtn-2 {
   position: sticky;
   top: 0;
   width:100%;
+  height:60px;
   background-color: white;
   z-index:1500;
   border-bottom:4px solid black;
+  padding-top:5px;
 }
 #eyeStyle .text-center {
     width:65%;
@@ -648,7 +651,9 @@ a#closebtn-2 {
     #paginationLinks{
         width:100%;
     }
-
+    #eyeStyle {
+        height:65px;
+    }
     #eyeStyle .text-center {
         width:100%;
     }
@@ -673,3 +678,12 @@ a#closebtn-2 {
 }
 
 
+@media only screen and (max-width: 480px) {
+    button.btn-stylesin {
+        display:none;
+    }
+    #eyeStyle {
+        font-size:0.9em;
+        padding-top:0;
+    }
+}
