@@ -697,4 +697,7 @@ a#closebtn-2 {
     #eyeStyle {
         font-size:0.9em;
     }
+    #eyeStyle button {
+        padding:2;
+    }
 }
