@@ -246,7 +246,7 @@ list-style-type: none;
     width: 20%;
     cursor: pointer; /* Pointer/hand icon */
     float: left;
-    padding-top: 3px;
+    padding-top: 4px;
 }
 
 .pagination-link a {
@@ -559,8 +559,7 @@ a#closebtn-2 {
 #eyeStyle #buttonList {
     float:left;
     padding-left:10px;
-  margin-top: 0.5%;
-  padding-top:3;
+  padding-top:4;
   padding-bottom: 1%;
   text-align: center;
 }
@@ -653,8 +652,12 @@ a#closebtn-2 {
     }
     #eyeStyle {
         height:65px;
+        padding-top:0;
     }
     #eyeStyle .text-center {
+        width:100%;
+    }
+    #buttonList {
         width:100%;
     }
     
@@ -684,6 +687,5 @@ a#closebtn-2 {
     }
     #eyeStyle {
         font-size:0.9em;
-        padding-top:0;
     }
 }
