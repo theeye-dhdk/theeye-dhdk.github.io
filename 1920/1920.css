@@ -314,10 +314,10 @@
     padding-bottom: 50%;
     background: rgb(251,251,251);
     background: rgb(0,0,0);
-    background: url(img/eye4.png), url(img/circle.svg), url(img/redtriangule.svg), url(img/redrectangular.svg), url(img/whitestripes.svg), linear-gradient(90deg, rgba(251,251,251,1) 0%, rgba(0,0,0,1) 0%, rgba(0,0,0,1) 24%, rgba(255,245,245,0) 24%, rgba(255,255,255,1) 100%, rgba(255,255,255,0) 100%);
-    background-repeat: no-repeat, no-repeat, no-repeat, no-repeat, no-repeat, no-repeat;
-    background-position: 96% 4%, 95% 2%, 100% 100%, center, -20% 0%, center;
-    background-size: 20%, 20%, 80%, 100%, 90%, 100%; 
+    background: url(img/eye4.png), url(img/circle.svg), url(img/redtriangule.svg), linear-gradient(90deg, rgba(0,0,0,1) 0%, rgba(0,0,0,1) 18%, rgba(255,253,253,1) 18%, rgba(255,253,253,1) 19%, rgba(255,252,252,1) 22%, rgba(0,0,0,1) 22%, rgba(0,0,0,1) 27%, rgba(251,251,251,1) 27%);
+    background-repeat: no-repeat, no-repeat, no-repeat, no-repeat;
+    background-position: 96% 4%, 95% 2%, 100% 100%, center;
+    background-size: 20%, 20%, 80%, 100%; 
 }
 
 #IssueCover h1 {
@@ -325,7 +325,7 @@
     font-size: 5vmax;
     color: black;
     margin-top: 30%;
-    padding-left: 20%;
+    padding-left: 23%;
     z-index: 2;
     text-align: left;
     border-bottom: solid 90px red;
