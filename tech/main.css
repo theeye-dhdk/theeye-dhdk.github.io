@@ -660,7 +660,6 @@ a#closebtn-2 {
         width:100%;
     }
     #eyeStyle {
-        height:65px;
         padding-top:0;
     }
     #eyeStyle .text-center {
@@ -669,6 +668,9 @@ a#closebtn-2 {
     #buttonList {
         width:100%;
         padding-left:0;
+    }
+    #eyeStyle button {
+        padding:2;
     }
     
     .sticky #metadataViewer {
@@ -697,8 +699,5 @@ a#closebtn-2 {
     }
     #eyeStyle {
         font-size:0.9em;
-    }
-    #eyeStyle button {
-        padding:2;
     }
 }
