@@ -340,31 +340,154 @@
     background-repeat: no-repeat;
 }
 /*ISSUED COVER */
+#file #IssueCover {
+	background-image: url("img/Eye_8.png"), url("img/darkleaves_1.jpg");
+	background-repeat: no-repeat, no-repeat;
+	background-position: 50% 0%, center;
+	background-size: 200px 180px, cover;
+	background-attachment: fixed;
+	width: 100%;
+	overflow-x: hidden;
+}
 
-#IssuedCover {
-	background-image: url("../2040/img/background2040.jpg");
-	background-position: 100%;
-	max-width: 100%;
-	height: auto;
-	padding: 0;
-	color:#dbe3cb;
-	font-family: 'NightStillComes';
-	font-size: 14pt;
+#IssueCover h1 {
+	color: #dbe3cb; 
+	font-family: 'morion-regular.c5d43538';
+	font-size: 70pt;
+	text-transform: uppercase;
+	text-align: center;
+	margin-left: 0%;
+	margin-right: 0%;
+	margin-top: 0%;
+
+}
+#file .IssueBibliographicCitation {
+	display: none;
+}
+#file #IssueIndex {
+	color: #dbe3cb; 
+	font-family: 'morion-regular.c5d43538';
+	font-size: 15pt;
 	text-align: left;
 	line-height: 1.7;
 }
-
-#IssuedCover h1 {
-	color:#dbe3cb;
-	font-family:'morion-bold.332ab69e';
-	font-style: bold;
-	font-size: 40pt;
-	text-align: center;
-	margin-right: 5%;
+#file #IssueIndex a {
+	color: #dbe3cb; 
+	font-family: 'morion-bold.332ab69e';
+	font-size: 45pt;
+	text-align: justify;
+	text-transform: uppercase;
 	margin-left: 5%;
-	line-height: 1.5;
+	margin-right: 5%;
+	line-height: 1.7;
+	margin-top: 5%;
+	margin-bottom: 5%;
 }
-/* responsive img*/
+#IssueIndex div.ArticleInfo:nth-child(1) {
+	background-color: #051f20;
+	display: inline-block;
+	max-width: 100%;
+	margin: 0%;
+	text-align: left;
+	padding-left: 5%;
+	padding-right: 5%;
+}
+#IssueIndex div.ArticleInfo:nth-child(2) {
+	background-color: #0b2b26;
+	display: block;
+	max-width: 100%;
+	margin: 0%;
+	text-align: right;
+	padding-left: 5%;
+	padding-right: 5%;
+}
+#IssueIndex div.ArticleInfo:nth-child(3) {
+	background-color: #163832;
+	display: inline-block;
+	max-width: 100%;
+	margin: 0%;
+	text-align: left;
+	padding-left: 5%;
+	padding-right: 5%;
+}
+#IssueIndex div.ArticleInfo:nth-child(4) {
+	background-color: #235347;
+	display: block;
+	max-width: 100%;
+	margin: 0%;
+	text-align: right;
+	padding-left: 5%;
+	padding-right: 5%;
+}
+
+/*cover author */
+#IssueIndex div.coverAuthor:nth-child(1) {
+	background-color: #3A482E;
+	display: inline-block;
+	max-width: 100%;
+	margin: 0%;
+	text-align: justify;
+	padding-left: 5%;
+}
+#IssueIndex div.coverAuthor:nth-child(2) {
+	width: 100%;
+	background-color: #38523f;
+	display: inline-block;
+	text-align: justify;	
+	padding-right: 5%;
+	padding-bottom: 5%;
+}
+#IssueIndex div.coverAuthoro:nth-child(3) {
+	width: 100%;
+	background-color: #4B553A;
+	display: inline-block;
+	text-align: justify;
+	padding-left: 5%;
+	padding-bottom: 5%;
+}
+#IssueIndex div.coverAuthor:nth-child(4) {
+	width: 100%;
+	background-color: #6C845A;
+	display: inline-block;
+	text-align: center;
+	padding-right: 5%;
+	padding-bottom: 5%;
+}
+
+#file .coverIssued {
+	display: none;
+}
+#file #IssueIndex img.articleImg {
+	display:none;
+}
+
+/*disclaimer*/
+#file #disclaimer {
+	background-image: url("img/darkleaves_1.jpg");
+	background-position: center;
+	background-size: cover;
+	width: 80%;
+	padding: 30%;
+	padding-left: 10%;
+	padding-right: 10%;
+	overflow-x: hidden;
+}
+#file #disclaimerText {
+	color: #dbe3cb;
+	font-family: 'morion-regular.c5d43538';
+	font-size: 25pt;
+	background-color: rgb(23, 32, 32); /* Blue background with 30% opacity */
+	padding: 5%;
+	line-height: 1.5;
+	word-break: break-word;
+    overflow: hidden;
+
+}
+#file #disclaimerText a {
+	text-align: center;
+	color: #dbe3cb;
+}
+
 @media screen and (max-width: 992px) {
 	#ContentWrapper figure img {
 	  width:480px;
@@ -374,21 +497,32 @@
 		width: 520px;
 		height: 336px;
 	}
-  }
-@media screen and (max-width: 900px) {
-	#file #ContentWrapper p {
-		margin-left:15%;
-		margin-right:15%;
+	#file #IssueIndex a {
+		font-size: 45pt;
 	}
+	#file #IssueCover img {
+		width: 200px;
+		height: 180px;
+	}
+	
 }
+  
   /* On screens that are 600px or less, set the background color to olive */
-  @media screen and (max-width: 600px) {
+@media screen and (max-width: 900px) {
 	#ContentWrapper figure img {
 		width:360px;
-		height:222px;
+		height: 222px;
 	  }
-	  #ContentWrapper figure img:hover {
-		  width: 390px;
-		  height: 252px;
-	  }
-  }
+	#ContentWrapper figure img:hover {
+		width: 390px;
+		height: 252px;
+	}
+	#file #IssueIndex a {
+		font-size: 30pt;
+	}
+	#file #IssueCover img {
+		width: 150px;
+		height: 130px;
+	}
+	
+}
