@@ -270,7 +270,7 @@ list-style-type: none;
     color:black;
 }
 
-#paginationLinks:after {
+#disclaimer-btn:after {
     content: "";
     clear: both;
     display: table;
