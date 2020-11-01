@@ -238,9 +238,14 @@ list-style-type: none;
 }
 
 #paginationLinks {
-    width: 35%;
-    float:right;
+    width: 25%;
+    float:left;
     text-align: center;
+}
+#disclaimer-btn {
+    width:10%;
+    padding-left:10px;
+    float:right;
 }
 
 .pagination-link {
@@ -509,6 +514,7 @@ a#closebtn-2 {
     -ms-transition: all 0.3s ease;
     -o-transition: all 0.3s ease;
     transition: all 0.3s ease;
+    z-index:2000;
 }
 #return-to-top i {
     color: #fff;
@@ -655,7 +661,10 @@ a#closebtn-2 {
         min-height: 150px;
     }    
     #paginationLinks{
-        width:100%;
+        width:80%;
+    }
+    #disclaimer-btn {
+        width:20%;
     }
 
     #eyeStyle .text-center {
@@ -664,11 +673,12 @@ a#closebtn-2 {
         bottom:0;
         height:60px;
         border-top:4px solid black;
+        z-index:1500;
     }
     #return-to-top {
         bottom:80px;
     }
-    #footer {
+    #footer2 {
         margin-bottom:100px;
     }
     .sticky #metadataViewer {
