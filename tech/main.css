@@ -652,6 +652,9 @@ a#closebtn-2 {
         position:relative;
         overflow-x:hidden;
     }
+    #main {
+        height:100%;
+        }
     #issueInfo {
         top:0;
         margin-left:0;
@@ -665,6 +668,7 @@ a#closebtn-2 {
     #disclaimer-btn {
         width:20%;
         float:left;
+        font-size:1.2em;
     }
 
     #eyeStyle .text-center {
