@@ -336,7 +336,8 @@
 		height: 336px;
 	}
 	#file #IssueCover h1 {
-		font-size: 35pt;
+		font-size: 24pt;
+		margin-bottom: 5%;
 	}
 	#file #IssueCover > h1:first-of-type::first-letter {
 		font-size: 70pt;
