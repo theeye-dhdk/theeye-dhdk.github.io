@@ -270,14 +270,11 @@ list-style-type: none;
     color:black;
 }
 
-#disclaimer-btn:after {
-    content: "";
-    clear: both;
-    display: table;
-  }
+
 #disclaimer-btn {
     float:right;
     padding-right: 15px;
+    padding-top:4px;
 }
 /**#disclaimer {
     padding-right: 1%;
@@ -537,7 +534,9 @@ a#closebtn-2 {
     top: 5px;
 }
 
-
+#footer2 {
+  position:relative;
+}
 
 /** STYLE BUTTONS **/
 #eyeStyle {
@@ -665,6 +664,7 @@ a#closebtn-2 {
     }
     #disclaimer-btn {
         width:20%;
+        float:left;
     }
 
     #eyeStyle .text-center {
