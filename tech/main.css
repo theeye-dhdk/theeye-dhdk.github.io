@@ -665,6 +665,7 @@ a#closebtn-2 {
     }
     #disclaimer-btn {
         width:20%;
+        padding-top:4px;
     }
 
     #eyeStyle .text-center {
@@ -674,6 +675,7 @@ a#closebtn-2 {
         height:60px;
         border-top:4px solid black;
         z-index:1500;
+        background:white;
     }
     #return-to-top {
         bottom:80px;
