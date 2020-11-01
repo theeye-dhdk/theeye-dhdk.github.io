@@ -335,9 +335,6 @@
 		width: 520px;
 		height: 336px;
 	}
-	#file #ArticleBody h1 {
-		font-size: 32pt;
-	}
 	#file #ArticleBody h3, #ArticleBody h4, #ArticleBody h5 {
 		font-size: 20pt
 	}
@@ -355,9 +352,6 @@
 	#ContentWrapper figure img:hover {
 		width: 390px;
 		height: 252px;
-	}
-	#file #ArticleBody h1 {
-		font-size: 20pt;
 	}
 	#file #ArticleBody h3, #ArticleBody h4, #ArticleBody h5 {
 		font-size: 14pt
