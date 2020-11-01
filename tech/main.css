@@ -653,7 +653,7 @@ a#closebtn-2 {
         overflow-x:hidden;
     }
     #main {
-        height:100%;
+        margin-bottom:100px;
         }
     #issueInfo {
         top:0;
