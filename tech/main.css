@@ -675,7 +675,6 @@ a#closebtn-2 {
         width:100%;
         position:fixed;
         bottom:0;
-        height:60px;
         border-top:4px solid black;
         z-index:1500;
         background:white;
