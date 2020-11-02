@@ -69,7 +69,7 @@
 #file h1 {
 	color: darkred; 
 	text-transform: uppercase;
-	text-align: center ;
+	text-align: left;
 	font-family: mySeagram;
     	font-size: 32pt;
 	letter-spacing: 6px;
@@ -187,6 +187,18 @@
 }
 
 #file #Credits > p:first-of-type::first-letter {
+	font-family: myCaps;
+	float: left;
+	font-size: 250pt;
+	line-height: 70px;
+	padding-top: 40px;
+	padding-bottom: 40px;
+	padding-right: 10px;
+	color: darkred;
+	float:left;
+	line-height: 0.63em;
+}
+#file #ArticleBody h1 > p:first-of-type::first-letter {
 	font-family: myCaps;
 	float: left;
 	font-size: 250pt;
@@ -347,6 +359,16 @@
 	#file #IssueCover > h1:first-of-type::first-letter {
 		font-size: 70pt;
 	}
+	#file #Credits > p:first-of-type::first-letter {
+	font-size: 250pt;
+	}
+	#file #ArticleBody h1 > p:first-of-type::first-letter {
+	font-size: 250pt;
+	}
+
+	#file #Summary > p:first-of-type::first-letter, #Introduction > p:first-of-type::first-letter, #ContentWrapper > p:first-of-type::first-letter, #ContentWrapper h2 ~ p:first-of-type::first-letter {
+	font-size: 150pt;
+	}
 }
   
   /* On screens that are 600px or less, set the background color to olive */
@@ -365,6 +387,16 @@
 	#file #IssueCover > h1:first-of-type::first-letter {
 		font-size: 60pt;
 	}
+	#file #Credits > p:first-of-type::first-letter {
+	font-size: 230pt;
+	}
+	#file #ArticleBody h1 > p:first-of-type::first-letter {
+	font-size: 230pt;
+	}
+
+	#file #Summary > p:first-of-type::first-letter, #Introduction > p:first-of-type::first-letter, #ContentWrapper > p:first-of-type::first-letter, #ContentWrapper h2 ~ p:first-of-type::first-letter {
+	font-size: 130pt;
+	}
   }
 
 @media screen and (max-width: 640px) {
@@ -382,6 +414,16 @@
 	#file #IssueCover > h1:first-of-type::first-letter {
 		font-size: 40pt;
 	}
+	#file #Credits > p:first-of-type::first-letter {
+	font-size: 200pt;
+	}
+	#file #ArticleBody h1 > p:first-of-type::first-letter {
+	font-size: 200pt;
+	}
+
+	#file #Summary > p:first-of-type::first-letter, #Introduction > p:first-of-type::first-letter, #ContentWrapper > p:first-of-type::first-letter, #ContentWrapper h2 ~ p:first-of-type::first-letter {
+	font-size: 100pt;
+	}
 }
 @media screen and (max-width: 480px) {
 	#file #IssueCover h1 {
@@ -391,6 +433,16 @@
 	#file #IssueCover > h1:first-of-type::first-letter {
 		font-size: 35pt;
 	}
+	#file #Credits > p:first-of-type::first-letter {
+	font-size: 180pt;
+	}
+	#file #ArticleBody h1 > p:first-of-type::first-letter {
+	font-size: 180pt;
+	}
+
+	#file #Summary > p:first-of-type::first-letter, #Introduction > p:first-of-type::first-letter, #ContentWrapper > p:first-of-type::first-letter, #ContentWrapper h2 ~ p:first-of-type::first-letter {
+	font-size: 80pt;
+	}
 }
 @media screen and (max-width: 220px) {
 	#file #IssueCover h1 {
@@ -399,6 +451,16 @@
 	}
 	#file #IssueCover > h1:first-of-type::first-letter {
 		font-size: 30pt;
+	}
+	#file #Credits > p:first-of-type::first-letter {
+	font-size: 150pt;
+	}
+	#file #ArticleBody h1 > p:first-of-type::first-letter {
+	font-size: 150pt;
+	}
+
+	#file #Summary > p:first-of-type::first-letter, #Introduction > p:first-of-type::first-letter, #ContentWrapper > p:first-of-type::first-letter, #ContentWrapper h2 ~ p:first-of-type::first-letter {
+	font-size: 60pt;
 	}
 }
 /*DISCLAIMER*/
