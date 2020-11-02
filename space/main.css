@@ -321,10 +321,13 @@ list-style-type: none;
     z-index:1000;
     padding-left: 1em;
     background: #fff;
-    border: 1px solid grey;
-    -webkit-border-radius: 25px;
-    -moz-border-radius: 25px;
-    border-radius: 25px;
+    border-right: 1px solid grey;
+    border-bottom: 1px solid grey;
+    border-left: 1px solid grey;
+    border-top: 3px solid black;
+    -webkit-border-radius: 0px;
+    -moz-border-radius: 0px;
+    border-radius: 0px;
     display: none;
     -webkit-transition: all 0.3s linear;
     -moz-transition: all 0.3s ease;
@@ -440,11 +443,11 @@ ul.minimal {
 }
 
 .closebtn {
-    color:black;
+    color: black;
     position: absolute;
     top: 0;
-    right: 0;
-    font-size: 36px;
+    right: 20px;
+    font-size: 15px;
 }
 
 #closebtn-1 {
@@ -461,9 +464,9 @@ ul.minimal {
 }
 
 a#closebtn-2 {
-    top: -30px;
+    top: -20px;
     margin-right: 0.2em;
-    font-size: 2em;
+    font-size: 1.5em;
 }
 
 #sticky-eye {
