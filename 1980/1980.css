@@ -1218,7 +1218,6 @@ padding-bottom:10px;
 	float:left;
 	color: #e46968;
   *line-height:1em; /* IE7 Only */
-
 }
 
 
@@ -1251,6 +1250,16 @@ font-family:"itcgaramond2";
 
 #file div.article  blockquote a{
 color: #3ba28f!important;
+}
+
+#file div.article  blockquote  p::first-letter {
+all:unset;
+    /* IE Only */
+  font-size: 100%;
+  letter-spacing: 0.1em;
+  color: black;
+  font-family:"itcgaramond";
+
 }
 
 #file div.article  p.copy {
