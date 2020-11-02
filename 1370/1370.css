@@ -45,7 +45,7 @@
 	column-count: 2;
 	column-gap: 7%;
 	column-fill: balance;
-	padding: 3%;
+	padding: 7%;
 	word-wrap: normal;
 	line-height: 1;
 	background-image: url("img/oldpaper_texture.png") !important;
@@ -66,7 +66,7 @@
 	filter: sepia(40%);
 } */
 
-#file #ArticleBody h1 {
+#file h1 {
 	color: darkred; 
 	text-transform: uppercase;
 	text-align: left;
@@ -115,6 +115,7 @@
 #file #ContentWrapper blockquote {
 	font-family: mySeagram;
 	font-size: 13pt;
+	text-align: justify;
 } 
 
 #file #ContentWrapper a:link {
@@ -184,6 +185,7 @@
 	font-family: mySeagram;
 	font-size:21pt;
 	padding-bottom:10px;
+	text-align: justify;
 }
 
 #file #Credits > p:first-of-type::first-letter {
@@ -198,7 +200,7 @@
 	float:left;
 	line-height: 0.63em;
 }
-#file #ArticleBody h1 > p:first-of-type::first-letter {
+#file h1 > p:first-of-type::first-letter {
 	font-family: myCaps;
 	float: left;
 	font-size: 230pt;
@@ -214,7 +216,7 @@
 #file #Summary > p:first-of-type::first-letter, #Introduction > p:first-of-type::first-letter, #ContentWrapper > p:first-of-type::first-letter, #ContentWrapper h2 ~ p:first-of-type::first-letter {
 	font-family: myCaps;
 	float: left;
-	font-size: 150pt;
+	font-size: 120pt;
 	line-height: 80px;
 	padding-top: 40px;
 	padding-right: 10px;
@@ -224,7 +226,7 @@
 }
 #file #Articlebody figcaption {
 	font-size: 10pt;
-	text-align: center;
+	text-align: justify;
 	line-height: 1.5;
     	padding: 5px;
 }
