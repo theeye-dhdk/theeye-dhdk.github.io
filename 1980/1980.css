@@ -1278,6 +1278,10 @@ font-family:"itcgaramond";
 background-color:white;
 }
 
+#file div.article  p.bio a{
+color: black;
+}
+
 #file div.article  p.bio + p.bio {
 border-top:none;
 margin-top:0%;
