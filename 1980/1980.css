@@ -1248,8 +1248,9 @@ padding-bottom: 1em;
 font-size: 20px;
 font-family:"itcgaramond2";
 }
+
 #file div.article  blockquote a{
-color: #3ba28f;
+color: #3ba28f!important;
 }
 
 #file div.article  p.copy {
