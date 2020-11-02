@@ -66,7 +66,7 @@
 	filter: sepia(40%);
 } */
 
-#file h1 {
+#file #ArticleBody h1 {
 	color: darkred; 
 	text-transform: uppercase;
 	text-align: left;
@@ -126,7 +126,7 @@
 #file #ContentWrapper a:visited {
 	color: black;
 	background-color: transparent;
-	text-decoration: none;
+	text-decoration: undeline;
 }
   
 #file #ContentWrapper a:hover {
@@ -189,7 +189,7 @@
 #file #Credits > p:first-of-type::first-letter {
 	font-family: myCaps;
 	float: left;
-	font-size: 250pt;
+	font-size: 230pt;
 	line-height: 70px;
 	padding-top: 40px;
 	padding-bottom: 40px;
@@ -201,7 +201,7 @@
 #file #ArticleBody h1 > p:first-of-type::first-letter {
 	font-family: myCaps;
 	float: left;
-	font-size: 250pt;
+	font-size: 230pt;
 	line-height: 70px;
 	padding-top: 40px;
 	padding-bottom: 40px;
@@ -231,7 +231,7 @@
 
 #file #Articlebody figcaption .num {
 	font-size: 12pt;
-	text-align: center;
+	text-align: justify;
 	line-height: 1;
     	padding: 5px;
 }
@@ -360,10 +360,10 @@
 		font-size: 70pt;
 	}
 	#file #Credits > p:first-of-type::first-letter {
-	font-size: 250pt;
+	font-size: 230pt;
 	}
 	#file #ArticleBody h1 > p:first-of-type::first-letter {
-	font-size: 250pt;
+	font-size: 230pt;
 	}
 
 	#file #Summary > p:first-of-type::first-letter, #Introduction > p:first-of-type::first-letter, #ContentWrapper > p:first-of-type::first-letter, #ContentWrapper h2 ~ p:first-of-type::first-letter {
