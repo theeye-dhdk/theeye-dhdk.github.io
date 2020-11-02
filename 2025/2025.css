@@ -322,6 +322,11 @@ z-index: 0;
     left: 0;
     z-index: -1;
 }
+@media only screen and (max-width: 1200px) {
+ #file div.article .content:after {
+    height: calc(100vh - 90px);
+}	
+}
 
 
  #file div.article div.content p{
