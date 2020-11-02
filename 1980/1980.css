@@ -1210,8 +1210,8 @@ padding-bottom:10px;
 #file div.article  div.content p::first-letter { 
 	vertical-align:center;
 	font-size:250%;
-	margin:.4em .1em .1em .1em;
-	padding:.0em .0em .0em .0em;
+	margin:.0em .1em .1em .1em;
+	padding:.4em .0em .0em .0em;
 	line-height:.30em;
         letter-spacing: 0.1em;
         font-family:"itcgaramond2";
