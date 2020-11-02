@@ -300,6 +300,32 @@ function loadArticle(file) {
             fillTabs();
             addReverseAccess(['person', 'place', 'entity', 'concept', 'event']);
             verifyGiuliaMarkup();
+            //LISTENING FUNCTIONS
+
+            document.getElementById("listening").onclick = function() {
+                document.getElementById("listeningTime").style = 'display:block;';
+                document.getElementById("ListeningWrapper").style = 'display:block;';
+                document.getElementById("play-btn").style="display:none;"
+                document.getElementById("pause-btn").style="display:block;"
+                responsiveVoice.speak(document.getElementById("ContentWrapper").textContent);
+            };
+
+            document.getElementById("pause-btn").onclick = function() {
+                if(responsiveVoice.isPlaying()) {
+                responsiveVoice.pause();
+                document.getElementById("play-btn").style="display:block;"
+                document.getElementById("pause-btn").style="display:none;"
+                }
+            };
+
+            document.getElementById("play-btn").onclick = function() {
+                if(!(responsiveVoice.isPlaying())) {
+                    responsiveVoice.resume();
+                    document.getElementById("pause-btn").style="display:block;"
+                    document.getElementById("play-btn").style="display:none;"
+                }
+            };
+            
         },
         error: function () {
             alert('Could not load ' + file)
@@ -621,31 +647,7 @@ $(document).ready(function(){
 
 
 
-//LISTENING FUNCTIONS
 
-document.getElementById("listening").onclick = function() {
-    document.getElementById("listeningTime").style = 'display:block;';
-    document.getElementById("ListeningWrapper").style = 'display:block;';
-    document.getElementById("play-btn").style="display:none;"
-    document.getElementById("pause-btn").style="display:block;"
-    responsiveVoice.speak(document.getElementById("ContentWrapper").textContent);
-};
-
-document.getElementById("pause-btn").onclick = function() {
-    if(responsiveVoice.isPlaying()) {
-    responsiveVoice.pause();
-    document.getElementById("play-btn").style="display:block;"
-    document.getElementById("pause-btn").style="display:none;"
-    }
-};
-
-document.getElementById("play-btn").onclick = function() {
-    if(!(responsiveVoice.isPlaying())) {
-        responsiveVoice.resume();
-        document.getElementById("pause-btn").style="display:block;"
-        document.getElementById("play-btn").style="display:none;"
-    }
-};
 
 document.getElementsByClassName('pagination-link').onclick = function() {
     responsiveVoice.cancel();
