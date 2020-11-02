@@ -299,6 +299,7 @@ function loadArticle(file) {
             fillInfo('#file', '#info');
             fillTabs();
             addReverseAccess(['person', 'place', 'entity', 'concept', 'event']);
+            verifyGiuliaMarkup();
         },
         error: function () {
             alert('Could not load ' + file)
@@ -511,6 +512,36 @@ function reverseAccess(obj) {
 
 
 
+function verifyGiuliaMarkup() {
+    if (!$("div.GiuliaMarkup").length) {
+      //first html piece of code
+      $('div.maincover').prepend(`<div class="parallax"><img src="../2040/img/Eye 8.png" class="logo"></div>`);
+      
+      //second html piece of code
+      $('div#CoverWrapper').append(`
+      <div class="GiuliaMarkup">
+        <div id="readingTime"></div>
+        <div id="listeningTime"></div>
+        <div id="icons">
+          <i id="listening" class="fa fa-microphone" aria-hidden="true"></i>
+        </div>
+        <div id="ListeningWrapper">
+          <div id="audiobox">
+              <i class="fa fa-play" id ="play-btn" aria-hidden="true"></i>
+              <i class="fa fa-pause" id ="pause-btn" aria-hidden="true"></i>
+          </div>
+        </div>
+      </div>`);
+      
+      //third html piece of code
+      $('div#ArticleBody').append(`
+      <div id="Footerimg"><img src="../2040/img/sust_3.png" class="footerimg"></div>
+      `);
+    }
+  }
+
+
+
 
 //Change style through buttons
 function changeStyle(selectedStyle) {
@@ -586,3 +617,39 @@ $(document).ready(function(){
         $('.articleImg[src=""]').hide();
         $('.articleImg:not([src=""])').show();
     });
+
+
+
+
+//LISTENING FUNCTIONS
+
+document.getElementById("listening").onclick = function() {
+    document.getElementById("listeningTime").style = 'display:block;';
+    document.getElementById("ListeningWrapper").style = 'display:block;';
+    document.getElementById("play-btn").style="display:none;"
+    document.getElementById("pause-btn").style="display:block;"
+    responsiveVoice.speak(document.getElementById("ContentWrapper").textContent);
+};
+
+document.getElementById("pause-btn").onclick = function() {
+    if(responsiveVoice.isPlaying()) {
+    responsiveVoice.pause();
+    document.getElementById("play-btn").style="display:block;"
+    document.getElementById("pause-btn").style="display:none;"
+    }
+};
+
+document.getElementById("play-btn").onclick = function() {
+    if(!(responsiveVoice.isPlaying())) {
+        responsiveVoice.resume();
+        document.getElementById("pause-btn").style="display:block;"
+        document.getElementById("play-btn").style="display:none;"
+    }
+};
+
+document.getElementsByClassName('pagination-link').onclick = function() {
+    responsiveVoice.cancel();
+}
+document.getElementById('btn-style').onclick = function() {
+    responsiveVoice.cancel();
+}

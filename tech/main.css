@@ -40,6 +40,7 @@ ul.breadcrumb {
     background-color: #fff;
     margin:0;
         font-size:18px;
+        border-bottom:1px solid grey;
   }
   ul.breadcrumb li {
     font-family: "hardingreg";
@@ -160,7 +161,7 @@ list-style-type: none;
     top: 0;
   }
 .sticky #metadataViewer {
-        padding-top:100px;       
+        padding-top:60px;       
 }
 
 #metadataViewer .label {
@@ -667,8 +668,6 @@ a#closebtn-2 {
     }
     #disclaimer-btn {
         width:20%;
-        float:left;
-        font-size:1.2em;
     }
 
     #eyeStyle .text-center {

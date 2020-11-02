@@ -1,5 +1,5 @@
 
-
+/*
 function verifyGiuliaMarkup() {
     if (!$("div.GiuliaMarkup").length) {
       //first html piece of code
@@ -59,27 +59,19 @@ $(document).ready(function() {
         document.getElementById("play-btn").style="display:none;"
     };
 });
-    // reading time depending on number of character
+*/
+    // reading and listening time depending on number of character
 $( document ).ready(function() {
     if ($("#ContentWrapper").text().length <= 2500) {
         $("#readingTime").html("Reading time 5 minutes");
-    }
-    else if ($("#ContentWrapper").text().length > 2500 && $("#ContentWrapper").text().length <= 7500) {
-        $("#readingTime").html("Reading time 7 minutes");
-    }
-    else if ($("#ContentWrapper").text().length > 7500) {
-        $("#readingTime").html("Reading time 10 minutes");
-    }
-});
-
-$( document ).ready(function() {
-    if ($("#ContentWrapper").text().length <= 2500) {
         $("#listeningTime").html("Listening time 5 minutes");
     }
     else if ($("#ContentWrapper").text().length > 2500 && $("#ContentWrapper").text().length <= 7500) {
+        $("#readingTime").html("Reading time 7 minutes");
         $("#listeningime").html("Listening time 7 minutes");
     }
     else if ($("#ContentWrapper").text().length > 7500) {
+        $("#readingTime").html("Reading time 10 minutes");
         $("#listeningTime").html("Listening time 10 minutes");
     }
 });
