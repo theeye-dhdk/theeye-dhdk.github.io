@@ -637,7 +637,26 @@ a#closebtn-2 {
     animation-iteration-count: 3;
     animation-fill-mode: backwards;
 }
-
+#loading {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    display: block;
+    opacity: 0.9;
+    background-color: #fff;
+    z-index: 1200;
+    text-align: center;
+  }
+  
+  #loading-image {
+    position: sticky;
+    position: -webkit-sticky;
+    top: 25%;
+    width:70%;
+    height:auto;
+    left:15%;
+    z-index: 1201;
+  }
 @keyframes bgcolor {
     from {
         background-color: #ffffff;

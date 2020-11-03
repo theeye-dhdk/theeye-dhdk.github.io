@@ -1,4 +1,13 @@
 
+window.addEventListener("load", function () {
+    document.getElementById('loading').style.display = 'none';
+});
+
+$(document).on({
+    ajaxStart: function() { document.getElementById('loading').style.display = 'block';    },
+    ajaxStop: function() { document.getElementById('loading').style.display = 'none'; }    
+});
+
 window.onscroll = function() {myFunction()};
 
 // Get the selector
@@ -319,11 +328,9 @@ function loadArticle(file) {
             };
 
             document.getElementById("play-btn").onclick = function() {
-                if(!(responsiveVoice.isPlaying())) {
-                    responsiveVoice.resume();
-                    document.getElementById("pause-btn").style="display:block;"
-                    document.getElementById("play-btn").style="display:none;"
-                }
+                responsiveVoice.resume();
+                document.getElementById("play-btn").style="display:none;"
+                document.getElementById("pause-btn").style="display:block;"
             };
             
         },
@@ -568,10 +575,20 @@ function verifyGiuliaMarkup() {
 
 
 
-
+Element.prototype.remove = function() {
+this.parentElement.removeChild(this);
+}
 //Change style through buttons
 function changeStyle(selectedStyle) {
-    document.getElementById('ArticleCss').setAttribute('href', selectedStyle);
+    document.getElementById('ArticleCss').remove();
+    document.getElementById('loading').style.display = 'block';
+    cssFile = document.createElement('link');
+    cssFile.type = "text/css"; 
+    cssFile.rel = "stylesheet";
+    cssFile.onload = function(){ document.getElementById('loading').style.display = 'none'; }
+    cssFile.href = selectedStyle;
+    cssFile.id= "ArticleCss";
+    document.getElementsByTagName("head")[0].appendChild(cssFile);
 }
 
 //Manage active style button
