@@ -121,6 +121,7 @@ color:black;
 
 li a{
 color:black;
+list-style-type:none;
 text-decoration: underline;
 overflow-wrap: break-word;
 word-wrap: break-word;
