@@ -27,7 +27,9 @@ margin-left:39px;
 font-family: "hardingreg";
 font-size: 110%;
 }
-
+.nav-item .dropdown {
+        z-index:4000;
+}
 .navbar-toggler {
 margin-left: 6%;}
 .breadcrumb_nav {
