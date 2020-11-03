@@ -1,5 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Amiri&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Alegreya+Sans:wght@300&display=swap');
 @font-face {
         font-family: 'hardingreg';
     src: url('HardingText Regular.ttf');
@@ -111,7 +112,7 @@ h4.documentationtitle:after {
     margin-bottom: 20px;
 }
 p {
-font-family:"Amiri";
+font-family: 'Alegreya Sans', sans-serif;
 }
 #center p:first-of-type {
 font-style: normal; 
