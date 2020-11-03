@@ -113,9 +113,13 @@ h4.documentationtitle:after {
     margin-bottom: 20px;
 }
 p {
-font-family: 'Alegreya Sans', sans-serif;
 font-family: 'Titillium Web', sans-serif;
 }
+p a{
+color:black;
+text-decoration: underline;	
+}
+
 #center p:first-of-type {
 font-style: normal; 
 color: black;
