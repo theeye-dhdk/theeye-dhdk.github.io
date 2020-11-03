@@ -11,6 +11,19 @@
 	padding:0;
 }
 
+#file a {
+    color: inherit;
+    text-decoration: underline;
+}
+
+#file a:hover {
+	color:red;
+}
+
+#file q:before, #file q:after {
+	content:'';
+}
+
 #file #ArticleBody {
 	background-color: #f9f7de;
 	font-family: 'Comfortaa', cursive;
@@ -62,6 +75,10 @@
 #file .coverinfo .byline {
 	color:red;
 	border-bottom: solid 5px black;
+}
+
+#file .coverinfo .publicationDate, .coverinfo .pubnote {
+	font-size: 0.8em;
 }
 
 #file .coverimg {
@@ -619,6 +636,9 @@ div#IssueIndex {
 	}
 
 	#file .covercaption {
-    width: 95%;
-    margin-bottom: 3%;
+	    width: 90%;
+	    margin-left: 0;
+	    margin-bottom: 7%;
+	    font-size: 0.8em;
+}
 }
