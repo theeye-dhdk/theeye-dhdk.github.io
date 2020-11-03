@@ -1,6 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Amiri&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Alegreya+Sans:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Titillium+Web:ital,wght@0,300;0,600;1,200&display=swap');
 @font-face {
         font-family: 'hardingreg';
     src: url('HardingText Regular.ttf');
@@ -113,6 +114,7 @@ h4.documentationtitle:after {
 }
 p {
 font-family: 'Alegreya Sans', sans-serif;
+font-family: 'Titillium Web', sans-serif;
 }
 #center p:first-of-type {
 font-style: normal; 
