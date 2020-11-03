@@ -118,7 +118,14 @@ font-family: 'Montserrat', sans-serif;
 }
 p a{
 color:black;
-text-decoration: underline;	
+text-decoration: underline;
+}
+
+li a{
+color:black;
+text-decoration: underline;
+overflow-wrap: break-word;
+word-wrap: break-word;
 }
 
 #center p:first-of-type {
