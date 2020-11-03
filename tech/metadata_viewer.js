@@ -1,7 +1,4 @@
 
-window.addEventListener("load", function () {
-    document.getElementById('loading').style.display = 'none';
-});
 
 $(document).on({
     ajaxStart: function() { document.getElementById('loading').style.display = 'block';    },
