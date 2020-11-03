@@ -513,7 +513,8 @@ ul.docStyles > li >a:checked {
 
 /* TEAM BLOCK--------------------------------------------------- */
 .teamBlock {
-margin-top:50px;}
+margin-top: 200px;
+}
 
 .our-team{
     position: relative;
