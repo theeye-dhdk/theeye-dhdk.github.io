@@ -1,8 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Amiri&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Alegreya+Sans:wght@300&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Titillium+Web:ital,wght@0,300;0,600;1,200&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,300;0,400;1,300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Titillium+Web:ital,wght@0,300;0,600;1,300&display=swap');
 
 @font-face {
         font-family: 'hardingreg';
@@ -115,7 +113,7 @@ h4.documentationtitle:after {
     margin-bottom: 20px;
 }
 p {
-font-family: 'Montserrat', sans-serif;
+font-family: 'Titillium Web', sans-serif;
 }
 p a{
 color:black;
@@ -572,6 +570,7 @@ margin-top: 200px;
     margin-right:2%;
 }
 .our-team .social-link li a{
+    text-decoration: none;
     color:#444;
     transition: all 0.50s ease;
 }
