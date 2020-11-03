@@ -345,7 +345,7 @@
 
 #file #IssueCover .IssueBibliographicCitation {
     font-family: Strasua;
-    font-size: 3vmax;
+    font-size: 2vmax;
     color: white;
     text-transform: uppercase;
     font-weight: bold;
@@ -607,3 +607,9 @@ div#IssueIndex {
     word-break: break-word;
 }
 **/
+
+@media screen and (max-width: 600px) {
+	#file img {
+		width:100%;
+	}
+}
