@@ -665,9 +665,9 @@ $(document).ready(function(){
 
 
 
-document.getElementsByClassName('pagination-link').onclick = function() {
+document.getElementById('paginationLinks').onclick = function() {
     responsiveVoice.cancel();
-}
+};
 document.getElementById('btn-style').onclick = function() {
     responsiveVoice.cancel();
 }
