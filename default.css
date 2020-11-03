@@ -8,7 +8,9 @@
 	margin:2%;
 	text-align:center;
 }
-
+#file #IssueCover h1 {
+	margin-bottom:3%;
+}
 #file #IssueCover .IssueBibliographicCitation {
 	text-transform: uppercase;
 	margin-top: 5%;
