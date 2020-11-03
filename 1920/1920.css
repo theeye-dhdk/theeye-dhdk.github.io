@@ -612,4 +612,13 @@ div#IssueIndex {
 	#file img {
 		width:100%;
 	}
+
+	#file .coverimg {
+		width:100%;
+		margin:0;
+	}
+
+	#file .covercaption {
+    width: 95%;
+    margin-bottom: 3%;
 }

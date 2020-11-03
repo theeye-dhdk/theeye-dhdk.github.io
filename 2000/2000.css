@@ -16,7 +16,16 @@
 }
 
 #file a {
-	color: #e60000;
+    color: inherit;
+    font-weight: bold;
+}
+
+#file a:hover {
+	color:#e60000;
+}
+
+#file figcaption a:hover {
+	color: #f2f2f2;
 }
 
 #file #ArticleBody {
@@ -297,13 +306,15 @@
     word-break: break-word;
 }
 
-#file #FootWrapper::after {
-	content:"theyemagazine"; 
-	text-transform: uppercase;
-	font-size: 0.9em;
-	font-weight: 100 !important;
-    letter-spacing: 2.2vmin;
-    padding: 2%;
+#ArticleBody::after {
+    content: "theyemagazine";
+    text-transform: uppercase;
+    font-size: 0.9em;
+    font-weight: 100 !important;
+    letter-spacing: 0.2vmin;
+    padding-right: 100%;
+    border-top: solid 1px #f2f2f2;
+    column-span: all;
 }
 
 #file #References {
@@ -468,12 +479,17 @@
 }
 
 #disclaimerText a {
+	color: #e60000;
 	font-family: 'Barlow Semi Condensed', sans-serif !important;
 	font-weight: 700 !important;
 	font-size: 120%;
 	overflow-wrap: break-word;
+	text-decoration: none;
 }
 
+#disclaimerText a:hover {
+	text-decoration: underline;
+}
 
 
 /** @media only screen and (max-width:780px) {
@@ -525,23 +541,10 @@
 	column-span: all;
 }
 
-/** #file #CoverWrapper .coverpic {
-    width: 100%;
-    height: 100%;
-    float: right;
-    margin-top: -7%;
-    margin-right: -7%;
-  }
-
-#file .title, #file .subtitle, #file .coverpic {
-	width:100%;
-	column-span: all;
-  }
-
-#file .coverpic img{
-	max-width:100%;
-	max-height: 100%
-  } **/
+#file .covercaption {
+    width: 50%;
+    margin-left: 40%;
+}
 
 #file #Abstract {
 	margin-top: 0%;
