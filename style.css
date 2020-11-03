@@ -110,7 +110,9 @@ h4.documentationtitle:after {
     margin-top: 10px;
     margin-bottom: 20px;
 }
-
+p {
+font-family:"Amiri";
+}
 #center p:first-of-type {
 font-style: normal; 
 color: black;
