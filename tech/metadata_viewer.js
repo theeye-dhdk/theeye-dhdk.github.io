@@ -1,4 +1,6 @@
+window.onload = function(){ document.getElementById('loading').style.display = 'none'; }
 
+});
 
 $(document).on({
     ajaxStart: function() { document.getElementById('loading').style.display = 'block';    },
@@ -137,6 +139,7 @@ function main() {
     closeOccurrences();
     $('#file').empty();
     $('#paginationLinks').css('display', 'none');
+    $('.disclaimer-txt').css('display', 'block');
     if ($(window).width() < 768) {
         closeNav()
     }
@@ -228,6 +231,7 @@ function loadDisclaimer() {
     for (var i = 0; i < sources.length; i++) {
         $('#disclaimer ul').append(sources[i]);
     }
+    $('.disclaimer-txt').css('display', 'none');
     $('#paginationLinks').css('display', 'block');
     $('#paginationLinks .previous').removeAttr('style');
     $('#paginationLinks .previous').attr("onclick","loadArticle('"+ articlesArray[articlesArray.length - 1].url +"')");
@@ -238,6 +242,7 @@ function loadDisclaimer() {
 function loadArticle(file) {
     $('#file').empty();
     $('#metadataArticle').empty();
+    $('.disclaimer-txt').css('display', 'none');
     $('#paginationLinks').css('display', 'block');
     closeOccurrences();
     
