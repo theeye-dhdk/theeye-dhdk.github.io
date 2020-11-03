@@ -7,10 +7,12 @@
 
 body {
     font-family: 'Amiri', serif;
+    overflow-x:hidden;
+ 
 }
 
 .navbarstyle2 { 
-    border-bottom: 4px solid black;
+    border-bottom: 2px solid black;
     }
 .navbar-brand {
 margin-left:40px;
@@ -28,9 +30,41 @@ font-size: 110%;
 
 .navbar-toggler {
 margin-left: 6%;}
+.breadcrumb_nav {
+    width:100%;
+}
+
+ul.breadcrumb {
+    padding: 10px 16px;
+    list-style: none;
+    background-color: #fff;
+    margin:0;
+        font-size:18px;
+        border-bottom:1px solid grey;
+  }
+  ul.breadcrumb li {
+    font-family: "hardingreg";
+    display: inline;
+    font-size: 18px;
+    color:#484848;
+  }
+  ul.breadcrumb li+li:before {
+    padding: 8px;
+    color: black;
+    content: "/\00a0";
+  }
+  ul.breadcrumb li a {
+    text-decoration: none;
+    color:grey;
+  }
+
+  ul.breadcrumb li a:hover {
+    color: #01447e;
+    text-decoration: underline;
+  }
 
 a {
-    color: #483949;
+    color: #087faa;
 }
 
 a:hover {
@@ -73,7 +107,10 @@ h4:after
   border-left: none;
 }
 
-
+#main {
+    font-size:18px;
+    min-height:100vh;
+}
 #footer {
     background-color: #f2f2f2;
   }
@@ -83,21 +120,19 @@ list-style-type: none;
 }
 
 .page-footer {
-    bottom: 0;
     width: 100%;
     /* Set the fixed height of the footer here */
     height: 60px;
     line-height: 1.5em; /* Vertically center the text there */
     background-color: transparent;
     border: none;
-    
+    position:relative;
   }
 .footer-copyright {
     border-top: 2px solid black;
     margin:0%;
 }
 #footer2 {
-    border-bottom: 4px solid black;
     margin:0%;
     }
 
@@ -113,17 +148,21 @@ list-style-type: none;
     overflow-y: scroll;
     overflow-x: hidden;
     padding-bottom:20px;
+    z-index:1300;
+    background-color:white;
 }
 
 #selector .list a {
-    font-size:1.1em;
+
 }
 
 .sticky {
     position: sticky;
     top: 0;
   }
-
+.sticky #metadataViewer {
+        padding-top:60px;       
+}
 
 #metadataViewer .label {
     font-weight: bold;
@@ -200,41 +239,44 @@ list-style-type: none;
 }
 
 #paginationLinks {
-    background-color: #5766799c; /**#ccb168;**/
-    font-size: 1.2em;
-    width: 100%;
+    width: 25%;
+    float:left;
     text-align: center;
-    height: 40px;
-    padding: 0.3em;
+}
+#disclaimer-btn {
+    width:10%;
+    padding-left:10px;
+    float:right;
 }
 
 .pagination-link {
     width: 20%;
     cursor: pointer; /* Pointer/hand icon */
     float: left;
-    margin-top: -0.6%;
-    padding-top: 6;
+    padding-top: 4px;
 }
 
 .pagination-link a {
-    color:#fff;
+    font-family: hardingreg;
+    color:#484848;
     width:100%;
     text-decoration: none;
     padding-left:0.3em;
     padding-right:0.3em;
     transition: 1s;
     cursor: pointer;
+    letter-spacing:1;
 }
 .pagination-link a:hover {
     color:black;
 }
 
-#paginationLinks:after {
-    content: "";
-    clear: both;
-    display: table;
-  }
 
+#disclaimer-btn {
+    float:right;
+    padding-right: 15px;
+    padding-top:4px;
+}
 /**#disclaimer {
     padding-right: 1%;
     padding-top: 1%;
@@ -253,22 +295,21 @@ list-style-type: none;
 }
 
 #metadataArticle .nav-item a{
-    color: #5766799c; /** #483949; **/
+    color: #1611369c; /** #483949; **/
 }
 
   #metadataArticle .nav-item a:hover{
     color:#f5f5f5;
-    background-color: #5766799c; /** #483949; **/
+    background-color: #1611369c; /** #483949; **/
 }
 #metadataArticle .nav-item .active {
     color:#f5f5f5;
-    background-color: #5766799c; /** #483949; **/
+    background-color: #1611369c; /** #483949; **/
 }
 #metadataArticle .tab-pane{
     background-color:#f5f5f5;
-    color: #25383C;
+    color: black;
     padding:15px;
-    font-size:95%;
     border-radius:0px 0px 10px 10px; 
 }
 
@@ -296,13 +337,11 @@ list-style-type: none;
     #occurrences-list{
         height: 130px;
         display: block;
-        font-size: 80%;
         overflow-y: scroll;
         overflow-x: hidden;
     }
     #wikiLink {
         display: block;
-        font-size: 90%;
         padding-left: 5px;
         padding-top: 15px;
     }
@@ -351,10 +390,12 @@ ul.minimal {
 
 #fileWrapper {
     transition: margin-left .5s;
+    padding:0;
+    margin:0;
+
 }
 
 #file {
-    padding: 0;
     padding-top:2em;
 }
 
@@ -435,7 +476,7 @@ a#closebtn-2 {
     left: 0;
     height: 40px;
     overflow: hidden;
-    background: #5766799c; /**#ccb168;**/
+    background: #1611369c; /**#ccb168;**/
     z-index: 1;
     font-size: 40px;
     padding-right: 1%;
@@ -445,58 +486,12 @@ a#closebtn-2 {
     display: none;/*value will change via javascript*/
 }
 
-span.head-title {
-    font-size: 0.5em;
-    padding-left: 0.8em;
-    font-family: 'hardingreg';
-}
+
 
 #wikiLink {
     font-size: 80%;
     padding-left: 5px;
 }
-
-.animate {
-    animation-name: bgcolor;
-    animation-duration: 1.50s;
-    animation-iteration-count: 3;
-    animation-fill-mode: backwards;
-}
-
-@keyframes bgcolor {
-    from {
-        background-color: #ffffff;
-    }
-
-    to {
-        background-color: greenyellow;
-    }
-}
-
-@media only screen and (max-width: 768px) {
-    #issueInfo {
-        top:0;
-        margin-left:0;
-        display:inline-block;
-        width:200px;
-        min-height: 150px;
-    }    
-    .sticky #metadataViewer {
-        padding-top:0px;
-    }
-    #closebtn-1 {
-        display:block;
-    }
-
-    #sticky-eye {
-        display:block;
-    }
-    
-    #fileWrapper {
-        /**margin-top: 60px;**/
-    }
-}
-
 
 #return-to-top {
     position: fixed;
@@ -517,6 +512,7 @@ span.head-title {
     -ms-transition: all 0.3s ease;
     -o-transition: all 0.3s ease;
     transition: all 0.3s ease;
+    z-index:2000;
 }
 #return-to-top i {
     color: #fff;
@@ -539,28 +535,40 @@ span.head-title {
     top: 5px;
 }
 
-
+#footer2 {
+  position:relative;
+}
 
 /** STYLE BUTTONS **/
 #eyeStyle {
   position: -webkit-sticky;
   position: sticky;
   top: 0;
-  padding-bottom: 1%;
+  width:100%;
   background-color: white;
-  z-index:1000;
-  border-radius: 0px 0px 15px 15px;
+  z-index:1500;
+  border-bottom:4px solid black;
+  padding-top:5px;
+  height:60px;
+  font-size:18px;
 }
-
+#eyeStyle .text-center {
+    width:65%;
+    float:left;
+}
 #eyeStyle .btn-group {
     margin: 0 auto; 
     text-align: center;
     width: inherit;
     display: inline-block;
+    font-size:0.9em;
 }
 
 #eyeStyle #buttonList {
-  margin-top: 3%;
+    float:left;
+    padding-left:10px;
+  margin-top: 0.5%;
+  padding-top:3;
   padding-bottom: 1%;
   text-align: center;
 }
@@ -571,14 +579,13 @@ span.head-title {
 
 #eyeStyle button {
   font-family: "hardingreg";
+  color:grey;
   font-size: 1em;
   border: none;
   background-color: transparent;
 }
 
-#eyeStyle button:hover {
-  opacity: 0.5;
-}
+
 
 #eyeStyle button:focus {
   outline: none;
@@ -606,3 +613,93 @@ span.head-title {
     transition:1s;
     float:left;
 }
+
+
+#btn-style>button.btn-active {
+    text-decoration:underline;
+    opacity: 0.5;
+}
+#CoverWrapper div.parallax {
+    display:none;
+}
+#CoverWrapper div.giuliaMarkup {
+    display:none;
+}
+#CoverWrapper div#ListeningWrapper {
+    display:none;
+}
+#ArticleBody div#Footerimg {
+    display:none;
+}
+.animate {
+    animation-name: bgcolor;
+    animation-duration: 1.50s;
+    animation-iteration-count: 3;
+    animation-fill-mode: backwards;
+}
+
+@keyframes bgcolor {
+    from {
+        background-color: #ffffff;
+    }
+
+    to {
+        background-color: greenyellow;
+    }
+}
+
+@media only screen and (max-width: 768px) {
+    .site {
+        position:relative;
+        overflow-x:hidden;
+    }
+    #main {
+        margin-bottom:100px;
+        }
+    #issueInfo {
+        top:0;
+        margin-left:0;
+        display:inline-block;
+        width:200px;
+        min-height: 150px;
+    }    
+    #paginationLinks{
+        width:80%;
+    }
+    #disclaimer-btn {
+        width:20%;
+    }
+
+    #eyeStyle .text-center {
+        width:100%;
+        position:fixed;
+        bottom:0;
+        border-top:4px solid black;
+        z-index:1500;
+        background:white;
+    }
+    #return-to-top {
+        bottom:80px;
+    }
+    #footer2 {
+        margin-bottom:100px;
+    }
+    .sticky #metadataViewer {
+        padding-top:0px;
+    }
+    #selector.offcanvas {
+        z-index:2000;
+    }
+    #closebtn-1 {
+        display:block;
+    }
+
+    #sticky-eye {
+        display:block;
+    }
+    
+    #fileWrapper {
+        /**margin-top: 60px;**/
+    }
+}
+
