@@ -119,9 +119,12 @@ p a{
 color:black;
 }
 
+li,ul {
+list-style-type:none;
+}
+
 li a{
 color:black;
-list-style-type:none;
 overflow-wrap: break-word;
 word-wrap: break-word;
 }
