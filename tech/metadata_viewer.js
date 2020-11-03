@@ -137,7 +137,6 @@ function main() {
     closeOccurrences();
     $('#file').empty();
     $('#paginationLinks').css('display', 'none');
-    $('.disclaimer-txt').css('display', 'block');
     if ($(window).width() < 768) {
         closeNav()
     }

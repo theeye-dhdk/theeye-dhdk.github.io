@@ -663,6 +663,8 @@ a#closebtn-2 {
   .disclaimer-txt {
       display:none;
       width: 80%;
+      padding-top:4px;
+      font-size:18px;
       float:left;
   }
 
