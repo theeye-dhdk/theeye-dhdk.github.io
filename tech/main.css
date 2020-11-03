@@ -664,7 +664,7 @@ a#closebtn-2 {
       display:none;
       width: 80%;
       padding-top:6px;
-      padding-left:5px;
+      padding-left:10px;
       font-size:16px;
       float:left;
   }
@@ -738,7 +738,7 @@ a#closebtn-2 {
 }
 
 @media only screen and (max-width: 480px) {
-    #main {
+    body {
         font-size:1.2em;
     }
 }
