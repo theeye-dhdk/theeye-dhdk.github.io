@@ -1,3 +1,9 @@
+window.onload = function(){ setTimeout(function() {document.getElementById('loading').style.display = 'none';}, 2400) };
+
+$(document).on({
+    ajaxStart: function() { document.getElementById('loading').style.display = 'block';    },
+    ajaxStop: function(){ setTimeout(function() {document.getElementById('loading').style.display = 'none';}, 2400) }
+});
 
 window.onscroll = function() {myFunction()};
 
@@ -222,6 +228,7 @@ function loadDisclaimer() {
     for (var i = 0; i < sources.length; i++) {
         $('#disclaimer ul').append(sources[i]);
     }
+    $('.disclaimer-txt').css('display', 'none');
     $('#paginationLinks').css('display', 'block');
     $('#paginationLinks .previous').removeAttr('style');
     $('#paginationLinks .previous').attr("onclick","loadArticle('"+ articlesArray[articlesArray.length - 1].url +"')");
@@ -232,6 +239,7 @@ function loadDisclaimer() {
 function loadArticle(file) {
     $('#file').empty();
     $('#metadataArticle').empty();
+    $('.disclaimer-txt').css('display', 'none');
     $('#paginationLinks').css('display', 'block');
     closeOccurrences();
     
@@ -299,6 +307,31 @@ function loadArticle(file) {
             fillInfo('#file', '#info');
             fillTabs();
             addReverseAccess(['person', 'place', 'entity', 'concept', 'event']);
+            verifyGiuliaMarkup();
+            //LISTENING FUNCTIONS
+
+            document.getElementById("listening").onclick = function() {
+                document.getElementById("listeningTime").style = 'display:block;';
+                document.getElementById("ListeningWrapper").style = 'display:block;';
+                document.getElementById("play-btn").style="display:none;"
+                document.getElementById("pause-btn").style="display:block;"
+                responsiveVoice.speak(document.getElementById("ContentWrapper").textContent);
+            };
+
+            document.getElementById("pause-btn").onclick = function() {
+                if(responsiveVoice.isPlaying()) {
+                responsiveVoice.pause();
+                document.getElementById("play-btn").style="display:block;"
+                document.getElementById("pause-btn").style="display:none;"
+                }
+            };
+
+            document.getElementById("play-btn").onclick = function() {
+                responsiveVoice.resume();
+                document.getElementById("play-btn").style="display:none;"
+                document.getElementById("pause-btn").style="display:block;"
+            };
+            
         },
         error: function () {
             alert('Could not load ' + file)
@@ -511,10 +544,50 @@ function reverseAccess(obj) {
 
 
 
+function verifyGiuliaMarkup() {
+    if (!$("div.GiuliaMarkup").length) {
+      //first html piece of code
+      $('div.maincover').prepend(`<div class="parallax"><img src="../2040/img/Eye 8.png" class="logo"></div>`);
+      
+      //second html piece of code
+      $('div#CoverWrapper').append(`
+      <div class="GiuliaMarkup">
+        <div id="readingTime"></div>
+        <div id="listeningTime"></div>
+        <div id="icons">
+          <i id="listening" class="fa fa-microphone" aria-hidden="true"></i>
+        </div>
+        <div id="ListeningWrapper">
+          <div id="audiobox">
+              <i class="fa fa-play" id ="play-btn" aria-hidden="true"></i>
+              <i class="fa fa-pause" id ="pause-btn" aria-hidden="true"></i>
+          </div>
+        </div>
+      </div>`);
+      
+      //third html piece of code
+      $('div#ArticleBody').append(`
+      <div id="Footerimg"><img src="../2040/img/sust_3.png" class="footerimg"></div>
+      `);
+    }
+  }
 
+
+
+Element.prototype.remove = function() {
+this.parentElement.removeChild(this);
+}
 //Change style through buttons
 function changeStyle(selectedStyle) {
-    document.getElementById('ArticleCss').setAttribute('href', selectedStyle);
+    document.getElementById('ArticleCss').remove();
+    document.getElementById('loading').style.display = 'block';
+    cssFile = document.createElement('link');
+    cssFile.type = "text/css"; 
+    cssFile.rel = "stylesheet";
+    cssFile.onload = function(){ setTimeout(function() {document.getElementById('loading').style.display = 'none';}, 2400) };
+    cssFile.href = selectedStyle;
+    cssFile.id= "ArticleCss";
+    document.getElementsByTagName("head")[0].appendChild(cssFile);
 }
 
 //Manage active style button
@@ -586,3 +659,15 @@ $(document).ready(function(){
         $('.articleImg[src=""]').hide();
         $('.articleImg:not([src=""])').show();
     });
+
+
+
+
+
+
+document.getElementById('paginationLinks').onclick = function() {
+    responsiveVoice.cancel();
+};
+document.getElementById('btn-style').onclick = function() {
+    responsiveVoice.cancel();
+}
