@@ -112,6 +112,9 @@
 	color: darkred;
 	column-span: all;
 }
+#file #ContentWrapper {
+	page-break-inside: avoid;
+}
 
 #file #ContentWrapper blockquote {
 	font-family: mySeagram;
@@ -220,10 +223,10 @@
 	line-height: 0.63em;
 }
 
-#file #Summary > p:first-of-type::first-letter, #Introduction > p:first-of-type::first-letter, #ContentWrapper h2 ~ p:first-of-type::first-letter {
+#file #Summary > p:first-of-type::first-letter, #Introduction > p:first-of-type::first-letter, #ContentWrapper > p:first-of-type::first-letter, #ContentWrapper h2 > p:first-of-type::first-letter {
 	font-family: myCaps;
 	float: left;
-	font-size: 120pt;
+	font-size: 100pt;
 	line-height: 80px;
 	padding-top: 40px;
 	padding-right: 10px;
