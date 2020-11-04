@@ -79,7 +79,7 @@
 	color: black;
 	font-family: mySeagram;
 	font-size: 20pt;
-	text-align: center;
+	text-align: justify;
 	margin-left: 10%;
 	margin-right: 10%;
 	line-height: 1.2;
@@ -156,7 +156,13 @@
 }
 
 #file div.coverinfo {
-	display: justify;
+	display: left;
+	font-size: 20pt;
+	margin-top: 5%;
+	margin-left: 10%;
+	margin-right: 10%;
+	line-height: 1.2;
+	
 } 
 
 #file #Introduction {
@@ -264,6 +270,7 @@
 	color: black;
 	border-spacing: 1px;
 	border-collapse: separate;
+	page-break-inside: avoid;
 }
 #file #FootWrapper {
 	color: black;
