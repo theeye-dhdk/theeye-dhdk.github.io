@@ -53,19 +53,21 @@
 }
 
 #file .coverpic {
-	max-width: 100%;
+	max-width: 80%;
 	position: relative;
 }
 
 #file .coverimg { 
-	max-width: 100%;
+	max-width: 80%;
 	position: left;
 	display: block;
 	filter: brightness(80%);
 	filter: sepia(40%);
+	margin-left: auto;
+	margin-right:auto;
 }
 
-#file h1 {
+#file #CoverWrapper h1 {
 	color: darkred; 
 	text-transform: uppercase;
 	text-align: left;
@@ -75,11 +77,11 @@
 	column-span: all;
 }
 
-#file p.subtitle {
+#file #CoverWrapper p.subtitle {
 	color: black;
 	font-family: mySeagram;
 	font-size: 20pt;
-	text-align: justify;
+	text-align: left;
 	margin-left: 10%;
 	margin-right: 10%;
 	line-height: 1.2;
@@ -148,9 +150,9 @@
 #file #CoverWrapper {
 	font-family: mySeagram !important;
 	text-transform: uppercase;
-	text-align: center;
+	text-align: left;
 	line-height: 1;
-	font-size: 27pt;
+	font-size: 20pt;
 	padding-bottom: 110px;
 	column-span: all;
 }
@@ -205,7 +207,7 @@
 	float:left;
 	line-height: 0.63em;
 }
-#file h1 > p:first-of-type::first-letter {
+#file #CoverWrapper h1 > p:first-of-type::first-letter {
 	font-family: myCaps;
 	float: left;
 	font-size: 230pt;
@@ -218,7 +220,7 @@
 	line-height: 0.63em;
 }
 
-#file #Summary > p:first-of-type::first-letter, #Introduction > p:first-of-type::first-letter, #ContentWrapper > p:first-of-type::first-letter, #ContentWrapper h2 ~ p:first-of-type::first-letter {
+#file #Summary > p:first-of-type::first-letter, #Introduction > p:first-of-type::first-letter, #ContentWrapper h2 ~ p:first-of-type::first-letter {
 	font-family: myCaps;
 	float: left;
 	font-size: 120pt;
@@ -376,7 +378,7 @@
 	font-size: 230pt;
 	}
 
-	#file #Summary > p:first-of-type::first-letter, #Introduction > p:first-of-type::first-letter, #ContentWrapper > p:first-of-type::first-letter, #ContentWrapper h2 ~ p:first-of-type::first-letter {
+	#file #Summary > p:first-of-type::first-letter, #Introduction > p:first-of-type::first-letter, #ContentWrapper h2 ~ p:first-of-type::first-letter {
 	font-size: 150pt;
 	}
 }
@@ -413,7 +415,7 @@
 	font-size: 230pt;
 	}
 
-	#file #Summary > p:first-of-type::first-letter, #Introduction > p:first-of-type::first-letter, #ContentWrapper > p:first-of-type::first-letter, #ContentWrapper h2 ~ p:first-of-type::first-letter {
+	#file #Summary > p:first-of-type::first-letter, #Introduction > p:first-of-type::first-letter, #ContentWrapper h2 ~ p:first-of-type::first-letter {
 	font-size: 130pt;
 	}
 	#file #ArticleBody table {
