@@ -156,7 +156,7 @@
 }
 
 #file div.coverinfo {
-	display: none;
+	display: justify;
 } 
 
 #file #Introduction {
@@ -354,8 +354,9 @@
 		height: 336px;
 	}
 	#file #IssueCover h1 {
-		font-size: 24pt;
+		font-size: 20pt;
 		margin-bottom: 5%;
+		letter-spacing: 1; 
 	}
 	#file #IssueCover > h1:first-of-type::first-letter {
 		font-size: 70pt;
@@ -363,6 +364,7 @@
 	#file #Credits > p:first-of-type::first-letter {
 	font-size: 230pt;
 	}
+	
 	#file #ArticleBody h1 > p:first-of-type::first-letter {
 	font-size: 230pt;
 	}
@@ -382,6 +384,15 @@
 		width: 390px;
 		height: 252px;
 	}
+	
+	#file h1 {
+	font-size: 20pt;
+	}
+
+	#file p.subtitle {
+	font-size: 15pt; 
+	}
+	
 	#file #IssueCover h1 {
 		font-size: 25pt;
 	}
@@ -397,6 +408,9 @@
 
 	#file #Summary > p:first-of-type::first-letter, #Introduction > p:first-of-type::first-letter, #ContentWrapper > p:first-of-type::first-letter, #ContentWrapper h2 ~ p:first-of-type::first-letter {
 	font-size: 130pt;
+	}
+	#file #ArticleBody table {
+		column-span: all; 
 	}
   }
 
