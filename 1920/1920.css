@@ -162,10 +162,12 @@
 }
 
 #file #Abstract {
-	border-right: solid 20px black;
-	margin-left: -5%;
-	padding-right: 2%;
-	width: 40%;
+	font-size: 0.8em;
+    border-right: solid 20px black;
+    margin-left: -5%;
+    padding-right: 2%;
+    margin-bottom: 2.5em;
+    width: 80%;
 }
 
 #file #Abstract .label {
@@ -190,14 +192,15 @@
   }
 
 #file #Summary {
-	font-size:0.8em;
-	border-left: solid 15px black;
-	border-bottom: solid 20px white;
-	margin-bottom: 1.5em;
-	background-color: blue;
-	color: white;
-	padding: 2%;
-	width: 30%;
+	font-size: 0.8em;
+    border-left: solid 15px black;
+    border-bottom: solid 20px white;
+    margin-bottom: 1.5em;
+    background-color: blue;
+    color: white;
+    padding: 3%;
+    padding-right: 10%;
+    width: 80%;
 }
 
 #file #Summary p {
@@ -412,6 +415,10 @@ div#IssueIndex {
 	text-transform: uppercase;
 }
 
+#file #IssueCover .ArticleInfo a {
+	color: #2273c3;
+}
+
 #file #IssueCover .ArticleInfo a:hover {
 	color:red;
 }
@@ -545,6 +552,7 @@ div#IssueIndex {
 
 #disclaimerText a {
 	font-family: Strasua;
+	color:blue;
 	background-color: yellow;
     overflow-wrap: break-word;
 }
@@ -636,7 +644,7 @@ div#IssueIndex {
 	}
 
 	#file .covercaption {
-	    width: 90%;
+		width: 75%;
 	    margin-left: 0;
 	    margin-bottom: 7%;
 	    font-size: 0.8em;
