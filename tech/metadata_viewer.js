@@ -2,7 +2,7 @@ window.onload = function(){ setTimeout(function() {document.getElementById('load
 
 $(document).on({
     ajaxStart: function() { document.getElementById('loading').style.display = 'block';    },
-    ajaxStop: function(){ setTimeout(function() {document.getElementById('loading').style.display = 'none';}, 4800) }; 
+    ajaxStop: function(){ setTimeout(function() {document.getElementById('loading').style.display = 'none';}, 4800) }
 });
 
 window.onscroll = function() {myFunction()};
