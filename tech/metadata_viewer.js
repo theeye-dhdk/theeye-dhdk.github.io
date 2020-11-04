@@ -1,8 +1,8 @@
-window.onload = function(){ setTimeout(function() {document.getElementById('loading').style.display = 'none';}, 4800) };
+window.onload = function(){ setTimeout(function() {document.getElementById('loading').style.display = 'none';}, 2400) };
 
 $(document).on({
     ajaxStart: function() { document.getElementById('loading').style.display = 'block';    },
-    ajaxStop: function(){ setTimeout(function() {document.getElementById('loading').style.display = 'none';}, 4800) }
+    ajaxStop: function(){ setTimeout(function() {document.getElementById('loading').style.display = 'none';}, 2400) }
 });
 
 window.onscroll = function() {myFunction()};
@@ -584,7 +584,7 @@ function changeStyle(selectedStyle) {
     cssFile = document.createElement('link');
     cssFile.type = "text/css"; 
     cssFile.rel = "stylesheet";
-    cssFile.onload = function(){ setTimeout(function() {document.getElementById('loading').style.display = 'none';}, 4800) };
+    cssFile.onload = function(){ setTimeout(function() {document.getElementById('loading').style.display = 'none';}, 2400) };
     cssFile.href = selectedStyle;
     cssFile.id= "ArticleCss";
     document.getElementsByTagName("head")[0].appendChild(cssFile);
