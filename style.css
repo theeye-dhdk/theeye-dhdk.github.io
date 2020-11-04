@@ -308,7 +308,8 @@ text-align: center;
   position: relative;
   width: 100%;
 }
-button.browse-btn{
+
+/**button.browse-btn{
   background-color:fff;
   border:none;
   cursor:pointer;
@@ -323,7 +324,44 @@ button.browse-btn:hover{
   border:1px solid grey;
   opacity: 1;
 
+}**/
+
+/** New home button **/
+.home-btn {
+  margin: auto; 
+  padding: 0; 
+  list-style: none; 
+  display: table;
+  width: 600px;
+  text-align: center;
 }
+
+.home-btn a {
+  color: #444;
+  font-family:hardingreg;
+  font-size: 1.3em;
+  text-decoration: none;
+  display: inline-block;
+  padding: 5px 5px;
+  position: relative;
+}
+.home-btn a:after {    
+  background: none repeat scroll 0 0 transparent;
+  bottom: 0;
+  content: "";
+  display: block;
+  height: 2px;
+  left: 50%;
+  position: absolute;
+  background: #444;
+  transition: width 0.3s ease 0s, left 0.3s ease 0s;
+  width: 0;
+}
+.home-btn a:hover:after { 
+  width: 100%; 
+  left: 0; 
+}
+/** end new home button **/
 
 .image {
    opacity: 1;
