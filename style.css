@@ -312,14 +312,13 @@ button.browse-btn{
   background-color:fff;
   border:none;
   cursor:pointer;
-  color:#444;
-  transition:1s;
+  color:black;
   font-size:1.3em;
   border:1px solid #444;
   transition:1s;
 }
 button.browse-btn:hover{
-  background-color:fff;
+  color:black;
   opacity: 1;
 
 }
