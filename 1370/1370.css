@@ -220,7 +220,7 @@
 	line-height: 0.63em;
 }
 
-#file #Summary > p:first-of-type::first-letter, #Introduction > p:first-of-type::first-letter, #ContentWrapper h2 > p:first-of-type::first-letter {
+#file #Summary > p:first-of-type::first-letter, #Introduction > p:first-of-type::first-letter, #Abstract > p:first-of-type::first-letter, #ContentWrapper h2 > p:first-of-type::first-letter {
 	font-family: myCaps;
 	float: left;
 	font-size: 120pt;
