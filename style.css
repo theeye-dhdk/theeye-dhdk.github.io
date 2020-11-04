@@ -319,6 +319,7 @@ button.browse-btn{
 }
 button.browse-btn:hover{
   color:black;
+  background-color: fff;
   opacity: 1;
 
 }
