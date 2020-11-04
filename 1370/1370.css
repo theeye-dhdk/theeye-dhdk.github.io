@@ -429,8 +429,9 @@
 }
 @media screen and (max-width: 480px) {
 	#file #IssueCover h1 {
-		font-size: 17pt;
+		font-size: 12pt;
 		padding-top: 55%;
+		letter-spacing: 4;
 	}
 	#file #IssueCover > h1:first-of-type::first-letter {
 		font-size: 35pt;
@@ -448,8 +449,9 @@
 }
 @media screen and (max-width: 220px) {
 	#file #IssueCover h1 {
-		font-size: 15pt;
+		font-size: 12pt;
 		margin-top: 50%;
+		letter-spacing: 4;
 	}
 	#file #IssueCover > h1:first-of-type::first-letter {
 		font-size: 30pt;
