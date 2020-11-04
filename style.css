@@ -319,7 +319,7 @@ button.browse-btn{
 }
 button.browse-btn:hover{
   color:black;
-  background-color: fff;
+  background-color: #f5f5f5;
   opacity: 1;
 
 }
