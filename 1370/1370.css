@@ -156,8 +156,8 @@
 }
 
 #file div.coverinfo {
-	display: left;
 	font-size: 20pt;
+	text-align: left;
 	margin-top: 5%;
 	margin-left: 10%;
 	margin-right: 10%;
