@@ -665,6 +665,9 @@ $(document).ready(function(){
 document.getElementById('paginationLinks').onclick = function() {
     responsiveVoice.cancel();
 };
+document.getElementById('disclaimer-btn').onclick = function() {
+    responsiveVoice.cancel();
+};
 document.getElementById('btn-style').onclick = function() {
     responsiveVoice.cancel();
 }
