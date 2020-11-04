@@ -27,7 +27,7 @@ margin-left:39px;
 font-family: "hardingreg";
 font-size: 110%;
 }
-.nav-item .dropdown {
+.dropdown-menu {
         z-index:4000;
 }
 .navbar-toggler {
@@ -647,7 +647,7 @@ a#closebtn-2 {
     height: 100%;
     position: absolute;
     display: block;
-    opacity: 0.9;
+    opacity: 1;
     background-color: #fff;
     z-index: 1200;
     text-align: center;
