@@ -1,9 +1,6 @@
 window.onload = function(){ setTimeout(function() {document.getElementById('loading').style.display = 'none';}, 2400) };
 
-$(document).on({
-    ajaxStart: function() { document.getElementById('loading').style.display = 'block';    },
-    ajaxStop: function(){ setTimeout(function() {document.getElementById('loading').style.display = 'none';}, 2400) }
-});
+
 
 window.onscroll = function() {myFunction()};
 
