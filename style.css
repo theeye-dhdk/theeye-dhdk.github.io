@@ -320,7 +320,7 @@ button.browse-btn{
 button.browse-btn:hover{
   color:white;
   background-color: grey;
-  border:none;
+  border:1px solid grey;
   opacity: 1;
 
 }
