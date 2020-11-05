@@ -98,7 +98,7 @@
 	padding-top: 20px;
 	padding-bottom: 20px;
 	color: darkred;
-	column-span: all;
+	/* column-span: all;*/
 }
 
 #file #ArticleBody h3, #ArticleBody h4, #ArticleBody h5 {
@@ -111,7 +111,7 @@
 	padding-bottom: 10px;
 	line-height: 1.5;
 	color: darkred;
-	column-span: all;
+	/*column-span: all;*/
 }
 
 #file #ContentWrapper {
@@ -239,7 +239,7 @@
 #file #ContentWrapper > p:first-of-type::first-letter {
 	font-family: myCaps;
 	float: left;
-	font-size: 150pt;
+	font-size: 130pt;
 	line-height: 80px;
 	padding-top: 40px;
 	padding-right: 10px;
