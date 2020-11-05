@@ -42,7 +42,6 @@
 	font-size: 12pt;
 	font-family: mySeagram !important;
 	text-align: justify ;
-	column-count: 2;
 	column-gap: 7%;
 	column-fill: balance;
 	padding: 7%;
@@ -111,6 +110,10 @@
 	line-height: 1.5;
 	color: darkred;
 	column-span: all;
+}
+
+#file #ContentWrapper {
+	column-count: 2;
 }
 
 #file #ContentWrapper blockquote {
@@ -543,7 +546,7 @@
 }
 
 @media screen and (max-width: 600px) {
-#file #ArticleBody {
+#file #ContentWrapper {
     column-count: 1;									
   }
 }
