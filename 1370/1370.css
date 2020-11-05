@@ -225,7 +225,7 @@
 	line-height: 0.63em;
 }*/
 
-#file #Summary > p:first-of-type::first-letter, #Introduction > p:first-of-type::first-letter, #Abstract > p:first-of-type::first-letter, #ContentWrapper h2 > p:first-of-type::first-letter {
+/*#file #Summary > p:first-of-type::first-letter, #Introduction > p:first-of-type::first-letter, #Abstract > p:first-of-type::first-letter, #ContentWrapper h2 > p:first-of-type::first-letter {
 	font-family: myCaps;
 	float: left;
 	font-size: 200pt;
@@ -235,8 +235,8 @@
 	color: darkgreen; 
 	float:left;
 	line-height: 0.63em;
-}
-/* #file #ContentWrapper > p:first-of-type::first-letter {
+}*/
+#file #ContentWrapper > p:first-of-type::first-letter {
 	font-family: myCaps;
 	float: left;
 	font-size: 100pt;
@@ -246,7 +246,7 @@
 	color: darkgreen; 
 	float:left;
 	line-height: 0.63em;
-} */
+}
 
 #file #Articlebody figcaption {
 	font-size: 10pt;
