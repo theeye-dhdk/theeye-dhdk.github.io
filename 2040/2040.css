@@ -138,6 +138,9 @@
 	font-size:200%;
 	padding:10%;
 }
+#CoverWrapper div.GiuliaMarkup i.fa:hover {
+	color: #051f209a;
+}
 
 #ListeningWrapper {
 	display:none;
@@ -148,6 +151,7 @@
 	z-index: 10px;
 	background: #051f20;
 }
+
 
 #file #ContentWrapper {
 	color: #dbe3cb;
@@ -292,8 +296,8 @@
 	margin-bottom: 5%;
 	margin-top: 5%;
 	word-break: break-word;
-	margin-left: auto;
-	margin-right: auto;
+	margin-left: 7%;
+	margin-right: 7%;
 	border-spacing: 1px;
 	border-collapse: separate;
 }
@@ -317,6 +321,16 @@
 	border-style: none #dbe3cb;
 	border-bottom-width: 2pt ;
 	font-family: 'OptimaNovaLTProLight';
+}
+
+#file #Articlebody table.caption {
+	font-size: 15pt;
+	font-family: 'OptimaNovaLTProLight';
+	padding: 10px;
+}
+#file #ArticleBody dl, ol, ul {
+	margin-left: 10%;
+	margin-right: 10%;
 }
 
 #file #FootWrapper {
