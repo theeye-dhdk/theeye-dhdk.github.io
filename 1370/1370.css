@@ -72,9 +72,9 @@
 	text-transform: uppercase;
 	text-align: left;
 	font-family: mySeagram;
-    font-size: 5vmax;
+    	font-size: 4vmax;
 	letter-spacing: 1vmin;
-    word-break: break-all;
+    	word-break: break-all;
 	column-span: all;
 }
 
@@ -93,7 +93,7 @@
 	text-align: center; 
 	text-transform: uppercase;
 	line-height: 1.3;
-	font-size: 4vmax;
+	font-size: 3vmax;
 	font-family:  mySeagram !important;
 	padding-top: 20px;
 	padding-bottom: 20px;
@@ -106,7 +106,7 @@
 	text-transform: uppercase;
 	text-align: center;
 	letter-spacing: 1vmin;
-	font-size: 3vmax;
+	font-size: 2vmax;
 	padding-top: 10px;
 	padding-bottom: 10px;
 	line-height: 1.5;
@@ -212,7 +212,7 @@
 	float:left;
 	line-height: 0.63em;
 }
-#file #CoverWrapper h1 > p:first-of-type::first-letter {
+/* #file #CoverWrapper h1 > p:first-of-type::first-letter {
 	font-family: myCaps;
 	float: left;
 	font-size: 230pt;
@@ -223,12 +223,12 @@
 	color: darkred;
 	float:left;
 	line-height: 0.63em;
-}
+}*/
 
 #file #Summary > p:first-of-type::first-letter, #Introduction > p:first-of-type::first-letter, #Abstract > p:first-of-type::first-letter, #ContentWrapper h2 > p:first-of-type::first-letter {
 	font-family: myCaps;
 	float: left;
-	font-size: 120pt;
+	font-size: 200pt;
 	line-height: 80px;
 	padding-top: 40px;
 	padding-right: 10px;
@@ -236,7 +236,7 @@
 	float:left;
 	line-height: 0.63em;
 }
-#file #ContentWrapper > p:first-of-type::first-letter {
+/* #file #ContentWrapper > p:first-of-type::first-letter {
 	font-family: myCaps;
 	float: left;
 	font-size: 100pt;
@@ -246,7 +246,7 @@
 	color: darkgreen; 
 	float:left;
 	line-height: 0.63em;
-}
+} */
 
 #file #Articlebody figcaption {
 	font-size: 10pt;
@@ -396,7 +396,7 @@
 	}
 
 	#file #Summary > p:first-of-type::first-letter, #Introduction > p:first-of-type::first-letter, #ContentWrapper h2 > p:first-of-type::first-letter {
-	font-size: 120pt;
+	font-size: 150pt;
 	}
 	#file #ContentWrapper > p:first-of-type::first-letter {
 	font-size: 100pt;
