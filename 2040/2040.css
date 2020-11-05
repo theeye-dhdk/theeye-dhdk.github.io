@@ -110,11 +110,13 @@
 	font-family: 'morion-bold.332ab69e';
 	font-size: 27pt;	
 	padding-bottom: none;
+	margin-top: 5%;
 }
 
 #file #ArticleBody h3, #ArticleBody h4, #ArticleBody h5 {
 	font-family: 'morion-regular.c5d43538';
-	font-size: 25pt;	
+	font-size: 25pt;
+	margin-top: 5%;
 }
 
 
