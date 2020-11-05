@@ -710,6 +710,9 @@ a#closebtn-2 {
         z-index:1500;
         background:white;
     }
+    #eyeStyle .btn-group {
+        display:inline-block;
+        }
     #return-to-top {
         bottom:80px;
     }
