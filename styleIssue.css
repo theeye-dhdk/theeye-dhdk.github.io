@@ -565,7 +565,6 @@ a#closebtn-2 {
     margin: 0 auto; 
     text-align: center;
     width: inherit;
-    display: inline-block;
     font-size:0.9em;
 }
 
