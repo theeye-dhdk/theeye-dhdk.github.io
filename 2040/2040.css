@@ -139,7 +139,7 @@
 	padding:10%;
 }
 #CoverWrapper div.GiuliaMarkup i.fa:hover {
-	color: #051f209a;
+	color: #dbe3cb79;
 }
 
 #ListeningWrapper {
@@ -329,8 +329,8 @@
 	padding: 10px;
 }
 #file #ArticleBody dl, ol, ul {
-	margin-left: 10%;
-	margin-right: 10%;
+	margin-left: 25%;
+	margin-right: 25%;
 }
 
 #file #FootWrapper {
