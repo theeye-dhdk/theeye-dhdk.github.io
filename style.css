@@ -615,6 +615,9 @@ margin-top: 200px;
     margin:0;
     list-style:none;
 }
+.social-link{
+margin-top:10px;
+}
 .our-team .social-link li{
     display: inline-block;
     margin-right:2%;
