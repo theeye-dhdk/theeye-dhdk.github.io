@@ -542,3 +542,8 @@
 	text-align: center;
 }
 
+@media screen and (max-width: 600px) {
+#file #ArticleBody {
+    column-count: 1;									
+  }
+}
