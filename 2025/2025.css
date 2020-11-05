@@ -2097,6 +2097,8 @@ line-height: 2.1;
   #file div.article .coverpic {
   display: none;
   }
+	#file div.article div.cover {
+	height: 700px}
   #file div.article p.subtitle {
   display: none;
   }
@@ -2210,6 +2212,8 @@ margin-left:7%;
   #file div.article p.pubnote  {
   display: none;
   }
+	#file div.article div.cover {
+	height: 700px}
   #file div.article div.cover:after {
   height: 6vw;
   width: 6vw;
