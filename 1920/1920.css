@@ -338,6 +338,8 @@
     background-repeat: no-repeat, no-repeat, no-repeat, no-repeat;
     background-position: 96% 4%, 95% 2%, 100% 100%, center;
     background-size: 20%, 20%, 80%, 100%; 
+    overflow-x: hidden;
+    word-break: break-all;
 }
 
 #IssueCover h1 {
@@ -427,93 +429,6 @@ div#IssueIndex {
 	display:none;
 }
 
-/** #IssueCover {
-	margin: 0;
-	padding: 5%;
-    padding-bottom: 50%;
-	background: rgb(251,251,251);
-	background: rgb(0,0,0);
-	background: url("img/eye4.png"), url("img/circle.svg"), url("img/redtriangule.svg"), linear-gradient(63deg, rgba(251,251,251,1) 0%, rgba(0,0,0,1) 0%, rgba(0,0,0,1) 44%, rgba(255,245,245,0) 44%, rgba(255,255,255,1) 100%, rgba(255,255,255,0) 100%);
-	background-repeat: no-repeat, no-repeat, no-repeat, no-repeat;
-	background-position: 96% 4%, 95% 2%, 100% 100%, center;
-	background-size: 20%, 20%, 80%, 100%;
-}
-
-#IssueCover h1 {
-    font-family: Strasua;
-    font-size: 4vmax;
-    color: black;
-    width: 30%;
-    margin-left: 0;
-    padding: 7%;
-    padding-top: 0;
-    z-index: 2;
-    transform: rotate(-29deg);
-}
-
-#IssueCover h1::first-letter {
-	font-size:12vmax;
-}
-
-#file #IssueCover .IssueBibliographicCitation {
-	font-family: Strasua;
-    font-size: 1vmax;
-    color: white;
-    background-color: black;
-    text-transform: uppercase;
-    font-weight: bold;
-    margin-left: 15%;
-    padding-left: 5%;
-    width: 40%;
-    z-index: 2;
-    transform: rotate(-29deg);
-}
-
-#file #IssueCover .IssueBibliographicCitation::first-letter {
-	font-size: 5vmax;
-}
-
-#file #IssueCover .ArticleInfo {
-	font-family: 'Comfortaa', cursive !important;
-	font-size:1vmax;
-	text-transform: lowercase;
-	font-weight:bold;
-	margin-left: 60%;
-	margin-top: -2%;
-	padding-bottom: 2%;
-	text-align: right;
-	transform: rotate(-29deg);
-}
-
-#file #IssueCover .ArticleInfo .coverLabel {
-	font-size:1.5vmax;
-}
-
-#file .ArticleInfo .coverLabel::before {
-	content: '';
-   display: inline-block;
-   width: 1vmax;
-   height: 1vmax;
-   -moz-border-radius: 7.5px;
-   -webkit-border-radius: 7.5px;
-   border-radius: 7.5px;
-   background-color: #2273c3;
-   margin-left: -2%;
-   margin-right: 1%;
-
-}
-
-#file .ArticleInfo .coverIssued {
-	text-transform: uppercase;
-}
-
-#file #IssueCover .ArticleInfo a:hover {
-	color:red;
-}
-
-#file #IssueCover .ArticleInfo img {
-	display:none;
-} **/
 
 /** DISCLAIMER **/
 #disclaimer {
@@ -574,64 +489,6 @@ div#IssueIndex {
     transform: rotate(27deg);
 }
 
-/**#disclaimer {
-	margin: 0;
-	padding: 5%;
-	padding-bottom: 25%;
-	background: url("img/redtrianguleReverse.svg"), linear-gradient(-63deg, rgba(251,251,251,1) 0%, rgba(0,0,0,1) 0%, rgba(0,0,0,1) 44%, rgba(255,245,245,0) 44%, rgba(255,255,255,1) 100%, rgba(255,255,255,0) 100%);
-	background-repeat: no-repeat, no-repeat;
-	background-position: -50% 100%, center;
-	background-size: 80%, 100%;
-}
-
-#disclaimerText {
-	font-family: 'Comfortaa', cursive !important;
-	font-size:1vmax;
-	text-transform: lowercase;
-	font-weight:bold;
-	padding: 2%;
-	padding-bottom: 0;
-	width: 45%;
-	margin-left: 15%;
-	margin-top: 5%;
-	text-align: right;
-	transform: rotate(27deg);
-	border-left: solid 15px black;
-	overflow-x: hidden;
-    word-break: break-word;
-}
-
-#disclaimerText:first-letter {
-	font-size: 4vmax;
-	font-family: Strasua;
-}
-
-#disclaimerText ul li {
-	padding: 1%;
-	list-style-type: square;
-}
-
-#disclaimerText a {
-	background-color: yellow;
-    overflow-wrap: break-word;
-}
-
-#disclaimerText a:hover {
-	color:red;
-}
-
-#disclaimer p.copyright {
-    font-size: 0.9vmax;
-    text-align: justify;
-    width: 40%;
-    padding: 2%;
-    margin-top: 15%;
-    margin-left: 55%;
-    border: solid 5px red; 
-    overflow-x: hidden;
-    word-break: break-word;
-}
-**/
 
 @media screen and (max-width: 600px) {
 	#file img {
