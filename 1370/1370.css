@@ -239,7 +239,7 @@
 #file #ContentWrapper > p:first-of-type::first-letter {
 	font-family: myCaps;
 	float: left;
-	font-size: 100pt;
+	font-size: 150pt;
 	line-height: 80px;
 	padding-top: 40px;
 	padding-right: 10px;
