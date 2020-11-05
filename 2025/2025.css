@@ -1817,16 +1817,21 @@ padding:0;
     }
 
 #file div.article .content section p:first-of-type::first-letter { 
-	vertical-align:center;
-	font-size:400%;
-	margin:.1em .2em 0 0;
-	padding:.6em .2em .5em .2em;
-	line-height:.60em;
-	float:left;
+	all:unset;
+    /* IE Only */
+	vertical-align: center;
+	font-size:18px;
+	line-height:1.77778;
+	line-height: 2.1;
 	color:#333;
-	border: solid #333;
-	border-width: thin;
-  *line-height:1em; /* IE7 Only */}
+	margin:0px;
+	padding:0;
+	float:none;
+	border:0;
+	border-width: 0;
+    *line-height:0em;
+    font-family:'faktpro';
+	}
   
  #file div.article .content section  {
  width:60%;
