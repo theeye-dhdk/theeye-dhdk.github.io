@@ -457,7 +457,7 @@ function fillIndex(input_obj, where) {
                 var namedict = {};
                 for (var i = 0; i < elements.length; i++) {
                     var currName = elements[i].innerText;
-                    var className = currName.split(' ').join('-').replace(/[^a-zA-Z]/g, '');
+                    var className = currName.split(' ').join('-').replace(/[\.\'\"\!\?\*\d]/g, '');
                     elements[i].classList.add(className);
                     if (!(currName in namedict)) {
                         namedict[currName] = 0;
@@ -467,7 +467,7 @@ function fillIndex(input_obj, where) {
                 }
                 var arrOfArrays = Object.entries(namedict).sort((a, b) => parseInt(b[1]) - parseInt(a[1]));
                 for (const [key, value] of arrOfArrays) {
-                    var className = key.split(' ').join('-').replace(/[^a-zA-Z]/g, '');
+                    var className = key.split(' ').join('-').replace(/[\.\'\"\!\?\*\d]/g, '');
                     $(where + " ul").last().append(listItem.tpl({
                         content: String(key),
                         num: String(value),
@@ -500,7 +500,7 @@ function fillOccurrenceTab(what, style, where) {
         }));
     }
     $('#wikiLink').empty();
-    var wikiName = elements[0].innerText.split(' ').join('_').replace(/[^a-zA-Z]/g, '');
+    var wikiName = elements[0].innerText.split(' ').join('_').replace(/[\.\'\"\!\?\*\d]/g, '');
     $('#wikiLink').attr('href', 'https://en.wikipedia.org/wiki/' + wikiName);
     $('#wikiLink').html('Search ' + elements[0].innerText + ' on Wikipedia');
     if ( $(window).width() < 768 ) {
@@ -536,7 +536,7 @@ function addReverseAccess(arrayClasses) {
 
 function reverseAccess(obj) {
     var name = $(obj).text();
-    var className = name.split(' ').join('-').replace(/[^a-zA-Z]/g, '');
+    var className = name.split(' ').join('-').replace(/[\.\'\"\!\?\*\d]/g, '');
     var what = '#file .' + className;
     fillOccurrenceTab(what, 'occurrences', '#occurrences');
 }
