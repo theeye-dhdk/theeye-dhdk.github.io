@@ -884,6 +884,10 @@ overflow-wrap: break-word;
    padding-bottom: 5%;
 }
 
+#file div.article p a {
+overflow-wrap: break-word;
+  word-wrap: break-word;}
+
 #file div.article  div.cover h1 {
   font-size:300%;
   font-family: 'futura'; 
