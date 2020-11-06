@@ -1113,6 +1113,10 @@ font-family:"itcgaramond2";
 letter-spacing: 0.1em;
 }
 
+#file div.article  div.content h4:after {
+display:none;}
+
+
 #file div.article  div.content h1{
 border-bottom:18px solid #e46968;
 }
