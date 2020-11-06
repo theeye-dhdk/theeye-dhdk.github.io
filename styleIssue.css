@@ -656,7 +656,7 @@ a#closebtn-2 {
     position: sticky;
     position: -webkit-sticky;
     top: 25%;
-    width:70%;
+    width:35%;
     height:auto;
     left:15%;
     z-index: 1201;
@@ -738,6 +738,9 @@ a#closebtn-2 {
     }
     .disclaimer-txt {
         display: block;
+    }
+    #loading-image {
+        width:50%;
     }
 }
 
