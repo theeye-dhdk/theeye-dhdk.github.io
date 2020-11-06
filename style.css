@@ -749,6 +749,9 @@ margin-top:10px;
 .docReferences ul li {
   list-style-type: circle;
 }
+p.documlist ul li {
+  list-style-type: circle;
+}
 
 .docReferences a {
   text-decoration: underline;
