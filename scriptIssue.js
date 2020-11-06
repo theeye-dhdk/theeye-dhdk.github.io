@@ -305,30 +305,32 @@ function loadArticle(file) {
             fillTabs();
             addReverseAccess(['person', 'place', 'entity', 'concept', 'event']);
             verifyGiuliaMarkup();
+            
             //LISTENING FUNCTIONS
-
             document.getElementById("listening").onclick = function() {
-                document.getElementById("listeningTime").style = 'display:block;';
-                document.getElementById("ListeningWrapper").style = 'display:block;';
-                document.getElementById("play-btn").style="display:none;"
-                document.getElementById("pause-btn").style="display:block;"
-                responsiveVoice.speak(document.getElementById("ContentWrapper").textContent);
-            };
-
-            document.getElementById("pause-btn").onclick = function() {
-                if(responsiveVoice.isPlaying()) {
-                responsiveVoice.pause();
-                document.getElementById("play-btn").style="display:block;"
-                document.getElementById("pause-btn").style="display:none;"
+                if(responsiveVoice.voiceSupport()) {
+                    document.getElementById("listeningTime").style = 'display:block;';
+                    document.getElementById("ListeningWrapper").style = 'display:block;';
+                    document.getElementById("play-btn").style="display:none;"
+                    document.getElementById("pause-btn").style="display:block;"
+                    responsiveVoice.speak(document.getElementById("ContentWrapper").textContent);
+                    document.getElementById("pause-btn").onclick = function() {
+                        if(responsiveVoice.isPlaying()) {
+                        responsiveVoice.pause();
+                        document.getElementById("play-btn").style="display:block;"
+                        document.getElementById("pause-btn").style="display:none;"
+                        }
+                    };
+        
+                    document.getElementById("play-btn").onclick = function() {
+                        responsiveVoice.resume();
+                        document.getElementById("play-btn").style="display:none;"
+                        document.getElementById("pause-btn").style="display:block;"
+                    };
+                } else {
+                    alert("Browser doesn't support Text-to-speech API")
                 }
             };
-
-            document.getElementById("play-btn").onclick = function() {
-                responsiveVoice.resume();
-                document.getElementById("play-btn").style="display:none;"
-                document.getElementById("pause-btn").style="display:block;"
-            };
-            
         },
         error: function () {
             alert('Could not load ' + file)
@@ -455,7 +457,7 @@ function fillIndex(input_obj, where) {
                 var namedict = {};
                 for (var i = 0; i < elements.length; i++) {
                     var currName = elements[i].innerText;
-                    var className = currName.split(' ').join('-').replace(/[\.\'\"\!\?\*]/g, '');
+                    var className = currName.split(' ').join('-').replace(/[^a-zA-Z]/g, '');
                     elements[i].classList.add(className);
                     if (!(currName in namedict)) {
                         namedict[currName] = 0;
@@ -465,7 +467,7 @@ function fillIndex(input_obj, where) {
                 }
                 var arrOfArrays = Object.entries(namedict).sort((a, b) => parseInt(b[1]) - parseInt(a[1]));
                 for (const [key, value] of arrOfArrays) {
-                    var className = key.split(' ').join('-').replace(/[\.\'\"\!\?\*]/g, '');
+                    var className = key.split(' ').join('-').replace(/[^a-zA-Z]/g, '');
                     $(where + " ul").last().append(listItem.tpl({
                         content: String(key),
                         num: String(value),
@@ -498,7 +500,7 @@ function fillOccurrenceTab(what, style, where) {
         }));
     }
     $('#wikiLink').empty();
-    var wikiName = elements[0].innerText.split(' ').join('_').replace(/[\.\'\"\!\?\*]/g, '');
+    var wikiName = elements[0].innerText.split(' ').join('_').replace(/[^a-zA-Z]/g, '');
     $('#wikiLink').attr('href', 'https://en.wikipedia.org/wiki/' + wikiName);
     $('#wikiLink').html('Search ' + elements[0].innerText + ' on Wikipedia');
     if ( $(window).width() < 768 ) {
@@ -534,7 +536,7 @@ function addReverseAccess(arrayClasses) {
 
 function reverseAccess(obj) {
     var name = $(obj).text();
-    var className = name.split(' ').join('-').replace(/[\.\'\"\!\?\*]/g, '');
+    var className = name.split(' ').join('-').replace(/[^a-zA-Z]/g, '');
     var what = '#file .' + className;
     fillOccurrenceTab(what, 'occurrences', '#occurrences');
 }
