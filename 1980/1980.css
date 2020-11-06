@@ -1118,7 +1118,26 @@ display:none;}
 #file div.article  div.content h4 {
 font-size:20px;}
 #file div.article  div.content h3 {
-text-transform: uppercase;}
+text-transform: uppercase;
+font-size: 25px;
+}
+
+#file div.article  div.content h4 + #file div.article  blockquote  p::first-letter {
+all:unset;
+    /* IE Only */
+  font-size: 100%;
+  letter-spacing: 0.1em;
+  color: black;
+  font-family:"itcgaramond";
+}
+#file div.article  div.content h3 + #file div.article  blockquote  p::first-letter {
+all:unset;
+    /* IE Only */
+  font-size: 100%;
+  letter-spacing: 0.1em;
+  color: black;
+  font-family:"itcgaramond";
+}
 
 
 #file div.article  div.content h1{
@@ -1126,7 +1145,7 @@ border-bottom:18px solid #e46968;
 }
 #file div.article  div.content h2 {
 border-bottom:18px solid #e46968;
-font-size: 25px;
+font-size: 28px;
 text-align: left;	
 }
 
