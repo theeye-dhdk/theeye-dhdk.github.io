@@ -1117,6 +1117,9 @@ letter-spacing: 0.1em;
 display:none;}
 #file div.article  div.content h4 {
 font-size:20px;}
+#file div.article  div.content h3 {
+text-transform: uppercase;}
+
 
 #file div.article  div.content h1{
 border-bottom:18px solid #e46968;
