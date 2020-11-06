@@ -140,6 +140,7 @@
 #CoverWrapper div.GiuliaMarkup i.fa{
 	font-size:200%;
 	padding:10%;
+	cursor:pointer;
 }
 #CoverWrapper div.GiuliaMarkup i.fa:hover {
 	color: #dbe3cb79;
