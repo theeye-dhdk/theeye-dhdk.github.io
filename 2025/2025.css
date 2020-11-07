@@ -528,6 +528,7 @@ color:black;
 {
 font-family: 'faktpro';
 text-transform: uppercase;
+text-align:left;
 }
 
  #file div.article .bio {
