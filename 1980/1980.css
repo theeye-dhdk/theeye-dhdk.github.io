@@ -1170,6 +1170,9 @@ font-size:17px;
 letter-spacing: 0.1em;
 line-height: normal;
 }
+#file div.article  div.content ul {
+ list-style-image: url(images/bullet.png);
+}
 
 #file div.article  div.content section p:last-of-type {
 margin-bottom:20px;
