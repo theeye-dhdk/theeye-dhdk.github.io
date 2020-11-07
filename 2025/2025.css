@@ -93,6 +93,7 @@ position:relative;
 margin-left:none;
 margin-right:none;
 height:650;
+cursor: url('img/cursorone.png'), auto;
 }
  #file div.article div.cover a {
 color:white;
@@ -294,6 +295,7 @@ width:100%;
 background-color: white;
 position: relative;
 z-index: 0;
+cursor: url('img/cursorone.png'), auto;
 }
 
 
@@ -507,6 +509,7 @@ z-index: 0;
 margin-bottom:20px;
 position:relative;
 border-top: 1px solid black;
+	 cursor: url('img/infocursor.png'), auto;
 }
  #file div.article div.foot a {
 color:black;
@@ -749,6 +752,7 @@ display: inline-block;
 width: 100%;
 margin-right:0%;
 margin-left:0%;
+	 cursor: url('img/imagecursor.png'), auto;
 }
   #file div.article  .content section  {
  width:86%;
