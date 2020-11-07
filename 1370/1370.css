@@ -75,7 +75,7 @@
 	font-family: mySeagram;
     	font-size: 4vmax;
 	letter-spacing: 1vmin;
-    	word-break: break-all;
+    	word-break: break-word;
 	column-span: all;
 }
 
@@ -100,6 +100,7 @@
 	padding-bottom: 20px;
 	color: darkred;
 	text-align: left;
+	word-break: break-word;
 	letter-spacing: 1.5;
 
 	/* column-span: all;*/
@@ -116,6 +117,7 @@
 	line-height: 1.5;
 	color: darkred;
 	text-align: left;
+	word-break: break-word;
 	letter-spacing: 1.5;
 
 	/*column-span: all;*/
