@@ -129,9 +129,6 @@ overflow-wrap: break-word;
 word-wrap: break-word;
 }
 
-/*li a:hover {
-	color: #0a0a0a96; 
-}*/
 
 #center p:first-of-type {
 font-style: normal; 
@@ -453,10 +450,6 @@ font-size:200%;
 overflow-wrap: unset;
 word-wrap: unset;
 
-}
-
-ul.docStyles > li >a:hover {
-    	color: #524e4ea1;
 }
 
 ul.docStyles > li >a:checked {
