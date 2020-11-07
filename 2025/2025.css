@@ -927,7 +927,7 @@ margin-left:7%;
 
 #IssueCover {
 width:100%;
-background-image:radial-gradient(rgba(255,255,255,1) 0%, rgba(208,227,255,1) 17%, rgba(255,195,222,1) 45%, rgba(237,230,162,1) 81%, rgba(255,255,255,1) 100%);
+background-image:radial-gradient( rgba(208,227,255,1) 17%, rgba(255,195,222,1) 45%, rgba(237,230,162,1) 81%, rgba(255,255,255,1) 100%);
 background-attachment: scroll;
 background-size: cover;
 margin: 0;
