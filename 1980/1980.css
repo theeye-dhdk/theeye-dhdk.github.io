@@ -1181,7 +1181,7 @@ border-bottom:18px solid #e46968;
 }
 
 #file div.article  div.content section h2, 
-#file div.article  div.content section h2 {
+#file div.article  div.content section h3 {
 padding-bottom:10px;
 }
 
@@ -1195,7 +1195,9 @@ padding-bottom:10px;
 #file div.article  div.foot h2 {
 text-align:left;
 font-family: 'itcgaramond';
-color:black; 
+color:black;
+border-bottom: 20px solid black;
+margin-bottom: 30px;
 }
 
 #file div.article  p.pubnote { 
