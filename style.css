@@ -129,6 +129,10 @@ overflow-wrap: break-word;
 word-wrap: break-word;
 }
 
+li a:hover {
+	color: #0a0a0a96; 
+}
+
 #center p:first-of-type {
 font-style: normal; 
 color: black;
