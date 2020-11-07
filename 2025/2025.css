@@ -95,6 +95,10 @@ margin-right:none;
 height:650;
 cursor: url('img/whitecursor.png'), auto;
 }
+#file a {
+cursor: url('img/selectcursor.png'), auto;	
+}
+	
  #file div.article div.cover a {
 color:white;
 }
