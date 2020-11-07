@@ -510,6 +510,17 @@ border-top: 1px solid black;
 color:black;
 }
 
+#file div.article div.foot h1,
+#file div.article div.foot h2,
+#file div.article div.foot h3,
+#file div.article div.foot h4,
+#file div.article div.foot h5,
+#file div.article div.foot h6,
+{
+font-family: 'faktpro';
+text-transform: uppercase;
+}
+
  #file div.article .bio {
 text-align:left;
 margin-top:40px;
