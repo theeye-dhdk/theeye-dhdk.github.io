@@ -129,9 +129,9 @@ overflow-wrap: break-word;
 word-wrap: break-word;
 }
 
-li a:hover {
+/*li a:hover {
 	color: #0a0a0a96; 
-}
+}*/
 
 #center p:first-of-type {
 font-style: normal; 
@@ -456,9 +456,9 @@ word-wrap: unset;
 }
 
 ul.docStyles > li >a:hover {
-    color: black;
-
+    	color: #524e4ea1;
 }
+
 ul.docStyles > li >a:checked {
     color: black;
     text-decoration: underline;
