@@ -340,7 +340,7 @@ font-size:18px;
 line-height:1.77778;
 font-size: 98%;
 line-height: 2.1;
-cursor: crosshair;
+cursor: url('img/readcursor.png'), auto;	;
 }
 
  #file div.article div.content h1, 
