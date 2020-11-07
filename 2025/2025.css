@@ -364,6 +364,10 @@ padding:0;
 font-family: 'faktpro';
 text-transform: uppercase;
 }
+#file div.article div.content h3 {
+padding-top:40px;
+padding-bottom:20px;
+}
 
  #file div.article .content p:first-of-type { 
    margin-top:10%;}
