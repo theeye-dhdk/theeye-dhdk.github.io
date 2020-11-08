@@ -682,8 +682,8 @@ a#closebtn-2 {
 
 @media only screen and (max-width: 768px) {
     .site {
-        position:relative;
-        overflow-x:hidden;
+        /*position:relative;
+        overflow-x:hidden;*/
     }
     #main {
         margin-bottom:100px;
