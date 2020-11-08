@@ -112,6 +112,10 @@ padding:0;
 	background-repeat: unset;
 }
 
+#file img{
+filter: contrast(1.31) saturate(1.53) sepia(0.14) ;
+}
+
 
 #IssueCover .IssueBibliographicCitation:before{
   content: "";
