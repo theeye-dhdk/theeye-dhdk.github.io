@@ -344,6 +344,8 @@ function addIds() {
     addId('#file .entity', 'thing')
     addId('#file .concept', 'concept')
     addId('#file .event', 'event')
+    addId('#file .footNote', 'f')
+    addId('#file .biblioItem', 'b')
     addId('#file h2', 'heading')
     addId('#file table', 'table')
     addId('#file figure', 'figure')
