@@ -502,7 +502,7 @@ function fillOccurrenceTab(what, style, where) {
         }));
     }
     $('#wikiLink').empty();
-    var wikiName = elements[0].innerText.split(' ').join('_').replace(/[\.\'\"\!\?\*\d]/g, '');
+    var wikiName = elements[0].innerText.split(' ').join('_').replace(/[\.\'\"\!\?\*\,\\\/]/g, '');
     $('#wikiLink').attr('href', 'https://en.wikipedia.org/wiki/' + wikiName);
     $('#wikiLink').html('Search ' + elements[0].innerText + ' on Wikipedia');
     if ( $(window).width() < 768 ) {
