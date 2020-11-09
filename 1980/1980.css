@@ -1535,12 +1535,18 @@ border-right: 7px solid #b0cbc0;
 
 #file div.article  div.content table caption p{
 font-size: 120%;
+font-family: "itcgaramond2";
 }
 
 #file div.article  div.content table caption {
-padding-left: 20px;
-color: black;
-aption-side: top;
+    padding-left: 20px;
+    color: black;
+    caption-side: top;
+    text-transform: uppercase;
+    font-size: 25px;
+    border-bottom: 18px solid #C59BDF;
+    font-family: "itcgaramond2";
+    letter-spacing: 0.1em;
 }
 
 #file div.article  div.content table caption + #file div.article  div.content table thead {
