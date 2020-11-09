@@ -471,12 +471,16 @@ text-decoration: none;
 color:black;
 text-decoration: none;
 }
-
 @media screen and (max-width: 1200px) {
 #IssueCover h1 {
-	font-size: 500%;
 	width: 100%;
-	font-size:400%;
+	font-size:450%;
+	}
+}
+@media screen and (max-width: 1200px) {
+#IssueCover h1 {
+	width: 100%;
+	font-size:340%;
 	}
 #IssueCover .IssueBibliographicCitation:before{
    height: 300px;
