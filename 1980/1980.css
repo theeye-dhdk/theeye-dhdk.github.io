@@ -1540,6 +1540,7 @@ font-size: 120%;
 #file div.article  div.content table caption {
 padding-left: 20px;
 color: black;
+aption-side: top;
 }
 
 #file div.article  div.content p.footnote {
