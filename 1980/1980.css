@@ -639,6 +639,41 @@ background-color: #fc4954;
     text-decoration: underline;
 	}
 }
+
+@media screen and (max-width: 500px) {
+	#IssueCover h1 {
+    font-size: 300%;;
+	}
+	
+}
+
+@media screen and (max-width: 400px) {
+	#IssueCover h1 {
+    font-size: 200%;;
+	}
+	
+}
+
+@media screen and (max-width: 300px) {
+	#IssueCover h1 {
+    font-size: 100%;;
+	}
+    #IssueCover .IssueBibliographicCitation:before{
+    height: 150px;
+    width: 150px;
+    left: -5%;
+    top: 20px;
+   }
+#IssueCover .IssueBibliographicCitation {
+    position: relative;
+    bottom: 0px;
+    top: 100px;
+    width: 100%;
+    font-size: 14px;
+   }
+	
+}
+
 /* ----------------------------------------------------- DISCLAIMER ------------------------------------------------------------ */ 
 /* ----------------------------------------------------- DISCLAIMER ------------------------------------------------------------ */ 
 
