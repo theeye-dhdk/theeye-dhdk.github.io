@@ -470,12 +470,34 @@ color:black;
 text-decoration: none;
 }
 
-
-@media screen and (max-width: 1000px) {
+@media screen and (max-width: 1200px) {
 #IssueCover h1 {
 	font-size: 500%;
 	width: 100%;
-	font-size:500%;
+	font-size:400%;
+	}
+#IssueCover .IssueBibliographicCitation:before{
+   height: 300px;
+   width:300px;
+   top:0px;
+   }
+#IssueCover .IssueBibliographicCitation {
+   position:relative;
+   bottom:-50px;
+   }
+#IssueIndex div.ArticleInfo:nth-child(3) {
+    width:40%;
+    float:left; 
+    position:relative;
+    display:inline-block;
+    left:0px;
+    }
+}
+@media screen and (max-width: 1000px) {
+#IssueCover h1 {
+    font-size: 300%;
+    transform: rotate(0deg);
+     width: 110%;
 	}
 #IssueCover .IssueBibliographicCitation:before{
    height: 260px;
@@ -495,20 +517,21 @@ text-decoration: none;
     }
 }
 
-@media screen and (max-width: 800px) {
+@media screen and (max-width: 900px) {
 #IssueCover h1 {
-	font-size: 500%;
-	width: 100%;
-	font-size:400%;
+    font-size: 250%;
+    transform: rotate(0deg);
+     width: 110%;
 	}
 #IssueCover .IssueBibliographicCitation:before{
-   height: 260px;
-   width:260px;
-   left:-280px;
+    height: 200px;
+    width: 200px;
+   top:0px;
    }
 #IssueCover .IssueBibliographicCitation {
    position:relative;
    bottom:-50px;
+  font-size: 100%;
    }
 #IssueIndex div.ArticleInfo:nth-child(3) {
     width:40%;
@@ -518,6 +541,7 @@ text-decoration: none;
     left:0px;
     }
 }
+
 
 @media screen and (max-width: 700px) {
 #IssueCover h1 {
