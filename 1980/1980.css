@@ -1466,6 +1466,8 @@ margin-top:1px;
 }
 
 #file div.article  table {
+  display: block;
+  overflow-x: scroll;
   column-span: all;
   width: 100%;
   margin-top: 5%;
