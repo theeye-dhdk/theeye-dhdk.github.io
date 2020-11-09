@@ -1543,6 +1543,10 @@ color: black;
 aption-side: top;
 }
 
+#file div.article  div.content table caption + #file div.article  div.content table thead {
+border-top:7px solid #b0cbc0;
+}
+
 #file div.article  div.content p.footnote {
 column-span:all;
 }
