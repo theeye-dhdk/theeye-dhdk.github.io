@@ -1108,6 +1108,7 @@ float: none;
 	
 #file div.article  div.coverinfo {
 overflow:hidden;
+display: inline;
 }
 
 #file div.article  .byline {
