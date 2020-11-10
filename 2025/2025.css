@@ -331,7 +331,7 @@ cursor: url('img/readcursor.png'), auto;
 }
 @media only screen and (max-width: 1200px) {
  #file div.article .content:after {
-    height: calc(100vh - 90px);
+    height: calc(100vh - 70px);
 }	
 }
 
