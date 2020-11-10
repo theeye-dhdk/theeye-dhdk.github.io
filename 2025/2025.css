@@ -663,7 +663,7 @@ position: relative;
 #file div.article   div.content p.footnote {
   position: relative;
   text-align:left;
-  left:-10%;
+  left:0%;
   padding:0;
   font-size:14px;
   line-height:1.77778;
