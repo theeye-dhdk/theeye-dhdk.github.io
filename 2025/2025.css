@@ -616,6 +616,12 @@ text-transform: uppercase;
 border-top: 1px solid black;
 padding-top: 4px;
 }
+ #file div.article #Notes {
+font-family:'faktpro';
+text-transform: uppercase;
+border-top: 1px solid black;
+padding-top: 4px;
+}
 
   #file div.article .bio + #References {
 border-top: none;
