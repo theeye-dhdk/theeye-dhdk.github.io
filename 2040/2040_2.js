@@ -74,4 +74,28 @@ $( document ).ready(function() {
         $("#readingTime").html("Reading time 10 minutes");
         $("#listeningTime").html("Listening time 10 minutes");
     }
+     else if ($("#ContentWrapper").text().length > 15000 && $("#ContentWrapper").text().length <= 20000) { /*add */
+        $("#readingTime").html("Reading time 15 minutes");
+        $("#listeningTime").html("Listening time 15 minutes");
+    }
+    else if ($("#ContentWrapper").text().length > 20000) {
+        $("#readingTime").html("Reading time 20 minutes");
+        $("#listeningTime").html("Listening time 20 minutes");
+    }
+    else if ($("#ContentWrapper").text().length > 20000 && $("#ContentWrapper").text().length <= 30000) {
+        $("#readingTime").html("Reading time 25 minutes");
+        $("#listeningTime").html("Listening time 25 minutes");
+    }
+    else if ($("#ContentWrapper").text().length > 30000) {
+        $("#readingTime").html("Reading time 30 minutes");
+        $("#listeningTime").html("Listening time 30 minutes");
+    }
+    else if ($("#ContentWrapper").text().length > 30000 && $("#ContentWrapper").text().length <= 50000) {
+        $("#readingTime").html("Reading time 40 minutes");
+        $("#listeningTime").html("Listening time 40 minutes");
+    }
+    else if ($("#ContentWrapper").text().length > 50000) {
+        $("#readingTime").html("Reading time 50 minutes");
+        $("#listeningTime").html("Listening time 50 minutes");
+    }
 });
