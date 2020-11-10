@@ -1809,7 +1809,7 @@ margin-bottom: calc(-100vh + 6px);
     display: block;
     background: white;
     background-color:white;
-    height: calc(100vh - 80px);
+    height: calc(100vh - 70px);
     width: 100%;
     position: -webkit-sticky;
     position: sticky;
