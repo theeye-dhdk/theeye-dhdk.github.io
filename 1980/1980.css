@@ -1189,6 +1189,7 @@ margin-top: 40px;
 #file div.article  div.content h6 {
 font-family:"itcgaramond2";
 letter-spacing: 0.1em;
+word-wrap: break-word;
 }
 
 #file div.article  div.content h4:after {
