@@ -56,8 +56,41 @@ img[src=""] {
     display: none;
 } 
 
+/* ----------------------------------------------------- CURSOR --------------------------------------------------------------- */ 
+/* ----------------------------------------------------- CURSOR --------------------------------------------------------------- */ 
+
+#file div.article div.cover {
+cursor:url("img/whitecursor.png"), auto;	
+}
+#file div.article div.content {
+cursor:url("img/blackcursor.png"), auto;	
+}
+#file div.article div.foot {
+cursor:url("img/blackcursor.png"), auto;	
+}
+#file #IssueCover {
+cursor:url("img/whitecursor.png"), auto;	
+}
+#file #disclaimer {
+cursor:url("img/whitecursor.png"), auto;	
+}
 
 
+#file div.article div.cover a{
+cursor:url("img/whitecursorbold.png"), auto;	
+}
+#file div.article div.content a{
+cursor:url("img/blackcursorbold.png"), auto;	
+}
+#file div.article div.foot a{
+cursor:url("img/blackcursorbold.png"), auto;	
+}
+#file #IssueCover {
+cursor:url("img/whitecursorbold.png"), auto;	
+}
+#file #disclaimer {
+cursor:url("img/whitecursorbold.png"), auto;	
+}	
 
 /* ----------------------------------------------------- ARTICLE --------------------------------------------------------------- */ 
 /* ----------------------------------------------------- ARTICLE --------------------------------------------------------------- */ 
