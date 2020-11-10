@@ -646,11 +646,13 @@ font-family: 'faktpro';
 }
 
 #file div.article   div.content table caption {
-  position: relative;
-  text-align:left;
-  left:-20%;
-  margin-top:-10%;
-  padding:0%;
+position: relative;
+    text-align: left;
+    left: -0%;
+    margin-top: 0%;
+    padding: 0%;
+    caption-side: top;
+    color: black;
   }
   
 #file div.article   div.content table caption p{
