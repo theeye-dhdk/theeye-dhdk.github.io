@@ -471,7 +471,7 @@ text-decoration: none;
 color:black;
 text-decoration: none;
 }
-@media screen and (max-width: 1200px) {
+@media screen and (max-width: 1300px) {
 #IssueCover h1 {
 	width: 100%;
 	font-size:450%;
