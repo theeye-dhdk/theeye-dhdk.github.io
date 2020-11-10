@@ -85,10 +85,10 @@ cursor:url("img/blackcursorbold.png"), auto;
 #file div.article div.foot a{
 cursor:url("img/blackcursorbold.png"), auto;	
 }
-#file #IssueCover {
+#file #IssueCover a{
 cursor:url("img/whitecursorbold.png"), auto;	
 }
-#file #disclaimer {
+#file #disclaimer a{
 cursor:url("img/whitecursorbold.png"), auto;	
 }	
 
