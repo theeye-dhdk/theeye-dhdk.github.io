@@ -596,6 +596,8 @@ font-family: 'faktpro';
 }
 
 #file div.article  div.content table {
+  display: block;
+  overflow-x: scroll;
   width: 80%;
   margin-right:10%;
   margin-left:10%;
@@ -2108,10 +2110,6 @@ line-height: 2.1;
   width: 3vw;
   }
 	
-#file div.article  table { 
-  display: block;
-  overflow-x: scroll;
-}
 
 }
 	
