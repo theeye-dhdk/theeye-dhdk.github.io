@@ -62,6 +62,9 @@ img[src=""] {
 #file div.article div.cover {
 cursor:url("img/whitecursor.png"), auto;	
 }
+#file div.article {
+cursor:url("img/whitecursor.png"), auto;	
+}
 #file div.article div.content {
 cursor:url("img/blackcursor.png"), auto;	
 }
