@@ -68,6 +68,10 @@ cursor:url("img/whitecursor.png"), auto;
 #file div.article div.content {
 cursor:url("img/blackcursor.png") 0 0, auto;	
 }
+#file div.article div.content blockquote{
+cursor:url("img/whitecursor.png") 0 0, auto;	
+}
+
 #file div.article div.foot {
 cursor:url("img/blackcursor.png"), auto;	
 }
@@ -93,7 +97,10 @@ cursor:url("img/whitecursorbold.png"), auto;
 }
 #file #disclaimer a{
 cursor:url("img/whitecursorbold.png"), auto;	
-}	
+}
+#file div.article div.content blockquote a{
+cursor:url("img/whitecursorbold.png") 0 0, auto;	
+}
 
 /* ----------------------------------------------------- ARTICLE --------------------------------------------------------------- */ 
 /* ----------------------------------------------------- ARTICLE --------------------------------------------------------------- */ 
