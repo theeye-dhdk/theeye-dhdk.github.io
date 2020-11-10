@@ -2114,12 +2114,6 @@ line-height: 2.1;
 }
 
 }
-
-	
-#file div.article  table { 
-  display: block;
-  overflow-x: scroll;
-}
 	
 @media screen and (max-width: 800px) {
   #file div.article div.title h1 {
