@@ -406,8 +406,12 @@ padding-bottom:20px;
 
  #file div.article .content p:first-of-type { 
    margin-top:10%;}
+
  #file div.article .content section p:first-of-type { 
    margin-top:3%;}
+
+#file div.article .content caption p:first-of-type { 
+   margin-top:2%;}
 
  #file div.article .content p:first-of-type::first-letter { 
 	vertical-align:center;
