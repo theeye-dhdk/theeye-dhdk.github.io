@@ -2107,9 +2107,20 @@ line-height: 2.1;
   height: 3vw;
   width: 3vw;
   }
+	
+#file div.article  table { 
+  display: block;
+  overflow-x: scroll;
+}
 
 }
 
+	
+#file div.article  table { 
+  display: block;
+  overflow-x: scroll;
+}
+	
 @media screen and (max-width: 800px) {
   #file div.article div.title h1 {
     font-size: 45px;
