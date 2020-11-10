@@ -66,7 +66,7 @@ cursor:url("img/whitecursor.png"), auto;
 cursor:url("img/whitecursor.png"), auto;	
 }
 #file div.article div.content {
-cursor:url("img/blackcursor.png") 48 48, auto;	
+cursor:url("img/blackcursor.png") 0 0, auto;	
 }
 #file div.article div.foot {
 cursor:url("img/blackcursor.png"), auto;	
@@ -83,7 +83,7 @@ cursor:url("img/whitecursor.png"), auto;
 cursor:url("img/whitecursorbold.png"), auto;	
 }
 #file div.article div.content a{
-cursor:url("img/blackcursorbold.png") 48 48, auto;	
+cursor:url("img/blackcursorbold.png") 0 0, auto;	
 }
 #file div.article div.foot a{
 cursor:url("img/blackcursorbold.png"), auto;	
