@@ -286,7 +286,7 @@
 }
 
 #file .bio {
-	font-size: 0.8em;
+	font-size: 0.9em;
     font-style: oblique;
     text-align: center;
     border-top: solid 1px black;
@@ -527,7 +527,7 @@
 
 @media screen and (max-width: 600px) {
 #file #ArticleBody {
-    column-count: 1;										/** Non funziona! **/
+    column-count: 1;									
   }
 
 #file .coverpic {
