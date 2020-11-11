@@ -760,7 +760,7 @@ line-height: 2.1;
 @media screen and (max-width: 1250px) {
    
 #file div.article div.title h1 {
-    font-size: 80px;
+    font-size: 60px;
   }
 #file div.article div.cover:after {
   height: 3vw;
@@ -782,7 +782,7 @@ line-height: 2.1;
 
 @media screen and (max-width: 800px) {
    #file div.article div.title h1 {
-    font-size: 45px;
+    font-size: 40px;
   }
    #file div.article div.cover:after {
   height: 4vw;
@@ -793,7 +793,7 @@ line-height: 2.1;
 
 @media screen and (max-width: 500px) {
    #file div.article  div.title h1 {
-    font-size: 45px;
+    font-size: 40px;
   }
    #file div.article  .coverpic {
   display: none;
