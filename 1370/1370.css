@@ -142,6 +142,7 @@
 	color: darkred;
 	background-color: transparent;
 	text-decoration: none;
+	word-break: break-all;
 }
   
 #file #ContentWrapper a:visited {
@@ -202,7 +203,7 @@
     	margin-right: auto;
 	filter: sepia(1);
 	-webkit-filter: sepia(1);
-	border: solid 14px brown;
+	border: double 9px brown;
 	margin-top: 15px;
     	margin-bottom: 15px;
 }
@@ -359,6 +360,7 @@
 }
 #file #IssueIndex a {
 	color: black;
+	word-break: break-all; 
 }
 #IssueIndex .ArticleInfo {
 	color: black;
@@ -433,8 +435,8 @@
   /* On screens that are 600px or less, set the background color to olive */
 @media screen and (max-width: 900px) {
 	#ContentWrapper figure img {
-		width:360px;
-		height: 222px;
+		width: 250px;
+    		height: 200px;
 	 }
 	#ContentWrapper figure img:hover {
 		width: 390px;
