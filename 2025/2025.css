@@ -793,7 +793,7 @@ line-height: 2.1;
 
 @media screen and (max-width: 500px) {
    #file div.article  div.title h1 {
-    font-size: 40px;
+    font-size: 30px;
   }
    #file div.article  .coverpic {
   display: none;
