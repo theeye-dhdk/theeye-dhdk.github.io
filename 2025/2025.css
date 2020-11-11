@@ -864,10 +864,10 @@ padding:0;
   left:0%;
 }
  #file div.article  div.content table {
-font-size:14px;
+display:block;
+overflow-x: scroll;
+font-size:10px;
 width: 100%;
-margin-right:0%;
-margin-left:0%;
 border-bottom: 1px solid black;
 }
  #file div.article  div.foot{
