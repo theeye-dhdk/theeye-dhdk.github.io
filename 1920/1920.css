@@ -20,6 +20,7 @@
 	color:red;
 }
 
+
 #file q:before, #file q:after {
 	content:'';
 }
@@ -75,6 +76,10 @@
 #file .coverinfo .byline {
 	color:red;
 	border-bottom: solid 5px black;
+}
+
+#file .coverinfo .byline a:hover {
+	color:black;
 }
 
 #file .coverinfo .publicationDate, #file .coverinfo .pubnote {
@@ -226,7 +231,7 @@
 	padding: 1%;
 }
 
-#file #References h2 {
+#file #References h2, #Notes h2 {
 	font-family: Strasua;
 	border: none;
 }
@@ -246,6 +251,14 @@
 
 #file #References .biblioMarker {
 	font-family: Strasua;
+}
+
+#file #Notes {
+    font-size: 0.9em;
+    border-top: solid 40px black;
+    border-bottom: solid 40px black;
+    padding: 2%;
+    margin: 5%;
 }
 
 #file #Articlebody table {
