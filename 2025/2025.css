@@ -770,7 +770,7 @@ line-height: 2.1;
 }
 @media screen and (max-width: 1100px) {
    #file div.article  div.title h1 {
-    font-size: 70px;
+    font-size: 55px;
   }
   
    #file div.article  div.cover:after {
@@ -902,7 +902,7 @@ margin-left:7%;
 
 @media screen and (max-device-width: 500px) {
    #file div.article  div.title h1 {
-    font-size: 45px;
+    font-size: 40px;
   }
    #file div.article  .coverpic {
   display: none;
