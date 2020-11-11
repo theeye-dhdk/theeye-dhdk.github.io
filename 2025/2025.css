@@ -12,7 +12,7 @@
     src: url('font/Eksell-Medium.ttf');
 }
 @font-face {
-    font-family: 'forum';
+    font-family: 'forum';F
     src: url('font2/Forum.ttf');
 }
 
@@ -770,7 +770,7 @@ line-height: 2.1;
 }
 @media screen and (max-width: 1100px) {
    #file div.article  div.title h1 {
-    font-size: 55px;
+    font-size: 45px;
   }
   
    #file div.article  div.cover:after {
