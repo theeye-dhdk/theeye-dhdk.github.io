@@ -227,15 +227,15 @@ display:none;
 }
 
  #file div.article div.title  h1{
-width:70%;
+width:80%;
 color:white;
-font-size:70px;
+font-size:60px;
 font-family:'eksell'!important;
 text-transform: none;
 font-weight:normal;
 letter-spacing: 4px;
 position:relative;
-left: 15%;
+left: 10%;
 top: 50%;
 transform: translateY(-50%);
 -webkit-transform: translateY(-50%);
