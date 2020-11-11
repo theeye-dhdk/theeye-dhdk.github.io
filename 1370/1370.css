@@ -66,6 +66,11 @@
 	filter: sepia(40%);
 	margin-left: auto;
 	margin-right:auto;
+	filter: sepia(1);
+	-webkit-filter: sepia(1);
+	border: double 14px brown;
+	margin-top: 15px;
+    	margin-bottom: 15px;
 }
 
 #file #CoverWrapper h1 {
@@ -172,7 +177,7 @@
 }
 
 #file div.coverinfo {
-	font-size: 20pt;
+	font-size: 13pt;
 	text-align: left;
 	margin-top: 5%;
 	margin-left: 10%;
@@ -189,7 +194,7 @@
 	line-height: 1;
 }
 
-#file #Articlebody img {
+#file #ContentWrapper img {
     	max-width: 70%;
     	max-height: 70%;
 	display: block;
@@ -197,7 +202,7 @@
     	margin-right: auto;
 	filter: sepia(1);
 	-webkit-filter: sepia(1);
-	border: double 14px brown;
+	border: solid 14px brown;
 	margin-top: 15px;
     	margin-bottom: 15px;
 }
@@ -314,6 +319,19 @@
 #file .footerimg {
 	display: none;
 }
+
+#file .pubnote {
+	color: black;
+	font-family: mySeagram;
+	font-size: 12pt;
+	text-align: left;
+	line-height: 1.5;
+	padding-top: 5%;
+	padding-bottom: 5%;
+	padding-right: 5%;
+	padding-left: 5%;
+}
+
 /*ISSUECOVER*/
 #IssueCover {
 	background-image: url("img/Eye_1.png"), url("img/bordertrasp2.png"), url("img/oldpaper_texture.png") ;
