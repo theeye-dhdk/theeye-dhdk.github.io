@@ -262,10 +262,12 @@ top: 15%;
 top: 20%;
 }
  #file div.article .byline:nth-child(4) {
-top: 25%;
+top: 20%;
+right:40%;
 }
  #file div.article .byline:nth-child(5) {
-top: 30%;
+top: 20%;
+left:40%;
 }
 
 
