@@ -650,22 +650,27 @@ $(document).ready(function(){
 });
 
 //Manage cover images
-document.getElementById('paginationLinks').onclick (function(){
+document.getElementById('paginationLinks').onclick = function(){
 	if(!$("div").hasClass("coverpic")) {
  $( ".title").toggleClass('title titlenoimage');
 }	
-});
+};
 
-document.getElementById('btn-style').onclick (function(){
+document.getElementById('btn-style').onclick = function(){
 	if(!$("div").hasClass("coverpic")) {
  $( ".title").toggleClass('title titlenoimage');
 }	
-});
+};
 
-$(document).ready(function(){
+document.getElementById('paginationLinks').onclick = function(){
         $('.articleImg[src=""]').hide();
         $('.articleImg:not([src=""])').show();
-    });
+    };
+
+document.getElementById('btn-style').onclick = function(){
+        $('.articleImg[src=""]').hide();
+        $('.articleImg:not([src=""])').show();
+    };
 
 
 
