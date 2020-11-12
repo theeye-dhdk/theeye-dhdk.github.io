@@ -650,10 +650,16 @@ $(document).ready(function(){
 });
 
 //Manage cover images
-$(document).ready (function(){
-  if(!$("div").hasClass("coverpic")) {
- $( ".title").toggleClass('titlenoimage newClass');
-}
+document.getElementById('paginationLinks').onclick (function(){
+	if(!$("div").hasClass("coverpic")) {
+ $( ".title").toggleClass('title titlenoimage');
+}	
+});
+
+document.getElementById('btn-style').onclick (function(){
+	if(!$("div").hasClass("coverpic")) {
+ $( ".title").toggleClass('title titlenoimage');
+}	
 });
 
 $(document).ready(function(){
