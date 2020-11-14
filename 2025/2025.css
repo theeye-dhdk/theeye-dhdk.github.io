@@ -678,14 +678,14 @@ font-family: 'faktpro';
 }
 
 #file div.article  .content section + file div.article  div.content table {
-
   border-top:none;
 }
 
 #file div.article   div.content table caption {
+    width: 110%;
     position: relative;
     text-align: left;
-    left: -20%;
+    left: 0%;
     padding: 0%;
     caption-side: top;
     color: black;
@@ -696,8 +696,8 @@ font-family: 'faktpro';
 #file div.article   div.content table caption p{
   margin-top: 0% ;
   margin-bottom: 1% ;
- margin-right: 0%;
- margin-right: 0%;
+  margin-right: 0%;
+  margin-left: 0%;
   }
   
 #file div.article   div.content p.footnote {
