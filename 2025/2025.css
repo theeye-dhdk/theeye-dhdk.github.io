@@ -473,6 +473,7 @@ padding-bottom:20px;
  padding-top:3%;
  padding-bottom:3%;
  }
+
  #file div.article  .content section + section {
   border-top: none;
  }  
@@ -662,6 +663,11 @@ font-family: 'faktpro';
   text-align: left;
   border-collapse: collapse;
   background-color: white;  
+}
+
+#file div.article  .content section + file div.article  div.content table {
+
+  border-top:none;
 }
 
 #file div.article   div.content table caption {
