@@ -28,6 +28,10 @@
 	text-decoration: underline;
 }
 
+#file q:before, #file q:after {
+	content:'';
+}
+
 #file #ArticleBody {
 		/** container **/
 	margin: 3rem;
