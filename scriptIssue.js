@@ -262,9 +262,6 @@ function loadArticle(file) {
                 <li class="nav-item">
                     <a class="nav-link" id="footnotes-tab" data-toggle="tab" href="#footnotes" role="tab" aria-controls="view" aria-selected="true">Notes</a>
                 </li>
-                <li class="nav-item">
-                    <a class="nav-link" id="asides-tab" data-toggle="tab" href="#asides" role="tab" aria-controls="view" aria-selected="true">Asides</a>
-                </li>
             </ul>
             <div class="tab-content" id="leftContent">
                 <div class="tab-pane active myBorder myBorder-notop" id="info" role="tabpanel" aria-labelledby="info-tab">
@@ -280,9 +277,6 @@ function loadArticle(file) {
                     <ul class="minimal"></ul>
                 </div>
                 <div class="tab-pane myBorder myBorder-notop" id="footnotes" role="tabpanel" aria-labelledby="footnotes-tab">
-                    <ul class="minimal"></ul>
-                </div>
-                <div class="tab-pane myBorder myBorder-notop" id="asides" role="tabpanel" aria-labelledby="asides-tab">
                     <ul class="minimal"></ul>
                 </div>
             </div>`);
