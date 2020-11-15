@@ -299,7 +299,6 @@ function loadArticle(file) {
         url: file,
         success: function (d) {
             $('#file').html(d);
-            $('.head-title').html($('#file h1').html());
             addIds();
             fillInfo('#file', '#info');
             fillTabs();
@@ -386,8 +385,7 @@ function fillInfo(from, where) {
 function fillTabs() {
     fillTab('#file h2', 'heading', '#toc')
     fillTab('#file .biblioItem', 'references', '#references')
-    fillTab('#file .footNote', 'footnotes', '#footnotes')
-    fillTab('#file .aside', 'asides', '#asides')
+    fillTab('#file #Notes .footNote', 'footnotes', '#footnotes')
     fillVisualContentTab({"#file figure": "figure", "#file table": "table"}, '#visual' )
     fillIndex({"#file .person":"person", "#file .place": "place", "#file .entity" : "thing", "#file .concept" : "concept", "#file .event" : "event"}, "#entities")
 }
