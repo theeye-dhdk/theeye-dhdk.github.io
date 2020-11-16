@@ -1,8 +1,8 @@
-window.onload = function(){ setTimeout(function() {document.getElementById('loading').style.display = 'none';}, 2400) };
+window.onload = function(){ setTimeout(function() {document.getElementById('loading').style.display = 'none';}, 2400) }; //Marco
 
 
 
-window.onscroll = function() {myFunction()};
+window.onscroll = function() {myFunction()}; //Giulia
 
 // Get the selector
 var selector = document.getElementById("selector");
@@ -20,7 +20,7 @@ function myFunction() {
 }
 
 // ===== Scroll to Top ==== 
-$(window).scroll(function() {
+$(window).scroll(function() { // Giulia
     if ($(this).scrollTop() >= 50) {        // If page is scrolled more than 50px
         $('#return-to-top').fadeIn(200);    // Fade in the arrow
     } else {
@@ -33,7 +33,7 @@ $('#return-to-top').click(function() {      // When arrow is clicked
     }, 500);
 });
 
-var expandCollapse = function(){
+var expandCollapse = function(){ // Cristian
     if ( $(window).width() < 768 ) {
         $(function(){
             // add a class .collapse to a div .showHide
@@ -51,7 +51,7 @@ var expandCollapse = function(){
     }
 }
 
-function openNav() {
+function openNav() { //Elisa
     closeOccurrences();
     $('.offcanvas').css('transform', 'translateX( 0 )');
     }
@@ -62,24 +62,26 @@ function closeNav() {
 }
 
 
+$(document).ready(expandCollapse); //Cristian
+$(document).ready(main);
+$(window).resize(expandCollapse);
 
-function closeOccurrences() {
+function closeOccurrences() { // Marco
     document.getElementById('occurrences').style.display = 'none';
 }
 
 
-String.prototype.tpl = function (o) {
+String.prototype.tpl = function (o) { // TUTTI
     var r = this;
     for (var i in o) {
         r = r.replace(new RegExp("\\$" + i, 'g'), o[i])
     }
     return r
 }
-$(document).ready(expandCollapse);
-$(document).ready(main);
-$(window).resize(expandCollapse);
 
-var ajaxResult=[];
+// ===== Marco e Elisa ====
+
+var ajaxResult=[]; 
 
 function loadCover(articlesArray, title, bibliographicCitation) {
     $('#file').append(`<div id="IssueCover"><h1>` + title + `</h1>
@@ -232,6 +234,7 @@ function loadDisclaimer() {
     $('#paginationLinks .next').css('visibility', 'hidden');
 }
 
+// ===== Cristian e Giulia  ====
 
 function loadArticle(file) {
     $('#file').empty();
@@ -297,9 +300,11 @@ function loadArticle(file) {
             fillInfo('#file', '#info');
             fillTabs();
             addReverseAccess(['person', 'place', 'entity', 'concept', 'event']);
+            // ===== Giulia ====
+
             verifyGiuliaMarkup();
             
-            //LISTENING FUNCTIONS
+            
             document.getElementById("listening").onclick = function() {
                 if(responsiveVoice.voiceSupport()) {
                     document.getElementById("listeningTime").style = 'display:block;';
@@ -330,6 +335,8 @@ function loadArticle(file) {
         }
     });
 }
+
+// ===== Cristian ====
 
 function addIds() {
     addId('#file .person', 'person')
@@ -536,8 +543,8 @@ function reverseAccess(obj) {
 }
 
 
-
-function verifyGiuliaMarkup() {
+// ===== Giulia ====
+function verifyGiuliaMarkup() { 
     if (!$("div.GiuliaMarkup").length) {
       //first html piece of code
       $('div.maincover').prepend(`<div class="parallax"><img src="../2040/img/Eye 8.png" class="logo"></div>`);
@@ -566,6 +573,7 @@ function verifyGiuliaMarkup() {
   }
 
 
+// ===== Elisa ====
 
 Element.prototype.remove = function() {
 this.parentElement.removeChild(this);
@@ -641,33 +649,7 @@ $(document).ready(function(){
   });
 });
 
-//Manage cover images
-document.getElementById('paginationLinks').onclick = function() {
-	if(!$("div").hasClass("coverpic")) {
- $( ".title").toggleClass('title titlenoimage');
-}	
-};
-
-document.getElementById('btn-style').onclick = function() {
-	if(!$("div").hasClass("coverpic")) {
- $( ".title").toggleClass('title titlenoimage');
-}	
-};
-
-document.getElementById('paginationLinks').onclick = function() {
-        $('.articleImg[src=""]').hide();
-        $('.articleImg:not([src=""])').show();
-    };
-
-document.getElementById('btn-style').onclick = function() {
-        $('.articleImg[src=""]').hide();
-        $('.articleImg:not([src=""])').show();
-    };
-
-
-
-
-
+// ===== Giulia ====
 
 document.getElementById('paginationLinks').onclick = function() {
     responsiveVoice.cancel();
