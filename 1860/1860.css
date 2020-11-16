@@ -85,7 +85,7 @@
     border-collapse: collapse;
     border: 1px solid;
     border-color: #241B12;
-    word-break: break-word;
+    word-break: break-all;
     hyphens: auto;
     margin-left: auto;
     margin-right: auto;
@@ -144,7 +144,7 @@
     column-rule: 1px solid;
     color: #2b1d0e;
     overflow: hidden;
-    word-wrap: break-word;
+    word-break: break-all;
     hyphens: auto;
     padding:1.3em;
 }
@@ -232,7 +232,7 @@ font-size: 1.1em;
     padding:1.3em;
     font-family: myBodoniCondensed;
     font-size:1.2em;
-    word-wrap: break-word;
+    word-break: break-all;
     hyphens: auto;
 }
 #disclaimer a {
@@ -289,7 +289,7 @@ font-size: 1.1em;
     padding-top:1em;
     padding-bottom:1em;
     overflow: auto;
-    word-wrap: break-word;
+    word-break: break-all;
     hyphens: auto;
 }
 
