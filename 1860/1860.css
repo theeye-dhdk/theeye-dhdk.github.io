@@ -23,15 +23,16 @@
 #file {
     padding: 30px; 
     min-height:100vh;
-    background-image: url("../1860/img/newspaper3.jpg");
-    font-size:13pt;
+    background-color: #e7e8cf;
+    background-image: url("https://www.transparenttextures.com/patterns/asfalt-dark.png");
+    font-size:14pt;
     font-family: 'myBodoni';
     text-align:justify;
 }   
 
 #file h1 {
     font-family: 'myFha';
-    font-size: 15pt;
+    font-size: 16pt;
     margin-bottom: 0.5em;
     text-align:center;
 }
@@ -39,13 +40,13 @@
     font-family: 'MyFhaCondensed';
     text-transform: uppercase;
     text-align: center;
-    font-size:15pt;
+    font-size:16pt;
     padding-top:1em;
     padding-bottom:1em;
 }
 #file h3, #file h4, #file h5 {
     font-family: 'MyBodoniCondensed';
-    font-size: 15pt;
+    font-size: 16pt;
     letter-spacing: 1.5px; 
     text-transform: uppercase;
     text-align:center;
@@ -243,7 +244,7 @@ font-size: 1.1em;
 /* COVER */
 
 #IssueCover {
-    font-size:15pt;
+    font-size:16pt;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -367,7 +368,7 @@ font-size: 1.1em;
         column-count: 2;
     }
     #ArticleBody h1, #ArticleBody h2, #ArticleBody h3, #ArticleBody h4, #ArticleBody h5, #ArticleBody th {
-        font-size: 13pt;
+        font-size: 14pt;
     }
 
     
