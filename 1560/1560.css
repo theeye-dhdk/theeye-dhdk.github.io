@@ -322,6 +322,7 @@
 		padding:7px;
 	}
 	.IssueBibliographicCitation::before {
+		background-image: url("../1560/img/eye_tablet.png");
 		height: 225px;
 		width: 278px;
 	}

@@ -332,6 +332,7 @@ font-size: 1.1em;
 
 @media screen and (max-width:1000px) {
     #IssueIndex::before {
+        background-image: url("../1860/img/Eye_tablet.png");
         width:449px;
         height: 270px;
     }
@@ -381,6 +382,7 @@ font-size: 1.1em;
     -webkit-column-count: 1; /* Chrome, Safari */
     }
     #IssueIndex::before{
+        background-image: url("../1860/img/Eye_mobile.png");
         width:281px;
         height:169px;
     }
