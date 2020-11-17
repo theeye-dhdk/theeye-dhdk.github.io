@@ -20,10 +20,10 @@
 #file {
 	color: #4a433e;
 	padding-top: 150px;
-	padding-bottom: 260px;
+	padding-bottom: 240px;
 	padding-left: 150px;
 	padding-right: 150px;	
-	font-size: 15pt;
+	font-size: 15px;
 	font-family: myHultog;
 	text-align: justify;
 	line-height: 1.5;
@@ -36,25 +36,25 @@
 	text-transform: uppercase;
 	text-align: center;
 	font-family: myHultogCoursive;
-    font-size: 26pt;
+    font-size: 24px;
 	letter-spacing: 6px;
-	padding-bottom: 1.7em;
+	padding-bottom: 1.6em;
 }
 #file h2 {
 	letter-spacing: 10px;
 	text-align: center; 
 	text-transform: uppercase;
 	line-height: 1.5;
-	font-size: 22pt;
+	font-size: 21px;
 	font-family:  myHultog;
 	padding-top: 1em;
-	padding-bottom: 1.7em;
+	padding-bottom: 1.6em;
 }
 #file h3, #file h4, #file h5 {font-family:  myHultogCoursive;
 	text-transform: uppercase;
 	text-align: center;
 	letter-spacing: 10px;
-	font-size: 15pt;
+	font-size: 15px;
 	padding-top: 10px;
 	padding-bottom: 10px;
 	line-height: 1.5;
@@ -84,7 +84,7 @@
 	text-align: center;
 	line-height: 1.5;
 	padding: 5px;
-	margin-bottom:1.7em;
+	margin-bottom:1.6em;
 }
 
 #file th {
@@ -108,8 +108,8 @@
 
 #file table {border: 4px solid;
 	margin-bottom: 1em;
-	margin-top: 1.7em;
-	word-break: break-word;
+	margin-top: 1.6em;
+	word-break: break-all;
 	margin-left: auto;
 	margin-right: auto;
 	color: #4a433e;
@@ -128,7 +128,6 @@
 	}
 #ArticleBody {
 	overflow: hidden;
-	word-wrap: break-word;
 }
 #ArticleBody a {
 	text-decoration:underline;
@@ -148,7 +147,7 @@
 	text-transform: uppercase;
 	text-align: center;
 	line-height: 1.5;
-	font-size: 22pt;
+	font-size: 21px;
 	padding-bottom: 88px;
 }
 #CoverWrapper div.maincover {
@@ -172,10 +171,10 @@
 	text-transform: capitalize;
 }
 #FootWrapper, #file .myPubnote {
-	padding-left: 1.7em;
-	padding-right: 1.7em;
+	padding-left: 1.6em;
+	padding-right: 1.6em;
 	font-family: myHultogCoursive;
-	font-size:13pt;
+	font-size:13px;
 }
 #FootWrapper p, #file .myPubnote p {
 	text-indent:1em;
@@ -187,7 +186,7 @@
 #ContentWrapper h2 + p::first-letter, #ContentWrapper p:first-of-type::first-letter {
 	font-family: myCaps;
 	float: left;
-	font-size: 90pt;
+	font-size: 90px;
 	line-height: 90px;
 	padding-top: 20px;
 	padding-right: 6px;
@@ -199,18 +198,18 @@
 	display:flex;
 	flex-direction:column;
 	justify-content:center;
-	font-size:22pt;
+	font-size:21px;
 }
 #IssueCover {
 	display:flex;
 	flex-direction:column;
 	justify-content:center;
-	font-size:22pt;
+	font-size:21px;
 }
 #IssueCover h1 {
 	padding:0em;
 	font-family:myHultog;
-	font-size:1.7em;
+	font-size:1.6em;
 	text-transform:uppercase;
 }
 #IssueIndex .ArticleInfo {
@@ -250,19 +249,19 @@
 		display: block;
 		height: 450px;
 		width: 556px;
-		margin-top: 3.4em;
-		margin-bottom: 1.7em;
+		margin-top: 3.2em;
+		margin-bottom: 1.6em;
 		margin-left: auto;
 		margin-right: auto;
 	}
 	/* DISCLAIMER */
 	#disclaimer {
-		padding:1.7em;
+		padding:1.6em;
 		text-align:center;
 	}
 	#disclaimer ul {
 		list-style-position:outside;
-		word-wrap: break-word;
+		word-break: break-all;
 	}
 
 	@media screen and (min-width: 1278px) {
@@ -270,11 +269,11 @@
 		padding-top: 200px;
 		padding-left:200px;
 		padding-right: 200px;
-		padding-bottom: 340px;
+		padding-bottom: 324px;
 	}
 
 	#CoverWrapper {
-		padding-bottom: 118px;
+		padding-bottom: 124px;
 	}
 }
 
@@ -282,38 +281,38 @@
 @media screen and (max-width: 768px) {
 	#file {
 		padding-top: 100px;
-		padding-bottom: 170px;
+		padding-bottom: 162px;
 		padding-left: 100px;
 		padding-right: 100px;
-		font-size: 13pt;
+		font-size: 13px;
 	}
 
 		#file h1 {
-			font-size: 22pt;
+			font-size: 21px;
 			letter-spacing: 4px;
 		}
 
 		#file h2 {
 			letter-spacing: 7px;
-			font-size: 17pt;
+			font-size: 16px;
 		}
 
 		#IssueCover {
-			font-size: 17px;
+			font-size: 16px;
 		}
 
 		#file h3, #file h4, #file h5 {
 			letter-spacing: 7px;
-			font-size: 13pt;
+			font-size: 13px;
 		}
 
 	#CoverWrapper {
-		font-size: 17pt;
-		padding-bottom: 59px;
+		font-size: 16px;
+		padding-bottom: 62px;
 	}
 
 	#ContentWrapper h2 + p::first-letter, #ContentWrapper p:first-of-type::first-letter {
-		font-size: 60pt;
+		font-size: 60px;
 		line-height: 60px;
 		padding-right: 6px;
 	}
@@ -329,17 +328,17 @@
 }
 @media screen and (max-width: 480px) {
 	#file {
-		padding-top: 59px;
+		padding-top: 62px;
 		padding-bottom: 100px;
-		padding-left: 59px;
-		padding-right: 59px;
+		padding-left: 62px;
+		padding-right: 62px;
 	}
 
 	#file th, #file td {
 		padding:2px;
 	}
 	#CoverWrapper {
-		padding-bottom: 35px;
+		padding-bottom: 37px;
 	}
 
 	#disclaimer {
