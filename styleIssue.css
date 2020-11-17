@@ -402,6 +402,7 @@ ul.minimal {
 
 #file {
     padding-top:2em;
+    min-height:100vh;
 }
 
 .figure-wrapper, .table-wrapper {
