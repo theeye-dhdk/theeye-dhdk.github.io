@@ -87,7 +87,6 @@
     border: 1px solid;
     border-color: #241B12;
     word-break: break-all;
-    hyphens: auto;
     margin-left: auto;
     margin-right: auto;
     column-span:all;
@@ -146,7 +145,6 @@
     color: #2b1d0e;
     overflow: hidden;
     word-break: break-all;
-    hyphens: auto;
     padding:1.3em;
 }
 #CoverWrapper {
@@ -234,7 +232,6 @@ font-size: 1.1em;
     font-family: myBodoniCondensed;
     font-size:1.2em;
     word-break: break-all;
-    hyphens: auto;
 }
 #disclaimer a {
     font-family:myBodoni;
@@ -291,7 +288,6 @@ font-size: 1.1em;
     padding-bottom:1em;
     overflow: auto;
     word-break: break-all;
-    hyphens: auto;
 }
 
 #IssueIndex .ArticleInfo p.coverLabel {
@@ -346,7 +342,7 @@ font-size: 1.1em;
     
     #IssueCover{
         padding:24px;
-        font-size:12pt;
+        font-size:13pt;
     }
     #IssueCover h1 {
         letter-spacing: 5px;
@@ -359,7 +355,7 @@ font-size: 1.1em;
 
 
     #file {
-    font-size:12pt;
+    font-size:13pt;
     padding: 24px;
     }
 
@@ -368,7 +364,7 @@ font-size: 1.1em;
         column-count: 2;
     }
     #ArticleBody h1, #ArticleBody h2, #ArticleBody h3, #ArticleBody h4, #ArticleBody h5, #ArticleBody th {
-        font-size: 14pt;
+        font-size: 15pt;
     }
 
     
