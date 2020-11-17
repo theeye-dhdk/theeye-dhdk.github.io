@@ -23,11 +23,12 @@
               success : function(data) {
                 console.log(data);
                 createCovers(data);
+                populateDropdownMenu(data);
                 }
               });
 
 
-            function createCovers(obj) {
+            function populateDropdownMenu(obj) {
                 for (i in obj.issues) {
                     $("#dropdownMenu").append("<a class='dropdown-item' href='" + obj.issues[i].pageLink + "'>The eye on " + obj.issues[i].topic + "</a>");
               }

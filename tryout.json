@@ -1,25 +1,25 @@
 {"issues":[
     {
     	"issue":"1",
-		"topic":"TECHNOLOGY", 
+		"topic":"Technology", 
         "pageLink":"tech/",
         "coverImg":"tech/simulation/img01.jpg"
 	},
     {
     	"issue":"2",
-    	"topic":"SPACE",
+    	"topic":"Space",
         "pageLink":"space/",
         "coverImg":"space/Private Space/space02.jpg"
     },
     {
     	"issue":"3",
-    	"topic":"CLIMATE",
+    	"topic":"Climate",
         "pageLink":"climate/",
         "coverImg":"climate/ng1.png"
     },
     {
     	"issue":"4",
-    	"topic":"HEALTH",
+    	"topic":"Health",
         "pageLink":"health/",
         "coverImg":"health/covid.jpg"
     }
