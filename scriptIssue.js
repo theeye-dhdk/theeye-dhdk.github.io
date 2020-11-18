@@ -593,7 +593,6 @@ function changeStyle(selectedStyle) {
 
 //Manage active style button
 $(document).ready(function(){
-    //$(".eyeActive").hide();
 
     $("#none").click(function(){
         $('#btn-style>button.btn-active').removeClass("btn-active");
@@ -602,50 +601,34 @@ $(document).ready(function(){
     $("#1370").click(function(){
         $('#btn-style>button.btn-active').removeClass("btn-active");
         this.classList.add("btn-active");
-        //$(".eyeActive").hide();
-        //$("#1370eye").show();
   });
     $("#1560").click(function(){
         $('#btn-style>button.btn-active').removeClass("btn-active");
         this.classList.add("btn-active");
-        //$(".eyeActive").hide();
-        //$("#1560eye").show();
   });
     $("#1860").click(function(){
         $('#btn-style>button.btn-active').removeClass("btn-active");
         this.classList.add("btn-active");
-        //$(".eyeActive").hide();
-        //$("#1860eye").show();
   });
     $("#1920").click(function(){
         $('#btn-style>button.btn-active').removeClass("btn-active");
         this.classList.add("btn-active");
-        //$(".eyeActive").hide();
-        //$("#1920eye").show();
   });
     $("#1980").click(function(){
         $('#btn-style>button.btn-active').removeClass("btn-active");
         this.classList.add("btn-active");
-        //$(".eyeActive").hide();
-        //$("#1980eye").show();
   });
     $("#2000").click(function(){
         $('#btn-style>button.btn-active').removeClass("btn-active");
         this.classList.add("btn-active");
-        //$(".eyeActive").hide();
-        //$("#2000eye").show();
   });
     $("#2020").click(function(){
         $('#btn-style>button.btn-active').removeClass("btn-active");
         this.classList.add("btn-active");
-        $(".eyeActive").hide();
-        $("#2020eye").show();
   });
      $("#2040").click(function(){
         $('#btn-style>button.btn-active').removeClass("btn-active");
         this.classList.add("btn-active");
-        //$(".eyeActive").hide();
-        //$("#2040eye").show();
   });
 });
 

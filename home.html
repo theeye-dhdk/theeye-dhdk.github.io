@@ -13,7 +13,7 @@
         <title>The Eye Magazine</title>
 
 
-      <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+      <script src="https://ajax.googleapis.com/ajax/libs/https://web.whatsapp.com/#jquery/3.5.1/jquery.min.js"></script>
           <script>
             $.ajax({
               url : 'tryout.json', 
@@ -23,12 +23,11 @@
               success : function(data) {
                 console.log(data);
                 createCovers(data);
-                populateDropdownMenu(data);
                 }
               });
 
 
-            function populateDropdownMenu(obj) {
+            function createCovers(obj) {
                 for (i in obj.issues) {
                     $("#dropdownMenu").append("<a class='dropdown-item' href='" + obj.issues[i].pageLink + "'>The eye on " + obj.issues[i].topic + "</a>");
               }
