@@ -27,6 +27,7 @@
 	font-family: myHultog;
 	text-align: justify;
 	line-height: 1.5;
+	min-height:100vh;
 	background-color: #ccab68;
 	background-image: url("https://www.transparenttextures.com/patterns/fresh-snow.png");
 }

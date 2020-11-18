@@ -144,7 +144,6 @@
     column-rule: 1px solid;
     color: #2b1d0e;
     overflow: hidden;
-    word-break: break-all;
     padding:1.3em;
 }
 #CoverWrapper {
@@ -170,11 +169,12 @@
 	order:1
 }
 #CoverWrapper div.maincover>div.coverinfo {
-	order:3
+	order:3;
 }
 
 #CoverWrapper p {
     display:inline;
+    word-break: break-all;
     
 }
 #CoverWrapper p.subtitle {
@@ -192,6 +192,7 @@
 #ContentWrapper {
     line-height: 0.9;
     padding:0.9em;
+    word-break: break-all;
  }
 
  #ContentWrapper p{
@@ -214,11 +215,12 @@
 
 
 #ArticleBody .myPubnote, #FootWrapper {
-font-family: myBodoniCondensed;
-margin-top: 15px;
-margin-bottom: 15px;
-line-height: 1;
-font-size: 1.1em;
+    font-family: myBodoniCondensed;
+    margin-top: 15px;
+    margin-bottom: 15px;
+    line-height: 1;
+    font-size: 1.1em;
+    word-break: break-all;
 }
 #ArticleBody .myPubnote p, #FootWrapper p {
     margin:0px;
