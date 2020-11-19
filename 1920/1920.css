@@ -123,6 +123,7 @@
 }
 
 #file #ArticleBody #ContentWrapper h3, #ContentWrapper h4, #ContentWrapper h5 {
+	font-family: 'Comfortaa', cursive;
 	border-top: solid 10px red;
 	/**width: 40%;**/
 	margin-top: 2%;
