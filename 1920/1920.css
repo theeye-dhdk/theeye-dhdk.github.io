@@ -130,13 +130,24 @@
 	text-align: justify;
 }
 
-#file #ContentWrapper p, #ContentWrapper blockquote {
+#file #ContentWrapper p {
 	display: block;
 	width: 70%;
 	margin-left: 30%;
 	text-align: justify;
 }
 
+#ContentWrapper blockquote {
+    display: block;
+    width: 70%;
+    margin-left: 30%;
+    text-align: justify;
+    font-family: 'Strasua';
+    font-size: 120%;
+    border-left: solid 5px black;
+    padding: 2%;
+}
+    
 #file figure {
 	float:left;
 	margin-left:0%;
