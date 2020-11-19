@@ -133,9 +133,9 @@ cursor:url("img/whitecursorbold.png") 0 0, auto;
 
  #file div.article div.cover {
 position:relative;
-margin-left:none;
-margin-right:none;
-height:700;
+margin-left:0;
+margin-right:0;
+height:700px;
 
 }
 #file a {
@@ -310,7 +310,7 @@ margin-top: auto;
 margin-bottom: auto;
 top: 0;
 bottom: 0;
-right:40;
+right:40px;
 }
 
  #file div.article p.subtitle  {
@@ -329,7 +329,7 @@ margin-top: auto;
 margin-bottom: auto;
 top: 0;
 bottom: 0;
-left:25;
+left:25px;
 
 }
 
@@ -510,9 +510,11 @@ width: 100%;
 height:auto;
 }
 
-#file div.article div.content figure img:hover {
--webkit-transition: transform 2s ease-in-out;
-transform: scale(1.3);
+ #file div.article figure img:hover {
+        -webkit-transform: scale(1.3);
+        -ms-transform: scale(1.3);
+        transform: scale(1.3);
+	 -webkit-transition: transform 2s ease-in-out;
 }
 
  #file div.article figcaption {
@@ -542,7 +544,6 @@ padding-bottom:2%;
  #file div.article blockquote {
 display: inline-block;
 width: 100%;
-line-height 50%;
 color:white;
 text-align: center;
 font-family:'chromate';
