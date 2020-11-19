@@ -510,6 +510,13 @@ width: 100%;
 height:auto;
 }
 
+#file div.article div.content figure img:hover {
+-webkit-transform: scale(1.3);
+-ms-transform: scale(1.3);
+-webkit-transition: transform 2s ease-in-out;
+transform: scale(1.3);
+}
+
  #file div.article figcaption {
 font-family:'faktpro';
 text-align: center;
@@ -558,6 +565,11 @@ margin-left: 0px;
 #file div.article blockquote a{
 color:white!important;
 }
+
+file div.article div.content blockquote:hover {
+box-shadow: rgb(255,255,255) 0px 0px 0px 25px inset;
+}
+
 
  #file div.article blockquote:after {
 display:block;
