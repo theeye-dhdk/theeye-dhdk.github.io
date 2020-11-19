@@ -76,7 +76,6 @@ background-image: url("../1980/img/barcode.jpg"),url('../1980/img/coverdecoratio
 }
 
 #IssueCover h1 {
-adding-left: 15px;
 word-break: break-word;
 font-size: 500%;
 letter-spacing: 15px;
@@ -124,7 +123,7 @@ filter: contrast(1.31) saturate(1.53) sepia(0.14) ;
   background-image:url("../1980/img/Eye80s2.png");
   background-size: 85%;
   background-repeat: no-repeat;
-  background-color:none;
+  background-color:transparent;
   display: block;
   position: relative;
   height: 350px;
@@ -159,7 +158,7 @@ transform: rotate(-4deg);
   font-family:"battiato";
   font-size: 190%;
   left:-5%;
-  font-style: bold; 
+  font-weight: bold; 
   padding-top:0px; 
 }
 
@@ -228,7 +227,7 @@ overflow: visible;
   background-image:url("img/baloon80s.png");
   background-size: 100%;
   background-repeat: no-repeat;
-  background-color:none;
+  background-color:transparent;
   display: block;
   position: relative;
   height: 200px;
@@ -712,7 +711,7 @@ background-image: url("../1980/img/barcode.jpg"),url('../1980/img/coverdecoratio
   font-family:"battiato";
   font-size: 140%;
   left:-5%;
-  font-style: bold; 
+  font-weight: bold; 
   padding-top:5px; 
 } 
 #disclaimer p {
