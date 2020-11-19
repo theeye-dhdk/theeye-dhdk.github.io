@@ -514,7 +514,7 @@ height:auto;
         -webkit-transform: scale(1.3);
         -ms-transform: scale(1.3);
         transform: scale(1.3);
-	transition: 0.2s ease-in-out !important;
+	transition: 2s ease-in-out !important;
 }
 
  #file div.article figcaption {
