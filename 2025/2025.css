@@ -695,6 +695,7 @@ font-family: 'faktpro';
 }
 
 #file div.article   div.content table caption {
+    font-family: 'faktpro';
     width: 110%;
     position: relative;
     text-align: left;
@@ -703,6 +704,7 @@ font-family: 'faktpro';
     caption-side: top;
     color: black;
     padding-bottom: 2%;
+    padding-top:2%;
     border-bottom: 1px solid black;
   }
   
