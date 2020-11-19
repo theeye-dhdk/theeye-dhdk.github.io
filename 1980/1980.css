@@ -1020,7 +1020,7 @@ display:inline-block;
 #file div.article  figcaption {
   position:relative;
   padding: 10px 10px;
-  max-width: 160%%;
+  max-width: 100%;
   top: -30px;
   left: -20px;
   background-color: #fceb7e;
