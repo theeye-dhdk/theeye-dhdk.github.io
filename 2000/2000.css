@@ -24,6 +24,10 @@
 	color:#e60000;
 }
 
+#file .byline a:hover {
+	color:black;
+}
+
 #file figcaption a:hover {
 	text-decoration: underline;
 }
