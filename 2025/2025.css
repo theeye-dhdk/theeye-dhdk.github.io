@@ -565,7 +565,7 @@ margin-left: 0px;
 color:white!important;
 }
 
-#file div.article div.content blockquote:hover {
+#file div.article blockquote:hover {
 box-shadow: rgb(255,255,255) 0px 0px 0px 25px inset;
 }
 
