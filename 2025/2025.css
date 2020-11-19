@@ -567,7 +567,8 @@ color:white!important;
 
 #file div.article blockquote:hover
 {
-        box-shadow: inset 0 0 0 25px #53a7ea;
+        box-shadow: inset 0 0 0 25px #FFFFFF;
+	transition: box-shadow 0.3s ease-in-out;
 }
 
 
