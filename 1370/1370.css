@@ -146,21 +146,21 @@
 }
   
 #file #ContentWrapper a:visited {
-	color: black;
+	color: darkred;
 	background-color: transparent;
-	text-decoration: undeline;
+	text-decoration: none;
 }
   
 #file #ContentWrapper a:hover {
-	color: black;
+	color: darkred;
 	background-color: transparent;
-	text-decoration: underline;
+	text-decoration: none;
 }
   
 #file #ContentWrapper a:active {
-	color: black;
+	color: darkred;
 	background-color: transparent;
-	text-decoration: underline;
+	text-decoration: none;
 }
 
 #file #icons img {
