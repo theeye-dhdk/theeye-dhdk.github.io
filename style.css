@@ -117,6 +117,8 @@ font-family: 'Amiri', serif;
 }
 p a{
 color:black;
+overflow-wrap: break-word;
+    word-wrap: break-word;
 }
 
 li,ul {
