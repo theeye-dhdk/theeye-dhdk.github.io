@@ -28,7 +28,8 @@
 	color:black;
 }
 
-#file figcaption > a:hover {
+#file figcaption a:hover {
+	color:white;
 	text-decoration: underline;
 }
 
