@@ -71,7 +71,7 @@
 }
 
 #file img.coverimg { 
-	max-width: 100%;
+	width: 100%;
 	position: left;
 	display: block;
 	filter: brightness(80%);
@@ -232,7 +232,7 @@
 	padding-left: 5%;
 	filter: sepia(40%);
 	width: 600;
- 	height: 370;
+ 	height: 390;
   	transition: width 1s, height 1s, transform 1s;
 }
 
@@ -444,7 +444,7 @@
 #IssueIndex div.coverAuthor:nth-child(1) {
 	background-color: #3A482E;
 	display: block;
-	max-width: 100%;
+	width: 100%;
 	margin: 0%;
 	text-align: justify;
 	padding-left: 5%;
